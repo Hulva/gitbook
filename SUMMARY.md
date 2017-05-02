@@ -48,4 +48,6 @@
 * [Gradle](./Gradle/README.md)
 * [Log4j](./Log4j/README.md)
 * [Java NIO vs IO](./Java/NIO-IO.md)
+* [Cassandra](./Cassandra/README.md)
+* [Logrotate](./Logrotate/README.md)
 
