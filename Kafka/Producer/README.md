@@ -406,7 +406,7 @@ public class ClientResponse {
 因为回调对象RequestCompletionHandler的回调方法 onComplete的参数是 ClientResponse.
 NetworkClient.poll是真正发生读写的地方,所以它也会负责生成客户端的响应信息.
 
-![](./request-respoonse.png)
+![](./request-response.png)
 
 ```java
     public List<ClientResponse> poll(long timeout, long now) {
@@ -569,7 +569,7 @@ Channel的 SelectionKey有了 Connect和 Write事件,在Selector的轮询过程�
 
 现在对于客户端而言,连接,读,写事件都有了(CONNECT,READ,WRITE).在selector的轮询中可以操作读写事件.
 
-![(./20160120174334217)]
+![](./20160120174334217)
 
 ### poll轮询
 
