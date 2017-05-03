@@ -1,2 +1,0 @@
-# HBase getting start
-
