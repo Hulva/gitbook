@@ -17,6 +17,7 @@
         * [Metadata Cache](./Kafka/Source-code-analysis/kafka-metadata-cache.md)
         * [Socketserver](./Kafka/Source-code-analysis/kafka-socketserver.md)
         * [LogAppend](./Kafka/Source-code-analysis/kafka-logappend.md)
+        * [ISR](./Kafka/Source-code-analysis/kafka-isr.md)
         * [Replica Manager](./Kafka/Source-code-analysis/kafka-replica-manager.md)
         * [Kafka Controller](./Kafka/Source-code-analysis/kafka-controller.md)
         * [Admin Manager](./Kafka/Source-code-analysis/kafka-admin-manager.md)

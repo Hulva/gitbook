@@ -685,5 +685,5 @@ OffsetIndex中每个条目的物理格式是4字节的相对offset和4字节的�
 
 ## Ref
 
-* http://www.cnblogs.com/fxjwind/p/4913703.html
-* http://www.cnblogs.com/huxi2b/p/4583249.html
+* [Apache Kafka源码分析 - KafkaApis](http://www.cnblogs.com/fxjwind/p/4913703.html)
+* [【原创】Kafka producer原理 (Scala版同步producer)](http://www.cnblogs.com/huxi2b/p/4583249.html)
