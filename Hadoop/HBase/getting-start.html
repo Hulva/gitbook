@@ -1,0 +1,954 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HBase getting start · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hbase-shell.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Kafka/">
+            
+                <a href="../../Kafka/">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../Kafka/Producer/">
+            
+                <a href="../../Kafka/Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Kafka/Producer-scala/">
+            
+                <a href="../../Kafka/Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../Kafka/Consumer/">
+            
+                <a href="../../Kafka/Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../Kafka/Stream/">
+            
+                <a href="../../Kafka/Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../Kafka/Connector/">
+            
+                <a href="../../Kafka/Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../Kafka/kafka-HA.html">
+            
+                <a href="../../Kafka/kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../Kafka/kafka-controller.html">
+            
+                <a href="../../Kafka/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../Kafka/Source-code-analysis/">
+            
+                <a href="../../Kafka/Source-code-analysis/">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="../../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="../../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="../../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="../../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="../../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="../../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="../../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="../../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="../../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="../../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1.1" data-path="getting-start.html">
+            
+                <a href="getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="hbase-shell.html">
+            
+                <a href="hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Hive/">
+            
+                <a href="../Hive/">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../Hive/tutorial.html">
+            
+                <a href="../Hive/tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../Hive/shell-command.html">
+            
+                <a href="../Hive/shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../Hive/HiveQL.html">
+            
+                <a href="../Hive/HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Sqoop/">
+            
+                <a href="../Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../Sqoop/tutorial.html">
+            
+                <a href="../Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >HBase getting start</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hbase-getting-start">HBase getting start</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: HBase">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hbase-shell.html" class="navigation navigation-next " aria-label="Next page: HBase Shell">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HBase getting start","level":"1.4.1.1","depth":3,"next":{"title":"HBase Shell","level":"1.4.1.2","depth":3,"path":"Hadoop/HBase/hbase-shell.md","ref":"./Hadoop/HBase/hbase-shell.md","articles":[]},"previous":{"title":"HBase","level":"1.4.1","depth":2,"path":"Hadoop/HBase/README.md","ref":"./Hadoop/HBase/README.md","articles":[{"title":"HBase getting start","level":"1.4.1.1","depth":3,"path":"Hadoop/HBase/getting-start.md","ref":"./Hadoop/HBase/getting-start.md","articles":[]},{"title":"HBase Shell","level":"1.4.1.2","depth":3,"path":"Hadoop/HBase/hbase-shell.md","ref":"./Hadoop/HBase/hbase-shell.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Hadoop/HBase/getting-start.md","mtime":"2017-01-13T06:55:37.434Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

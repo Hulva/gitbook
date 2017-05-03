@@ -1,0 +1,1313 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ISR · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kafka-replica-manager.html" />
+    
+    
+    <link rel="prev" href="kafka-logappend.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Producer/">
+            
+                <a href="../Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Producer-scala/">
+            
+                <a href="../Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Consumer/">
+            
+                <a href="../Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Stream/">
+            
+                <a href="../Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Connector/">
+            
+                <a href="../Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../kafka-HA.html">
+            
+                <a href="../kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../kafka-controller.html">
+            
+                <a href="../kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="kafka-schedule.html">
+            
+                <a href="kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="kafka-zkUtils.html">
+            
+                <a href="kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="kafka-metric-reporter.html">
+            
+                <a href="kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="kafka-log-manager.html">
+            
+                <a href="kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="kafka-metadata-cache.html">
+            
+                <a href="kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="kafka-socketserver.html">
+            
+                <a href="kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="kafka-logappend.html">
+            
+                <a href="kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8.8" data-path="kafka-isr.html">
+            
+                <a href="kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="kafka-replica-manager.html">
+            
+                <a href="kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="kafka-controller.html">
+            
+                <a href="kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="kafka-admin-manager.html">
+            
+                <a href="kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="kafka-group-coordinator.html">
+            
+                <a href="kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="kafka-transaction-coordinator.html">
+            
+                <a href="kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="kafka-authorizer.html">
+            
+                <a href="kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="kafka-apis.html">
+            
+                <a href="kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="kafka-dynamic-config-manager.html">
+            
+                <a href="kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="kafka-health-checker.html">
+            
+                <a href="kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="kafka-checkpoint.html">
+            
+                <a href="kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Hadoop/">
+            
+                <a href="../../Hadoop/">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Hadoop/HBase/">
+            
+                <a href="../../Hadoop/HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../Hadoop/HBase/getting-start.html">
+            
+                <a href="../../Hadoop/HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../Hadoop/HBase/hbase-shell.html">
+            
+                <a href="../../Hadoop/HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Hadoop/Hive/">
+            
+                <a href="../../Hadoop/Hive/">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../Hadoop/Hive/tutorial.html">
+            
+                <a href="../../Hadoop/Hive/tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../Hadoop/Hive/shell-command.html">
+            
+                <a href="../../Hadoop/Hive/shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../Hadoop/Hive/HiveQL.html">
+            
+                <a href="../../Hadoop/Hive/HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Hadoop/Sqoop/">
+            
+                <a href="../../Hadoop/Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../Hadoop/Sqoop/tutorial.html">
+            
+                <a href="../../Hadoop/Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ISR</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="isr">ISR</h1>
+<h2 id="partition--replica">Partition &amp; Replica</h2>
+<p>&#x9996;&#x5148;&#x6765;&#x770B;Partition&#x7684; Replication&#x526F;&#x672C;&#x662F;&#x4E2A;&#x4EC0;&#x4E48;&#x6982;&#x5FF5;. &#x6BCF;&#x4E2A;Partition&#x90FD;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A; Replication.
+&#x5176;&#x4E2D;Leader&#x526F;&#x672C;&#x8D1F;&#x8D23;&#x8BFB;&#x5199;, Follower&#x526F;&#x672C;&#x8D1F;&#x8D23;&#x4ECE; Leader&#x62C9;&#x53D6;&#x6570;&#x636E;. Replica&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684; Broker&#x4E0A;.
+&#x6240;&#x4EE5;Replica&#x53EA;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;: Partition(&#x5206;&#x533A;), brokerid(&#x6240;&#x5728;&#x7684; Kafka&#x8282;&#x70B9;).</p>
+<p><img src="20160114142830405" alt="Partition &amp; Replica"></p>
+<p>&#x4E00;&#x4E2A;Replication&#x6709;&#x4E24;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x5143;&#x6570;&#x636E;: HighWatermark&#x548C; LogEndOffset.</p>
+<ul>
+<li>HighWatermark&#x662F;&#x7528;&#x6765;&#x786E;&#x4FDD;&#x6D88;&#x8D39;&#x8005;&#x80FD;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x6D88;&#x606F;&#x7684;&#x6700;&#x9AD8;&#x6C34;&#x4F4D;,&#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#x6C34;&#x4F4D;&#x7684;&#x6D88;&#x606F;&#x662F;&#x4E0D;&#x4F1A;&#x88AB;&#x5BA2;&#x6237;&#x7AEF;&#x770B;&#x5230;&#x7684;.</li>
+<li>&#x7531;&#x4E8E;Leader&#x8D1F;&#x8D23;&#x8BFB;&#x5199;,&#x6240;&#x4EE5;HW&#x53EA;&#x80FD;&#x7531; Leader&#x66F4;&#x65B0;,&#x4F46;&#x662F;&#x600E;&#x4E48;&#x65F6;&#x5019;&#x66F4;&#x65B0;,&#x53EF;&#x80FD;&#x7531;follower&#x5728;&#x66F4;&#x65B0; LEO&#x65F6;&#x901A;&#x77E5; Leader&#x4FEE;&#x6539;.</li>
+<li>LogEndOffset&#x662F;&#x6240;&#x6709;&#x7684; Replica&#x90FD;&#x4F1A;&#x6709;&#x7684;: Leader&#x5728;&#x6D88;&#x606F;&#x8FFD;&#x52A0;&#x540E;&#x4F1A;&#x66F4;&#x65B0;,follower&#x5728;&#x4ECE; Leader&#x6293;&#x53D6;&#x6D88;&#x606F;&#x4E5F;&#x4E5F;&#x4F1A;&#x66F4;&#x65B0;.</li>
+</ul>
+<p><img src="20160114145533803" alt=""></p>
+<blockquote>
+<p>&#x95EE;: &#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;Log&#x662F;&#x600E;&#x4E48;&#x7528;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x672C;&#x5730;&#x7684; Replica? Local&#x548C; Remote&#x53C8;&#x662F;&#x9488;&#x5BF9;&#x4EC0;&#x4E48;&#x800C;&#x8A00;?
+&#x7B54;:&#x4E00;&#x4E2A;Partition&#x7684;&#x6240;&#x6709; Replicas&#x90FD;&#x662F;&#x4FDD;&#x5B58;&#x5728; Leader&#x8282;&#x70B9;&#x7684;&#x5185;&#x5B58;&#x4E2D;&#x7684;. &#x800C;&#x4E0D;&#x662F;&#x8BA9;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x81EA;&#x5DF1;&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x4FE1;&#x606F;,
+&#x5982;&#x679C;&#x8FD9;&#x6837;&#x7684;&#x8BDD;,&#x6BCF;&#x4E2A;Kafka&#x8282;&#x70B9;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x90FD;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;! &#x800C;&#x5206;&#x5E03;&#x5F0F;&#x96C6;&#x7FA4;&#x7BA1;&#x7406;&#x662F;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x4E2D;&#x5FC3;&#x6765;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x8282;&#x70B9;&#x4FE1;&#x606F;&#x7684;.
+&#x56E0;&#x4E3A;&#x73B0;&#x5728;&#x662F;&#x5728;Leader&#x8282;&#x70B9;&#x4E0A;,&#x5E76;&#x4E14;&#x662F;&#x7531;Leader&#x7BA1;&#x7406;&#x6240;&#x6709;&#x7684; Replicas,Leader&#x81EA;&#x5DF1;&#x5C31;&#x662F; Local,&#x5176;&#x4ED6; Replics&#x90FD;&#x662F; Remote!
+&#x5373;Leader Replica = Local Replica, Follower Repicas = Remote Replicas.</p>
+<p>&#x95EE;: &#x56E0;&#x4E3A;Partitions&#x662F;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684; Kafka&#x8282;&#x70B9;,&#x672C;&#x8EAB;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x8BB0;&#x5F55;&#x7684;Partitions&#x5C31;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x4E86;.
+&#x7B54;: &#x6CA1;&#x9519;,&#x5206;&#x5E03;&#x5F0F;&#x8282;&#x70B9;&#x4FDD;&#x5B58;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;,&#x4F46;&#x662F;&#x540C;&#x4E00;&#x4E2A;Partition&#x7684;&#x6240;&#x6709; Replicas&#x5E94;&#x8BE5;&#x662F;&#x4EA4;&#x7ED9; Leader&#x7BA1;&#x7406;&#x7684;.
+&#x800C;follower&#x4E0A;&#x7684; Replicas&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x72B6;&#x6001;,&#x56E0;&#x4E3A;Leader&#x66FF;&#x4ED6;&#x4EEC;&#x7BA1;&#x7406;&#x597D;&#x4E86;.</p>
+</blockquote>
+<p><img src="20160114153213150" alt=""></p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Replica</span>(<span class="hljs-params">val brokerId: <span class="hljs-type">Int</span>, val partition: <span class="hljs-type">Partition</span>, time: <span class="hljs-type">Time</span> = <span class="hljs-type">SystemTime</span>, initialHighWatermarkValue: <span class="hljs-type">Long</span> = 0L, val log: <span class="hljs-type">Option</span>[<span class="hljs-type">Log</span>] = <span class="hljs-type">None</span></span>) </span>{
+  <span class="hljs-comment">// the high watermark offset value, in non-leader replicas only its message offsets are kept</span>
+  <span class="hljs-meta">@volatile</span> <span class="hljs-keyword">private</span>[<span class="hljs-keyword">this</span>] <span class="hljs-keyword">var</span> highWatermarkMetadata: <span class="hljs-type">LogOffsetMetadata</span> = <span class="hljs-keyword">new</span> <span class="hljs-type">LogOffsetMetadata</span>(initialHighWatermarkValue)
+  <span class="hljs-comment">// the log end offset value, kept in all replicas;</span>
+  <span class="hljs-comment">// for local replica it is the log&apos;s end offset, for remote replicas its value is only updated by follower fetch</span>
+  <span class="hljs-meta">@volatile</span> <span class="hljs-keyword">private</span>[<span class="hljs-keyword">this</span>] <span class="hljs-keyword">var</span> logEndOffsetMetadata: <span class="hljs-type">LogOffsetMetadata</span> = <span class="hljs-type">LogOffsetMetadata</span>.<span class="hljs-type">UnknownOffsetMetadata</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">isLocal</span></span>: <span class="hljs-type">Boolean</span> = log <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(l) =&gt; <span class="hljs-literal">true</span>    <span class="hljs-comment">// &#x521B;&#x5EFA;Replica&#x65F6;&#x6307;&#x5B9A; Log&#x65F6;, &#x5219;&#x8868;&#x793A;&#x662F;&#x672C;&#x5730;&#x7684;Replication</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt; <span class="hljs-literal">false</span>
+  }
+
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;LEO: &#x4E0D;&#x5E94;&#x8BE5;&#x5728;Local Replication&#x7684; Partition&#x4E0A;&#x8BBE;&#x7F6E; LEO. &#x5BF9;&#x4E8E;Local Replica,&#x5B83;&#x662F;&#x7531;Log&#x7684; EndOffset&#x6307;&#x5B9A;,&#x800C;&#x4E0D;&#x80FD;&#x8C03;&#x7528;&#x6539;update&#x65B9;&#x6CD5;</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logEndOffset_=</span></span>(newLogEndOffset: <span class="hljs-type">LogOffsetMetadata</span>) {
+    <span class="hljs-keyword">if</span> (!isLocal) logEndOffsetMetadata = newLogEndOffset
+  }
+  <span class="hljs-comment">// &#x83B7;&#x53D6;LEO</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logEndOffset</span> </span>= <span class="hljs-keyword">if</span> (isLocal) log.get.logEndOffsetMetadata <span class="hljs-keyword">else</span> logEndOffsetMetadata
+
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;HW: &#x4E0D;&#x5E94;&#x8BE5;&#x5728;&#x975E;Local Replication&#x7684; Partition&#x4E0A;&#x8BBE;&#x7F6E; HW, &#x5373;&#x53EA;&#x80FD;&#x5728;Local Replica&#x4E0A;&#x8BBE;&#x7F6E;, Local Replica&#x4E5F;&#x662F; Leader Replica</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">highWatermark_=</span></span>(newHighWatermark: <span class="hljs-type">LogOffsetMetadata</span>) {
+    <span class="hljs-keyword">if</span> (isLocal) highWatermarkMetadata = newHighWatermark
+  }
+  <span class="hljs-comment">// &#x83B7;&#x53D6;HW</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">highWatermark</span> </span>= highWatermarkMetadata
+}
+</code></pre>
+<p>&#x5728;Partition&#x4E2D;&#x521B;&#x5EFA; Replica,&#x5982;&#x679C;&#x4E0D;&#x5728;assignedReplicaMap&#x4E2D;,&#x6839;&#x636E;&#x662F;&#x5426;&#x662F;&#x672C;&#x5730;(Leader)&#x6765;&#x521B;&#x5EFA;Replica&#x5B9E;&#x4F8B;.
+Local&#x7684; Replica&#x6BD4; Remote&#x7684;&#x591A;&#x4E86; offset&#x548C; Log. Replica&#x7684; isLocal()&#x4F1A;&#x6839;&#x636E;&#x662F;&#x5426;&#x6709; Log&#x5224;&#x65AD;&#x662F;&#x4E0D;&#x662F; Local.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getOrCreateReplica</span></span>(replicaId: <span class="hljs-type">Int</span> = localBrokerId): <span class="hljs-type">Replica</span> = {
+    <span class="hljs-keyword">val</span> replicaOpt = getReplica(replicaId)
+    replicaOpt <span class="hljs-keyword">match</span> {
+      <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(replica) =&gt; replica
+      <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt;
+        <span class="hljs-keyword">if</span> (isReplicaLocal(replicaId)) {
+          <span class="hljs-keyword">val</span> config = <span class="hljs-type">LogConfig</span>.fromProps(logManager.defaultConfig.originals, <span class="hljs-type">AdminUtils</span>.fetchEntityConfig(zkUtils, <span class="hljs-type">ConfigType</span>.<span class="hljs-type">Topic</span>, topic))
+          <span class="hljs-comment">// TopicAndPartition&#x7684; Log</span>
+          <span class="hljs-keyword">val</span> log = logManager.createLog(<span class="hljs-type">TopicAndPartition</span>(topic, partitionId), config)
+          <span class="hljs-comment">// log.dirs&#x662F;&#x6240;&#x6709; TopicAndPartition&#x7684;&#x7236;&#x76EE;&#x5F55;, &#x800C;checkpoints&#x4E5F;&#x662F;&#x5168;&#x5C40;&#x7684;</span>
+          <span class="hljs-keyword">val</span> checkpoint = replicaManager.highWatermarkCheckpoints(log.dir.getParentFile.getAbsolutePath)
+          <span class="hljs-keyword">val</span> offsetMap = checkpoint.read
+          <span class="hljs-comment">// checkpoints&#x4E2D;&#x8BB0;&#x5F55;&#x4E86;&#x6240;&#x6709; Partition&#x7684; offset&#x4FE1;&#x606F;, &#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x6839;&#x636E;TopicAndPartition&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684; offset</span>
+          <span class="hljs-keyword">if</span> (!offsetMap.contains(<span class="hljs-type">TopicAndPartition</span>(topic, partitionId))) info(<span class="hljs-string">&quot;No checkpointed highwatermark is found for partition [%s,%d]&quot;</span>.format(topic, partitionId))
+          <span class="hljs-keyword">val</span> offset = offsetMap.getOrElse(<span class="hljs-type">TopicAndPartition</span>(topic, partitionId), <span class="hljs-number">0</span>L).min(log.logEndOffset)
+          <span class="hljs-comment">// &#x672C;&#x5730;&#x7684;&#x662F;Leader, &#x6240;&#x4EE5;&#x8981;&#x7ED9;&#x51FA;offset&#x548C; Log.</span>
+          <span class="hljs-keyword">val</span> localReplica = <span class="hljs-keyword">new</span> <span class="hljs-type">Replica</span>(replicaId, <span class="hljs-keyword">this</span>, time, offset, <span class="hljs-type">Some</span>(log))
+          addReplicaIfNotExists(localReplica)
+        } <span class="hljs-keyword">else</span> {
+          <span class="hljs-comment">// &#x8FDC;&#x7A0B;&#x7684;&#x662F;follower.</span>
+          <span class="hljs-keyword">val</span> remoteReplica = <span class="hljs-keyword">new</span> <span class="hljs-type">Replica</span>(replicaId, <span class="hljs-keyword">this</span>, time)
+          addReplicaIfNotExists(remoteReplica)
+        }
+        getReplica(replicaId).get
+    }
+  }
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x4E0A;&#x9762;&#x7684;<code>log.dir</code>&#x662F; TopicAndPartition&#x7684;&#x76EE;&#x5F55;(&#x6BCF;&#x4E2A;TopicAndPartition&#x76EE;&#x5F55;&#x662F;&#x552F;&#x4E00;&#x7684;).
+<code>log.dir.getParentFile</code>&#x6307;&#x7684;&#x662F;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684; <code>log.dirs</code>,&#x800C;&#x4E0D;&#x662F;Partition&#x7684;&#x76EE;&#x5F55;.
+&#x800C;<code>log.dirs</code>&#x662F; <code>server.properties</code>&#x7684; <code>log.dirs</code>&#x914D;&#x7F6E;&#x9879;,&#x5B83;&#x662F;&#x6240;&#x6709;TopicAndPartition&#x7684;&#x7236;&#x76EE;&#x5F55;.</p>
+<blockquote>
+<p>getOrCreateReplica&#x88AB;&#x8C03;&#x7528;&#x7684;&#x5730;&#x65B9;&#x662F;&#x5728; ReplicaManager.becomeLeaderOrFollower-&gt;makeFollowers</p>
+</blockquote>
+<h2 id="replicamanager-offsetcheckpoint">ReplicaManager-&gt;OffsetCheckpoint</h2>
+<p>Local Replica&#x7684; offset&#x6765;&#x6E90;&#x4E8E; High watermark&#x7684; checkpoint(&#x56E0;&#x4E3A;HW&#x5F88;&#x91CD;&#x8981;,&#x6240;&#x6709;&#x9700;&#x8981;&#x505A;&#x68C0;&#x67E5;&#x70B9;).
+ReplicaManager&#x7684; highWatermarkCheckpoints&#x662F;&#x4E00;&#x4E2A; Map:&#x65E5;&#x5FD7;&#x76EE;&#x5F55;(log.dirs)-&gt;OffsetCheckpoint.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">val</span> highWatermarkCheckpoints = config.logDirs.map(dir =&gt; 
+    (<span class="hljs-keyword">new</span> <span class="hljs-type">File</span>(dir).getAbsolutePath, <span class="hljs-keyword">new</span> <span class="hljs-type">OffsetCheckpoint</span>(<span class="hljs-keyword">new</span> <span class="hljs-type">File</span>(dir, <span class="hljs-type">ReplicaManager</span>.<span class="hljs-type">HighWatermarkFilename</span>)))
+  ).toMap
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x7684;/data/kafka&#x76EE;&#x5F55;&#x662F; <code>server.properties</code>&#x4E2D;&#x7684; <code>log.dirs</code>&#x7684;&#x914D;&#x7F6E;&#x9879;,&#x4F1A;&#x5728;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x751F;&#x6210;checkpoint&#x6587;&#x4EF6;.</p>
+<pre><code class="lang-?">&#x279C;  kafka  ll                                                                        &#x2B05;&#xFE0F; log.dirs&#x76EE;&#x5F55;
+-rw-r--r--  1 zhengqh  staff     0B  1 14 16:13 recovery-point-offset-checkpoint
+-rw-r--r--  1 zhengqh  staff    18B  1 14 16:13 replication-offset-checkpoint       &#x2B05;&#xFE0F; offset-checkpoint&#x6587;&#x4EF6;
+drwxr-xr-x  4 zhengqh  staff   136B  1 14 16:13 wikipedia-0
+&#x279C;  kafka  ll wikipedia-0                                                            &#x2B05;&#xFE0F; topic-partition&#x76EE;&#x5F55;         
+-rw-r--r--  1 zhengqh  staff    10M  1 14 16:13 00000000000000000000.index          &#x2B05;&#xFE0F; Segment&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x548C;&#x7D22;&#x5F15;&#x6587;&#x4EF6;
+-rw-r--r--  1 zhengqh  staff     0B  1 14 16:13 00000000000000000000.log
+</code></pre>
+<p>ReplicaManager&#x662F;&#x7BA1;&#x7406;&#x6240;&#x6709;&#x7684; Partition&#x7684;,&#x800C;checkpoints&#x91CC;&#x8BB0;&#x5F55;&#x7684; offsetMap&#x662F;&#x6240;&#x6709; Partition&#x5171;&#x7528;&#x7684;.
+&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;TopicAndPartition&#x627E;&#x5230;&#x5B83;&#x5728; checkpoints&#x4E2D;&#x5BF9;&#x5E94;&#x7684; offset,&#x7528;&#x6765;&#x521B;&#x5EFA;Replica.</p>
+<p><img src="20160114163702208" alt=""></p>
+<p>&#x56E0;&#x4E3A;OffsetCheckpoint&#x8BB0;&#x5F55;&#x7684;&#x662F; TopicAndPartition&#x5230; offset&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;.&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x7C7B;&#x4E2D;&#x53EA;&#x662F;&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">OffsetCheckpoint</span>(<span class="hljs-params">val file: <span class="hljs-type">File</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">Logging</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">write</span></span>(offsets: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Long</span>]) {
+    <span class="hljs-comment">// write the current version and the number of entries, then the entries, finally flush to disk</span>
+    offsets.foreach { <span class="hljs-keyword">case</span> (topicPart, offset) =&gt;
+        writer.write(<span class="hljs-string">&quot;%s %d %d&quot;</span>.format(topicPart.topic, topicPart.partition, offset))
+        writer.newLine()
+    }
+  }
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">read</span></span>(): <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Long</span>] = {
+    <span class="hljs-keyword">var</span> offsets = <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Long</span>]()
+    line = reader.readLine()
+    <span class="hljs-keyword">while</span>(line != <span class="hljs-literal">null</span>) {
+        <span class="hljs-keyword">val</span> pieces = line.split(<span class="hljs-string">&quot;\\s+&quot;</span>)
+        <span class="hljs-keyword">val</span> topic = pieces(<span class="hljs-number">0</span>)
+        <span class="hljs-keyword">val</span> partition = pieces(<span class="hljs-number">1</span>).toInt
+        <span class="hljs-keyword">val</span> offset = pieces(<span class="hljs-number">2</span>).toLong
+        offsets += (<span class="hljs-type">TopicAndPartition</span>(topic, partition) -&gt; offset)
+        line = reader.readLine()
+    }
+  }
+}
+</code></pre>
+<p>ReplicaManager&#x662F;&#x5728; becomeLeaderOrFollower&#x8C03;&#x5EA6; Checkpoint&#x7684;&#x5199;&#x5165;,&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x662F;&#x5B9A;&#x65F6;&#x8FD0;&#x884C;&#x7684;,&#x786E;&#x4FDD;HW&#x662F;&#x6700;&#x65B0;&#x7684;.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> highWatermarkCheckPointThreadStarted = <span class="hljs-keyword">new</span> <span class="hljs-type">AtomicBoolean</span>(<span class="hljs-literal">false</span>)   <span class="hljs-comment">// &#x539F;&#x5B50;&#x53D8;&#x91CF;,&#x786E;&#x4FDD;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5237;&#x5199;checkpoint&#x6587;&#x4EF6;</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> allPartitions = <span class="hljs-keyword">new</span> <span class="hljs-type">Pool</span>[(<span class="hljs-type">String</span>, <span class="hljs-type">Int</span>), <span class="hljs-type">Partition</span>]                <span class="hljs-comment">// &#x6240;&#x6709;&#x7684;Partitions</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">startHighWaterMarksCheckPointThread</span></span>() = {
+    <span class="hljs-keyword">if</span>(highWatermarkCheckPointThreadStarted.compareAndSet(<span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>))
+      scheduler.schedule(<span class="hljs-string">&quot;highwatermark-checkpoint&quot;</span>, checkpointHighWatermarks, period = config.replicaHighWatermarkCheckpointIntervalMs, unit = <span class="hljs-type">TimeUnit</span>.<span class="hljs-type">MILLISECONDS</span>)
+  }
+
+  <span class="hljs-comment">// Flushes the highwatermark value for all partitions to the highwatermark file &#x628A;&#x6240;&#x6709;Partitions&#x7684;HW&#x503C;&#x5237;&#x5199;&#x5230;&#x6587;&#x4EF6;&#x4E2D;</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">checkpointHighWatermarks</span></span>() {
+    <span class="hljs-keyword">val</span> replicas = allPartitions.values.map(_.getReplica(config.brokerId)).collect{<span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(replica) =&gt; replica}
+    <span class="hljs-keyword">val</span> replicasByDir = replicas.filter(_.log.isDefined).groupBy(_.log.get.dir.getParentFile.getAbsolutePath)
+    <span class="hljs-keyword">for</span>((dir, reps) &lt;- replicasByDir) {
+      <span class="hljs-keyword">val</span> hwms = reps.map(r =&gt; (<span class="hljs-keyword">new</span> <span class="hljs-type">TopicAndPartition</span>(r) -&gt; r.highWatermark.messageOffset)).toMap
+      highWatermarkCheckpoints(dir).write(hwms)
+    }
+  }
+</code></pre>
+<p>&#x5982;&#x4F55;&#x6839;&#x636E;Partition&#x5F97;&#x5230; offset: Partition-&gt;Replica-&gt;LogOffsetMetadata-&gt;messageOffset.</p>
+<ul>
+<li>&#x627E;&#x51FA;&#x6240;&#x6709;&#x7684;Partitions,&#x83B7;&#x53D6;&#x5176;Replica,&#x786E;&#x4FDD;&#x6709;Replica&#x7684; Partition</li>
+<li>&#x6839;&#x636E;log.dirs&#x91CD;&#x65B0;&#x5206;&#x7EC4;(&#x786E;&#x4FDD;&#x6709;Log), &#x6BCF;&#x4E2A;log.dirs&#x5BF9;&#x5E94;&#x4E86; replicas&#x5217;&#x8868;</li>
+<li>&#x5BF9;&#x6BCF;&#x4E2A;log.dirs, &#x5FAA;&#x73AF;replicas, &#x8F6C;&#x6362;&#x6210;TopicAndPartition&#x5230;HW&#x7684;&#x6620;&#x5C04;</li>
+<li>&#x6700;&#x7EC8;&#x5F80;&#x6BCF;&#x4E2A;log.dirs&#x5199;&#x5165;&#x4E86;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A; dir&#x7684; TopicAndPartition-&gt;offset&#x4FE1;&#x606F;</li>
+</ul>
+<blockquote>
+<p>&#x95EE;: HW&#x662F;&#x7531; Leader&#x66F4;&#x65B0;&#x7684;,Broker&#x8282;&#x70B9;&#x5B58;&#x50A8;&#x7684;&#x5E76;&#x4E0D;&#x90FD;&#x662F; Leader Partitions,&#x5728;&#x505A;checkpoint&#x65F6;&#x662F;&#x53EA;&#x5BF9; Leader Partition&#x505A;&#x5417;?
+&#x7B54;: &#x4E0D;&#x662F;&#x7684;,ReplicaManager&#x662F;&#x5BF9;&#x6240;&#x6709; Partitions&#x505A; checkpoint&#x7684;.&#x867D;&#x7136;&#x53EA;&#x6709; Leader&#x66F4;&#x65B0; HW,&#x4F46;&#x662F;Leader&#x4E5F;&#x4F1A;&#x5C06; HW&#x5E7F;&#x64AD;&#x7ED9; follower&#x7684;.
+&#x5F53;follower&#x5411; leader fetch request&#x7684;&#x65F6;&#x5019;,leader&#x4F1A;&#x628A; hw&#x4E5F;&#x4F20;&#x7ED9; follower,&#x8FD9;&#x6837;follower&#x4E5F;&#x6709;&#x4E86; hw&#x4FE1;&#x606F;. &#x8FD9;&#x6837;&#x540C;&#x4E00;&#x4E2A;Partition&#x7684;
+&#x6240;&#x6709;Replica&#x90FD;&#x6709;&#x4E86; hw&#x4FE1;&#x606F;.&#x76EE;&#x7684;&#x662F;&#x5373;&#x4F7F;Leader&#x6302;&#x6389;&#x4E86;,&#x8FD9;&#x4E2A;hw&#x4ECD;&#x7136;&#x4F1A;&#x4FDD;&#x7559;&#x5728;&#x5176;&#x4ED6; Replica&#x4E0A;,&#x5176;&#x4ED6;replica&#x6210;&#x4E3A; leader&#x540E;,hw&#x4E5F;&#x4E0D;&#x4F1A;&#x4E22;&#x5931;.</p>
+<p>&#x95EE;: Replica&#x7684; highWatermark_=&#x65B9;&#x6CD5;&#x4E0D;&#x662F;&#x53EA;&#x6709;Leader&#x624D;&#x80FD;&#x8C03;&#x7528;&#x5417;(isLocal),&#x90A3;&#x4E48;leader&#x5E7F;&#x64AD;&#x7ED9; follower&#x7684; hw&#x662F;&#x5982;&#x4F55;&#x88AB;&#x66F4;&#x65B0;&#x7684;?</p>
+</blockquote>
+<h2 id="replicamanagerallpartitions">ReplicaManager.allPartitions</h2>
+<p>allPartitions&#x88AB;&#x653E;&#x5165;&#x4E5F;&#x662F;&#x5728; becomeLeaderOrFollower&#x4E2D;.&#x8FD9;&#x8BF4;&#x660E;&#x4E00;&#x4E2A;Partition&#x5728; Leader&#x548C; follower&#x8F6C;&#x6362;&#x65F6;&#x662F;&#x8981;&#x505A;&#x5F88;&#x591A;&#x5DE5;&#x4F5C;&#x7684;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getOrCreatePartition</span></span>(topic: <span class="hljs-type">String</span>, partitionId: <span class="hljs-type">Int</span>): <span class="hljs-type">Partition</span> = {
+    <span class="hljs-keyword">var</span> partition = allPartitions.get((topic, partitionId))
+    <span class="hljs-keyword">if</span> (partition == <span class="hljs-literal">null</span>) {
+      allPartitions.putIfNotExists((topic, partitionId), <span class="hljs-keyword">new</span> <span class="hljs-type">Partition</span>(topic, partitionId, time, <span class="hljs-keyword">this</span>))
+      partition = allPartitions.get((topic, partitionId))
+    }
+    partition
+  }
+</code></pre>
+<p>allPartitions&#x8BB0;&#x5F55;&#x7684;&#x662F;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709; Partitions.&#x8FD9;&#x4E9B; Partitions&#x5E76;&#x4E0D;&#x90FD;&#x662F; Leader.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getLeaderPartitions</span></span>() : <span class="hljs-type">List</span>[<span class="hljs-type">Partition</span>] = {
+    allPartitions.values.filter(_.leaderReplicaIfLocal().isDefined).toList
+  }
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">maybeShrinkIsr</span></span>() {
+    allPartitions.values.foreach(_.maybeShrinkIsr(config.replicaLagTimeMaxMs))  <span class="hljs-comment">//&#x8BC4;&#x4F30;ISR,&#x67E5;&#x770B;&#x662F;&#x5426;&#x6709;replicas&#x53EF;&#x4EE5;&#x4ECE;&#x4E2D;&#x79FB;&#x9664;</span>
+  }
+</code></pre>
+<blockquote>
+<p>&#x7559;&#x4E2A;&#x5751;: becomeLeaderOrFollower&#x7684;&#x8C03;&#x7528;&#x4EE5;&#x53CA; ISR&#x6536;&#x7F29;&#x65F6;&#x5BF9; HW&#x7684;&#x5F71;&#x54CD;.</p>
+</blockquote>
+<h2 id="replicamanagerappendmessages">ReplicaManager.appendMessages</h2>
+<p>&#x5728;Log.append&#x4E4B;&#x540E;,&#x9700;&#x8981;&#x901A;&#x77E5;follower&#x83B7;&#x53D6;&#x8FD9;&#x4E9B;&#x65B0;&#x7684;&#x6D88;&#x606F;.&#x56E0;&#x4E3A;&#x73B0;&#x5728; Leader&#x7684; LEO&#x5DF2;&#x7ECF;&#x66F4;&#x65B0;&#x4E86;,follower&#x9700;&#x8981;&#x53CA;&#x65F6;&#x83B7;&#x53D6;&#x843D;&#x540E;&#x7684;&#x6D88;&#x606F;
+&#x5982;&#x679C;Partition&#x7684; ISR&#x53EA;&#x6709;1&#x4E2A;,&#x8BF4;&#x660E;&#x6CA1;&#x6709;&#x5176;&#x4ED6;Replication,&#x5219;Leader&#x7684; LEO&#x66F4;&#x65B0;&#x540E;,&#x5176;HW&#x4E5F;&#x8981;&#x4E5F;&#x8981;&#x4E00;&#x8D77;&#x66F4;&#x65B0;(&#x5F53;&#x7136;&#x8FD9;&#x662F;&#x7279;&#x6B8A;&#x60C5;&#x51B5;)</p>
+<p><img src="20160114094002808" alt=""></p>
+<p>&#x4E3A;&#x4E86;&#x66F4;&#x65B9;&#x4FBF;&#x5730;&#x67E5;&#x770B;&#x5728;append&#x4E4B;&#x540E;&#x7684;&#x64CD;&#x4F5C;,&#x6211;&#x628A;&#x76F8;&#x5173;&#x7684;&#x4EE3;&#x7801;&#x90FD;&#x5217;&#x5728;&#x4E00;&#x8D77;&#x4E86;.&#x4E4B;&#x524D;&#x5206;&#x6790;&#x8FC7;&#x7684;&#x5C31;&#x7701;&#x7565;&#x4E86;.</p>
+<pre><code class="lang-scala">  <span class="hljs-comment">//*****ReplicationManager.scala*****</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">appendToLocalLog</span></span>(internalTopicsAllowed: <span class="hljs-type">Boolean</span>,messagesPerPartition: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">MessageSet</span>], requiredAcks: <span class="hljs-type">Short</span>): <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">LogAppendResult</span>] = {
+    messagesPerPartition.map { <span class="hljs-keyword">case</span> (topicAndPartition, messages) =&gt;
+      <span class="hljs-keyword">val</span> info = partition.appendMessagesToLeader(messages.asInstanceOf[<span class="hljs-type">ByteBufferMessageSet</span>], requiredAcks)
+      (topicAndPartition, <span class="hljs-type">LogAppendResult</span>(info))
+    }
+  }
+  <span class="hljs-comment">//*****Partition.scala*****</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">appendMessagesToLeader</span></span>(messages: <span class="hljs-type">ByteBufferMessageSet</span>, requiredAcks: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>) = {
+    <span class="hljs-keyword">val</span> (info, leaderHWIncremented) = inReadLock(leaderIsrUpdateLock) {
+          <span class="hljs-comment">// &#x2460; &#x5199;&#x5230;Partition&#x7684; Leader&#x7684;&#x90A3;&#x4E2A; Log</span>
+          <span class="hljs-keyword">val</span> log = leaderReplica.log.get
+          <span class="hljs-keyword">val</span> info = log.append(messages, assignOffsets = <span class="hljs-literal">true</span>)
+          <span class="hljs-comment">// &#x2461; probably unblock some follower fetch requests since log end offset has been updated</span>
+          replicaManager.tryCompleteDelayedFetch(<span class="hljs-keyword">new</span> <span class="hljs-type">TopicPartitionOperationKey</span>(<span class="hljs-keyword">this</span>.topic, <span class="hljs-keyword">this</span>.partitionId))
+          <span class="hljs-comment">// &#x2462; we may need to increment high watermark since ISR could be down to 1</span>
+          (info, maybeIncrementLeaderHW(leaderReplica))
+    }
+    <span class="hljs-comment">// some delayed operations may be unblocked after HW changed </span>
+    <span class="hljs-comment">// &#x2463; &#x5982;&#x679C;HW&#x6539;&#x53D8;&#x4E86;,&#x5219;&#x4E00;&#x4E9B;&#x5EF6;&#x8FDF;&#x7684;&#x8BF7;&#x6C42;(&#x9488;&#x5BF9;&#x6D88;&#x8D39;&#x8005;)&#x9700;&#x8981;&#x88AB;&#x89E3;&#x9501;.&#x5F53;&#x7136;&#x5982;&#x679C;HW&#x6CA1;&#x6709;&#x53D8;&#x5316;,&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x901A;&#x77E5;&#x4E86;</span>
+    <span class="hljs-keyword">if</span> (leaderHWIncremented) tryCompleteDelayedRequests()
+  }
+  <span class="hljs-comment">//*****ReplicationManager.scala*****</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">appendMessages</span></span>(timeout: <span class="hljs-type">Long</span>, ... ){
+      <span class="hljs-keyword">val</span> localProduceResults = appendToLocalLog(internalTopicsAllowed, messagesPerPartition, requiredAcks)
+      <span class="hljs-keyword">val</span> produceStatus = localProduceResults.map { <span class="hljs-keyword">case</span> (topicAndPartition, result) =&gt;
+        topicAndPartition -&gt; <span class="hljs-type">ProducePartitionStatus</span>(result.info.lastOffset + <span class="hljs-number">1</span>, <span class="hljs-type">ProducerResponseStatus</span>(result.errorCode, result.info.firstOffset)) <span class="hljs-comment">// required offset, response status</span>
+      }
+      <span class="hljs-keyword">if</span> (delayedRequestRequired(requiredAcks, messagesPerPartition, localProduceResults)) {
+        <span class="hljs-comment">// &#x2464; create delayed produce operation &#x521B;&#x5EFA;&#x5EF6;&#x8FDF;&#x7684;Produce&#x64CD;&#x4F5C;</span>
+        <span class="hljs-keyword">val</span> produceMetadata = <span class="hljs-type">ProduceMetadata</span>(requiredAcks, produceStatus)
+        <span class="hljs-keyword">val</span> delayedProduce = <span class="hljs-keyword">new</span> <span class="hljs-type">DelayedProduce</span>(timeout, produceMetadata, <span class="hljs-keyword">this</span>, responseCallback)
+        <span class="hljs-comment">// create a list of (topic, partition) pairs to use as keys for this delayed produce operation</span>
+        <span class="hljs-keyword">val</span> producerRequestKeys = messagesPerPartition.keys.map(<span class="hljs-keyword">new</span> <span class="hljs-type">TopicPartitionOperationKey</span>(_)).toSeq
+        <span class="hljs-comment">// &#x2465; try to complete the request immediately, otherwise put it into the purgatory &#x5C1D;&#x8BD5;&#x7ACB;&#x5373;&#x5B8C;&#x6210;&#x8BF7;&#x6C42;,&#x5426;&#x5219;&#x653E;&#x5165;&#x5341;&#x516B;&#x5C42;&#x5730;&#x72F1;&#x4E2D;&#x70BC;&#x72F1;&#x4E00;&#x756A;(&#x5B9E;&#x9645;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x7F13;&#x5B58;)</span>
+        <span class="hljs-comment">// this is because while the delayed produce operation is being created, new requests may arrive and hence make this operation completable.</span>
+        delayedProducePurgatory.tryCompleteElseWatch(delayedProduce, producerRequestKeys)
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// &#x2466; we can respond immediately &#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;&#x7B49;&#x5F85;ISR&#x540C;&#x6B65;&#x6570;&#x636E;,&#x5728;&#x6210;&#x529F;&#x5199;&#x5230;Leader&#x4E4B;&#x540E;,&#x5C31;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x7ED9;Producer&#x4E86;</span>
+        <span class="hljs-keyword">val</span> produceResponseStatus = produceStatus.mapValues(status =&gt; status.responseStatus)
+        responseCallback(produceResponseStatus)
+      }
+  }
+</code></pre>
+<p>&#x2460;-&#x2463; &#x6DFB;&#x52A0;&#x5230;Leader&#x7684;&#x672C;&#x5730;&#x65E5;&#x5FD7;&#x540E;,&#x8981;&#x89E3;&#x9501;follower&#x7684; fetch,&#x8FD9;&#x6837;ISR&#x4E2D;&#x7684; follower&#x624D;&#x80FD;&#x5C3D;&#x5FEB;&#x5730;&#x540C;&#x6B65;&#x65B0;&#x589E;&#x7684;&#x6D88;&#x606F;.
+&#x2464;-&#x2465; &#x5982;&#x679C;&#x9700;&#x8981;ISR&#x4E2D;&#x7684; follower replicas&#x540C;&#x6B65;&#x6570;&#x636E;,&#x5219;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x5EF6;&#x8FDF;&#x7684;ProducerRequest(&#x751F;&#x4EA7;&#x8BF7;&#x6C42;),&#x5E76;&#x4EA4;&#x7ED9;&#x4E13;&#x95E8;&#x7684;Purgatory&#x5904;&#x7406;
+&#x2466; &#x4E0D;&#x9700;&#x8981;&#x7B49;&#x5F85;ISR&#x7684;&#x6570;&#x636E;&#x540C;&#x6B65;,&#x5728;&#x6210;&#x529F;&#x5199;&#x5230;Leader&#x4E4B;&#x540E;,&#x5C31;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x7ED9;Producer&#x4E86;</p>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x521B;&#x5EFA;&#x7684;DelayedProduce&#x548C; Producer&#x76F8;&#x5173;&#x7684;&#x51E0;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5173;&#x7CFB;.</p>
+<ul>
+<li>produceStatus: &#x751F;&#x4EA7;&#x8005;&#x7684;&#x72B6;&#x6001;, &#x4E3B;&#x8981;&#x662F;TopicAndPartition&#x548C; ProducePartitionStatus&#x7684;&#x6620;&#x5C04;. &#x4F1A;&#x6709;&#x591A;&#x4E2A;Partition&#x5BF9;&#x5E94;&#x81EA;&#x5DF1;&#x7684;&#x72B6;&#x6001;</li>
+<li>produceMetadata: &#x5305;&#x542B;&#x4E86;&#x4E0A;&#x9762;&#x7684;&#x751F;&#x4EA7;&#x8005;&#x72B6;&#x6001;, &#x4EE5;&#x53CA;requiredAcks&#x6765;&#x81EA; Producer&#x7684; acks&#x8BBE;&#x7F6E;</li>
+<li>responseCallback: &#x56DE;&#x5230;&#x51FD;&#x6570;, &#x6765;&#x81EA;&#x4E8E;appendMessages&#x5916;&#x9762;&#x4F20;&#x5165;&#x7684;(&#x6765;&#x6E90;&#x4E8E;KafkaApis&#x5B9A;&#x4E49;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&lt;--&#x5BA2;&#x6237;&#x7AEF;&#x56DE;&#x8C03;)</li>
+<li>produceResponseStatus: &#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x54CD;&#x5E94;&#x4FE1;&#x606F;, &#x5728;&#x8BF7;&#x6C42;&#x5B8C;&#x6210;&#x65F6;, &#x4F1A;&#x628A;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x4F20;&#x7ED9;&#x56DE;&#x8C03;&#x51FD;&#x6570;,&#x7136;&#x540E;&#x8C03;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;,&#x5B8C;&#x6210;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x56DE;&#x8C03;</li>
+</ul>
+<h2 id="replicamanager-delayoperation">ReplicaManager-&gt;DelayOperation</h2>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x5148;&#x7B80;&#x5355;&#x770B;&#x4E0B;&#x751F;&#x4EA7;&#x8BF7;&#x6C42;&#x9700;&#x8981;&#x88AB;&#x5EF6;&#x8FDF;&#x7684;&#x573A;&#x666F;,&#x540E;&#x9762;&#x4E00;&#x7BC7;&#x4E13;&#x95E8;&#x8BB2;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x5EF6;&#x8FDF;(&#x4EE5;&#x53CA;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x6765;&#x4FDD;&#x5B58;&#x548C;&#x79FB;&#x9664;&#x64CD;&#x4F5C;)</p>
+</blockquote>
+<h3 id="delayedrequestrequired">delayedRequestRequired</h3>
+<p>&#x5728;appendToLocalLog&#x540E;,&#x6EE1;&#x8DB3;&#x4E0B;&#x9762;&#x7684;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x65F6;,&#x5C06;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5EF6;&#x8FDF;&#x7684;Produce&#x8BF7;&#x6C42;,&#x5E76;&#x4E14;&#x7B49;&#x5F85;replication&#x5B8C;&#x6210;:</p>
+<ul>
+<li>required acks = -1 : Producer&#x9700;&#x8981;&#x7B49;&#x5F85;&#x6240;&#x6709; ISR&#x63A5;&#x6536;&#x6570;&#x636E;(&#x8FD9;&#x4E2A;&#x6700;&#x91CD;&#x8981;&#x4E86;,&#x4E0D;&#x8FC7;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x6307;&#x5B9A;&#x7684;)</li>
+<li>there is data to append : &#x6709;&#x6570;&#x636E;(&#x5E9F;&#x8BDD;,&#x6CA1;&#x6570;&#x636E;&#x600E;&#x4E48;&#x53EB;&#x751F;&#x4EA7;&#x6D88;&#x606F;)</li>
+<li>at least one partition append was successful &#x81F3;&#x5C11;&#x4E00;&#x4E2A;Partition&#x8FFD;&#x52A0;&#x6210;&#x529F;(&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x6709;&#x591A;&#x4E2A;Partition)</li>
+</ul>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">delayedRequestRequired</span></span>(requiredAcks: <span class="hljs-type">Short</span>, messagesPerPartition: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">MessageSet</span>], localProduceResults: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">LogAppendResult</span>]): <span class="hljs-type">Boolean</span> = {
+    requiredAcks == <span class="hljs-number">-1</span> &amp;&amp; messagesPerPartition.size &gt; <span class="hljs-number">0</span> &amp;&amp; localProduceResults.values.count(_.error.isDefined) &lt; messagesPerPartition.size
+  }
+</code></pre>
+<h3 id="delayedproduce">DelayedProduce</h3>
+<pre><code class="lang-?">localProduceResults -&gt; (TopicAndPartition,LogAppendResult) -&gt; ProducePartitionStatus -&gt; ProduceMetadata -&gt; DelayedProduce
+&#x672C;&#x5730;(Leader)&#x7684;&#x751F;&#x4EA7;&#x7ED3;&#x679C; -&gt;           &#x65E5;&#x5FD7;&#x8FFD;&#x52A0;&#x7ED3;&#x679C;               -&gt; Produce&#x7684; Partition&#x72B6;&#x6001;  -&gt; Produce&#x7684;&#x5143;&#x6570;&#x636E;  -&gt; &#x5EF6;&#x8FDF;&#x7684;Produce&#x64CD;&#x4F5C;
+</code></pre>
+<p>&#x5EF6;&#x8FDF;&#x7684;Produce&#x64CD;&#x4F5C;&#x4F1A;&#x88AB; ReplicaManager&#x521B;&#x5EFA;(new DelayedProduce),&#x5E76;&#x88AB;ProduceOperationPurgatory&#x76D1;&#x89C6;.</p>
+<pre><code class="lang-scala"><span class="hljs-comment">// A delayed produce operation that can be created by the replica manager and watched in the produce operation purgatory</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DelayedProduce</span>(<span class="hljs-params">delayMs: <span class="hljs-type">Long</span>, produceMetadata: <span class="hljs-type">ProduceMetadata</span>, replicaManager: <span class="hljs-type">ReplicaManager</span>, 
+                     responseCallback: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">ProducerResponseStatus</span>] =&gt; <span class="hljs-type">Unit</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">DelayedOperation</span>(<span class="hljs-params">delayMs</span>) </span>
+
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DelayedOperation</span>(<span class="hljs-params">delayMs: <span class="hljs-type">Long</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">TimerTask</span> <span class="hljs-keyword">with</span> <span class="hljs-title">Logging</span> </span>{
+  <span class="hljs-keyword">override</span> <span class="hljs-keyword">val</span> expirationMs = delayMs + <span class="hljs-type">System</span>.currentTimeMillis()
+}
+</code></pre>
+<p>DelayedProduce&#x7684; delayMs&#x4EE5;&#x53CA; acks&#x6E90;&#x5934;&#x6765;&#x81EA;&#x4E8E; KafkaApis.handleProducerRequest&#x7684; ProduceRequest:</p>
+<pre><code class="lang-scala">      replicaManager.appendMessages(produceRequest.ackTimeoutMs.toLong, produceRequest.requiredAcks, internalTopicsAllowed, authorizedRequestInfo, sendResponseCallback)
+</code></pre>
+<h2 id="delayedoperationpurgatory">DelayedOperationPurgatory</h2>
+<p>ReplicaManager&#x7684; append&#x64CD;&#x4F5C;&#x51FA;&#x73B0;&#x4E86;&#x4E09;&#x4E2A; tryCompleteXXX(Fetch,Request,ElseWath)&#x90FD;&#x662F;&#x4EA4;&#x7ED9;DelayedOperationPurgatory&#x70BC;&#x72F1;&#x5DE5;&#x5382;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ReplicaManager</span></span>:
+  <span class="hljs-keyword">val</span> delayedProducePurgatory = <span class="hljs-keyword">new</span> <span class="hljs-type">DelayedOperationPurgatory</span>[<span class="hljs-type">DelayedProduce</span>](purgatoryName = <span class="hljs-string">&quot;Produce&quot;</span>, config.brokerId, config.producerPurgatoryPurgeIntervalRequests)
+  <span class="hljs-keyword">val</span> delayedFetchPurgatory = <span class="hljs-keyword">new</span> <span class="hljs-type">DelayedOperationPurgatory</span>[<span class="hljs-type">DelayedFetch</span>](purgatoryName = <span class="hljs-string">&quot;Fetch&quot;</span>, config.brokerId, config.fetchPurgatoryPurgeIntervalRequests)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tryCompleteDelayedFetch</span></span>(key: <span class="hljs-type">DelayedOperationKey</span>)   { <span class="hljs-keyword">val</span> completed = delayedFetchPurgatory.checkAndComplete(key) }
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tryCompleteDelayedProduce</span></span>(key: <span class="hljs-type">DelayedOperationKey</span>) { <span class="hljs-keyword">val</span> completed = delayedProducePurgatory.checkAndComplete(key) }
+
+<span class="hljs-comment">// A helper purgatory class for bookkeeping delayed operations with a timeout, and expiring timed out operations.</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DelayedOperationPurgatory</span>[<span class="hljs-type">T</span> &lt;: <span class="hljs-type">DelayedOperation</span>](<span class="hljs-params">purgatoryName: <span class="hljs-type">String</span>, brokerId: <span class="hljs-type">Int</span> = 0, purgeInterval: <span class="hljs-type">Int</span> = 1000</span>)</span>
+</code></pre>
+<p>A.&#x5C1D;&#x8BD5;&#x5B8C;&#x6210;&#x5EF6;&#x8FDF;&#x7684;fetch&#x8BF7;&#x6C42;&#x7684;&#x89E6;&#x53D1;&#x6761;&#x4EF6;:</p>
+<ul>
+<li>A.1 Partition&#x7684; HW&#x53D1;&#x751F;&#x53D8;&#x5316; (&#x6B63;&#x5E38;&#x7684;fetch--&#x5373;consumer&#x7684; fetch,&#x56E0;&#x4E3A;HW&#x662F;&#x9488;&#x5BF9;&#x6D88;&#x8D39;&#x8005;&#x800C;&#x8A00;,&#x6D88;&#x8D39;&#x8005;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x5230;HW)</li>
+<li>A.2 &#x65B0;&#x7684;MessageSet&#x8FFD;&#x52A0;&#x5230;&#x672C;&#x5730;&#x65E5;&#x5FD7; (follower&#x7684; fetch, &#x65B0;&#x7684;MessageSet&#x6709;&#x65B0;&#x7684; LEO, &#x800C;follower&#x662F;&#x8DDF;&#x8E2A; LEO&#x7684;)</li>
+</ul>
+<p>B.&#x5C1D;&#x8BD5;&#x5B8C;&#x6210;&#x5EF6;&#x8FDF;&#x7684;Produce&#x8BF7;&#x6C42;&#x7684;&#x89E6;&#x53D1;&#x6761;&#x4EF6;:</p>
+<ul>
+<li>B.1 Partition&#x7684; HW&#x53D1;&#x751F;&#x53D8;&#x5316; (&#x5BF9;&#x4E8E;acks=-1&#x7684;&#x60C5;&#x51B5;)</li>
+<li>B.2 &#x6536;&#x5230;&#x4E86;&#x4E00;&#x4E2A;follower&#x526F;&#x672C;&#x7684; fetch&#x64CD;&#x4F5C; (&#x5BF9;&#x4E8E;acks&gt;1&#x7684;&#x60C5;&#x51B5;? acks&#x4E0D;&#x662F;&#x53EA;&#x6709;-1,0,1&#x4E09;&#x4E2A;&#x503C;&#x5417;?)</li>
+</ul>
+<h2 id="partition-incrementleaderhw">Partition-&gt;IncrementLeaderHW</h2>
+<blockquote>
+<p>HW&#x8868;&#x793A;&#x7684;&#x662F;&#x6240;&#x6709; ISR&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x90FD;&#x5DF2;&#x7ECF;&#x590D;&#x5236;&#x5B8C;&#x7684;&#x6D88;&#x606F;.&#x4E5F;&#x662F;&#x6D88;&#x8D39;&#x8005;&#x6240;&#x80FD;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x6D88;&#x606F;&#x7684;&#x6700;&#x5927;offset,&#x6240;&#x4EE5;&#x53EB;&#x505A;high watermark.
+&#x6CE8;&#x610F;Leader Partition&#x4FDD;&#x5B58;&#x4E86; ISR&#x4FE1;&#x606F;.&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x770B;&#x5230;maybeIncrementLeaderHW()&#x662F;&#x5728;appendToLocalLog()&#x5185;&#x4E00;&#x8D77;&#x6267;&#x884C;&#x7684;</p>
+</blockquote>
+<p>C.&#x589E;&#x52A0;(Leader)Partition&#x7684; Hight Watermark(HW)&#x7684;&#x89E6;&#x53D1;&#x6761;&#x4EF6;:</p>
+<ul>
+<li>C.1 (Leader)Partition&#x7684; ISR&#x53D1;&#x751F;&#x53D8;&#x5316; (&#x5047;&#x8BBE;&#x67D0;&#x4E2A;&#x5F88;&#x6162;&#x7684;&#x8282;&#x70B9;&#x843D;&#x540E;&#x5F88;&#x591A;&#x4ECE;ISR&#x4E2D;&#x79FB;&#x9664;,&#x800C;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x5927;&#x90E8;&#x5206;&#x90FD;catch-up,&#x5C31;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;HW)</li>
+<li>C.2 &#x4EFB;&#x4F55;Replication&#x7684; LEO&#x53D1;&#x751F;&#x53D8;&#x5316; (ISR&#x4E2D;&#x7684; followers&#x6709;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x8282;&#x70B9; LEO&#x6539;&#x53D8;,&#x770B;&#x770B;&#x6240;&#x6709;ISR&#x662F;&#x5426;&#x90FD;&#x590D;&#x5236;&#x4E86;,&#x7136;&#x540E;&#x66F4;&#x65B0;HW)</li>
+</ul>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">maybeIncrementLeaderHW</span></span>(leaderReplica: <span class="hljs-type">Replica</span>): <span class="hljs-type">Boolean</span> = {
+    <span class="hljs-comment">// &#x6240;&#x6709;inSync&#x526F;&#x672C;&#x4E2D;&#x6700;&#x5C0F;&#x7684; LEO(&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A; follower&#x7684; LEO&#x90FD;&#x53EF;&#x80FD;&#x4E0D;&#x4E00;&#x6837;), &#x8868;&#x793A;&#x7684;&#x662F;&#x6700;&#x65B0;&#x7684;hw</span>
+    <span class="hljs-keyword">val</span> allLogEndOffsets = inSyncReplicas.map(_.logEndOffset)
+    <span class="hljs-keyword">val</span> newHighWatermark = allLogEndOffsets.min(<span class="hljs-keyword">new</span> <span class="hljs-type">LogOffsetMetadata</span>.<span class="hljs-type">OffsetOrdering</span>)
+
+    <span class="hljs-comment">// Leader&#x672C;&#x8EAB;&#x7684; hw, &#x662F;&#x65E7;&#x7684;</span>
+    <span class="hljs-keyword">val</span> oldHighWatermark = leaderReplica.highWatermark  <span class="hljs-comment">// &#x662F;&#x4E00;&#x4E2A;LogOffsetMetadata</span>
+    <span class="hljs-keyword">if</span>(oldHighWatermark.precedes(newHighWatermark)) {   <span class="hljs-comment">// &#x6BD4;&#x8F83;Leader&#x7684; messageOffset&#x662F;&#x5426;&#x5C0F;&#x4E8E; ISR&#x7684;</span>
+      leaderReplica.highWatermark = newHighWatermark    <span class="hljs-comment">// Leader&#x5C0F;&#x4E8E; ISR, &#x66F4;&#x65B0;Leader&#x4E3A; ISR&#x4E2D;&#x6700;&#x5C0F;&#x7684;</span>
+      <span class="hljs-literal">true</span>
+    }<span class="hljs-keyword">else</span> <span class="hljs-literal">false</span>     <span class="hljs-comment">// Returns true if the HW was incremented, and false otherwise.</span>
+  }
+</code></pre>
+<p>&#x5728;Log&#x4E2D; append&#x7684; updateLogEndOffset(LogAppendInfo.lastOffset+1)&#x66F4;&#x65B0;&#x7684;&#x662F;LogOffsetMetadata&#x7684; messageOffset
+&#x800C;&#x8FD9;&#x91CC;&#x7684;oldHighWatermark&#x548C; newHighWatermark&#x4E5F;&#x90FD;&#x662F; LogOffsetMetadata(&#x6700;&#x91CD;&#x8981;&#x7684;&#x5C31;&#x662F;messageOffset&#x5B57;&#x6BB5;&#x4E86;)!
+&#x6240;&#x4EE5;&#x5B9E;&#x9645;&#x6BD4;&#x8F83;&#x7684;&#x662F;&#x4E24;&#x4E2A;LogOffsetMetadata&#x7684; messageOffset, &#x53EA;&#x6709;Leader&#x7684; HW&#x5C0F;&#x4E8E; ISR&#x6700;&#x5C0F;&#x7684; LEO,&#x624D;&#x66F4;&#x65B0; Leader&#x7684; HW.</p>
+<ul>
+<li>leaderReplica&#x662F; Partition&#x7684; Leader&#x526F;&#x672C;,&#x4E00;&#x4E2A;Partition&#x53EA;&#x6709;&#x4E00;&#x4E2A; Leader,&#x8BFB;&#x5199;&#x90FD;&#x53D1;&#x751F;&#x5728;Leader&#x4E0A;</li>
+<li>inSyncReplicas&#x662F; Partition&#x7684; follower&#x4E2D;&#x8FFD;&#x8D76;&#x4E0A; Leader&#x7684;&#x526F;&#x672C;(&#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709; Follower&#x90FD;&#x662F; InSync)</li>
+</ul>
+<blockquote>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x90FD;&#x662F;Partition&#x7EA7;&#x522B;&#x7684;,&#x5373; Partition&#x8981;&#x77E5;&#x9053;&#x5B83;&#x7684; leader&#x662F;&#x54EA;&#x4E2A;,&#x4EE5;&#x53CA;&#x8FD9;&#x4E2A;leader&#x7BA1;&#x7406;&#x7684; isr&#x5217;&#x8868;&#x662F;&#x4EC0;&#x4E48;.</p>
+</blockquote>
+<h2 id="&#x5176;&#x4ED6;">&#x5176;&#x4ED6;</h2>
+<h3 id="delay-operation-complete">delay operation complete</h3>
+<p>&#x89E6;&#x53D1;&#x6761;&#x4EF6;(&#x5EF6;&#x8FDF;&#x8BF7;&#x6C42;&#x4EE5;&#x53CA;&#x589E;&#x52A0;HW)&#x4E2D;&#x5173;&#x4E8E;ISR&#x7684;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x73AF;&#x73AF;&#x76F8;&#x6263;&#x7684;:</p>
+<ul>
+<li>leader&#x6709;&#x65B0;&#x6D88;&#x606F;&#x5199;&#x5230;&#x672C;&#x5730;&#x65E5;&#x5FD7;(&#x751F;&#x4EA7;&#x8005;&#x5199;&#x65B0;&#x6570;&#x636E;) --&gt; A.2 --&gt; DelayedFetch</li>
+<li>leader replication&#x7684; LEO&#x53D1;&#x751F;&#x53D8;&#x5316;(&#x8FFD;&#x52A0;&#x4E86;&#x65B0;&#x6D88;&#x606F;) --&gt; C.2 --&gt; HW</li>
+<li>follower&#x5411; Leader&#x53D1;&#x8D77; fetch&#x8BF7;&#x6C42;(ISR&#x7684; follower&#x4F1A;&#x548C; Leader&#x4FDD;&#x6301;&#x540C;&#x6B65;) --&gt; B.2 --&gt; DelayedProduce</li>
+<li>follower&#x6240;&#x5728; replication&#x7684; LEO&#x53D1;&#x751F;&#x53D8;&#x5316;(&#x62C9;&#x53D6;&#x4E86;&#x65B0;&#x6D88;&#x606F;&#x5230;&#x672C;&#x5730;) --&gt; C.2 --&gt; HW</li>
+<li>&#x6240;&#x6709;replication&#x7684; LEO&#x53D1;&#x751F;&#x53D8;&#x5316;,Leader&#x7684; HW&#x4E5F;&#x4F1A;&#x53D8;&#x5316;(&#x6210;&#x529F;&#x63D0;&#x4EA4;&#x4E86;&#x6D88;&#x606F;) --&gt; C.2 --&gt; HW</li>
+<li>consumer&#x8BFB;&#x53D6;&#x81F3;&#x591A; Leader&#x7684; HW,HW&#x53D8;&#x5316;&#x4E86;,&#x89E3;&#x9501;consumer --&gt; A.1 --&gt; DelayedFetch</li>
+<li>producer&#x7B49;&#x5F85; ISR&#x90FD;&#x540C;&#x6B65;&#x6210;&#x529F;,&#x5BFC;&#x81F4;HW&#x53D8;&#x5316;,&#x5C31;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x54CD;&#x5E94; --&gt; B.1 --&gt; DelayedProduce</li>
+</ul>
+<p><img src="20160117162956999" alt=""></p>
+<h3 id="partition-and-replica-creation">Partition and Replica Creation</h3>
+<p>ReplicaManager&#x8D1F;&#x8D23;&#x7BA1;&#x7406; Partition, &#x6240;&#x4EE5;&#x662F;&#x5728;ReplicaManager&#x521B;&#x5EFA; Partition&#x7684;: getOrCreatePartition
+Partition&#x8D1F;&#x8D23;&#x7BA1;&#x7406; Replica, &#x6240;&#x4EE5;&#x662F;&#x5728;Partition&#x4E2D;&#x521B;&#x5EFA; Replica&#x7684;: getOrCreateReplica</p>
+<p>ReplicaManager&#x8981;&#x7BA1;&#x7406; Broker&#x4E0A;&#x7684;&#x6240;&#x6709; Partition, allPartitions: Pool[(String, Int), Partition]
+Partition&#x4E5F;&#x8981;&#x7BA1;&#x7406;&#x5206;&#x914D;&#x7684;&#x6240;&#x6709; Replica,&#x8FD8;&#x6709;Leader Replica&#x548C; ISR.</p>
+<p><img src="20160117163023129" alt=""></p>
+<h2 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h2>
+<ul>
+<li>Partition&#x526F;&#x672C;&#x7531; Leader&#x548C; follower&#x7EC4;&#x6210;,&#x53EA;&#x6709;ISR&#x5217;&#x8868;&#x4E2D;&#x7684;&#x526F;&#x672C;&#x662F;&#x4EC5;&#x4EC5;&#x8DDF;&#x7740; Leader&#x7684;</li>
+<li>Leader&#x7BA1;&#x7406;&#x4E86; ISR&#x5217;&#x8868;,&#x53EA;&#x6709;ISR&#x5217;&#x8868;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x526F;&#x672C;&#x90FD;&#x590D;&#x5236;&#x4E86;&#x6D88;&#x606F;,&#x624D;&#x80FD;&#x8BA4;&#x4E3A;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x662F;&#x63D0;&#x4EA4;&#x7684;</li>
+<li>Leader&#x548C; follower&#x526F;&#x672C;&#x90FD;&#x53EB;&#x505A; Replica,&#x540C;&#x4E00;&#x4E2A; Partition&#x7684;&#x4E0D;&#x540C;&#x526F;&#x672C;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C; Broker&#x4E0A;</li>
+<li>Replica&#x5F88;&#x91CD;&#x8981;&#x7684;&#x4E24;&#x4E2A;&#x4FE1;&#x606F;&#x662F; HighWatermark(HW)&#x548C;LogEndOffset(LEO)</li>
+<li>&#x53EA;&#x6709;Leader Partition&#x8D1F;&#x8D23;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BFB;&#x5199;,follower&#x4ECE; Leader&#x540C;&#x6B65;&#x6570;&#x636E;</li>
+<li>&#x6240;&#x6709;Replica&#x90FD;&#x4F1A;&#x5BF9; HW&#x505A; checkpoint,Leader&#x4F1A;&#x5728; follower&#x7684;&#x62C9;&#x53D6;&#x8BF7;&#x6C42;&#x65F6;&#x5E7F;&#x64AD; HW&#x7ED9; follower</li>
+</ul>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="http://www.jasongj.com/2015/04/24/KafkaColumn2/" target="_blank">Kafka&#x8BBE;&#x8BA1;&#x89E3;&#x6790;&#xFF08;&#x4E8C;&#xFF09;- Kafka High Availability &#xFF08;&#x4E0A;&#xFF09;</a></li>
+<li><a href="https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Replication" target="_blank">Kafka Replication</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kafka-logappend.html" class="navigation navigation-prev " aria-label="Previous page: LogAppend">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kafka-replica-manager.html" class="navigation navigation-next " aria-label="Next page: Replica Manager">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ISR","level":"1.2.8.8","depth":3,"next":{"title":"Replica Manager","level":"1.2.8.9","depth":3,"path":"Kafka/Source-code-analysis/kafka-replica-manager.md","ref":"./Kafka/Source-code-analysis/kafka-replica-manager.md","articles":[]},"previous":{"title":"LogAppend","level":"1.2.8.7","depth":3,"path":"Kafka/Source-code-analysis/kafka-logappend.md","ref":"./Kafka/Source-code-analysis/kafka-logappend.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Kafka/Source-code-analysis/kafka-isr.md","mtime":"2017-05-03T05:09:46.199Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

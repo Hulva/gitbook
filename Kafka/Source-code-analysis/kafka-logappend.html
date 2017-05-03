@@ -1,0 +1,1555 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>LogAppend · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kafka-isr.html" />
+    
+    
+    <link rel="prev" href="kafka-socketserver.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Producer/">
+            
+                <a href="../Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Producer-scala/">
+            
+                <a href="../Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Consumer/">
+            
+                <a href="../Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Stream/">
+            
+                <a href="../Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Connector/">
+            
+                <a href="../Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../kafka-HA.html">
+            
+                <a href="../kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../kafka-controller.html">
+            
+                <a href="../kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="kafka-schedule.html">
+            
+                <a href="kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="kafka-zkUtils.html">
+            
+                <a href="kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="kafka-metric-reporter.html">
+            
+                <a href="kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="kafka-log-manager.html">
+            
+                <a href="kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="kafka-metadata-cache.html">
+            
+                <a href="kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="kafka-socketserver.html">
+            
+                <a href="kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8.7" data-path="kafka-logappend.html">
+            
+                <a href="kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="kafka-isr.html">
+            
+                <a href="kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="kafka-replica-manager.html">
+            
+                <a href="kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="kafka-controller.html">
+            
+                <a href="kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="kafka-admin-manager.html">
+            
+                <a href="kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="kafka-group-coordinator.html">
+            
+                <a href="kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="kafka-transaction-coordinator.html">
+            
+                <a href="kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="kafka-authorizer.html">
+            
+                <a href="kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="kafka-apis.html">
+            
+                <a href="kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="kafka-dynamic-config-manager.html">
+            
+                <a href="kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="kafka-health-checker.html">
+            
+                <a href="kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="kafka-checkpoint.html">
+            
+                <a href="kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Hadoop/">
+            
+                <a href="../../Hadoop/">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Hadoop/HBase/">
+            
+                <a href="../../Hadoop/HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../Hadoop/HBase/getting-start.html">
+            
+                <a href="../../Hadoop/HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../Hadoop/HBase/hbase-shell.html">
+            
+                <a href="../../Hadoop/HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Hadoop/Hive/">
+            
+                <a href="../../Hadoop/Hive/">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../Hadoop/Hive/tutorial.html">
+            
+                <a href="../../Hadoop/Hive/tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../Hadoop/Hive/shell-command.html">
+            
+                <a href="../../Hadoop/Hive/shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../Hadoop/Hive/HiveQL.html">
+            
+                <a href="../../Hadoop/Hive/HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Hadoop/Sqoop/">
+            
+                <a href="../../Hadoop/Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../Hadoop/Sqoop/tutorial.html">
+            
+                <a href="../../Hadoop/Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >LogAppend</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="logappend">LogAppend</h1>
+<h2 id="kafkaapis">KafkaApis</h2>
+<p><a href="kafka-socketserver.html">&#x4E0A;&#x7BC7;</a> KafkaRequestHandler &#x4F1A;&#x5C06; Request&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x7ED9; KafkaApis&#x5904;&#x7406;:&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x8BF7;&#x6C42;&#x7C7B;&#x578B;&#x8C03;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5904;&#x7406;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">KafkaApis</span>(<span class="hljs-params">val requestChannel: <span class="hljs-type">RequestChannel</span>, val replicaManager: <span class="hljs-type">ReplicaManager</span>, val coordinator: <span class="hljs-type">GroupCoordinator</span>,
+                val controller: <span class="hljs-type">KafkaController</span>, val zkUtils: <span class="hljs-type">ZkUtils</span>, val brokerId: <span class="hljs-type">Int</span>, val config: <span class="hljs-type">KafkaConfig</span>, val metadataCache: <span class="hljs-type">MetadataCache</span>, val metrics: <span class="hljs-type">Metrics</span>, val authorizer: <span class="hljs-type">Option</span>[<span class="hljs-type">Authorizer</span>]</span>) </span>{
+  <span class="hljs-comment">// Top-level method that handles all requests and multiplexes to the right api</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">handle</span></span>(request: <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Request</span>) {
+    <span class="hljs-keyword">try</span>{
+      <span class="hljs-type">ApiKeys</span>.forId(request.requestId) <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-type">ApiKeys</span>.<span class="hljs-type">PRODUCE</span> =&gt; handleProducerRequest(request)
+        <span class="hljs-keyword">case</span> <span class="hljs-type">ApiKeys</span>.<span class="hljs-type">FETCH</span> =&gt; handleFetchRequest(request)
+        <span class="hljs-comment">//....</span>
+      }
+    } <span class="hljs-keyword">catch</span> {
+      <span class="hljs-keyword">case</span> e: <span class="hljs-type">Throwable</span> =&gt;
+        <span class="hljs-keyword">if</span> ( request.requestObj == <span class="hljs-literal">null</span>) {
+          <span class="hljs-keyword">val</span> response = request.body.getErrorResponse(request.header.apiVersion, e)
+          <span class="hljs-keyword">val</span> respHeader = <span class="hljs-keyword">new</span> <span class="hljs-type">ResponseHeader</span>(request.header.correlationId)
+          <span class="hljs-comment">// If request doesn&apos;t have a default error response, we just close the connection. For example, when produce request has acks set to 0 */</span>
+          <span class="hljs-keyword">if</span> (response == <span class="hljs-literal">null</span>) requestChannel.closeConnection(request.processor, request)
+          <span class="hljs-keyword">else</span> requestChannel.sendResponse(<span class="hljs-keyword">new</span> <span class="hljs-type">Response</span>(request, <span class="hljs-keyword">new</span> <span class="hljs-type">ResponseSend</span>(request.connectionId, respHeader, response)))
+        }
+    }
+  }
+}
+</code></pre>
+<p>SocketChannel&#x7684;RequestChannel&#x7528;&#x4E8E;KafkaApis,&#x56E0;&#x4E3A;&#x54CD;&#x5E94;&#x548C;&#x8BF7;&#x6C42;&#x90FD;&#x9700;&#x8981;&#x653E;&#x5230;RequestChannel&#x7684;&#x961F;&#x5217;&#x4E2D;&#x88AB;&#x5904;&#x7406;.
+&#x6BD4;&#x5982;&#x5728;handle&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x65F6;,&#x4F1A;&#x5C06;Response&#x52A0;&#x5165;&#x5230;requestChannel&#x7684;&#x8BF7;&#x6C42;&#x961F;&#x5217;&#x4E2D;(closeConnection&#x4E5F;&#x662F;&#x4E00;&#x79CD;Resp).</p>
+<h2 id="handleproducerrequest">handleProducerRequest</h2>
+<p>&#x6709;&#x4E24;&#x4E2A;Callback&#x51FD;&#x6570;&#x5B9A;&#x4E49;,&#x4F46;&#x662F;&#x771F;&#x6B63;&#x8C03;&#x7528;&#x662F;&#x901A;&#x8FC7;&#x2460;replicaManager.appendMessages&#x89E6;&#x53D1;&#x7684;:
+&#x2461;sendResponseCallback-&gt;&#x2462;produceResponseCallback-&gt;&#x2463;ProducerResponse-&gt;&#x2464;requestChannel.sendResponse
+&#x771F;&#x6B63;&#x7684;&#x53D1;&#x9001;ProducerResponse&#x662F;&#x5728; produceResponseCallback&#x4E2D;:&#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;ack,&#x5219;&#x8FD9;&#x4E00;&#x6574;&#x6761;&#x94FE;&#x8DEF;&#x90FD;&#x4E0D;&#x4F1A;&#x8C03;&#x7528;.
+sendResponseCallback&#x7684;&#x53C2;&#x6570; responseStatus&#x662F;&#x54CD;&#x5E94;&#x72B6;&#x6001;,&#x6240;&#x4EE5;&#x2460;&#x4E2D;&#x8981;&#x786E;&#x4FDD;&#x4F1A;&#x751F;&#x6210;&#x5B83;,&#x7136;&#x540E;&#x4F7F;&#x7528;&#x56DE;&#x8C03;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">handleProducerRequest</span></span>(request: <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Request</span>) {
+    <span class="hljs-keyword">val</span> produceRequest = request.requestObj.asInstanceOf[<span class="hljs-type">ProducerRequest</span>]
+    <span class="hljs-keyword">val</span> numBytesAppended = produceRequest.sizeInBytes
+
+    <span class="hljs-comment">//partition&#x662F;&#x5BF9;Map&#x5206;&#x6210;&#x4E24;&#x7EC4;:&#x6709;&#x6388;&#x6743;&#x7684;(true)&#x548C;&#x6CA1;&#x6709;&#x6388;&#x6743;&#x7684;(false).&#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B;&#x662F;Map(TopicAndPartition-&gt;MessageSet),&#x56E0;&#x4E3A;&#x662F;&#x6839;&#x636E;data&#x8FDB;&#x884C;&#x5206;&#x533A;&#x7684;</span>
+    <span class="hljs-keyword">val</span> (authorizedRequestInfo, unauthorizedRequestInfo) =  produceRequest.data.partition  {
+      <span class="hljs-comment">//data&#x662F;TopicAndPartition-&gt;MessageSet, &#x5728;&#x5224;&#x65AD;&#x662F;&#x5426;&#x6388;&#x6743;&#x65F6;&#x4E0D;&#x9700;&#x8981;MessageSet  </span>
+      <span class="hljs-keyword">case</span> (topicAndPartition, _) =&gt; authorize(request.session, <span class="hljs-type">Write</span>, <span class="hljs-keyword">new</span> <span class="hljs-type">Resource</span>(<span class="hljs-type">Topic</span>, topicAndPartition.topic))
+    }
+
+    <span class="hljs-comment">// *************************************************************************</span>
+    <span class="hljs-comment">// &#x2461; the callback for sending a produce response &#x53D1;&#x9001;Producer&#x7684;Response&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sendResponseCallback</span></span>(responseStatus: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">ProducerResponseStatus</span>]) {
+      <span class="hljs-comment">// &#x2462; &#x751F;&#x6210;Response&#x7684;Callback, &#x5373;&#x5C06;Response&#x653E;&#x5165;RequestChannel&#x7684;responseQueue&#x4E2D;  </span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">produceResponseCallback</span></span>(delayTimeMs: <span class="hljs-type">Int</span>) {
+        <span class="hljs-keyword">if</span> (produceRequest.requiredAcks == <span class="hljs-number">0</span>) {  
+          <span class="hljs-keyword">if</span> (errorInResponse) {
+            requestChannel.closeConnection(request.processor, request)
+          } <span class="hljs-keyword">else</span> {
+            requestChannel.noOperation(request.processor, request)
+          }          
+        } <span class="hljs-keyword">else</span> {  
+          <span class="hljs-comment">// &#x2463; Producer&#x8BF7;&#x6C42;&#x9700;&#x8981;&#x7B49;&#x5F85;ack(1,-1), &#x521B;&#x5EFA;ProducerResponse, &#x5176;&#x4E2D;mergedResponseStatus&#x6765;&#x81EA;&#x4E8E;responseStatus</span>
+          <span class="hljs-keyword">val</span> response = <span class="hljs-type">ProducerResponse</span>(produceRequest.correlationId, mergedResponseStatus, produceRequest.versionId, delayTimeMs)
+          <span class="hljs-comment">// &#x2464; &#x5C06;&#x54CD;&#x5E94;&#x4FE1;&#x606F;&#x63A8;&#x5165;&#x5230;&#x8BF7;&#x6C42;&#x901A;&#x9053;&#x4E2D;, &#x6700;&#x540E;&#x4F1A;&#x53D1;&#x9001;&#x7ED9;Producer&#x5BA2;&#x6237;&#x7AEF;</span>
+          requestChannel.sendResponse(<span class="hljs-keyword">new</span> <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Response</span>(request, <span class="hljs-keyword">new</span> <span class="hljs-type">RequestOrResponseSend</span>(request.connectionId, response)))
+        }
+      }
+      <span class="hljs-comment">// &#x2462; quotaManagers&#x4F1A;&#x8C03;&#x7528;produceResponseCallback, &#x5B83;&#x672C;&#x8EAB;&#x505A;&#x4E86;&#x4E00;&#x4E9B;quota&#x9650;&#x989D;&#x7684;&#x5DE5;&#x4F5C;</span>
+      quotaManagers(<span class="hljs-type">ApiKeys</span>.<span class="hljs-type">PRODUCE</span>.id).recordAndMaybeThrottle(produceRequest.clientId, numBytesAppended, produceResponseCallback)
+    }
+    <span class="hljs-comment">// *************************************************************************</span>
+
+    <span class="hljs-comment">// &#x2460; &#x5C06;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F20;&#x7ED9;replicaManager.appendMessages&#x65B9;&#x6CD5;, &#x6240;&#x4EE5;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x771F;&#x6B63;&#x7684;&#x8C03;&#x7528;&#x662F;&#x5728;&#x8FD9;&#x91CC;&#x7684;</span>
+    <span class="hljs-keyword">if</span> (authorizedRequestInfo.isEmpty) sendResponseCallback(<span class="hljs-type">Map</span>.empty)  <span class="hljs-comment">//authorizedRequestInfo&#x662F;&#x4E2A;Map,&#x4E3A;&#x7A7A;&#x7684;&#x8BDD;,&#x8BF4;&#x660E;&#x6CA1;&#x6709;&#x6D88;&#x606F;,&#x5C31;&#x4E0D;&#x9700;&#x8981;append</span>
+    <span class="hljs-keyword">else</span> { <span class="hljs-comment">// call the replica manager to append messages to the replicas</span>
+      replicaManager.appendMessages(produceRequest.ackTimeoutMs.toLong, produceRequest.requiredAcks, internalTopicsAllowed, authorizedRequestInfo, sendResponseCallback)
+      produceRequest.emptyData()
+    }
+  }
+</code></pre>
+<p>handleProducerRequest&#x5904;&#x7406; Producer&#x7684;&#x8BF7;&#x6C42;: &#x5C06;Request&#x8BF7;&#x6C42;&#x8F6C;&#x6362;&#x4E3A; ProducerRequest.
+ProducerRequest&#x542B;&#x6709;&#x751F;&#x4EA7;&#x8005;&#x7684; Partition-&gt;&#x6D88;&#x606F;&#x96C6;:authorizedRequestInfo,&#x4F1A;&#x88AB;&#x5199;&#x5165;&#x5230;&#x65E5;&#x5FD7;&#x4E2D;.
+Producer&#x7AEF;&#x7684; request.required.acks&#x914D;&#x7F6E;&#x9879;,&#x7528;&#x6765;&#x63A7;&#x5236;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;:</p>
+<table>
+<thead>
+<tr>
+<th>acks</th>
+<th>what happen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>The producer never waits for an ack &#x751F;&#x4EA7;&#x8005;&#x4E0D;&#x4F1A;&#x7B49;&#x5F85;&#x4E00;&#x4E2A;ack,&#x6536;&#x5230;&#x6D88;&#x606F;&#x540E;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>The producer gets an ack after the leader replica has received the data &#x5F53;&#x5199;Leader&#x6210;&#x529F;&#x540E;&#x5C31;&#x8FD4;&#x56DE;,&#x5176;&#x4ED6;&#x7684;replica&#x90FD;&#x662F;&#x901A;&#x8FC7;fetcher&#x53BB;&#x540C;&#x6B65;&#x7684;,&#x6240;&#x4EE5;kafka&#x662F;&#x5F02;&#x6B65;&#x5199;</td>
+</tr>
+<tr>
+<td>-1</td>
+<td>The producer gets an ack after all ISRs receive the data &#x8981;&#x7B49;&#x5F85;&#x6240;&#x6709;&#x7684;replicas&#x90FD;&#x6210;&#x529F;&#x540E;&#x624D;&#x80FD;&#x8FD4;&#x56DE;.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="responsecallback">responseCallback</h2>
+<p>responseCallback&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165; appendMessages&#x65B9;&#x6CD5;&#x4E2D;,&#x662F;&#x56E0;&#x4E3A;&#x9996;&#x5148;&#x8981;&#x628A;&#x751F;&#x4EA7;&#x8005;&#x7684;&#x6D88;&#x606F;&#x5199;&#x5230;&#x672C;&#x5730;&#x65E5;&#x5FD7;&#x540E;,&#x624D;&#x80FD;&#x5224;&#x65AD;&#x662F;&#x5426;&#x8981;&#x53D1;&#x9001;&#x54CD;&#x5E94;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;.
+&#x63A5;&#x7740;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x662F;&#x5EF6;&#x8FDF;&#x7684;&#x64CD;&#x4F5C;,&#x5219;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x53C8;&#x4F1A;&#x88AB;&#x62D6;&#x540E;&#x5230;DelayedOperation.onComplete&#x65F6;.
+&#x7531;&#x4E8E;responseCallback&#x56DE;&#x5230;&#x51FD;&#x6570;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x54CD;&#x5E94;&#x72B6;&#x6001;&#x7684;&#x53C2;&#x6570;,&#x56E0;&#x6B64;&#x8FD9;&#x91CC;&#x8981;&#x8D1F;&#x8D23;&#x751F;&#x6210;responseStatus.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">appendMessages</span></span>(timeout: <span class="hljs-type">Long</span>, requiredAcks: <span class="hljs-type">Short</span>, internalTopicsAllowed: <span class="hljs-type">Boolean</span>, messagesPerPartition: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">MessageSet</span>], 
+                     responseCallback: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">ProducerResponseStatus</span>] =&gt; <span class="hljs-type">Unit</span>) {
+    <span class="hljs-keyword">if</span> (isValidRequiredAcks(requiredAcks)) {
+      <span class="hljs-comment">// &#x9996;&#x5148;&#x8FFD;&#x52A0;&#x5230;&#x672C;&#x5730;&#x65E5;&#x5FD7;&#x4E2D;... appendToLocalLog, &#x7136;&#x540E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x8981;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;. &#x5BF9;&#x4E8E;acks=-1, &#x9700;&#x8981;&#x5EF6;&#x8FDF;.</span>
+      <span class="hljs-keyword">if</span> (delayedRequestRequired(requiredAcks, messagesPerPartition, localProduceResults)) {
+        <span class="hljs-comment">// &#x521B;&#x5EFA;&#x5EF6;&#x8FDF;&#x7684;DelayedProduce, &#x5728;&#x5B8C;&#x6210;&#x540E;, &#x8C03;&#x7528;onComplete, &#x4E5F;&#x4F1A;&#x89E6;&#x53D1;responseCallback&#x7684;&#x56DE;&#x8C03;</span>
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">// we can respond immediately &#x5BF9;&#x4E8E;acks=0,1&#x7684;&#x60C5;&#x51B5;, &#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x54CD;&#x5E94;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x4E86;</span>
+        <span class="hljs-keyword">val</span> produceResponseStatus = produceStatus.mapValues(status =&gt; status.responseStatus)
+        responseCallback(produceResponseStatus)
+      }
+    }
+  }
+</code></pre>
+<p><img src="20160119150948872" alt=""></p>
+<h2 id="replicamanagerappendmessages">ReplicaManager.appendMessages</h2>
+<ul>
+<li>&#x5C06;&#x6D88;&#x606F;&#x8FFD;&#x52A0;&#x5230;Partition&#x7684; leader replicas, &#x5E76;&#x4E14;&#x7B49;&#x5F85;&#x5B83;&#x4EEC;&#x590D;&#x5236;&#x5230;&#x5176;&#x4ED6;&#x526F;&#x672C;&#x4E0A;.</li>
+<li>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x53EA;&#x6709;&#x5728;&#x8D85;&#x65F6;&#x6216;&#x8005;&#x9700;&#x8981;acks&#x65F6;&#x624D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;</li>
+</ul>
+<p>&#x7531;&#x4E8E;Producer&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x53D1;&#x9001; ClientRequest&#x7684;&#x65F6;&#x5019;&#x5DF2;&#x7ECF;&#x6839;&#x636E; Partition&#x627E;&#x5230;&#x4E86;&#x6240;&#x5C5E;&#x7684; Leader,
+&#x6240;&#x4EE5;ClientRequest&#x4E00;&#x5B9A;&#x662F;&#x53D1;&#x9001;&#x7ED9; Leader&#x8282;&#x70B9;&#x7684; SocketServer&#x7684;(&#x4E5F;&#x662F;KafkaServer&#x8282;&#x70B9;),
+&#x6240;&#x4EE5;&#x63A5;&#x6536;ProducerRequest&#x4E00;&#x5B9A;&#x662F;&#x6D88;&#x606F;&#x7684; Partition&#x5BF9;&#x5E94;&#x7684; Leader&#x8282;&#x70B9;,&#x53EF;&#x4EE5;&#x653E;&#x5FC3;&#x5730;&#x5F80;&#x672C;&#x5730;&#x5199;&#x6570;&#x636E;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">appendMessages</span></span>(timeout: <span class="hljs-type">Long</span>, requiredAcks: <span class="hljs-type">Short</span>, internalTopicsAllowed: <span class="hljs-type">Boolean</span>, messagesPerPartition: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">MessageSet</span>], responseCallback: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">ProducerResponseStatus</span>] =&gt; <span class="hljs-type">Unit</span>) {
+    <span class="hljs-keyword">if</span> (isValidRequiredAcks(requiredAcks)) {
+      <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x5230;&#x672C;&#x5730;&#x65E5;&#x5FD7;(&#x4E3A;&#x4EC0;&#x4E48;&#x662F;&#x672C;&#x5730;? &#x672C;&#x5730;&#x6307;&#x7684;&#x662F;KafkaServer&#x8282;&#x70B9;, &#x540C;&#x65F6;&#x4E5F;&#x662F;TopicAndPartition&#x7684; Leader&#x8282;&#x70B9;)</span>
+      <span class="hljs-keyword">val</span> localProduceResults = appendToLocalLog(internalTopicsAllowed, messagesPerPartition, requiredAcks)
+
+      <span class="hljs-comment">// &#x4E0B;&#x9762;&#x662F;response&#x7684;&#x4E00;&#x4E9B;&#x5904;&#x7406;, &#x6570;&#x636E;&#x5728;appendToLocalLog&#x65B9;&#x6CD5;&#x4E2D;&#x5DF2;&#x7ECF;&#x88AB;&#x6210;&#x529F;&#x5730;&#x5199;&#x5165;&#x5230; Leader&#x8282;&#x70B9;&#x4E86;...</span>
+    }
+  }
+</code></pre>
+<p>messagesPerPartition&#x56E0;&#x4E3A;&#x662F; TopicAndPartition&#x5230;&#x6D88;&#x606F;&#x96C6;&#x7684;&#x6620;&#x5C04;, topic&#x7528;&#x4E8E;&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x80FD;&#x591F;&#x5141;&#x8BB8;&#x5199;.
+Partition&#x662F;&#x6D88;&#x606F;&#x6700;&#x7EC8;&#x5B58;&#x50A8;&#x7684;&#x6240;&#x5728;&#x6587;&#x4EF6;&#x5939;,&#x8C03;&#x7528;partition.appendMessagesToLeader(messages),
+&#x8868;&#x793A;&#x5C06;&#x6D88;&#x606F;messages&#x8FFD;&#x52A0;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x8FD9;&#x4E2A; partition(&#x800C;&#x8FD9;&#x4E2A;Partition&#x4E00;&#x5B9A;&#x662F; Leader replicas).</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">appendToLocalLog</span></span>(internalTopicsAllowed: <span class="hljs-type">Boolean</span>, messagesPerPartition: <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">MessageSet</span>],
+                               requiredAcks: <span class="hljs-type">Short</span>): <span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">LogAppendResult</span>] = {
+    messagesPerPartition.map { <span class="hljs-keyword">case</span> (topicAndPartition, messages) =&gt;
+      <span class="hljs-comment">// reject appending to internal topics if it is not allowed. </span>
+      <span class="hljs-keyword">if</span> (!<span class="hljs-type">Topic</span>.<span class="hljs-type">InternalTopics</span>.contains(topicAndPartition.topic) || internalTopicsAllowed) {
+          <span class="hljs-keyword">val</span> partitionOpt = getPartition(topicAndPartition.topic, topicAndPartition.partition)
+          <span class="hljs-keyword">val</span> info = partitionOpt <span class="hljs-keyword">match</span> {
+            <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(partition) =&gt; partition.appendMessagesToLeader(messages.asInstanceOf[<span class="hljs-type">ByteBufferMessageSet</span>], requiredAcks)
+          }
+          (topicAndPartition, <span class="hljs-type">LogAppendResult</span>(info))
+      }
+    }
+  }
+</code></pre>
+<p>topicAndPartition&#x7684;&#x6E90;&#x5934;&#x662F;&#x7531; Producer&#x5BA2;&#x6237;&#x7AEF;&#x6784;&#x9020;&#x7684;,&#x670D;&#x52A1;&#x7AEF;&#x9700;&#x8981;&#x6839;&#x636E;topic&#x548C; partitionId&#x6784;&#x9020;&#x51FA;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684; Partition&#x7528;&#x4E8E;&#x5199;&#x65E5;&#x5FD7;</p>
+<p>Partition&#x662F;&#x600E;&#x4E48;&#x6765;&#x7684;:getOrCreatePartition&#x7684;&#x8C03;&#x7528;&#x94FE;=becomeLeaderOrFollower&lt;-KafkaApis.handleLeaderAndIsrRequest</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> allPartitions = <span class="hljs-keyword">new</span> <span class="hljs-type">Pool</span>[(<span class="hljs-type">String</span>, <span class="hljs-type">Int</span>), <span class="hljs-type">Partition</span>]
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getOrCreatePartition</span></span>(topic: <span class="hljs-type">String</span>, partitionId: <span class="hljs-type">Int</span>): <span class="hljs-type">Partition</span> = {
+    <span class="hljs-keyword">var</span> partition = allPartitions.get((topic, partitionId))
+    <span class="hljs-keyword">if</span> (partition == <span class="hljs-literal">null</span>) {
+      allPartitions.putIfNotExists((topic, partitionId), <span class="hljs-keyword">new</span> <span class="hljs-type">Partition</span>(topic, partitionId, time, <span class="hljs-keyword">this</span>))
+      partition = allPartitions.get((topic, partitionId))
+    }
+    partition
+  }
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getPartition</span></span>(topic: <span class="hljs-type">String</span>, partitionId: <span class="hljs-type">Int</span>): <span class="hljs-type">Option</span>[<span class="hljs-type">Partition</span>] = {
+    <span class="hljs-keyword">val</span> partition = allPartitions.get((topic, partitionId))
+    <span class="hljs-keyword">if</span> (partition == <span class="hljs-literal">null</span>) <span class="hljs-type">None</span>
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Some</span>(partition)
+  }
+</code></pre>
+<h2 id="partitionappendmessagestoleader">Partition.appendMessagesToLeader</h2>
+<p>&#x6D88;&#x606F;&#x5199;&#x5230;Partition&#x7684; Leader replica,&#x5728;&#x786E;&#x5B9A; Partition&#x7684; Replica&#x540E;,&#x5F80;Replication&#x7684; Log&#x5B9E;&#x4F8B;&#x8FFD;&#x52A0;&#x6570;&#x636E;.
+&#x8C03;&#x7528;&#x94FE;&#x4ECE;ReplicationManager -&gt; Partition -&gt; Replica -&gt; Log, &#x6D88;&#x606F;messages&#x6700;&#x7EC8;&#x5199;&#x5230;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2D;.</p>
+<p><img src="20160111130308041" alt=""></p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">appendMessagesToLeader</span></span>(messages: <span class="hljs-type">ByteBufferMessageSet</span>, requiredAcks: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>) = {
+    <span class="hljs-keyword">val</span> (info, leaderHWIncremented) = inReadLock(leaderIsrUpdateLock) {
+      <span class="hljs-keyword">val</span> leaderReplicaOpt = leaderReplicaIfLocal()
+      leaderReplicaOpt <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(leaderReplica) =&gt;
+          <span class="hljs-keyword">val</span> log = leaderReplica.log.get
+          <span class="hljs-keyword">val</span> minIsr = log.config.minInSyncReplicas
+          <span class="hljs-keyword">val</span> inSyncSize = inSyncReplicas.size
+          <span class="hljs-comment">// Avoid writing to leader if there are not enough insync replicas to make it safe</span>
+          <span class="hljs-keyword">if</span> (inSyncSize &lt; minIsr &amp;&amp; requiredAcks == <span class="hljs-number">-1</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">NotEnoughReplicasException</span>(<span class="hljs-string">&quot;Number of insync replicas below required minimum&quot;</span>)
+          <span class="hljs-keyword">val</span> info = log.append(messages, assignOffsets = <span class="hljs-literal">true</span>)
+          replicaManager.tryCompleteDelayedFetch(<span class="hljs-keyword">new</span> <span class="hljs-type">TopicPartitionOperationKey</span>(<span class="hljs-keyword">this</span>.topic, <span class="hljs-keyword">this</span>.partitionId))
+          (info, maybeIncrementLeaderHW(leaderReplica))
+      }
+    }
+    <span class="hljs-keyword">if</span> (leaderHWIncremented) tryCompleteDelayedRequests()   <span class="hljs-comment">// some delayed operations may be unblocked after HW changed</span>
+    info
+  }
+</code></pre>
+<h3 id="leaderreplicaiflocal">leaderReplicaIfLocal</h3>
+<p>&#x5224;&#x65AD;leaderReplica&#x662F;&#x5426;&#x662F;&#x672C;&#x5730;&#x7684;, &#x662F;&#x6BD4;&#x8F83;leaderReplicaIdOpt(&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x662F;volatile)&#x548C;localBrokerId&#x662F;&#x5426;&#x76F8;&#x540C;.
+localBrokerId&#x5728; Kafka&#x8282;&#x70B9;&#x542F;&#x52A8;&#x65F6;&#x5C31;&#x662F;&#x786E;&#x5B9A;&#x7684;,&#x5373;&#x540C;&#x4E00;&#x4E2A;KafkaServer&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709; Partition&#x7684; BrokerId&#x90FD;&#x662F;&#x76F8;&#x7B49;&#x7684;.
+&#x800C;leaderReplicaIdOpt&#x4F1A;&#x5728; makeLeader&#x548C; makeFollower&#x4E2D;&#x88AB;&#x4FEE;&#x6539;(&#x4E5F;&#x90FD;&#x88AB;becomeLeaderOrFollower&#x8C03;&#x7528;)</p>
+<p>assignedReplicaMap&#x662F;&#x4E00;&#x4E2A; Map:.&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;Partition&#x7684; Replication&#x6709; Leader&#x548C; Follower.
+&#x5B83;&#x4EEC;&#x90FD;&#x662F;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684;Broker&#x8282;&#x70B9;&#x4E0A;.&#x6240;&#x4EE5;Partition&#x6301;&#x6709;&#x6240;&#x6709;&#x8FD9;&#x4E9B; Replication,&#x5C31;&#x53EF;&#x4EE5;&#x77E5;&#x9053;Replication&#x7684;&#x5206;&#x5E03;&#x60C5;&#x51B5;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Partition</span>(<span class="hljs-params">val topic: <span class="hljs-type">String</span>, val partitionId: <span class="hljs-type">Int</span>, time: <span class="hljs-type">Time</span>, replicaManager: <span class="hljs-type">ReplicaManager</span></span>) </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> localBrokerId = replicaManager.config.brokerId    <span class="hljs-comment">//KafkaServer&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;BrokerId</span>
+  <span class="hljs-meta">@volatile</span> <span class="hljs-keyword">var</span> leaderReplicaIdOpt: <span class="hljs-type">Option</span>[<span class="hljs-type">Int</span>] = <span class="hljs-type">None</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> assignedReplicaMap = <span class="hljs-keyword">new</span> <span class="hljs-type">Pool</span>[<span class="hljs-type">Int</span>, <span class="hljs-type">Replica</span>]
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">leaderReplicaIfLocal</span></span>(): <span class="hljs-type">Option</span>[<span class="hljs-type">Replica</span>] = {
+    leaderReplicaIdOpt <span class="hljs-keyword">match</span> {
+      <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(leaderReplicaId) =&gt; <span class="hljs-keyword">if</span> (leaderReplicaId == localBrokerId) getReplica(localBrokerId) <span class="hljs-keyword">else</span> <span class="hljs-type">None</span>
+      <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt; <span class="hljs-type">None</span>
+    }
+  }  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getReplica</span></span>(replicaId: <span class="hljs-type">Int</span> = localBrokerId): <span class="hljs-type">Option</span>[<span class="hljs-type">Replica</span>] = {
+    <span class="hljs-keyword">val</span> replica = assignedReplicaMap.get(replicaId)
+    <span class="hljs-keyword">if</span> (replica == <span class="hljs-literal">null</span>) <span class="hljs-type">None</span>
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Some</span>(replica)
+  }
+}
+</code></pre>
+<blockquote>
+<p>&#x95EE;&#x9898;: &#x5177;&#x4F53;Replica&#x662F;&#x5982;&#x4F55;&#x88AB;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#x7684;, &#x4EE5;&#x53CA;local&#x548C;remote&#x7684;&#x542B;&#x4E49;&#x5206;&#x522B;&#x662F;&#x4EC0;&#x4E48;? &#x4F1A;&#x5728;&#x4E0B;&#x4E00;&#x7BC7;&#x4ECB;&#x7ECD;.</p>
+</blockquote>
+<h2 id="logappend">Log.append</h2>
+<p>&#x5C06;&#x6D88;&#x606F;&#x8F6C;&#x6362;&#x4E3A;LogAppendInfo,&#x5E76;&#x4EA4;&#x7ED9;Log&#x4E2D;&#x6700;&#x65B0;&#x7684; Segment&#x5904;&#x7406;,&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;Partition&#x7684; Log&#x5206;&#x6210;&#x591A;&#x4E2A; Segment.
+&#x8FFD;&#x52A0;&#x6D88;&#x606F;&#x53EA;&#x5230;&#x6700;&#x65B0;&#x7684;Segment&#x4E2D;,&#x65E7;&#x7684;Segment&#x4E00;&#x65E6;&#x5173;&#x95ED;&#x540E;,&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x6DFB;&#x52A0;&#x6570;&#x636E;.&#x6240;&#x4EE5;&#x5FC5;&#x8981;&#x7684;&#x8BDD;&#x4F1A;&#x521B;&#x5EFA;&#x65B0;&#x7684;Segment.</p>
+<ul>
+<li>&#x2460; LogOffsetMetadata(Log&#x7684; Offset&#x5143;&#x6570;&#x636E;)&#x7684;&#x5F53;&#x524D;&#x503C;&#x4F5C;&#x4E3A;&#x672C;&#x6B21;LogAppendInfo&#x7684; firstOffset</li>
+<li>&#x2461; &#x7ED9;MessageSet&#x5206;&#x914D; Offset: &#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;offset&#x90FD;&#x662F;&#x5355;&#x8C03;&#x9012;&#x589E;&#x7684;</li>
+<li>&#x2462; LogAppendInfo&#x7684; lastOffset&#x662F;&#x8FD9;&#x4E00;&#x6279;&#x6D88;&#x606F;&#x7684;&#x6700;&#x540E;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684; offset</li>
+<li>&#x2463; &#x6DFB;&#x52A0;&#x6D88;&#x606F;&#x5230;&#x5F53;&#x524D;&#x6216;&#x8005;&#x65B0;&#x521B;&#x5EFA;&#x7684;Segment</li>
+<li>&#x2464; &#x66F4;&#x65B0;Log End Offset&#x4E3A;&#x5F53;&#x524D;&#x6700;&#x540E;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684; offset&#x7684;&#x4E0B;&#x4E00;&#x6761;</li>
+</ul>
+<pre><code class="lang-scala">  <span class="hljs-meta">@volatile</span> <span class="hljs-keyword">var</span> nextOffsetMetadata = <span class="hljs-keyword">new</span> <span class="hljs-type">LogOffsetMetadata</span>(activeSegment.nextOffset(), activeSegment.baseOffset, activeSegment.size.toInt)
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">append</span></span>(messages: <span class="hljs-type">ByteBufferMessageSet</span>, assignOffsets: <span class="hljs-type">Boolean</span> = <span class="hljs-literal">true</span>): <span class="hljs-type">LogAppendInfo</span> = {
+    <span class="hljs-keyword">val</span> appendInfo = analyzeAndValidateMessageSet(messages)
+    <span class="hljs-comment">// trim any invalid bytes or partial messages before appending it to the on-disk log</span>
+    <span class="hljs-keyword">var</span> validMessages = trimInvalidBytes(messages, appendInfo)
+    <span class="hljs-comment">// they are valid, insert them in the log</span>
+    lock synchronized {
+        appendInfo.firstOffset = nextOffsetMetadata.messageOffset   <span class="hljs-comment">// &#x2460; &#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset</span>
+        <span class="hljs-keyword">if</span>(assignOffsets) {                                         <span class="hljs-comment">// &#x2461; assign offsets to the message set &#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;offset&#x90FD;&#x662F;&#x9012;&#x589E;&#x7684;</span>
+          <span class="hljs-keyword">val</span> offset = <span class="hljs-keyword">new</span> <span class="hljs-type">AtomicLong</span>(nextOffsetMetadata.messageOffset)
+          validMessages = validMessages.validateMessagesAndAssignOffsets(offset, appendInfo.sourceCodec, appendInfo.targetCodec, config.compact)
+          appendInfo.lastOffset = offset.get - <span class="hljs-number">1</span>                    <span class="hljs-comment">// &#x2462; &#x6700;&#x540E;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset</span>
+        }
+        <span class="hljs-keyword">val</span> segment = maybeRoll(validMessages.sizeInBytes)          <span class="hljs-comment">// maybe roll the log if this segment is full</span>
+        segment.append(appendInfo.firstOffset, validMessages)       <span class="hljs-comment">// &#x2463; now append to the log</span>
+        updateLogEndOffset(appendInfo.lastOffset + <span class="hljs-number">1</span>)               <span class="hljs-comment">// &#x2464; increment the log end offset      </span>
+        <span class="hljs-keyword">if</span>(unflushedMessages &gt;= config.flushInterval) flush()       <span class="hljs-comment">// &#x5237;&#x65B0;</span>
+        appendInfo
+    }
+  }
+
+  <span class="hljs-comment">// &#x76F4;&#x63A5;&#x4FEE;&#x6539;nextOffsetMetadata&#x5B9E;&#x4F8B;, &#x83B7;&#x53D6;messageOffset&#x65F6;&#x6BD4;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x8981;&#x5FEB;</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">updateLogEndOffset</span></span>(messageOffset: <span class="hljs-type">Long</span>) {
+    nextOffsetMetadata = <span class="hljs-keyword">new</span> <span class="hljs-type">LogOffsetMetadata</span>(messageOffset, activeSegment.baseOffset, activeSegment.size.toInt)
+  }
+</code></pre>
+<p>&#x8FFD;&#x52A0;&#x4E00;&#x6279;&#x6D88;&#x606F;,&#x5F00;&#x59CB;&#x65F6;&#x4ECE;LogOffsetMetadata&#x83B7;&#x53D6;&#x6700;&#x65B0;&#x7684; messageoffset,
+&#x6700;&#x540E;&#x66F4;&#x65B0;LogOffsetMetadata&#x7684; messageOffset&#x4E3A;&#x6700;&#x540E;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684; offset+1,
+&#x8FD9;&#x6837;&#x4E0B;&#x4E00;&#x6B21;&#x4ECE;LogOffsetMetadata&#x83B7;&#x53D6;&#x7684; messageOffset&#x662F;&#x7D27;&#x63A5;&#x7740;&#x4E0A;&#x4E00;&#x6B21;&#x7684; offset&#x4E4B;&#x540E;.</p>
+<p><img src="20160111182528354" alt=""></p>
+<h2 id="messageset">MessageSet</h2>
+<p>MessageSet: A set of messages with offsets. The format of each message is as follows:</p>
+<ul>
+<li>8 byte message offset number</li>
+<li>4 byte size containing an integer N</li>
+<li>N byte message</li>
+</ul>
+<p>Message: The format of an N byte message is the following:</p>
+<ul>
+<li>4 byte CRC32 of the message</li>
+<li>1 byte &quot;magic&quot; identifier to allow format changes, value is 0 currently</li>
+<li>1 byte &quot;attributes&quot; identifier(compression enabled, type of codec used)</li>
+<li>4 byte key length, containing length K</li>
+<li>K byte key</li>
+<li>4 byte payload length, containing length V</li>
+<li>V byte payload</li>
+</ul>
+<p><img src="20160111120400346" alt=""></p>
+<p>ByteBufferMessageSet&#x7684; shallowIterator&#x8FD4;&#x56DE; MessageAndOffset&#x8FED;&#x4EE3;&#x5668;,&#x9A8C;&#x8BC1;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x662F;&#x5426;&#x5408;&#x6CD5;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">shallowIterator</span></span>: <span class="hljs-type">Iterator</span>[<span class="hljs-type">MessageAndOffset</span>] = internalIterator(<span class="hljs-literal">true</span>)
+
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">internalIterator</span></span>(isShallow: <span class="hljs-type">Boolean</span> = <span class="hljs-literal">false</span>): <span class="hljs-type">Iterator</span>[<span class="hljs-type">MessageAndOffset</span>] = {
+    <span class="hljs-keyword">new</span> <span class="hljs-type">IteratorTemplate</span>[<span class="hljs-type">MessageAndOffset</span>] {
+      <span class="hljs-keyword">var</span> topIter = buffer.slice()                      <span class="hljs-comment">// buffer&#x662F;MessageSetByteBuffer</span>
+      <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">makeNextOuter</span></span>: <span class="hljs-type">MessageAndOffset</span> = {
+        <span class="hljs-keyword">if</span> (topIter.remaining &lt; <span class="hljs-number">12</span>) <span class="hljs-keyword">return</span> allDone()    <span class="hljs-comment">// if there isn&apos;t at least an offset and size, we are done. &#x81F3;&#x5C11;&#x8981;&#x6709;8+4=12bytes</span>
+        <span class="hljs-keyword">val</span> offset = topIter.getLong()                  <span class="hljs-comment">// &#x8BFB;&#x53D6;8bytes(Long&#x7C7B;&#x578B;)&#x7684;offset&#x7684;&#x503C;</span>
+        <span class="hljs-keyword">val</span> size = topIter.getInt()                     <span class="hljs-comment">// &#x8BFB;&#x53D6;4bytes(Int&#x7C7B;&#x578B;)&#x7684;size&#x7684;&#x503C;, &#x8FD9;&#x4E2A;&#x503C;&#x662F;Message&#x7684;&#x5B57;&#x8282;&#x5927;&#x5C0F;</span>
+        <span class="hljs-keyword">if</span>(size &lt; <span class="hljs-type">Message</span>.<span class="hljs-type">MinHeaderSize</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">InvalidMessageException</span>()    <span class="hljs-comment">// Message&#x7684;Header&#x90E8;&#x5206;(&#x9664;&#x4E86;Key,Value&#x7684;&#x5185;&#x5BB9;). &#x5373;size&#x5FC5;&#x987B;&gt;=HeaderSize</span>
+        <span class="hljs-keyword">if</span>(topIter.remaining &lt; size) <span class="hljs-keyword">return</span> allDone()   <span class="hljs-comment">// we have an incomplete message</span>
+        <span class="hljs-keyword">val</span> message = topIter.slice()                   <span class="hljs-comment">// read the current message and check correctness</span>
+        message.limit(size)                             <span class="hljs-comment">// size&#x8868;&#x793A;&#x6D88;&#x606F;&#x7684;&#x5927;&#x5C0F;(N)</span>
+        topIter.position(topIter.position + size)       <span class="hljs-comment">// &#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;slice,&#x5DF2;&#x7ECF;&#x5B9A;&#x4F4D;&#x5230;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x7684;&#x5934;&#x90E8;,&#x518D;&#x52A0;&#x4E0A;size, &#x5B9A;&#x4F4D;&#x5230;&#x7684;&#x662F;&#x4E0B;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;&#x4F4D;&#x7F6E;</span>
+        <span class="hljs-keyword">val</span> newMessage = <span class="hljs-keyword">new</span> <span class="hljs-type">Message</span>(message)           <span class="hljs-comment">// &#x5DF2;&#x7ECF;&#x5F97;&#x5230;&#x4E86;Message&#x7684;&#x5B8C;&#x6574;&#x5185;&#x5BB9;&#x4E86;(ByteBuffer)</span>
+        <span class="hljs-keyword">new</span> <span class="hljs-type">MessageAndOffset</span>(newMessage, offset)        <span class="hljs-comment">// Message&#x548C;offset&#x7EC4;&#x5408;&#x6210;MessageAndOffset</span>
+      }
+      <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">makeNext</span></span>(): <span class="hljs-type">MessageAndOffset</span> = makeNextOuter
+    }
+  }
+</code></pre>
+<h2 id="analyzeandvalidatemessageset">analyzeAndValidateMessageSet</h2>
+<p>&#x9664;&#x4E86;&#x68C0;&#x67E5;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x662F;&#x5426;&#x548C;CRC&#x5339;&#x914D;,&#x6D88;&#x606F;&#x7684;&#x5927;&#x5C0F;&#x662F;&#x5426;&#x6709;&#x6548;,&#x8FD8;&#x8FD4;&#x56DE;&#x4E86;&#x5982;&#x4E0B;&#x4FE1;&#x606F;:</p>
+<ul>
+<li>First offset in the message set &#x6D88;&#x606F;&#x96C6;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;offset</li>
+<li>Last offset in the message set &#x6D88;&#x606F;&#x96C6;&#x4E2D;&#x6700;&#x540E;&#x4E00;&#x4E2A;offset</li>
+<li>Number of messages &#x6D88;&#x606F;&#x6570;&#x91CF;</li>
+<li>Number of valid bytes &#x6709;&#x6548;&#x5B57;&#x8282;&#x6570;</li>
+<li>Whether the offsets are monotonically increasing &#x504F;&#x79FB;&#x91CF;&#x662F;&#x5426;&#x5355;&#x8C03;&#x9012;&#x589E;</li>
+</ul>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">analyzeAndValidateMessageSet</span></span>(messages: <span class="hljs-type">ByteBufferMessageSet</span>): <span class="hljs-type">LogAppendInfo</span> = {
+    <span class="hljs-keyword">var</span> shallowMessageCount = <span class="hljs-number">0</span>             <span class="hljs-comment">// &#x6D88;&#x606F;&#x6570;&#x91CF;</span>
+    <span class="hljs-keyword">var</span> validBytesCount = <span class="hljs-number">0</span>                 <span class="hljs-comment">// &#x6709;&#x6548;&#x5B57;&#x8282;&#x6570;</span>
+    <span class="hljs-keyword">var</span> firstOffset, lastOffset = <span class="hljs-number">-1</span>L       <span class="hljs-comment">// &#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x548C;&#x6700;&#x540E;&#x4E00;&#x6761;(&#x5728;&#x5FAA;&#x73AF;&#x65F6;&#x8868;&#x793A;&#x4E0A;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset)&#x6D88;&#x606F;&#x7684;offset</span>
+    <span class="hljs-keyword">var</span> monotonic = <span class="hljs-literal">true</span>                    <span class="hljs-comment">// &#x662F;&#x5426;&#x5355;&#x8C03;&#x53D8;&#x5316;(&#x5355;&#x8C03;&#x9012;&#x589E;)</span>
+    <span class="hljs-keyword">for</span>(messageAndOffset &lt;- messages.shallowIterator) {
+      <span class="hljs-keyword">if</span>(firstOffset &lt; <span class="hljs-number">0</span>) firstOffset = messageAndOffset.offset     <span class="hljs-comment">// update the first offset if on the first message</span>
+      <span class="hljs-keyword">if</span>(lastOffset &gt;= messageAndOffset.offset) monotonic = <span class="hljs-literal">false</span>   <span class="hljs-comment">// check that offsets are monotonically increasing</span>
+      lastOffset = messageAndOffset.offset                          <span class="hljs-comment">// update the last offset seen</span>
+      <span class="hljs-keyword">val</span> m = messageAndOffset.message
+      <span class="hljs-keyword">val</span> messageSize = <span class="hljs-type">MessageSet</span>.entrySize(m)                     <span class="hljs-comment">// Check if the message sizes are valid.</span>
+      m.ensureValid()                                               <span class="hljs-comment">// check the validity of the message by checking CRC      </span>
+      shallowMessageCount += <span class="hljs-number">1</span>
+      validBytesCount += messageSize
+    }
+    <span class="hljs-type">LogAppendInfo</span>(firstOffset, lastOffset, sourceCodec, targetCodec, shallowMessageCount, validBytesCount, monotonic)
+  }
+</code></pre>
+<p>&#x56E0;&#x4E3A;MessageSet&#x5305;&#x542B;&#x591A;&#x6761; Message.firstoOffset&lt;0&#x53EA;&#x4F1A;&#x5728;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x65F6;&#x6267;&#x884C;,firstOffset=&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset.
+lastOffset&#x5728;&#x904D;&#x5386;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x65F6;,&#x90FD;&#x66F4;&#x6539;&#x4E3A;&#x5F53;&#x524D;&#x6D88;&#x606F;&#x7684;offset. &#x521D;&#x59CB;&#x65F6;&#x4E3A;-1,&#x4E0D;&#x6267;&#x884C;if, &#x5E76;&#x8D4B;&#x503C;&#x4E3A;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset,
+&#x7B2C;&#x4E8C;&#x6761;&#x6D88;&#x606F;&#x65F6;,lastOffset&#x662F;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684; offset,messageAndOffset&#x73B0;&#x5728;&#x662F;&#x7B2C;&#x4E8C;&#x6761;&#x6D88;&#x606F;,&#x5982;&#x679C;&#x662F;&#x5355;&#x8C03;&#x9012;&#x589E;&#x7684;offset,
+&#x8D8A;&#x5F80;&#x540E;&#x6D88;&#x606F;&#x7684;offset&#x90FD;&#x6BD4;&#x524D;&#x4E00;&#x6761; offset&#x8981;&#x9AD8;,&#x5219;if&#x8BED;&#x53E5;&#x540C;&#x6837;&#x90FD;&#x4E0D;&#x4F1A;&#x6267;&#x884C;.&#x76F4;&#x5230;&#x6700;&#x540E;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset&#x8BBE;&#x7F6E;&#x4E3A; lastOffset.</p>
+<p><img src="20160111135542050" alt=""></p>
+<h2 id="validatemessagesandassignoffsets">validateMessagesAndAssignOffsets</h2>
+<p>LogAppendInfo&#x7684; firstOffset&#x867D;&#x7136;&#x4E0A;&#x9762;&#x5DF2;&#x7ECF;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x4E86;,&#x4F46;&#x662F;&#x771F;&#x6B63;&#x662F;&#x7531;LogOffsetMetadata.messageOffset&#x786E;&#x5B9A;&#x7684;
+lastOffset&#x4E5F;&#x8981;&#x6839;&#x636E;&#x521D;&#x59CB;&#x5316;&#x503C;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;:offsetCounter&#x5728;&#x5FAA;&#x73AF;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x65F6;&#x4E0D;&#x65AD;&#x9012;&#x589E;1,&#x4EE3;&#x8868;&#x7684;&#x662F;&#x4E0B;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset.</p>
+<p><img src="20160111143238708" alt=""></p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span>[kafka] <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">validateMessagesAndAssignOffsets</span></span>(offsetCounter: <span class="hljs-type">AtomicLong</span>, sourceCodec: <span class="hljs-type">CompressionCodec</span>, targetCodec: <span class="hljs-type">CompressionCodec</span>, compactedTopic: <span class="hljs-type">Boolean</span> = <span class="hljs-literal">false</span>): <span class="hljs-type">ByteBufferMessageSet</span> = {
+    <span class="hljs-keyword">if</span>(sourceCodec == <span class="hljs-type">NoCompressionCodec</span> &amp;&amp; targetCodec == <span class="hljs-type">NoCompressionCodec</span>) {
+      <span class="hljs-keyword">var</span> messagePosition = <span class="hljs-number">0</span>
+      buffer.mark()         <span class="hljs-comment">// &#x5148;&#x6807;&#x8BB0;</span>
+      <span class="hljs-keyword">while</span>(messagePosition &lt; sizeInBytes - <span class="hljs-type">MessageSet</span>.<span class="hljs-type">LogOverhead</span>) {
+        buffer.position(messagePosition)                            <span class="hljs-comment">// &#x5B9A;&#x4F4D;&#x5230;MessageSet&#x4E2D;&#x4EE3;&#x8868;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;&#x5F00;&#x5934;&#x4F4D;&#x7F6E;,&#x4ECE;0&#x5F00;&#x59CB;</span>
+        buffer.putLong(offsetCounter.getAndIncrement())             <span class="hljs-comment">// offsetCounter&#x662F;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x90FD;&#x589E;&#x52A0;1(8bytes), &#x73B0;&#x5728;&#x6307;&#x9488;&#x5230;&#x4E86;size&#x7684;&#x5F00;&#x5934;</span>
+        <span class="hljs-keyword">val</span> messageSize = buffer.getInt()                           <span class="hljs-comment">// offset&#x540E;&#x9762;&#x8DDF;&#x7684;&#x662F;&#x6D88;&#x606F;&#x7684;&#x5927;&#x5C0F;size(4bytes), &#x8BFB;&#x53D6;&#x51FA;&#x503C;=&#x662F;&#x6D88;&#x606F;&#x7684;&#x5B57;&#x8282;&#x6570;</span>
+        <span class="hljs-keyword">val</span> positionAfterKeySize = buffer.position + <span class="hljs-type">Message</span>.<span class="hljs-type">KeySizeOffset</span> + <span class="hljs-type">Message</span>.<span class="hljs-type">KeySizeLength</span>  <span class="hljs-comment">// pos&#x662F;Message&#x6D88;&#x606F;&#x7684;&#x4F4D;&#x7F6E;,&#x5C31;size&#x7684;&#x672B;&#x5C3E; </span>
+        <span class="hljs-keyword">if</span> (compactedTopic &amp;&amp; positionAfterKeySize &lt; sizeInBytes) {  
+          buffer.position(buffer.position() + <span class="hljs-type">Message</span>.<span class="hljs-type">KeySizeOffset</span>)<span class="hljs-comment">// &#x653E;&#x5230;Message&#x6D88;&#x606F;&#x7684;Key-Length&#x7684;&#x5F00;&#x5934;     </span>
+          <span class="hljs-keyword">val</span> keySize = buffer.getInt()                             <span class="hljs-comment">// &#x8BFB;&#x53D6;4bytes,&#x5373;key-length&#x7684;&#x5185;&#x5BB9; </span>
+        }
+        messagePosition += <span class="hljs-type">MessageSet</span>.<span class="hljs-type">LogOverhead</span> + messageSize     <span class="hljs-comment">// &#x66F4;&#x65B0;messagePosition&#x4E3A;&#x4E0B;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x505A;&#x51C6;&#x5907;(8+&#x6D88;&#x606F;&#x5927;&#x5C0F;&#x8868;&#x793A;MessageSet&#x4E2D;&#x4E00;&#x6761;&#x5B8C;&#x6574;&#x7684;&#x6D88;&#x606F;)</span>
+      }
+      buffer.reset()        <span class="hljs-comment">// &#x91CD;&#x7F6E;&#x7684;&#x65F6;&#x5019;, &#x56DE;&#x5230;&#x6700;&#x5F00;&#x59CB;&#x6807;&#x8BB0;&#x7684;&#x5730;&#x65B9;</span>
+      <span class="hljs-keyword">this</span>
+    }
+  }
+</code></pre>
+<p>&#x5728;&#x904D;&#x5386;&#x5B8C;MessageSet&#x540E;,offset&#x7684;&#x503C;&#x662F;&#x521D;&#x59CB;&#x503C;+&#x6240;&#x6709;&#x6D88;&#x606F;&#x6570;&#x91CF;, &#x6700;&#x540E;&#x66F4;&#x65B0;&#x4E0B;LogAppendInfo&#x7684; lastOffset.</p>
+<pre><code class="lang-scala">    appendInfo.firstOffset = nextOffsetMetadata.messageOffset
+    <span class="hljs-keyword">if</span>(assignOffsets) { <span class="hljs-comment">// assign offsets to the message set</span>
+      <span class="hljs-keyword">val</span> offset = <span class="hljs-keyword">new</span> <span class="hljs-type">AtomicLong</span>(nextOffsetMetadata.messageOffset)
+      validMessages = validMessages.validateMessagesAndAssignOffsets(offset, appendInfo.sourceCodec, appendInfo.targetCodec, config.compact)
+      appendInfo.lastOffset = offset.get - <span class="hljs-number">1</span>
+    }
+</code></pre>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x5728;&#x6700;&#x540E;&#x8981;&#x51CF;&#x53BB;1: &#x56E0;&#x4E3A;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;offsetCounter&#x5728;&#x83B7;&#x53D6;&#x540E;&#x5C31;&#x9012;&#x589E;1,&#x6240;&#x4EE5;&#x5B83;&#x8868;&#x793A;&#x7684;&#x662F;&#x4E0B;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset.
+&#x5047;&#x8BBE;&#x521D;&#x59CB;&#x503C;nextOffsetMetadata&#x7684;offset=10,&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset=10,&#x9012;&#x589E;1;&#x7B2C;&#x4E8C;&#x6761;&#x6D88;&#x606F;&#x7684;offset=11,&#x9012;&#x589E;1.
+&#x5047;&#x8BBE;&#x6709;5&#x6761;&#x6D88;&#x606F;,&#x6700;&#x540E;&#x7684;offset&#x8FD4;&#x56DE;&#x503C;=15,&#x800C;&#x5B9E;&#x9645;&#x4E0A;&#x6700;&#x6709;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset=lastOffset&#x5E94;&#x8BE5;&#x662F;15-1=14</p>
+<pre><code class="lang-data">            |message1|message2|message3|message4|message5
+offset      10        11       12       13       14   &lt;- lastOffset
+increment   11        12       13       14       15   &lt;- offsetCounter
+</code></pre>
+<h2 id="logsegment-roll">LogSegment Roll</h2>
+<p>&#x53D1;&#x751F;Roll&#x662F;&#x6709;&#x4E00;&#x5B9A;&#x65F6;&#x673A;&#x7684;:</p>
+<ul>
+<li>&#x5F53;&#x524D;Segment+&#x672C;&#x6B21;&#x9700;&#x8981;&#x8FFD;&#x52A0;&#x7684;&#x6D88;&#x606F;&#x5927;&#x5C0F;&#x8D85;&#x8FC7;Segment&#x7684;&#x9608;&#x503C;</li>
+<li>&#x7D22;&#x5F15;&#x6EE1;&#x4E86;(Segment&#x662F;&#x7531; log&#x548C; index&#x7EC4;&#x6210;, &#x4E0D;&#x4EC5;log&#x6EE1;&#x4E86;&#x8981; Roll, index&#x6EE1;&#x4E86;&#x4E5F;&#x8981; Roll)</li>
+<li>&#x79BB;&#x4E0A;&#x6B21;&#x521B;&#x5EFA;Segment&#x7684;&#x65F6;&#x95F4;&#x5230;&#x8FBE;&#x4E00;&#x5B9A;&#x9700;&#x8981;&#x6EDA;&#x52A8;&#x7684;&#x65F6;&#x95F4;</li>
+</ul>
+<p><img src="20160112084940190" alt=""></p>
+<pre><code class="lang-scala"><span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> segments: <span class="hljs-type">ConcurrentNavigableMap</span>[java.lang.<span class="hljs-type">Long</span>, <span class="hljs-type">LogSegment</span>] = <span class="hljs-keyword">new</span> <span class="hljs-type">ConcurrentSkipListMap</span>[java.lang.<span class="hljs-type">Long</span>, <span class="hljs-type">LogSegment</span>]
+  loadSegments()        <span class="hljs-comment">// &#x52A0;&#x8F7D;Segments,&#x4F1A;&#x586B;&#x5145;&#x5230;segments&#x94FE;&#x5F0F;Map&#x4E2D;(&#x56E0;&#x4E3A;Map&#x662F;&#x65E0;&#x5E8F;&#x7684;,&#x800C;Segment&#x662F;&#x6709;&#x5E8F;&#x7684;,&#x6240;&#x4EE5;&#x8981;&#x4F7F;&#x7528;List)</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">activeSegment</span> </span>= segments.lastEntry.getValue               <span class="hljs-comment">// The active segment that is currently taking appends &#x6700;&#x540E;&#x4E00;&#x4E2A;Segment&#x662F;&#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x7684;</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logEndOffset</span></span>: <span class="hljs-type">Long</span> = nextOffsetMetadata.messageOffset     <span class="hljs-comment">// The offset of the next message that will be appended to the log &#x6DFB;&#x52A0;&#x5230;&#x65E5;&#x5FD7;&#x4E2D;&#x4E0B;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset</span>
+
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">maybeRoll</span></span>(messagesSize: <span class="hljs-type">Int</span>): <span class="hljs-type">LogSegment</span> = {
+    <span class="hljs-keyword">val</span> segment = activeSegment     <span class="hljs-comment">// segments&#x4E2D;&#x6700;&#x540E;&#x4E00;&#x4E2A;Segment, &#x603B;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x4E2A;Segment&#x770B;&#x662F;&#x5426;&#x5230;&#x8FBE;Roll&#x6761;&#x4EF6;       </span>
+    <span class="hljs-keyword">if</span> (segment.size &gt; config.segmentSize - messagesSize || segment.index.isFull || segment.size &gt; <span class="hljs-number">0</span> &amp;&amp; time.milliseconds - segment.created &gt; config.segmentMs - segment.rollJitterMs) {
+      roll()            <span class="hljs-comment">// &#x521B;&#x5EFA;&#x65B0;&#x7684;Segment, &#x6B64;&#x65F6;&#x5982;&#x679C;&#x8C03;&#x7528;activeSegment(&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x54E6;), &#x5F97;&#x5230;&#x7684;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x65B0;&#x521B;&#x5EFA;&#x7684;Segment</span>
+    } <span class="hljs-keyword">else</span> segment      <span class="hljs-comment">// &#x4F7F;&#x7528;&#x5F53;&#x524D;&#x7684;Segment,&#x4E0D;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x65B0;&#x7684;Segment</span>
+  }
+</code></pre>
+<p>&#x5F53;&#x9700;&#x8981;(&#x6EDA;&#x52A8;&#x5730;)&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Segment,&#x4EE5;&#x5F53;&#x524D;&#x7684;logEndOffset&#x4E3A;&#x8D77;&#x70B9;,&#x4F5C;&#x4E3A;&#x65B0;Segment&#x7684; segmentBaseOffset.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">roll</span></span>(): <span class="hljs-type">LogSegment</span> = {
+    lock synchronized {
+      <span class="hljs-keyword">val</span> newOffset = logEndOffset                      <span class="hljs-comment">// &#x6700;&#x65B0;&#x7684;offset</span>
+      <span class="hljs-keyword">val</span> logFile = logFilename(dir, newOffset)         <span class="hljs-comment">// Segment&#x5305;&#x62EC;&#x4E86; log&#x6570;&#x636E;&#x6587;&#x4EF6;&#x548C; index&#x7D22;&#x5F15;&#x6587;&#x4EF6;</span>
+      <span class="hljs-keyword">val</span> indexFile = indexFilename(dir, newOffset)     <span class="hljs-comment">// Segment&#x7684; baseOffset&#x4F1A;&#x4F5C;&#x4E3A;&#x8FD9;&#x4E2A; Segment&#x7684; log&#x6587;&#x4EF6;&#x548C; index&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x79F0;</span>
+
+      segments.lastEntry() <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-literal">null</span> =&gt;                                    <span class="hljs-comment">// &#x65B0;&#x521B;&#x5EFA;&#x7684;Segment</span>
+        <span class="hljs-keyword">case</span> entry =&gt; {
+          entry.getValue.index.trimToValidSize()        <span class="hljs-comment">// &#x5BF9;index&#x548C; log&#x90FD; trim&#x622A;&#x65AD;</span>
+          entry.getValue.log.trim()
+        }
+      }
+      <span class="hljs-keyword">val</span> segment = <span class="hljs-keyword">new</span> <span class="hljs-type">LogSegment</span>(dir,  startOffset = newOffset, ...)
+      <span class="hljs-keyword">val</span> prev = addSegment(segment)                    <span class="hljs-comment">// &#x5C06;&#x65B0;&#x521B;&#x5EFA;&#x7684;Segment&#x6DFB;&#x52A0;&#x5230; segments Map&#x4E2D;</span>
+      <span class="hljs-comment">// We need to update the segment base offset and append position data of the metadata when log rolls. The next offset should not change.</span>
+      updateLogEndOffset(nextOffsetMetadata.messageOffset)
+      <span class="hljs-comment">// schedule an asynchronous flush of the old segment</span>
+      scheduler.schedule(<span class="hljs-string">&quot;flush-log&quot;</span>, () =&gt; flush(newOffset), delay = <span class="hljs-number">0</span>L)
+      segment
+    }
+  }
+
+  <span class="hljs-comment">// Add the given segment to the segments in this log. If this segment replaces an existing segment, delete it.</span>
+  <span class="hljs-comment">// segments&#x7684; Key&#x662F;&#x6BCF;&#x4E2A; Segment&#x7684; baseOffset, &#x6240;&#x4EE5;&#x4E00;&#x4E2A;Partition&#x4E2D;&#x6240;&#x6709; Segment&#x7684; baseOffset&#x90FD;&#x662F;&#x4E0D;&#x540C;&#x7684;,&#x4EE3;&#x8868;&#x4E86;&#x5B83;&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x5728;Partition&#x4E2D;&#x7684;&#x7EDD;&#x5BF9; offset</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">addSegment</span></span>(segment: <span class="hljs-type">LogSegment</span>) = <span class="hljs-keyword">this</span>.segments.put(segment.baseOffset, segment)
+</code></pre>
+<p>&#x6BCF;&#x4E2A;Segment&#x7531; log&#x548C; index&#x7EC4;&#x6210;,log&#x662F; FileMessageSet,&#x542B;&#x6709;&#x771F;&#x6B63;&#x7684;&#x6D88;&#x606F;.index&#x662F; OffsetIndex:&#x903B;&#x8F91;&#x7684;offset&#x5230;&#x7269;&#x7406;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#x7684;&#x7D22;&#x5F15;.
+Segment&#x95F4;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x5173;&#x7CFB;:&#x4E4B;&#x524D;&#x4EFB;&#x4F55;&#x7684;segment&#x7684; offset &lt; &#x6BCF;&#x4E2A;Segment&#x7684; baseOffset &lt;= &#x5F53;&#x524D;Segment&#x4EFB;&#x4F55;&#x6D88;&#x606F;&#x6700;&#x5C0F;&#x7684; offset.</p>
+<ul>
+<li>&#x5F53;&#x524D;Segment&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684; offset&#x4F1A;&#x4F5C;&#x4E3A;&#x8FD9;&#x4E2A; Segment&#x4E2D;&#x6240;&#x6709;&#x6D88;&#x606F;&#x7684; segmentBaseOffset</li>
+<li>&#x6240;&#x4EE5;&#x53F3;&#x8FB9;&#x7684;&#x5F0F;&#x5B50;&#x6210;&#x7ACB;,&#x6700;&#x5C0F;&#x7684;offset=segmentBaseOffset, &#x540E;&#x9762;&#x6D88;&#x606F;&#x7684;offset&#x4E00;&#x5B9A;&#x5927;&#x4E8E;&#x8FD9;&#x4E2A;&#x503C;</li>
+<li>&#x6BCF;&#x4E2A;Segment&#x90FD;&#x662F;&#x6309;&#x7167;&#x65F6;&#x95F4;&#x987A;&#x5E8F;&#x521B;&#x5EFA;&#x7684;,&#x540E;&#x9762;&#x7684;Segment&#x7684;&#x6700;&#x5C0F;&#x7684; baseOffset&#x4E00;&#x5B9A;&#x5927;&#x4E8E;&#x524D;&#x9762;&#x7684; Segment&#x7684;&#x6700;&#x5927;&#x7684; offset</li>
+</ul>
+<p><img src="20160112084837929" alt=""></p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LogSegment</span>(<span class="hljs-params">val log: <span class="hljs-type">FileMessageSet</span>, val index: <span class="hljs-type">OffsetIndex</span>, 
+                 val baseOffset: <span class="hljs-type">Long</span>,  val indexIntervalBytes: <span class="hljs-type">Int</span>, val rollJitterMs: <span class="hljs-type">Long</span>, time: <span class="hljs-type">Time</span></span>)</span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">this</span></span>(dir: <span class="hljs-type">File</span>, startOffset: <span class="hljs-type">Long</span>, indexIntervalBytes: <span class="hljs-type">Int</span>, maxIndexSize: <span class="hljs-type">Int</span>, rollJitterMs: <span class="hljs-type">Long</span>, time: <span class="hljs-type">Time</span>, fileAlreadyExists: <span class="hljs-type">Boolean</span> = <span class="hljs-literal">false</span>, initFileSize: <span class="hljs-type">Int</span> = <span class="hljs-number">0</span>, preallocate: <span class="hljs-type">Boolean</span> = <span class="hljs-literal">false</span>) =
+    <span class="hljs-keyword">this</span>(<span class="hljs-keyword">new</span> <span class="hljs-type">FileMessageSet</span>(file = <span class="hljs-type">Log</span>.logFilename(dir, startOffset), fileAlreadyExists = fileAlreadyExists, initFileSize = initFileSize, preallocate = preallocate),
+         <span class="hljs-keyword">new</span> <span class="hljs-type">OffsetIndex</span>(file = <span class="hljs-type">Log</span>.indexFilename(dir, startOffset), baseOffset = startOffset, maxIndexSize = maxIndexSize),
+         startOffset, indexIntervalBytes, rollJitterMs, time)
+}
+</code></pre>
+<h3 id="updatelogendoffset">updateLogEndOffset</h3>
+<p>&#x6709;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#x8C03;&#x7528;&#x4E86;updateLogEndOffset, &#x7B2C;&#x4E00;&#x6B21;&#x5C31;&#x662F;&#x4E0A;&#x9762;&#x5728;addSegment&#x4E4B;&#x540E;(&#x8C8C;&#x4F3C;&#x53D6;&#x503C;&#x540E;&#x53C8;&#x8BBE;&#x7F6E;&#x8FDB;&#x53BB;,&#x6CA1;&#x5565;&#x53D8;&#x5316;),
+&#x7B2C;&#x4E8C;&#x6B21;&#x662F;&#x5728;&#x5F80;Segment&#x6DFB;&#x52A0;&#x6D88;&#x606F;&#x4E4B;&#x540E;(&#x66F4;&#x65B0;&#x4E3A;LogAppendInfo.lastOffset+1,&#x5373;&#x6700;&#x540E;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;offset&#x7684;&#x4E0B;&#x4E00;&#x4E2A;)</p>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x5728;addSegment&#x4E4B;&#x540E;,activeSegment&#x4F1A;&#x53D8;&#x6210;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x90A3;&#x4E2A;Segment.&#x867D;&#x7136;messageOffset&#x6CA1;&#x6709;&#x53D8;&#x5316;,&#x4F46;&#x662F;&#x540E;&#x9762;&#x4E24;&#x4E2A;&#x90FD;&#x53D8;&#x4E86;.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">updateLogEndOffset</span></span>(messageOffset: <span class="hljs-type">Long</span>) {
+    nextOffsetMetadata = <span class="hljs-keyword">new</span> <span class="hljs-type">LogOffsetMetadata</span>(messageOffset, activeSegment.baseOffset, activeSegment.size.toInt)
+  }
+</code></pre>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FFD;&#x52A0;&#x5230;roll segment,&#x53D1;&#x751F;&#x4E86;&#x4E24;&#x6B21;updateLogEndOffset,&#x800C;&#x5982;&#x679C;&#x662F;&#x5DF2;&#x6709;&#x7684;Segment,&#x5219;&#x53EA;&#x6709;&#x4E00;&#x6B21;update&#x64CD;&#x4F5C;.
+&#x6BCF;&#x6B21;update&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x65B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; LogOffsetMetadata&#x5BF9;&#x8C61;,nextOffsetMetadata&#x662F;&#x4E00;&#x4E2A; var&#x53D8;&#x91CF;,&#x8868;&#x793A;&#x4E0B;&#x4E00;&#x4E2A;offset&#x7684;&#x5143;&#x6570;&#x636E;.</p>
+<p>&#x867D;&#x7136;LogOffsetMetadata&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x673A;&#x4E0D;&#x662F;&#x5F88;&#x7A33;&#x5B9A;&#x7684;, &#x4F46;&#x662F;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4ECD;&#x7136;&#x662F;&#x6574;&#x4E2A;Partition&#x8303;&#x56F4;&#x7684;.
+&#x56E0;&#x4E3A;&#x5B83;&#x7684;messageOffset&#x8981;&#x4E0D;&#x65AD;&#x5730;&#x66F4;&#x65B0;:&#x5373;&#x4F7F;&#x6CA1;&#x6709;&#x521B;&#x5EFA;Segment,&#x5728;&#x6BCF;&#x6B21;&#x8FFD;&#x52A0;&#x6570;&#x636E;&#x5230;&#x5DF2;&#x6709;Segment&#x540E;&#x90FD;&#x8981;
+&#x6267;&#x884C;updateLogEndOffset(appendInfo.lastOffset + 1), &#x5C06;messages&#x6700;&#x540E;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x4F5C;&#x4E3A;&#x5176;
+messageOffset,&#x6B63;&#x5982;&#x53D8;&#x91CF;&#x540D;nextOffsetMetadata,&#x8868;&#x793A;&#x7684;&#x662F;&#x4E0B;&#x4E00;&#x4E2A;offset:nextOffset&#x7684;&#x5143;&#x6570;&#x636E;&#x4FE1;&#x606F;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;:&#x5728;&#x540C;&#x4E00;&#x6279;messages&#x4E2D;,&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x90FD;&#x8981;&#x66F4;&#x65B0;LogEndOffset,&#x53EA;&#x6709;&#x4E0D;&#x540C;&#x6279;&#x6B21;&#x7684;messages&#x624D;&#x9700;&#x8981;&#x66F4;&#x65B0;.</p>
+</blockquote>
+<p><img src="20160112084739593" alt=""></p>
+<h2 id="logoffsetmetadata">LogOffsetMetadata</h2>
+<ul>
+<li>[1] the message offset &#x6D88;&#x606F;&#x7684;&#x504F;&#x79FB;&#x91CF;,&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x7EDD;&#x5BF9;&#x504F;&#x79FB;&#x91CF;,&#x5373;&#x540C;&#x4E00;&#x4E2A;Partition&#x7684;&#x6240;&#x6709;Segment&#x7684;&#x7EDD;&#x5BF9;&#x504F;&#x79FB;&#x4F4D;&#x7F6E;</li>
+<li>[2] the base message offset of the located segment &#x5F53;&#x524D;Segment&#x7684;base offset.&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x76F8;&#x5BF9;&#x504F;&#x79FB;&#x91CF;</li>
+<li>[3] the physical position on the located segment &#x5728;Segment&#x4E2D;&#x7684;&#x7269;&#x7406;&#x4F4D;&#x7F6E;,&#x7528;&#x4E8E;&#x8BFB;&#x53D6;&#x6D88;&#x606F;&#x7684;&#x5177;&#x4F53;&#x5185;&#x5BB9;</li>
+</ul>
+<pre><code class="lang-scala"><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LogOffsetMetadata</span>(<span class="hljs-params">messageOffset: <span class="hljs-type">Long</span>, segmentBaseOffset: <span class="hljs-type">Long</span> = <span class="hljs-type">LogOffsetMetadata</span>.<span class="hljs-type">UnknownSegBaseOffset</span>, relativePositionInSegment: <span class="hljs-type">Int</span> = <span class="hljs-type">LogOffsetMetadata</span>.<span class="hljs-type">UnknownFilePosition</span></span>) </span>{
+  <span class="hljs-comment">// check if this offset is already on an older segment compared with the given offset</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">offsetOnOlderSegment</span></span>(that: <span class="hljs-type">LogOffsetMetadata</span>): <span class="hljs-type">Boolean</span> = <span class="hljs-keyword">this</span>.segmentBaseOffset &lt; that.segmentBaseOffset
+  <span class="hljs-comment">// check if this offset is on the same segment with the given offset</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">offsetOnSameSegment</span></span>(that: <span class="hljs-type">LogOffsetMetadata</span>): <span class="hljs-type">Boolean</span> = <span class="hljs-keyword">this</span>.segmentBaseOffset == that.segmentBaseOffset
+
+  <span class="hljs-comment">// check if this offset is before the given offset</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">precedes</span></span>(that: <span class="hljs-type">LogOffsetMetadata</span>): <span class="hljs-type">Boolean</span> = <span class="hljs-keyword">this</span>.messageOffset &lt; that.messageOffset
+  <span class="hljs-comment">// compute the number of messages between this offset to the given offset</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">offsetDiff</span></span>(that: <span class="hljs-type">LogOffsetMetadata</span>): <span class="hljs-type">Long</span> = <span class="hljs-keyword">this</span>.messageOffset - that.messageOffset
+
+  <span class="hljs-comment">// compute the number of bytes between this offset to the given offset if they are on the same segment and this offset precedes the given offset</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">positionDiff</span></span>(that: <span class="hljs-type">LogOffsetMetadata</span>): <span class="hljs-type">Int</span> = <span class="hljs-keyword">this</span>.relativePositionInSegment - that.relativePositionInSegment
+}
+</code></pre>
+<p>&#x56E0;&#x4E3A;baseOffset&#x662F;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x7684; offset,&#x6240;&#x4EE5;&#x540C;&#x4E00;&#x4E2A;Segment&#x7684;&#x6240;&#x6709;&#x6D88;&#x606F;&#x7684; baseOffset&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;.</p>
+<ul>
+<li>messageOffset: &#x9488;&#x5BF9;Partition&#x5168;&#x5C40;&#x7684;&#x7EDD;&#x5BF9;&#x504F;&#x79FB;&#x91CF;</li>
+<li>segmentBaseOffset: &#x6BCF;&#x4E2A;Segment&#x7684;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x5728; Partition&#x7684; messageOffset</li>
+<li>relativePositionInSegment: &#x53EA;&#x6709;&#x5728;&#x540C;&#x4E00;&#x4E2A;Segment&#x4E2D;,&#x4E24;&#x4E2A;offset&#x76F8;&#x51CF;,&#x8868;&#x793A;&#x4E24;&#x4E2A;offset&#x4E4B;&#x95F4;&#x7684;&#x5B57;&#x8282;&#x6570;</li>
+</ul>
+<p>&#x539F;&#x5148;&#x4EE5;&#x4E3A;&#x5728;&#x540C;&#x4E00;&#x4E2A;Segment&#x4E2D;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684; segmentBaseOffset&#x8868;&#x793A;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x5BF9;&#x4E8E;&#x6700;&#x5F00;&#x59CB;&#x6D88;&#x606F;&#x7684;&#x76F8;&#x5BF9;&#x504F;&#x79FB;&#x91CF;,&#x5176;&#x5B9E;&#x662F;&#x9519;&#x7684;.</p>
+<p><img src="20160111165015556" alt=""></p>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;offset&#x90FD;&#x662F;&#x5355;&#x8C03;&#x9012;&#x589E;1&#x7684;(&#x8FDE;&#x7EED;&#x7684;).&#x800C;relativePositionInSegment&#x662F;&#x4E0D;&#x8FDE;&#x7EED;&#x7684;(&#x56E0;&#x4E3A;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x540C;)</p>
+<p><img src="20160112085010724" alt=""></p>
+<h2 id="logsegment-append">LogSegment append</h2>
+<p>messages&#x8FFD;&#x52A0;&#x5230; Segment&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x662F;: segment.append(appendInfo.firstOffset, validMessages)
+&#x5199;&#x5165;&#x6570;&#x636E;&#x5230;log&#x6587;&#x4EF6;&#x7684;&#x540C;&#x65F6;,&#x8FD8;&#x8981;&#x95F4;&#x9694;indexIntervalBytes&#x5927;&#x5C0F;&#x5199;&#x5165;&#x4E00;&#x6761;&#x7D22;&#x5F15;&#x6761;&#x76EE;(&#x5E76;&#x4E0D;&#x662F;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x90FD;&#x5199;&#x5165;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;)</p>
+<pre><code class="lang-scala">  <span class="hljs-comment">//Append the given messages starting with the given offset. Add an entry to the index if needed.</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">append</span></span>(offset: <span class="hljs-type">Long</span>, messages: <span class="hljs-type">ByteBufferMessageSet</span>) {
+    <span class="hljs-keyword">if</span> (messages.sizeInBytes &gt; <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">if</span>(bytesSinceLastIndexEntry &gt; indexIntervalBytes) {
+        index.append(offset, log.sizeInBytes())             <span class="hljs-comment">// append an entry to the index (if needed)</span>
+        <span class="hljs-keyword">this</span>.bytesSinceLastIndexEntry = <span class="hljs-number">0</span>                   <span class="hljs-comment">// &#x6210;&#x529F;&#x5199;&#x4E00;&#x6B21;&#x7D22;&#x5F15;&#x540E;,&#x91CD;&#x7F6E;&#x4E3A;0</span>
+      }
+      log.append(messages)                                  <span class="hljs-comment">// append the messages</span>
+      <span class="hljs-keyword">this</span>.bytesSinceLastIndexEntry += messages.sizeInBytes <span class="hljs-comment">// &#x7EDF;&#x8BA1;&#x503C;&#x589E;&#x52A0;,&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x9700;&#x8981;&#x5199;&#x7D22;&#x5F15;</span>
+    }
+  }
+</code></pre>
+<h3 id="filemessageset">FileMessageSet</h3>
+<p>&#x521B;&#x5EFA;LogSegment&#x65F6;,&#x77E5;&#x9053;segmentBaseOffset,&#x5F97;&#x5230;log&#x548C; index&#x7684;&#x6587;&#x4EF6;&#x540D;,&#x521B;&#x5EFA;log&#x6587;&#x4EF6;,&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684;FileChannel.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">append</span></span>(messages: <span class="hljs-type">ByteBufferMessageSet</span>) {
+    <span class="hljs-keyword">val</span> written = messages.writeTo(channel, <span class="hljs-number">0</span>, messages.sizeInBytes)
+    _size.getAndAdd(written)
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sizeInBytes</span></span>(): <span class="hljs-type">Int</span> = _size.get()
+<span class="hljs-type">ByteBufferMessageSet</span>&#x63D0;&#x4F9B;&#x4E86;&#x5199;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;,writeTo&#x63D0;&#x4F9B;&#x7684;offset,size&#x662F;&#x4E3A;&#x4E86;&#x8BA9;channel&#x4ECE;&#x6307;&#x5B9A;&#x7684;offset&#x5F00;&#x59CB;&#x5199;,
+&#x4E00;&#x5171;&#x5199;&#x5165;size&#x5927;&#x5C0F;(&#x4E0D;&#x662F;<span class="hljs-type">MessageSet</span>&#x4E2D;&#x7684;offset&#x548C;size&#x6982;&#x5FF5;!). &#x800C;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x628A;&#x5168;&#x90E8;&#x6570;&#x636E;&#x90FD;&#x5199;&#x5165;channel&#x4E2D;.
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ByteBufferMessageSet</span>(<span class="hljs-params">val buffer: <span class="hljs-type">ByteBuffer</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">MessageSet</span> </span>{
+  <span class="hljs-comment">// Ignore offset and size from input. We just want to write the whole buffer to the channel.</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">writeTo</span></span>(channel: <span class="hljs-type">GatheringByteChannel</span>, offset: <span class="hljs-type">Long</span>, size: <span class="hljs-type">Int</span>): <span class="hljs-type">Int</span> = {
+    buffer.mark()
+    <span class="hljs-keyword">var</span> written = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">while</span>(written &lt; sizeInBytes) written += channel.write(buffer)
+    buffer.reset()
+    written
+  }
+}
+</code></pre>
+<p>FileMessageSet&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6709; start&#x548C; end,&#x63D0;&#x4F9B;&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x6D88;&#x606F;&#x6587;&#x4EF6;&#x7684;&#x5B50;&#x96C6;/&#x5207;&#x7247;.
+searchFor&#x7ED9;&#x5B9A;&#x76EE;&#x6807; offset&#x548C;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;,&#x8FD4;&#x56DE;&gt;=&#x76EE;&#x6807;offset&#x6700;&#x8FD1;&#x7684;&#x90A3;&#x4E2A;&#x7684;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;.
+&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;offset,&#x8981;&#x62C9;&#x53D6;&#x8FD9;&#x4E2A;offset&#x4E4B;&#x540E;&#x7684;&#x6D88;&#x606F;(&#x8FD9;&#x90E8;&#x5206;&#x6D88;&#x606F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5B50;&#x96C6;).</p>
+<blockquote>
+<p>&#x8981;&#x786E;&#x4FDD;startingPosition&#x4F4D;&#x4E8E;&#x6D88;&#x606F;&#x7684;&#x8FB9;&#x754C;,&#x4E0D;&#x8FC7;&#x4E00;&#x822C;startPos=0,&#x800C;&#x4E0D;&#x662F;&#x6587;&#x4EF6;&#x968F;&#x4FBF;&#x67D0;&#x4E2A;&#x4F4D;&#x7F6E;.</p>
+</blockquote>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">searchFor</span></span>(targetOffset: <span class="hljs-type">Long</span>, startingPosition: <span class="hljs-type">Int</span>): <span class="hljs-type">OffsetPosition</span> = {
+    <span class="hljs-keyword">var</span> position = startingPosition
+    <span class="hljs-keyword">val</span> buffer = <span class="hljs-type">ByteBuffer</span>.allocate(<span class="hljs-type">MessageSet</span>.<span class="hljs-type">LogOverhead</span>)    <span class="hljs-comment">// LogOverhead=8+4=12</span>
+    <span class="hljs-keyword">val</span> size = sizeInBytes()                                    <span class="hljs-comment">// &#x8FD9;&#x662F;FileMessageSet&#x7684;&#x6D88;&#x606F;&#x5927;&#x5C0F;</span>
+    <span class="hljs-keyword">while</span>(position + <span class="hljs-type">MessageSet</span>.<span class="hljs-type">LogOverhead</span> &lt; size) {
+      buffer.rewind()   <span class="hljs-comment">// &#x5728;&#x5FAA;&#x73AF;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;, &#x7531;&#x4E8E;&#x8BFB;&#x53D6;buffer, &#x6307;&#x9488;&#x540E;&#x79FB;, &#x6240;&#x4EE5;&#x5F00;&#x59CB;&#x8BFB;&#x53D6;&#x524D;,&#x8981;&#x4F4D;&#x4E8E;buffer&#x7684;&#x5934;&#x90E8;</span>
+      channel.read(buffer, position)                            <span class="hljs-comment">// &#x8981;&#x786E;&#x4FDD;startPos&#x4F4D;&#x4E8E;&#x6D88;&#x606F;&#x7684;&#x8FB9;&#x754C;</span>
+      buffer.rewind()   <span class="hljs-comment">// &#x4ECE;&#x6587;&#x4EF6;&#x7684;postiion&#x4F4D;&#x7F6E;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5230;buffer&#x4E2D;, &#x8BFB;&#x53D6;&#x540E;&#x4F4D;&#x4E8E;buffer&#x7684;&#x672B;&#x5C3E;, &#x8C03;&#x7528;rewind&#x56DE;&#x5230;buffer&#x7684;&#x5F00;&#x59CB;</span>
+      <span class="hljs-keyword">val</span> offset = buffer.getLong()                             <span class="hljs-comment">// &#x8FD9;&#x6761;&#x6D88;&#x606F;&#x7684;offset,8&#x4E2A;&#x5B57;&#x8282;</span>
+      <span class="hljs-keyword">if</span>(offset &gt;= targetOffset) <span class="hljs-keyword">return</span> <span class="hljs-type">OffsetPosition</span>(offset, position)    <span class="hljs-comment">// Got You!</span>
+      <span class="hljs-keyword">val</span> messageSize = buffer.getInt()                         <span class="hljs-comment">// size&#x5B57;&#x6BB5;&#x5B58;&#x50A8;&#x7684;&#x662F;&#x8FD9;&#x6761;message&#x7684;&#x5927;&#x5C0F;,&#x5B83;&#x672C;&#x8EAB;&#x5360;&#x7528;&#x4E86;4&#x4E2A;&#x5B57;&#x8282;</span>
+      position += <span class="hljs-type">MessageSet</span>.<span class="hljs-type">LogOverhead</span> + messageSize          <span class="hljs-comment">// &#x5728;MessageSet&#x4E2D;&#x7684;&#x4E00;&#x6761;&#x5B8C;&#x6574;&#x7684;&#x6D88;&#x606F;(offset,size,message)</span>
+    }
+    <span class="hljs-literal">null</span>
+  }
+</code></pre>
+<p>OffsetPosition&#x662F;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x7684;&#x903B;&#x8F91; log&#x504F;&#x79FB;&#x91CF;&#x548C;&#x5728;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x7269;&#x7406;&#x4F4D;&#x7F6E;(&#x5373;&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;)
+&#x56E0;&#x4E3A;MessageSet&#x4E2D;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;&#x5927;&#x5C0F;&#x90FD;&#x5B58;&#x5728; size&#x4E2D;,&#x6240;&#x4EE5;&#x4E0D;&#x5FC5;&#x771F;&#x6B63;&#x8BFB;&#x53D6;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x5C31;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x9700;&#x8981;&#x7684;offset.</p>
+<p><img src="20160112110329315" alt=""></p>
+<h2 id="offsetindex">OffsetIndex</h2>
+<p>OffsetIndex&#x548C; FileMessageSet&#x90FD;&#x662F;&#x5728;&#x521B;&#x5EFA; LogSegment&#x65F6;&#x540C;&#x65F6;&#x521B;&#x5EFA;. OffsetIndex&#x8FD8;&#x9700;&#x8981; baseOffset=segmentBaseOffset.</p>
+<ul>
+<li>&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x6620;&#x5C04;offset&#x5230;&#x6587;&#x4EF6;&#x7684;&#x7269;&#x7406;&#x4F4D;&#x7F6E;(&#x7C7B;&#x4F3C;&#x4E0A;&#x9762;&#x7684;OffsetPosition),&#x5B83;&#x4E0D;&#x4F1A;&#x5BF9;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x90FD;&#x7D22;&#x5F15;,&#x6240;&#x4EE5;&#x662F;&#x7A00;&#x758F;&#x7684;.</li>
+<li>&#x7531;&#x4E8E;offset&#x548C; position&#x7684;&#x503C;&#x4E0D;&#x50CF;&#x6D88;&#x606F;&#x5185;&#x5BB9;&#x53D8;&#x957F;, &#x6240;&#x4EE5;&#x6BCF;&#x4E2A;&#x7D22;&#x5F15;&#x6761;&#x76EE;&#x90FD;&#x56FA;&#x5B9A;&#x4E3A;8bytes.&#x5373;offset&#x548C; position&#x5206;&#x522B;4byte</li>
+<li>MessageSet&#x4E2D;&#x662F;8byte&#x7684; offset,&#x800C;&#x7D22;&#x5F15;&#x4E2D;&#x662F;4byte,&#x6240;&#x4EE5;&#x7D22;&#x5F15;&#x4E2D;&#x5B58;&#x50A8;&#x7684; offset&#x662F;&#x51CF;&#x53BB;segmentBaseOffset&#x7684;&#x503C;&#x624D;&#x653E;&#x7684;&#x4E0B;</li>
+<li>&#x7531;&#x4E8E;&#x662F;&#x7A00;&#x758F;&#x7D22;&#x5F15;,&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x628A;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x901A;&#x8FC7;&#x5185;&#x5B58;&#x6620;&#x5C04;&#x7684;&#x65B9;&#x5F0F;&#x5C06;&#x6574;&#x4E2A;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x90FD;&#x653E;&#x5165;&#x5185;&#x5B58;&#x4E2D;,&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;offset&#x7684;&#x67E5;&#x8BE2;</li>
+<li>&#x56E0;&#x4E3A;offset&#x662F;&#x6709;&#x5E8F;&#x7684;,&#x6240;&#x4EE5;&#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x7684;offset&#x65F6;,&#x4F7F;&#x7528;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#x5C31;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;offset&#x5728;&#x54EA;&#x4E2A;&#x4F4D;&#x7F6E;(&#x5F53;&#x7136;&#x4E5F;&#x77E5;&#x9053;position&#x4E86;)</li>
+<li>&#x53EF;&#x80FD;&#x6307;&#x5B9A;&#x7684;offset&#x5728;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x4E2D;(0,5,8)&#x4E0D;&#x5B58;&#x5728;,&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x6307;&#x5B9A;offset(6)&#x7684;&#x6700;&#x5927;offset(5)</li>
+<li>&#x7531;&#x4E8E;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x968F;&#x7740;&#x6D88;&#x606F;&#x7684;&#x8FFD;&#x52A0;&#x800C;&#x4E0D;&#x65AD;&#x53D8;&#x5316;,&#x6253;&#x5F00;&#x7D22;&#x5F15;&#x6587;&#x4EF6;:&#x7A7A;&#x7684;&#x5141;&#x8BB8;&#x8FFD;&#x52A0;&#x7684;&#x53EF;&#x53D8;&#x7D22;&#x5F15;&#x6216;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x53EA;&#x8BFB;&#x7684;&#x7D22;&#x5F15;&#x6587;&#x4EF6;</li>
+<li>&#x5F53;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x53D1;&#x751F;roll&#x65F6;,&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x90FD;&#x4E0D;&#x4F1A;&#x53D8;&#x5316;&#x4E86;(&#x7C7B;&#x4F3C;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x7684;&#x6EDA;&#x52A8;),&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x628A;&#x53EF;&#x53D8;&#x7684;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x8F6C;&#x4E3A;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#x7D22;&#x5F15;&#x6587;&#x4EF6;</li>
+</ul>
+<p>OffsetIndex&#x4E2D;&#x6BCF;&#x4E2A;&#x6761;&#x76EE;&#x7684;&#x7269;&#x7406;&#x683C;&#x5F0F;&#x662F;4&#x5B57;&#x8282;&#x7684;&#x76F8;&#x5BF9;offset&#x548C;4&#x5B57;&#x8282;&#x7684;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;(&#x6D88;&#x606F;&#x5728;log&#x4E2D;&#x7684;&#x7269;&#x7406;&#x4F4D;&#x7F6E;).
+&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x7EDD;&#x5BF9;offset&#x548C; position&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x7684;(OffsetPosition),&#x7EDD;&#x5BF9;offset-baseOffst=&#x76F8;&#x5BF9;offset</p>
+<p>&#x5047;&#x8BBE;baseOffset=50, &#x6D88;&#x606F;1&#x7684;offset=55(&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;offset,&#x9488;&#x5BF9;partition&#x8303;&#x56F4;), &#x76F8;&#x5BF9;offset=55-50=5 &#x6D88;&#x606F;2&#x7684;offset=56,&#x76F8;&#x5BF9;offset=56-50=6,&#x5373;&#x7D22;&#x5F15;&#x6761;&#x76EE;&#x4E2D;&#x7684;offset&#x90FD;&#x662F;&#x76F8;&#x5BF9;&#x4E8E;segmentBaseOffset&#x7684;&#x5DEE;&#x503C;.
+&#x8FD9;&#x6837;&#x53EA;&#x9700;&#x8981;4&#x4E2A;&#x5B57;&#x8282;&#x5C31;&#x53EF;&#x4EE5;&#x653E;&#x7684;&#x4E0B;,&#x800C;&#x4E14;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x7684;offset&#x662F;&#x5355;&#x8C03;&#x9012;&#x589E;&#x7684;,&#x4EE5;&#x4E00;&#x4E2A;&#x57FA;&#x7EBF;&#x4E3A;&#x51C6;,&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x91CF;&#x5C31;&#x4F1A;&#x5C11;&#x5F88;&#x591A;.
+&#x5E26;&#x6765;&#x7684;&#x989D;&#x5916;&#x5DE5;&#x4F5C;&#x662F;&#x9700;&#x8981;&#x5C06;&#x76F8;&#x5BF9;offset&#x8F6C;&#x6362;&#x4E3A;&#x5168;&#x5C40;/&#x7EDD;&#x5BF9;offset,&#x56E0;&#x4E3A;&#x5916;&#x90E8;&#x7ED9;&#x7684;offset&#x4E00;&#x5B9A;&#x662F;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9; offset.</p>
+<pre><code class="lang-scala">  <span class="hljs-comment">// Append an entry for the given offset/location pair to the index. This entry must have a larger offset than all subsequent entries.</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">append</span></span>(offset: <span class="hljs-type">Long</span>, position: <span class="hljs-type">Int</span>) {
+    inLock(lock) {
+      <span class="hljs-keyword">if</span> (size.get == <span class="hljs-number">0</span> || offset &gt; lastOffset) {
+        <span class="hljs-keyword">this</span>.mmap.putInt((offset - baseOffset).toInt)   <span class="hljs-comment">// &#x76F8;&#x5BF9;&#x4E8E;segmentBaseOffset&#x7684;&#x504F;&#x79FB;&#x91CF;</span>
+        <span class="hljs-keyword">this</span>.mmap.putInt(position)                      <span class="hljs-comment">// offset&#x5BF9;&#x5E94;&#x7684;position</span>
+        <span class="hljs-keyword">this</span>.size.incrementAndGet()
+        <span class="hljs-keyword">this</span>.lastOffset = offset
+        require(entries * <span class="hljs-number">8</span> == mmap.position, entries + <span class="hljs-string">&quot; entries but file position in index is &quot;</span> + mmap.position + <span class="hljs-string">&quot;.&quot;</span>)
+      }
+    }
+  }
+</code></pre>
+<p>&#x4E8C;&#x5206;&#x67E5;&#x627E;,&#x5148;&#x5C06;&#x76EE;&#x6807;offset&#x51CF;&#x53BB; baseOffset,&#x56E0;&#x4E3A;&#x7D22;&#x5F15;&#x5B58;&#x7684;&#x90FD;&#x662F;&#x76F8;&#x5BF9;offset.</p>
+<pre><code class="lang-scala">  <span class="hljs-comment">// Find the slot in which the largest offset less than or equal to the given target offset is stored.</span>
+  <span class="hljs-comment">// -1 if the least entry in the index is larger than the target offset or the index is empty</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">indexSlotFor</span></span>(idx: <span class="hljs-type">ByteBuffer</span>, targetOffset: <span class="hljs-type">Long</span>): <span class="hljs-type">Int</span> = {
+    <span class="hljs-keyword">val</span> relOffset = targetOffset - baseOffset           <span class="hljs-comment">// we only store the difference from the base offset so calculate that</span>
+    <span class="hljs-keyword">if</span>(entries == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>                          <span class="hljs-comment">// check if the index is empty</span>
+    <span class="hljs-keyword">if</span>(relativeOffset(idx, <span class="hljs-number">0</span>) &gt; relOffset) <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>    <span class="hljs-comment">// check if the target offset is smaller than the least offset</span>
+    <span class="hljs-comment">// binary search for the entry</span>
+    <span class="hljs-keyword">var</span> lo = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">var</span> hi = entries<span class="hljs-number">-1</span>
+    <span class="hljs-keyword">while</span>(lo &lt; hi) {
+      <span class="hljs-keyword">val</span> mid = ceil(hi/<span class="hljs-number">2.0</span> + lo/<span class="hljs-number">2.0</span>).toInt
+      <span class="hljs-keyword">val</span> found = relativeOffset(idx, mid)
+      <span class="hljs-keyword">if</span>(found == relOffset) <span class="hljs-keyword">return</span> mid
+      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(found &lt; relOffset) lo = mid
+      <span class="hljs-keyword">else</span> hi = mid - <span class="hljs-number">1</span>
+    }
+    lo
+  }
+</code></pre>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="http://www.cnblogs.com/fxjwind/p/4913703.html" target="_blank">Apache Kafka&#x6E90;&#x7801;&#x5206;&#x6790; - KafkaApis</a></li>
+<li><a href="http://www.cnblogs.com/huxi2b/p/4583249.html" target="_blank">&#x3010;&#x539F;&#x521B;&#x3011;Kafka producer&#x539F;&#x7406; (Scala&#x7248;&#x540C;&#x6B65;producer)</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kafka-socketserver.html" class="navigation navigation-prev " aria-label="Previous page: Socketserver">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kafka-isr.html" class="navigation navigation-next " aria-label="Next page: ISR">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"LogAppend","level":"1.2.8.7","depth":3,"next":{"title":"ISR","level":"1.2.8.8","depth":3,"path":"Kafka/Source-code-analysis/kafka-isr.md","ref":"./Kafka/Source-code-analysis/kafka-isr.md","articles":[]},"previous":{"title":"Socketserver","level":"1.2.8.6","depth":3,"path":"Kafka/Source-code-analysis/kafka-socketserver.md","ref":"./Kafka/Source-code-analysis/kafka-socketserver.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Kafka/Source-code-analysis/kafka-logappend.md","mtime":"2017-05-02T09:47:54.539Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1526 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Cassandra · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Logrotate/" />
+    
+    
+    <link rel="prev" href="../Java/NIO-IO.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Kafka/">
+            
+                <a href="../Kafka/">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Kafka/Producer/">
+            
+                <a href="../Kafka/Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Kafka/Producer-scala/">
+            
+                <a href="../Kafka/Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Kafka/Consumer/">
+            
+                <a href="../Kafka/Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Kafka/Stream/">
+            
+                <a href="../Kafka/Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Kafka/Connector/">
+            
+                <a href="../Kafka/Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Kafka/kafka-HA.html">
+            
+                <a href="../Kafka/kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../Kafka/kafka-controller.html">
+            
+                <a href="../Kafka/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Kafka/Source-code-analysis/">
+            
+                <a href="../Kafka/Source-code-analysis/">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                <a href="../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Zookeeper/">
+            
+                <a href="../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Zookeeper/getting-start.html">
+            
+                <a href="../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Zookeeper/managing-configuration.html">
+            
+                <a href="../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Hadoop/">
+            
+                <a href="../Hadoop/">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Hadoop/HBase/">
+            
+                <a href="../Hadoop/HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../Hadoop/HBase/getting-start.html">
+            
+                <a href="../Hadoop/HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../Hadoop/HBase/hbase-shell.html">
+            
+                <a href="../Hadoop/HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Hadoop/Hive/">
+            
+                <a href="../Hadoop/Hive/">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../Hadoop/Hive/tutorial.html">
+            
+                <a href="../Hadoop/Hive/tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../Hadoop/Hive/shell-command.html">
+            
+                <a href="../Hadoop/Hive/shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../Hadoop/Hive/HiveQL.html">
+            
+                <a href="../Hadoop/Hive/HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Hadoop/Sqoop/">
+            
+                <a href="../Hadoop/Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../Hadoop/Sqoop/tutorial.html">
+            
+                <a href="../Hadoop/Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../2017/">
+            
+                <a href="../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../2017/load-unload-jar.html">
+            
+                <a href="../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../2017/somthing-with-git.html">
+            
+                <a href="../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Angular2/">
+            
+                <a href="../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Docker/">
+            
+                <a href="../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Confluent/">
+            
+                <a href="../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Gobblin/">
+            
+                <a href="../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Gradle/">
+            
+                <a href="../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../Log4j/">
+            
+                <a href="../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../Java/NIO-IO.html">
+            
+                <a href="../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../Logrotate/">
+            
+                <a href="../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Cassandra</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cassandra">Cassandra</h1>
+<ul>
+<li>highly scalable</li>
+<li>designed to manage very large amounts of structured data</li>
+<li>no single point of failure </li>
+<li>NoSQL(Not only SQL) database</li>
+<li>Wide Column Stores</li>
+</ul>
+<h2 id="&#x6570;&#x636E;&#x6A21;&#x578B;">&#x6570;&#x636E;&#x6A21;&#x578B;</h2>
+<ul>
+<li>&#x4E8C;&#x7EF4;&#x7684;key-value &#x5B58;&#x50A8; <code>map&lt;key1, map&lt;key2,value&gt;&gt;</code></li>
+<li>BigTable(Column Family) = Cassandra(table)</li>
+<li>BigTable(Column key) = Cassandra(Row key) = primary key</li>
+</ul>
+<p>Cassandra&#x7684;row key&#x51B3;&#x5B9A;&#x4E86;&#x8BE5;&#x884C;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x54EA;&#x4E9B;&#x8282;&#x70B9;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;row key&#x9700;&#x8981;&#x6309;&#x54C8;&#x5E0C;&#x6765;&#x5B58;&#x50A8;&#xFF0C;&#x4E0D;&#x80FD;&#x987A;&#x5E8F;&#x7684;&#x626B;&#x63CF;&#x6216;&#x8BFB;&#x53D6;&#xFF0C;&#x800C;&#x4E00;&#x4E2A;row&#x5185;&#x7684;column key&#x662F;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6709;&#x5E8F;&#x7684;&#x626B;&#x63CF;&#x6216;&#x8303;&#x56F4;&#x67E5;&#x627E;</p>
+<p>Cassandra&#x7684;&#x6570;&#x636E;&#x5E76;&#x4E0D;&#x5B58;&#x50A8;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5982;GFS&#x6216;HDFS&#x4E2D;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x5B58;&#x4E8E;&#x672C;&#x5730;</p>
+<p>&#x65E5;&#x5FD7;&#x578B;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5373;&#x628A;&#x65B0;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x5728;&#x5185;&#x5B58;&#x7684;Memtable&#x4E2D;&#x5E76;&#x901A;&#x8FC7;&#x78C1;&#x76D8;&#x4E2D;&#x7684;CommitLog&#x6765;&#x505A;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x5185;&#x5B58;&#x586B;&#x6EE1;&#x540E;&#x5C06;&#x6570;&#x636E;&#x6309;&#x7167;key&#x7684;&#x987A;&#x5E8F;&#x5199;&#x8FDB;&#x4E00;&#x4E2A;&#x53EA;&#x8BFB;&#x6587;&#x4EF6;SSTable&#x4E2D;&#xFF0C;&#x6BCF;&#x6B21;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x65F6;&#x5C06;&#x6240;&#x6709;SSTable&#x548C;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#x548C;&#x5408;&#x5E76;</p>
+<h2 id="key-components-of-cassandra">Key Components of Cassandra</h2>
+<ul>
+<li>Node: where data stored</li>
+<li>Data center: a collection of related nodes</li>
+<li>Cluster: contains one or more data centers</li>
+<li>Commit log: The commit log is a crash-recovery mechanism in Cassandra. Every write operation is written to the commit log.</li>
+<li>Mem-table: a memory-resident data structure. After commit log, the data will be written to the mem-table. Sometimes, for a single-column family, there will be multiple mem-tables.</li>
+<li>SSTable: a disk file to which the data is flushed from the mem-table when its reach a threshold value.</li>
+<li>Bloom filter: a special kind of cache</li>
+</ul>
+<h2 id="cassandra-query-language">Cassandra Query Language</h2>
+<h3 id="write-operations">Write Operations</h3>
+<p>write activity -&gt; commit logs
+data -&gt; mem-table -&gt; SSTable
+automatically partitioned and replicated throughout the cluster</p>
+<h3 id="read-operations">Read Operations</h3>
+<p>Cassandra gets values from the mem-table and checks the bloom filter to find the appropriate SSTable that holds the required data.</p>
+<h2 id="cqlsh">cqlsh</h2>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cqlsh --help</td>
+<td>Shows help topics about the options of cqlsh commands.</td>
+</tr>
+<tr>
+<td>cqlsh --version</td>
+<td>Provides the version of the cqlsh you are using.</td>
+</tr>
+<tr>
+<td>cqlsh --color</td>
+<td>Directs the shell to use colored output.</td>
+</tr>
+<tr>
+<td>cqlsh --debug</td>
+<td>Shows additional debugging information.</td>
+</tr>
+<tr>
+<td>cqlsh --execute cql_statement</td>
+<td>Directs the shell to accept and execute a CQL command.</td>
+</tr>
+<tr>
+<td>cqlsh --file= &quot;file name&quot;</td>
+<td>If you use this option, Cassandra executes the command in the given file and exits.</td>
+</tr>
+<tr>
+<td>cqlsh --no-color</td>
+<td>Directs Cassandra not to use colored output.</td>
+</tr>
+<tr>
+<td>cqlsh -u &quot;user name&quot;</td>
+<td>Using this option, you can authenticate a user. The default user name is: cassandra.</td>
+</tr>
+<tr>
+<td>cqlsh-p &quot;pass word&quot;</td>
+<td>Using this option, you can authenticate a user with a password. The default password is: cassandra.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="documented-shell-commands">Documented Shell Commands</h3>
+<p>Given below are the Cqlsh documented shell commands. These are the commands used to perform tasks such as displaying help topics, exit from cqlsh, describe,etc.</p>
+<ul>
+<li><p><strong>HELP</strong> - Displays help topics for all cqlsh commands.</p>
+</li>
+<li><p><strong>CAPTURE</strong> - Captures the output of a command and adds it to a file.</p>
+</li>
+<li><p><strong>CONSISTENCY</strong> - Shows the current consistency level, or sets a new consistency level.</p>
+</li>
+<li><p><strong>COPY</strong> - Copies data to and from Cassandra.</p>
+</li>
+</ul>
+<blockquote>
+<p><code>COPY emp (emp_id, emp_city, emp_name, emp_phone,emp_sal) TO &apos;myfile&apos;;</code></p>
+</blockquote>
+<ul>
+<li><strong>DESCRIBE</strong> - Describes the current cluster of Cassandra and its objects.</li>
+</ul>
+<blockquote>
+<p><code>describe cluster;</code>
+<code>describe keyspaces;</code>
+<code>describe tables;</code>
+<code>describe table emp;</code>
+<code>describe type card_details;</code>
+<code>DESCRIBE TYPES;</code></p>
+</blockquote>
+<ul>
+<li><p><strong>EXPAND</strong> - Expands the output of a query vertically.</p>
+</li>
+<li><p><strong>EXIT</strong> - Using this command, you can terminate cqlsh.</p>
+</li>
+<li><p><strong>PAGING</strong> - Enables or disables query paging.</p>
+</li>
+<li><p><strong>SHOW</strong> - Displays the details of current cqlsh session such as Cassandra version, host, or data type assumptions.</p>
+</li>
+<li><p><strong>SOURCE</strong> - Executes a file that contains CQL statements.</p>
+</li>
+<li><p><strong>TRACING</strong> - Enables or disables request tracing.</p>
+</li>
+</ul>
+<h3 id="cql-data-definition-commands">CQL Data Definition Commands</h3>
+<ul>
+<li><strong>CREATE KEYSPACE</strong> - Creates a KeySpace in Cassandra.</li>
+</ul>
+<blockquote>
+<p><code>CREATE KEYSPACE &lt;identifier&gt; WITH &lt;properties&gt;</code></p>
+<pre><code>CREATE KEYSPACE &quot;KeySpace Name&quot;
+WITH replication = {&apos;class&apos;: &apos;Strategy name&apos;, &apos;replication_factor&apos;: &apos;No.Of replicas&apos;}
+AND durable_writes = &apos;Boolean value&apos;;
+SELECT * FROM system.schema_keyspaces;
+</code></pre><p>```
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;</p>
+</blockquote>
+<p>public class Create_KeySpace {</p>
+<p>   public static void main(String args[]){</p>
+<pre><code>  //Query
+  String query = &quot;CREATE KEYSPACE tp WITH replication &quot;
+     + &quot;= {&apos;class&apos;:&apos;SimpleStrategy&apos;, &apos;replication_factor&apos;:1};&quot;;
+
+  //creating Cluster object
+  Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+  //Creating Session object
+  Session session = cluster.connect();
+
+  //Executing the query
+  session.execute(query);
+
+  //using the KeySpace
+  session.execute(&quot;USE tp&quot;);
+  System.out.println(&quot;Keyspace created&quot;); 
+</code></pre><p>   }
+}</p>
+<pre><code>
+- **USE** - Connects to a created KeySpace.
+
+- **ALTER KEYSPACE** - Changes the properties of a KeySpace.
+
+&gt; `ALTER KEYSPACE &lt;identifier&gt; WITH &lt;properties&gt;`
+</code></pre><p>ALTER KEYSPACE &quot;KeySpace Name&quot;
+WITH replication = {&apos;class&apos;: &apos;Strategy name&apos;, &apos;replication_factor&apos;: &apos;No.Of replicas&apos;};
+ALTER KEYSPACE tutorialspoint
+WITH replication = {&apos;class&apos;:&apos;NetworkTopologyStrategy&apos;, &apos;replication_factor&apos;: 3};
+ALTER KEYSPACE test
+WITH REPLICATION = {&apos;class&apos; : &apos;NetworkTopologyStrategy&apos;, &apos;datacenter1&apos; : 3}
+AND DURABLE_WRITES = true;</p>
+<pre><code>```
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class Alter_KeySpace {
+   public static void main(String args[]){
+
+      //Query
+      String query = &quot;ALTER KEYSPACE tp WITH replication &quot; + &quot;= {&apos;class&apos;:&apos;NetworkTopologyStrategy&apos;, &apos;datacenter1&apos;:3}&quot;
+         + &quot;AND DURABLE_WRITES = false;&quot;;
+
+      //Creating Cluster object
+      Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+      //Creating Session object
+      Session session = cluster.connect();
+
+      //Executing the query
+      session.execute(query);
+
+      System.out.println(&quot;Keyspace altered&quot;);
+   }
+}
+</code></pre><ul>
+<li><strong>DROP KEYSPACE</strong> - Removes a KeySpace</li>
+</ul>
+<blockquote>
+<p><code>DROP KEYSPACE &lt;identifier&gt;;</code>
+<code>DROP KEYSPACE &quot;keySpaceName&quot;;</code>
+```
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;</p>
+</blockquote>
+<p>public class Drop_KeySpace {</p>
+<p>   public static void main(String args[]){</p>
+<pre><code>  //Query
+  String query = &quot;Drop KEYSPACE tp&quot;;
+
+  //creating Cluster object
+  Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+  //Creating Session object
+  Session session = cluster.connect();
+
+  //Executing the query
+  session.execute(query);
+  System.out.println(&quot;Keyspace deleted&quot;);
+</code></pre><p>   }
+}</p>
+<pre><code>
+- **CREATE TABLE** - Creates a table in a KeySpace.
+</code></pre><p>CREATE (TABLE | COLUMNFAMILY) <tablename>
+(&apos;<column-definition>&apos; , &apos;<column-definition>&apos;)
+(WITH <option> AND </option><option>)</option></column-definition></column-definition></tablename></p>
+<pre><code>```
+CREATE TABLE tablename(
+   column1 name datatype PRIMARYKEY,
+   column2 name data type,
+   column3 name data type.
+   )
+</code></pre><pre><code>CREATE TABLE tablename(
+   column1 name datatype PRIMARYKEY,
+   column2 name data type,
+   column3 name data type,
+   PRIMARY KEY (column1)
+   )
+</code></pre><pre><code>CREATE TABLE emp(
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint
+   );
+</code></pre><pre><code>import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class Create_Table {
+
+   public static void main(String args[]){
+
+      //Query
+      String query = &quot;CREATE TABLE emp(emp_id int PRIMARY KEY, &quot;
+         + &quot;emp_name text, &quot;
+         + &quot;emp_city text, &quot;
+         + &quot;emp_sal varint, &quot;
+         + &quot;emp_phone varint );&quot;;
+
+      //Creating Cluster object
+      Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+      //Creating Session object
+      Session session = cluster.connect(&quot;tp&quot;);
+
+      //Executing the query
+      session.execute(query);
+
+      System.out.println(&quot;Table created&quot;);
+   }
+}
+</code></pre><ul>
+<li><strong>ALTER TABLE</strong> - Modifies the column properties of a table.</li>
+</ul>
+<p><code>ALTER (TABLE | COLUMNFAMILY) &lt;tablename&gt; &lt;instruction&gt;;</code></p>
+<pre><code>ALTER TABLE table name
+ADD  new column datatype;
+ALTER table name
+DROP column name;
+</code></pre><pre><code>import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class Add_column {
+
+   public static void main(String args[]){
+
+      //Query
+      String query = &quot;ALTER TABLE emp ADD emp_email text;&quot;;
+      //Query
+      //String query = &quot;ALTER TABLE emp DROP emp_email;&quot;;
+
+      //Creating Cluster object
+      Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+      //Creating Session object
+      Session session = cluster.connect(&quot;tp&quot;);
+
+      //Executing the query
+      session.execute(query);
+
+      System.out.println(&quot;Column added&quot;);
+   }
+}
+</code></pre><ul>
+<li><p><strong>DROP TABLE</strong> - Removes a table.</p>
+</li>
+<li><p><strong>TRUNCATE</strong> - Removes all the data from a table.</p>
+</li>
+<li><p><strong>CREATE INDEX</strong> - Defines a new index on a single column of a table.</p>
+</li>
+</ul>
+<blockquote>
+<p><code>CREATE INDEX &lt;identifier&gt; ON &lt;tablename&gt;;</code>
+<code>CREATE INDEX name ON emp1 (emp_name);</code></p>
+</blockquote>
+<pre><code>import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class Create_Index {
+
+   public static void main(String args[]){
+
+      //Query
+      String query = &quot;CREATE INDEX name ON emp1 (emp_name);&quot;;
+      Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+      //Creating Session object
+      Session session = cluster.connect(&quot;tp&quot;);
+
+      //Executing the query
+      session.execute(query);
+      System.out.println(&quot;Index created&quot;);
+   }
+}
+</code></pre><ul>
+<li><strong>DROP INDEX</strong> - Deletes a named index.<blockquote>
+<p><code>drop index name;</code></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="cql-data-manipulation-commands">CQL Data Manipulation Commands</h3>
+<ul>
+<li><strong>INSERT</strong> - Adds columns for a row in a table.<pre><code>INSERT INTO &lt;tablename&gt;
+(&lt;column1 name&gt;, &lt;column2 name&gt;....)
+VALUES (&lt;value1&gt;, &lt;value2&gt;....)
+USING &lt;option&gt;;
+</code></pre><blockquote>
+<p><code>INSERT INTO emp (emp_id, emp_name, emp_city, emp_phone, emp_sal) VALUES(1,&apos;ram&apos;, &apos;Hyderabad&apos;, 9848022338, 50000);</code>
+```
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;</p>
+</blockquote>
+</li>
+</ul>
+<p>public class Create_Data {</p>
+<p>   public static void main(String args[]){</p>
+<pre><code>  //queries
+  String query1 = &quot;INSERT INTO emp (emp_id, emp_name, emp_city, emp_phone,  emp_sal)&quot;
+
+     + &quot; VALUES(1,&apos;ram&apos;, &apos;Hyderabad&apos;, 9848022338, 50000);&quot; ;
+
+  String query2 = &quot;INSERT INTO emp (emp_id, emp_name, emp_city,
+     emp_phone, emp_sal)&quot;
+
+     + &quot; VALUES(2,&apos;robin&apos;, &apos;Hyderabad&apos;, 9848022339, 40000);&quot; ;
+
+  String query3 = &quot;INSERT INTO emp (emp_id, emp_name, emp_city, emp_phone, emp_sal)&quot;
+
+     + &quot; VALUES(3,&apos;rahman&apos;, &apos;Chennai&apos;, 9848022330, 45000);&quot; ;
+
+  //Creating Cluster object
+  Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+  //Creating Session object
+  Session session = cluster.connect(&quot;tp&quot;);
+
+  //Executing the query
+  session.execute(query1);
+
+  session.execute(query2);
+
+  session.execute(query3);
+
+  System.out.println(&quot;Data created&quot;);
+</code></pre><p>   }
+}</p>
+<pre><code>
+- **UPDATE** - Updates a column of a row.
+</code></pre><p>UPDATE <tablename>
+SET <column name=""> = <new value=""></new></column></tablename></p>
+<p><column name=""> = <value>....
+WHERE <condition>;</condition></value></column></p>
+<pre><code>
+- **DELETE** - Deletes data from a table.
+&gt; `DELETE FROM emp WHERE emp_id=3;`
+
+- **BATCH** - Executes multiple DML statements at once.
+</code></pre><p>BEGIN BATCH</p>
+<p><insert-stmt>/ <update-stmt>/ <delete-stmt>
+APPLY BATCH</delete-stmt></update-stmt></insert-stmt></p>
+<pre><code>```
+BEGIN BATCH
+INSERT INTO emp (emp_id, emp_city, emp_name, emp_phone, emp_sal) values(  4,&apos;Pune&apos;,&apos;rajeev&apos;,9848022331, 30000);
+UPDATE emp SET emp_sal = 50000 WHERE emp_id =3;
+DELETE emp_city FROM emp WHERE emp_id = 2;
+APPLY BATCH;
+</code></pre><pre><code>import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class Batch {
+
+   public static void main(String args[]){
+
+      //query
+      String query =&quot; BEGIN BATCH INSERT INTO emp (emp_id, emp_city,
+         emp_name, emp_phone, emp_sal) values( 4,&apos;Pune&apos;,&apos;rajeev&apos;,9848022331, 30000);&quot;
+
+         + &quot;UPDATE emp SET emp_sal = 50000 WHERE emp_id =3;&quot;
+         + &quot;DELETE emp_city FROM emp WHERE emp_id = 2;&quot;
+         + &quot;APPLY BATCH;&quot;;
+
+      //Creating Cluster object
+      Cluster cluster = Cluster.builder().addContactPoint(&quot;127.0.0.1&quot;).build();
+
+      //Creating Session object
+      Session session = cluster.connect(&quot;tp&quot;);
+
+      //Executing the query
+      session.execute(query);
+
+      System.out.println(&quot;Changes done&quot;);
+   }
+}
+</code></pre><h3 id="cql-clauses">CQL Clauses</h3>
+<ul>
+<li><p><strong>SELECT</strong> - This clause reads data from a table</p>
+</li>
+<li><p><strong>WHERE</strong> - The where clause is used along with select to read a specific data.</p>
+</li>
+<li><p><strong>ORDERBY</strong> - The orderby clause is used along with select to read a specific data in a specific order.</p>
+</li>
+</ul>
+<h2 id="data-type">Data type</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Type</th>
+<th>Constants</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ascii</td>
+<td>strings</td>
+<td>Represents</td>
+<td>ASCII character string</td>
+</tr>
+<tr>
+<td>bigint</td>
+<td>bigint</td>
+<td>Represents 64-bit signed long</td>
+</tr>
+<tr>
+<td>blob</td>
+<td>blobs</td>
+<td>Represents arbitrary bytes</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>booleans</td>
+<td>Represents true or false</td>
+</tr>
+<tr>
+<td>counter</td>
+<td>integers</td>
+<td>Represents counter column</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>integers, floats</td>
+<td>Represents variable-precision decimal</td>
+</tr>
+<tr>
+<td>double</td>
+<td>integers</td>
+<td>Represents 64-bit IEEE-754 floating point</td>
+</tr>
+<tr>
+<td>float</td>
+<td>integers, floats</td>
+<td>Represents 32-bit IEEE-754 floating point</td>
+</tr>
+<tr>
+<td>inet</td>
+<td>strings</td>
+<td>Represents an IP address, IPv4 or IPv6</td>
+</tr>
+<tr>
+<td>int</td>
+<td>integers</td>
+<td>Represents 32-bit signed int</td>
+</tr>
+<tr>
+<td>text</td>
+<td>strings</td>
+<td>Represents UTF8 encoded string</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>integers, strings</td>
+<td>Represents a timestamp</td>
+</tr>
+<tr>
+<td>timeuuid</td>
+<td>uuids</td>
+<td>Represents type 1 UUID</td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>uuids</td>
+<td>Represents type 1 or type 4</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>UUID</td>
+</tr>
+<tr>
+<td>varchar</td>
+<td>strings</td>
+<td>Represents uTF8 encoded string</td>
+</tr>
+<tr>
+<td>varint</td>
+<td>integers</td>
+<td>Represents arbitrary-precision integer</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Collection</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list</td>
+<td>A list is a collection of one or more ordered elements.</td>
+</tr>
+<tr>
+<td>map</td>
+<td>A map is a collection of key-value pairs.</td>
+</tr>
+<tr>
+<td>set</td>
+<td>A set is a collection of one or more elements.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ser-defined-datatypes">ser-defined datatypes</h3>
+<ul>
+<li><p><strong>CREATE</strong> TYPE - Creates a user-defined datatype.</p>
+</li>
+<li><p><strong>ALTER</strong> TYPE - Modifies a user-defined datatype.</p>
+</li>
+<li><p><strong>DROP</strong> TYPE - Drops a user-defined datatype.</p>
+</li>
+<li><p><strong>DESCRIBE</strong> TYPE - Describes a user-defined datatype.</p>
+</li>
+<li><p><strong>DESCRIBE</strong> TYPES - Describes user-defined datatypes.</p>
+</li>
+</ul>
+<h1 id="more"><a href="https://www.tutorialspoint.com/cassandra/cassandra_cql_collections.htm" target="_blank">more</a></h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Java/NIO-IO.html" class="navigation navigation-prev " aria-label="Previous page: Java NIO vs IO">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Logrotate/" class="navigation navigation-next " aria-label="Next page: Logrotate">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cassandra","level":"1.13","depth":1,"next":{"title":"Logrotate","level":"1.14","depth":1,"path":"Logrotate/README.md","ref":"./Logrotate/README.md","articles":[]},"previous":{"title":"Java NIO vs IO","level":"1.12","depth":1,"path":"Java/NIO-IO.md","ref":"./Java/NIO-IO.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cassandra/README.md","mtime":"2017-04-18T09:29:45.369Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

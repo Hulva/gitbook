@@ -1,0 +1,1089 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HiveQL · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Sqoop/" />
+    
+    
+    <link rel="prev" href="shell-command.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Kafka/">
+            
+                <a href="../../Kafka/">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../Kafka/Producer/">
+            
+                <a href="../../Kafka/Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Kafka/Producer-scala/">
+            
+                <a href="../../Kafka/Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../Kafka/Consumer/">
+            
+                <a href="../../Kafka/Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../Kafka/Stream/">
+            
+                <a href="../../Kafka/Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../Kafka/Connector/">
+            
+                <a href="../../Kafka/Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../Kafka/kafka-HA.html">
+            
+                <a href="../../Kafka/kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../Kafka/kafka-controller.html">
+            
+                <a href="../../Kafka/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../Kafka/Source-code-analysis/">
+            
+                <a href="../../Kafka/Source-code-analysis/">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="../../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="../../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="../../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="../../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="../../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="../../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="../../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="../../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="../../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="../../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../HBase/">
+            
+                <a href="../HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../HBase/getting-start.html">
+            
+                <a href="../HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../HBase/hbase-shell.html">
+            
+                <a href="../HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="tutorial.html">
+            
+                <a href="tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="shell-command.html">
+            
+                <a href="shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2.3" data-path="HiveQL.html">
+            
+                <a href="HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Sqoop/">
+            
+                <a href="../Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../Sqoop/tutorial.html">
+            
+                <a href="../Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >HiveQL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="hiveql">HiveQL</h1>
+<blockquote>
+<p>Hive Query Language</p>
+</blockquote>
+<pre><code>SELECT [ALL | DISTINCT] select_expr, select_expr, ... 
+FROM table_reference 
+[WHERE where_condition] 
+[GROUP BY col_list] 
+[HAVING having_condition] 
+[CLUSTER BY col_list | [DISTRIBUTE BY col_list] [SORT BY col_list]] 
+[LIMIT number];
+</code></pre><h2 id="example">Example</h2>
+<p>SELECT Where </p>
+<pre><code>+------+--------------+-------------+-------------------+--------+
+| ID   | Name         | Salary      | Designation       | Dept   |
++------+--------------+-------------+-------------------+--------+
+|1201  | Gopal        | 45000       | Technical manager | TP     |
+|1202  | Manisha      | 45000       | Proofreader       | PR     |
+|1203  | Masthanvali  | 40000       | Technical writer  | TP     |
+|1204  | Krian        | 40000       | Hr Admin          | HR     |
+|1205  | Kranthi      | 30000       | Op Admin          | Admin  | 
++------+--------------+-------------+-------------------+--------+
+</code></pre><pre><code>hive&gt; SELECT * FROM employee WHERE salary&gt;30000;
++------+--------------+-------------+-------------------+--------+
+| ID   | Name         | Salary      | Designation       | Dept   |
++------+--------------+-------------+-------------------+--------+
+|1201  | Gopal        | 45000       | Technical manager | TP     |
+|1202  | Manisha      | 45000       | Proofreader       | PR     |
+|1203  | Masthanvali  | 40000       | Technical writer  | TP     |
+|1204  | Krian        | 40000       | Hr Admin          | HR     |
++------+--------------+-------------+-------------------+--------+
+</code></pre><p>SELECT ORDER BY</p>
+<pre><code>hive&gt; SELECT Id, Name, Dept FROM employee ORDER BY DEPT;
++------+--------------+-------------+-------------------+--------+
+| ID   | Name         | Salary      | Designation       | Dept   |
++------+--------------+-------------+-------------------+--------+
+|1205  | Kranthi      | 30000       | Op Admin          | Admin  |
+|1204  | Krian        | 40000       | Hr Admin          | HR     |
+|1202  | Manisha      | 45000       | Proofreader       | PR     |
+|1201  | Gopal        | 45000       | Technical manager | TP     |
+|1203  | Masthanvali  | 40000       | Technical writer  | TP     |
++------+--------------+-------------+-------------------+--------+
+</code></pre><p>SELECT GROUP BY</p>
+<pre><code>hive&gt; SELECT Dept,count(*) FROM employee GROUP BY DEPT;
++------+--------------+ 
+| Dept | Count(*)     | 
++------+--------------+ 
+|Admin |    1         | 
+|PR    |    2         | 
+|TP    |    3         | 
++------+--------------+
+</code></pre><p>SELECT JOINS</p>
+<pre><code>+----+----------+-----+-----------+----------+ 
+| ID | NAME     | AGE | ADDRESS   | SALARY   | 
++----+----------+-----+-----------+----------+ 
+| 1  | Ramesh   | 32  | Ahmedabad | 2000.00  |  
+| 2  | Khilan   | 25  | Delhi     | 1500.00  |  
+| 3  | kaushik  | 23  | Kota      | 2000.00  | 
+| 4  | Chaitali | 25  | Mumbai    | 6500.00  | 
+| 5  | Hardik   | 27  | Bhopal    | 8500.00  | 
+| 6  | Komal    | 22  | MP        | 4500.00  | 
+| 7  | Muffy    | 24  | Indore    | 10000.00 | 
++----+----------+-----+-----------+----------+
+</code></pre><pre><code>+-----+---------------------+-------------+--------+ 
+|OID  | DATE                | CUSTOMER_ID | AMOUNT | 
++-----+---------------------+-------------+--------+ 
+| 102 | 2009-10-08 00:00:00 |           3 | 3000   | 
+| 100 | 2009-10-08 00:00:00 |           3 | 1500   | 
+| 101 | 2009-11-20 00:00:00 |           2 | 1560   | 
+| 103 | 2008-05-20 00:00:00 |           4 | 2060   | 
++-----+---------------------+-------------+--------+
+</code></pre><ul>
+<li>JOIN <pre><code>hive&gt; SELECT c.ID, c.NAME, c.AGE, o.AMOUNT 
+FROM CUSTOMERS c JOIN ORDERS o 
+ON (c.ID = o.CUSTOMER_ID);
++----+----------+-----+--------+ 
+| ID | NAME     | AGE | AMOUNT | 
++----+----------+-----+--------+ 
+| 3  | kaushik  | 23  | 3000   | 
+| 3  | kaushik  | 23  | 1500   | 
+| 2  | Khilan   | 25  | 1560   | 
+| 4  | Chaitali | 25  | 2060   | 
++----+----------+-----+--------+
+</code></pre></li>
+<li>LEFT OUTER JOIN<pre><code>hive&gt; SELECT c.ID, c.NAME, o.AMOUNT, o.DATE 
+FROM CUSTOMERS c 
+LEFT OUTER JOIN ORDERS o 
+ON (c.ID = o.CUSTOMER_ID);
++----+----------+--------+---------------------+ 
+| ID | NAME     | AMOUNT | DATE                | 
++----+----------+--------+---------------------+ 
+| 1  | Ramesh   | NULL   | NULL                | 
+| 2  | Khilan   | 1560   | 2009-11-20 00:00:00 | 
+| 3  | kaushik  | 3000   | 2009-10-08 00:00:00 | 
+| 3  | kaushik  | 1500   | 2009-10-08 00:00:00 | 
+| 4  | Chaitali | 2060   | 2008-05-20 00:00:00 | 
+| 5  | Hardik   | NULL   | NULL                | 
+| 6  | Komal    | NULL   | NULL                | 
+| 7  | Muffy    | NULL   | NULL                | 
++----+----------+--------+---------------------+
+</code></pre></li>
+<li>RIGHT OUTER JOIN <pre><code>hive&gt; SELECT c.ID, c.NAME, o.AMOUNT, o.DATE 
+FROM CUSTOMERS c 
+RIGHT OUTER JOIN ORDERS o 
+ON (c.ID = o.CUSTOMER_ID);
++------+----------+--------+---------------------+ 
+| ID   | NAME     | AMOUNT | DATE                | 
++------+----------+--------+---------------------+ 
+| 3    | kaushik  | 3000   | 2009-10-08 00:00:00 | 
+| 3    | kaushik  | 1500   | 2009-10-08 00:00:00 | 
+| 2    | Khilan   | 1560   | 2009-11-20 00:00:00 | 
+| 4    | Chaitali | 2060   | 2008-05-20 00:00:00 | 
++------+----------+--------+---------------------+
+</code></pre></li>
+<li>FULL OUTER JOIN <pre><code>hive&gt; SELECT c.ID, c.NAME, o.AMOUNT, o.DATE 
+FROM CUSTOMERS c 
+FULL OUTER JOIN ORDERS o 
+ON (c.ID = o.CUSTOMER_ID);
++------+----------+--------+---------------------+ 
+| ID   | NAME     | AMOUNT | DATE                | 
++------+----------+--------+---------------------+ 
+| 1    | Ramesh   | NULL   | NULL                | 
+| 2    | Khilan   | 1560   | 2009-11-20 00:00:00 | 
+| 3    | kaushik  | 3000   | 2009-10-08 00:00:00 | 
+| 3    | kaushik  | 1500   | 2009-10-08 00:00:00 | 
+| 4    | Chaitali | 2060   | 2008-05-20 00:00:00 | 
+| 5    | Hardik   | NULL   | NULL                | 
+| 6    | Komal    | NULL   | NULL                |
+| 7    | Muffy    | NULL   | NULL                |  
+| 3    | kaushik  | 3000   | 2009-10-08 00:00:00 | 
+| 3    | kaushik  | 1500   | 2009-10-08 00:00:00 | 
+| 2    | Khilan   | 1560   | 2009-11-20 00:00:00 | 
+| 4    | Chaitali | 2060   | 2008-05-20 00:00:00 | 
++------+----------+--------+---------------------+
+</code></pre></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="shell-command.html" class="navigation navigation-prev " aria-label="Previous page: Hive Shell Command">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Sqoop/" class="navigation navigation-next " aria-label="Next page: Sqoop">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HiveQL","level":"1.4.2.3","depth":3,"next":{"title":"Sqoop","level":"1.4.3","depth":2,"path":"Hadoop/Sqoop/README.md","ref":"./Hadoop/Sqoop/README.md","articles":[{"title":"Sqoop Tutorial","level":"1.4.3.1","depth":3,"path":"Hadoop/Sqoop/tutorial.md","ref":"./Hadoop/Sqoop/tutorial.md","articles":[]}]},"previous":{"title":"Hive Shell Command","level":"1.4.2.2","depth":3,"path":"Hadoop/Hive/shell-command.md","ref":"./Hadoop/Hive/shell-command.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Hadoop/Hive/HiveQL.md","mtime":"2017-01-14T06:52:28.762Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

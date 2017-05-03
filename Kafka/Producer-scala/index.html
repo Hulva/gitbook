@@ -1,0 +1,1444 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Producer-Scala · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Consumer/" />
+    
+    
+    <link rel="prev" href="../Producer/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Producer/">
+            
+                <a href="../Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Consumer/">
+            
+                <a href="../Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Stream/">
+            
+                <a href="../Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Connector/">
+            
+                <a href="../Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../kafka-HA.html">
+            
+                <a href="../kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../kafka-controller.html">
+            
+                <a href="../kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Source-code-analysis/">
+            
+                <a href="../Source-code-analysis/">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Source-code-analysis/kafka-schedule.html">
+            
+                <a href="../Source-code-analysis/kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Source-code-analysis/kafka-zkUtils.html">
+            
+                <a href="../Source-code-analysis/kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Source-code-analysis/kafka-metric-reporter.html">
+            
+                <a href="../Source-code-analysis/kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../Source-code-analysis/kafka-log-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../Source-code-analysis/kafka-metadata-cache.html">
+            
+                <a href="../Source-code-analysis/kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../Source-code-analysis/kafka-socketserver.html">
+            
+                <a href="../Source-code-analysis/kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../Source-code-analysis/kafka-logappend.html">
+            
+                <a href="../Source-code-analysis/kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../Source-code-analysis/kafka-isr.html">
+            
+                <a href="../Source-code-analysis/kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="../Source-code-analysis/kafka-replica-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="../Source-code-analysis/kafka-controller.html">
+            
+                <a href="../Source-code-analysis/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="../Source-code-analysis/kafka-admin-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="../Source-code-analysis/kafka-group-coordinator.html">
+            
+                <a href="../Source-code-analysis/kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="../Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                <a href="../Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="../Source-code-analysis/kafka-authorizer.html">
+            
+                <a href="../Source-code-analysis/kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="../Source-code-analysis/kafka-apis.html">
+            
+                <a href="../Source-code-analysis/kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="../Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="../Source-code-analysis/kafka-health-checker.html">
+            
+                <a href="../Source-code-analysis/kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="../Source-code-analysis/kafka-checkpoint.html">
+            
+                <a href="../Source-code-analysis/kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Hadoop/">
+            
+                <a href="../../Hadoop/">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Hadoop/HBase/">
+            
+                <a href="../../Hadoop/HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../Hadoop/HBase/getting-start.html">
+            
+                <a href="../../Hadoop/HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../Hadoop/HBase/hbase-shell.html">
+            
+                <a href="../../Hadoop/HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Hadoop/Hive/">
+            
+                <a href="../../Hadoop/Hive/">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../Hadoop/Hive/tutorial.html">
+            
+                <a href="../../Hadoop/Hive/tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../Hadoop/Hive/shell-command.html">
+            
+                <a href="../../Hadoop/Hive/shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../Hadoop/Hive/HiveQL.html">
+            
+                <a href="../../Hadoop/Hive/HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Hadoop/Sqoop/">
+            
+                <a href="../../Hadoop/Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../Hadoop/Sqoop/tutorial.html">
+            
+                <a href="../../Hadoop/Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Producer-Scala</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="producer-scala">Producer-Scala</h1>
+<blockquote>
+<p>Kafka&#x7684;Producer Scala&#x5BA2;&#x6237;&#x7AEF;API&#x5B9E;&#x73B0;</p>
+</blockquote>
+<p>Scala OldProducer</p>
+<p>scala&#x7248;&#x672C;&#x7684;&#x751F;&#x4EA7;&#x8005;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x793A;&#x4F8B;: &#x9762;&#x5411;KeyedMessage,&#x6307;&#x5B9A;&#x4E86;topic&#x548C;&#x6D88;&#x606F;&#x5185;&#x5BB9;.</p>
+<pre><code class="lang-code">    Properties props = new Properties();
+    props.put(&quot;metadata.broker.list&quot;, &quot;192.168.4.31:9092&quot;);
+    props.put(&quot;serializer.class&quot;, &quot;kafka.serializer.StringEncoder&quot;);
+    Producer&lt;Integer,String&gt; producer = new Producer&lt;Integer, String&gt;(new ProducerConfig(props));
+    KeyedMessage&lt;Integer, String&gt; data = new KeyedMessage&lt;Integer, String&gt;(&quot;myTopic&quot;, &quot;message&quot;);
+    producer.send(data);
+    producer.close();
+</code></pre>
+<blockquote>
+<p>&#x95EE;:core&#x4E0B;&#x4E5F;&#x6709;Producer&#x548C;Consumer.scala, &#x548C;clients&#x4E2D;&#x7684;KafkaProducer,KafkaConsumer&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;?
+&#x7B54;:&#x4ECE;ConsoleProducer&#x770B;&#x5230;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;:OldProducer-&gt;scala&#x7684;Producer,NewShinyProducer-&gt;KafkaProducer</p>
+</blockquote>
+<pre><code class="lang-scala">    <span class="hljs-keyword">val</span> producer = <span class="hljs-keyword">if</span>(config.useOldProducer) {
+        <span class="hljs-keyword">new</span> <span class="hljs-type">OldProducer</span>(getOldProducerProps(config))
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">new</span> <span class="hljs-type">NewShinyProducer</span>(getNewProducerProps(config))
+    }
+</code></pre>
+<p>&#x65E7;&#x7684;Producer&#x6D88;&#x606F;&#x7528; KeyedMessage,&#x65B0;&#x7684;&#x7528;ProducerRecord.&#x4E0D;&#x540C;&#x7684;Producer&#x5B9E;&#x73B0;,&#x7528;trait&#x5B9A;&#x4E49;&#x5171;&#x540C;&#x7684; send&#x63A5;&#x53E3;.
+&#x56E0;&#x4E3A;&#x6D88;&#x606F;&#x6700;&#x7EC8;&#x662F;&#x4EE5;&#x5B57;&#x8282;&#x7684;&#x5F62;&#x5F0F;&#x5B58;&#x50A8;&#x5728;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x4E2D;&#x7684;,&#x6240;&#x4EE5;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#x7684;key&#x548C; value&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x5B9E;&#x73B0;&#x7684;&#x5171;&#x540C;&#x5B58;&#x50A8;&#x7ED3;&#x6784;.</p>
+<pre><code class="lang-scala">    <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">BaseProducer</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send</span></span>(topic: <span class="hljs-type">String</span>, key: <span class="hljs-type">Array</span>[<span class="hljs-type">Byte</span>], value: <span class="hljs-type">Array</span>[<span class="hljs-type">Byte</span>])
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">close</span></span>()
+    }
+</code></pre>
+<p><img src="20160122151636197" alt=""></p>
+<p>&#x7528;scala&#x5B9E;&#x73B0;&#x7684; Producer&#x6784;&#x9020;&#x65B9;&#x5F0F;&#x662F;&#x4E00;&#x6837;&#x7684;,&#x9700;&#x8981;&#x6307;&#x5B9A;&#x5206;&#x533A;&#x65B9;&#x5F0F;,Key,Value&#x7684;&#x5E8F;&#x5217;&#x5316;.&#x5982;&#x679C;&#x662F;&#x5F02;&#x6B65;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x53D1;&#x9001;&#x7EBF;&#x7A0B;.
+&#x5728;java&#x7248;&#x672C;&#x4E2D;&#x7528;&#x4E86; RecordAccumulator,RecordBatch,MemoryRecords&#x7B49;&#x6765;&#x7F13;&#x5B58;&#x4E00;&#x6279;&#x6D88;&#x606F;,scala&#x7248;&#x672C;&#x7528;&#x7B80;&#x5355;&#x7684;&#x961F;&#x5217;&#x6765;&#x7F13;&#x5B58;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Producer</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>](<span class="hljs-params">val config: <span class="hljs-type">ProducerConfig</span>, private val eventHandler: <span class="hljs-type">EventHandler</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]</span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">Logging</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> queue = <span class="hljs-keyword">new</span> <span class="hljs-type">LinkedBlockingQueue</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]](config.queueBufferingMaxMessages)
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> producerSendThread: <span class="hljs-type">ProducerSendThread</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>] = <span class="hljs-literal">null</span>
+  config.producerType <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;sync&quot;</span> =&gt;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;async&quot;</span> =&gt;
+      sync = <span class="hljs-literal">false</span>
+      producerSendThread = <span class="hljs-keyword">new</span> <span class="hljs-type">ProducerSendThread</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>](<span class="hljs-string">&quot;ProducerSendThread-&quot;</span>+config.clientId, queue, eventHandler,config.queueBufferingMaxMs, config.batchNumMessages, config.clientId)
+      producerSendThread.start()
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">this</span></span>(config: <span class="hljs-type">ProducerConfig</span>) = <span class="hljs-keyword">this</span>(config, <span class="hljs-keyword">new</span> <span class="hljs-type">DefaultEventHandler</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>](config,
+                                      <span class="hljs-type">CoreUtils</span>.createObject[<span class="hljs-type">Partitioner</span>](config.partitionerClass, config.props),
+                                      <span class="hljs-type">CoreUtils</span>.createObject[<span class="hljs-type">Encoder</span>[<span class="hljs-type">V</span>]](config.serializerClass, config.props),
+                                      <span class="hljs-type">CoreUtils</span>.createObject[<span class="hljs-type">Encoder</span>[<span class="hljs-type">K</span>]](config.keySerializerClass, config.props),
+                                      <span class="hljs-keyword">new</span> <span class="hljs-type">ProducerPool</span>(config)))
+}
+</code></pre>
+<p>&#x6CE8;&#x610F;ProducerSendThread&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x6D88;&#x606F;&#x4E5F;&#x662F;&#x901A;&#x8FC7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668; eventHandler&#x7684;,&#x5F53;&#x7136;&#x5C11;&#x4E0D;&#x4E86;&#x963B;&#x585E;&#x961F;&#x5217;queue.
+&#x540C;&#x6B65;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;, &#x5F02;&#x6B65;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5219;&#x4F1A;&#x52A0;&#x5165;&#x5230;&#x963B;&#x585E;&#x961F;&#x5217;BlockingQueue,
+&#x901A;&#x8FC7;&#x540E;&#x53F0;ProducerSendThread&#x7EBF;&#x7A0B;&#x5B8C;&#x6210;&#x5F02;&#x6B65;&#x53D1;&#x9001;,&#x7C7B;&#x4F3C;&#x4E8E;java&#x7248;&#x672C;&#x7684; Sender&#x7EBF;&#x7A0B;</p>
+<p><img src="20160122152749505" alt=""></p>
+<pre><code class="lang-scala"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send</span></span>(messages: <span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]*) {
+    lock synchronized {
+      sync <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-literal">true</span> =&gt; eventHandler.handle(messages)
+        <span class="hljs-keyword">case</span> <span class="hljs-literal">false</span> =&gt; asyncSend(messages)
+      }
+    }
+  }
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;send&#x65B9;&#x6CD5;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6700;&#x5F00;&#x59CB;&#x7684; Producer&#x793A;&#x4F8B;&#x4E86;,&#x53C2;&#x6570;&#x7528;*&#x8868;&#x793A;&#x53EF;&#x4EE5;&#x53D1;&#x9001;&#x591A;&#x6761;KeyedMessage&#x6D88;&#x606F;.
+&#x5F02;&#x6B65;&#x53D1;&#x9001;&#x5C31;&#x662F;&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x4EE3;&#x7801;&#x4E2D;&#x4F20;&#x5165;&#x7684;&#x6D88;&#x606F;messages&#x8F6C;&#x5B58;&#x5230; Producer&#x7684;&#x961F;&#x5217;&#x4E2D;.
+&#x7136;&#x540E;ProducerSendThread&#x5728; Producer&#x4E2D;&#x88AB;&#x542F;&#x52A8;&#x4E86;,&#x5C31;&#x53EF;&#x4EE5;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x6D88;&#x8D39;&#x6D88;&#x606F;,&#x5B8C;&#x6210;&#x6D88;&#x606F;&#x7684;&#x53D1;&#x9001;&#x52A8;&#x4F5C;.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">asyncSend</span></span>(messages: <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]]) {
+    <span class="hljs-keyword">for</span> (message &lt;- messages) {
+      config.queueEnqueueTimeoutMs <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>  =&gt; queue.offer(message)
+        <span class="hljs-keyword">case</span> _  =&gt; config.queueEnqueueTimeoutMs &lt; <span class="hljs-number">0</span> <span class="hljs-keyword">match</span> {
+            <span class="hljs-keyword">case</span> <span class="hljs-literal">true</span> =&gt; queue.put(message); <span class="hljs-literal">true</span>
+            <span class="hljs-keyword">case</span> _ =&gt; queue.offer(message, config.queueEnqueueTimeoutMs, <span class="hljs-type">TimeUnit</span>.<span class="hljs-type">MILLISECONDS</span>)
+        }
+      }
+    }
+  }
+</code></pre>
+<p>&#x5728;async&#x65B9;&#x5F0F;&#x4E2D;&#xFF0C;&#x5C06;&#x4EA7;&#x751F;&#x7684;&#x6570;&#x636E;&#x653E;&#x5165;queue&#x65F6;&#x6709;&#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x653E;&#x5165;&#x65B9;&#x5F0F;:
+&#x5F53;queue.enqueue.timeout.ms=0&#xFF0C;&#x5219;&#x7ACB;&#x5373;&#x653E;&#x5165;queue&#x4E2D;&#x5E76;&#x8FD4;&#x56DE; true&#xFF0C;&#x82E5;queue&#x5DF2;&#x6EE1;&#xFF0C;&#x5219;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;false
+&#x5F53;queue.enqueue.timeout.ms<0，则立即放入queue，若queue已满，则一直等待queue释放空间 当queue.enqueue.timeout.ms="">0&#xFF0C;&#x5219;&#x7ACB;&#x5373;&#x653E;&#x5165;queue&#x4E2D;&#x5E76;&#x8FD4;&#x56DE; true&#xFF0C;&#x82E5;queue&#x5DF2;&#x6EE1;&#xFF0C;&#x5219;&#x7B49;&#x5F85;queue.enqueue.timeout.ms&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x4EE5;&#x8BA9; queue&#x91CA;&#x653E;&#x7A7A;&#x95F4;&#xFF0C;&#x82E5;&#x65F6;&#x95F4;&#x5230;queue&#x8FD8;&#x662F;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7A7A;&#x95F4;&#xFF0C;&#x5219;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;false</0，则立即放入queue，若queue已满，则一直等待queue释放空间></p>
+<h2 id="producersendthread">ProducerSendThread</h2>
+<p>&#x6279;&#x5904;&#x7406;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x5728;&#x6BCF;&#x6B21;&#x4ECE;queue&#x4E2D; poll&#x4E00;&#x6761;&#x6D88;&#x606F;,&#x5148;&#x52A0;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;events&#x4E2D;,&#x5E76;&#x5728;&#x6BCF;&#x6B21;&#x52A0;&#x5165;&#x4E4B;&#x540E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x8D85;&#x8FC7;batchSize.
+&#x5982;&#x679C;&#x8D85;&#x8FC7;batchSize,&#x5219;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x6279;&#x5904;&#x7406;,&#x540C;&#x65F6;&#x91CD;&#x7F6E;events&#x6570;&#x7EC4;&#x548C;&#x8BBE;&#x7F6E;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x53D1;&#x9001;&#x7684;&#x65F6;&#x95F4;.&#x6700;&#x540E;&#x8FD8;&#x9700;&#x8981;&#x6709;&#x4E00;&#x6B21; handle&#x5904;&#x7406;.
+&#x6279;&#x5904;&#x7406;&#x7684;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;&#x548C;java&#x7248;&#x672C;&#x7684; RecordAccumulator&#x7C7B;&#x4F3C;,&#x6BCF;&#x6B21;&#x6DFB;&#x52A0;&#x65B0;&#x6D88;&#x606F;&#x65F6;,&#x90FD;&#x8981;&#x5224;&#x65AD;&#x52A0;&#x4E86;&#x4E4B;&#x540E;,&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x6279;&#x5904;&#x7406;.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">processEvents</span></span>() {
+    <span class="hljs-keyword">var</span> lastSend = <span class="hljs-type">SystemTime</span>.milliseconds
+    <span class="hljs-keyword">var</span> events = <span class="hljs-keyword">new</span> <span class="hljs-type">ArrayBuffer</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]]
+    <span class="hljs-keyword">var</span> full: <span class="hljs-type">Boolean</span> = <span class="hljs-literal">false</span>
+
+    <span class="hljs-comment">// drain the queue until you get a shutdown command</span>
+    <span class="hljs-type">Iterator</span>.continually(queue.poll(scala.math.max(<span class="hljs-number">0</span>, (lastSend + queueTime) - <span class="hljs-type">SystemTime</span>.milliseconds), <span class="hljs-type">TimeUnit</span>.<span class="hljs-type">MILLISECONDS</span>))
+                      .takeWhile(item =&gt; <span class="hljs-keyword">if</span>(item != <span class="hljs-literal">null</span>) item ne shutdownCommand <span class="hljs-keyword">else</span> <span class="hljs-literal">true</span>).foreach {
+      currentQueueItem =&gt;
+        <span class="hljs-keyword">val</span> expired = currentQueueItem == <span class="hljs-literal">null</span>
+        <span class="hljs-keyword">if</span>(currentQueueItem != <span class="hljs-literal">null</span>) {
+          events += currentQueueItem    <span class="hljs-comment">// &#x52A0;&#x5165;&#x5230;&#x4E34;&#x65F6;&#x6570;&#x7EC4;&#x4E2D;</span>
+        } 
+        full = events.size &gt;= batchSize <span class="hljs-comment">// check if the batch size is reached</span>
+        <span class="hljs-keyword">if</span>(full || expired) {           <span class="hljs-comment">// &#x9664;&#x4E86;batch&#x6EE1;&#x4E86;,&#x8FD8;&#x53EF;&#x80FD;&#x662F;&#x6CA1;&#x6709;&#x6D88;&#x606F;&#x4E86;     </span>
+          tryToHandle(events)           <span class="hljs-comment">// &#x5F00;&#x59CB;&#x6279;&#x5904;&#x7406;</span>
+          events = <span class="hljs-keyword">new</span> <span class="hljs-type">ArrayBuffer</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]]
+        }
+    }
+    tryToHandle(events)                 <span class="hljs-comment">// send the last batch of events</span>
+  }
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x521B;&#x5EFA;ProducerSendThread&#x4E5F;&#x6307;&#x5B9A;&#x4E86;&#x9ED8;&#x8BA4;&#x7684; eventHandler,&#x6240;&#x4EE5;&#x5728;&#x5F97;&#x5230;&#x6BCF;&#x4E00;&#x6279;&#x6D88;&#x606F;&#x65F6;,&#x53EF;&#x4EE5;&#x4EA4;&#x7ED9;handler&#x5904;&#x7406;&#x4E86;.
+&#x800C;&#x5BF9;&#x4E8E;&#x540C;&#x6B65;&#x7684;&#x53D1;&#x9001;&#x65B9;&#x5F0F;,&#x662F;&#x76F4;&#x63A5;&#x5728;handler&#x4E0A;&#x5904;&#x7406;&#x5168;&#x90E8;&#x6570;&#x636E;.&#x800C;&#x5F02;&#x6B65;&#x662F;&#x5C06;&#x5168;&#x90E8;&#x6D88;&#x606F;&#x5148;&#x653E;&#x5230;&#x961F;&#x5217;&#x4E2D;,&#x518D;&#x4E00;&#x5C0F;&#x6279;&#x4E00;&#x5C0F;&#x6279;&#x5730;&#x5904;&#x7406;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tryToHandle</span></span>(events: <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]]) {
+    <span class="hljs-keyword">val</span> size = events.size
+    <span class="hljs-keyword">if</span>(size &gt; <span class="hljs-number">0</span>) handler.handle(events)
+  }
+</code></pre>
+<p>&#x76EE;&#x524D;&#x4E3A;&#x6B62;,scala&#x7684;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7B80;&#x6D01;.&#x4E3B;&#x8981;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#x963B;&#x585E;&#x961F;&#x5217;&#x6765;&#x7F13;&#x5B58;&#x6D88;&#x606F;,&#x800C;&#x4E0D;&#x50CF;java&#x4E2D;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x4E86;&#x5F88;&#x591A;&#x7C7B;.</p>
+<h2 id="brokerpartitioninfo">BrokerPartitionInfo</h2>
+<p>BrokerPartitionInfo -&gt; topicPartitionInfo -&gt; TopicMetadata -&gt; PartitionMetadata</p>
+<p>BrokerPartitionInfo&#x7684; getBrokerPartitionInfo&#x4F1A;&#x6839;&#x636E; topic&#x540D;&#x79F0;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684; BrokerPartition&#x5217;&#x8868;.
+&#x5BF9;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x800C;&#x8A00;&#x53EA;&#x5173;&#x5FC3;&#x8FD9;&#x4E2A;Partition&#x7684; Leader&#x526F;&#x672C;,&#x6240;&#x4EE5;&#x8FD4;&#x56DE;&#x7684;&#x662F;PartitionAndLeader&#x5217;&#x8868;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BrokerPartitionInfo</span>(<span class="hljs-params">producerConfig: <span class="hljs-type">ProducerConfig</span>, producerPool: <span class="hljs-type">ProducerPool</span>, topicPartitionInfo: <span class="hljs-type">HashMap</span>[<span class="hljs-type">String</span>, <span class="hljs-type">TopicMetadata</span>]</span>) </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getBrokerPartitionInfo</span></span>(topic: <span class="hljs-type">String</span>, correlationId: <span class="hljs-type">Int</span>): <span class="hljs-type">Seq</span>[<span class="hljs-type">PartitionAndLeader</span>] = {
+    <span class="hljs-keyword">val</span> topicMetadata = topicPartitionInfo.get(topic)   <span class="hljs-comment">// check if the cache has metadata for this topic</span>
+    <span class="hljs-keyword">val</span> metadata: <span class="hljs-type">TopicMetadata</span> = topicMetadata <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(m) =&gt; m
+        <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt;        <span class="hljs-comment">// refresh the topic metadata cache</span>
+          updateInfo(<span class="hljs-type">Set</span>(topic), correlationId)
+          <span class="hljs-keyword">val</span> topicMetadata = topicPartitionInfo.get(topic)
+          topicMetadata <span class="hljs-keyword">match</span> {
+            <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(m) =&gt; m
+            <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt; <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">KafkaException</span>(<span class="hljs-string">&quot;Failed to fetch topic metadata for topic: &quot;</span> + topic)
+          }
+      }
+    <span class="hljs-comment">// &#x4E00;&#x4E2A;TopicMetadata&#x4F1A;&#x6709;&#x591A;&#x4E2A;PartitionMetadata,&#x6BCF;&#x4E2A;PartitionMetadata&#x662F;Partition&#x7684;&#x5143;&#x6570;&#x636E;</span>
+    <span class="hljs-keyword">val</span> partitionMetadata = metadata.partitionsMetadata
+    partitionMetadata.map { m =&gt;
+      m.leader <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(leader) =&gt;    <span class="hljs-keyword">new</span> <span class="hljs-type">PartitionAndLeader</span>(topic, m.partitionId, <span class="hljs-type">Some</span>(leader.id))
+        <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt;            <span class="hljs-keyword">new</span> <span class="hljs-type">PartitionAndLeader</span>(topic, m.partitionId, <span class="hljs-type">None</span>)
+      }
+    }.sortWith((s, t) =&gt; s.partitionId &lt; t.partitionId)  <span class="hljs-comment">// &#x6309;&#x7167;partitionId&#x6392;&#x5E8F;</span>
+  }
+}
+</code></pre>
+<p>&#x5728;java&#x7248;&#x672C;&#x4E2D; Cluster&#x4FDD;&#x5B58;&#x4E86; broker-topic-partitions&#x7B49;&#x7684;&#x5173;&#x7CFB;,PartitionInfo&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x5206;&#x533A;(&#x6709;Leader,ISR&#x7B49;)
+&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x90FD;&#x8981;&#x6839;&#x636E;Partitioner&#x4E3A;&#x5B83;&#x9009;&#x62E9;&#x4E00;&#x4E2A; PartitionInfo,&#x7136;&#x540E;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;Partition&#x7684; Leader Broker.&#x6839;&#x636E;Leader&#x5206;&#x7EC4;.
+PartitionAndLeader&#x7C7B;&#x4F3C; PartitionInfo,&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x7684;LeaderBrokerId,&#x4F46;&#x662F;&#x6CA1;&#x6709;isr,replicas&#x7B49;&#x4FE1;&#x606F;.</p>
+<p><code>case class PartitionAndLeader(topic: String, partitionId: Int, leaderBrokerIdOpt: Option[Int])</code>
+updateInfo&#x4F1A;&#x66F4;&#x65B0;&#x6BCF;&#x4E2A; Topic&#x7684;&#x5143;&#x6570;&#x636E; TopicMetadata. &#x66F4;&#x65B0;&#x52A8;&#x4F5C;&#x4E5F;&#x76F8;&#x5F53;&#x4E8E;&#x5411;Kafka&#x53D1;&#x9001;&#x4E00;&#x79CD; Producer&#x8BF7;&#x6C42;(fetch request).
+&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;TopicMetadata&#x7684; fetch&#x8BF7;&#x6C42;&#x540E;,&#x4F1A;&#x6536;&#x5230;topicMetadata&#x7684; Response&#x54CD;&#x5E94;,&#x6700;&#x540E;&#x653E;&#x5230;topicPartitionInfo map&#x4E2D;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">updateInfo</span></span>(topics: <span class="hljs-type">Set</span>[<span class="hljs-type">String</span>], correlationId: <span class="hljs-type">Int</span>) {
+    <span class="hljs-keyword">var</span> topicsMetadata: <span class="hljs-type">Seq</span>[<span class="hljs-type">TopicMetadata</span>] = <span class="hljs-type">Nil</span>
+    <span class="hljs-keyword">val</span> topicMetadataResponse = <span class="hljs-type">ClientUtils</span>.fetchTopicMetadata(topics, brokers, producerConfig, correlationId)
+    topicsMetadata = topicMetadataResponse.topicsMetadata
+    topicsMetadata.foreach(tmd =&gt; <span class="hljs-keyword">if</span>(tmd.errorCode == <span class="hljs-type">Errors</span>.<span class="hljs-type">NONE</span>.code)  topicPartitionInfo.put(tmd.topic, tmd))
+    producerPool.updateProducer(topicsMetadata)
+  }
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x66F4;&#x65B0;&#x4E4B;&#x540E;&#x7684;TopicMetadata&#x8FD8;&#x4F1A;&#x8FD4;&#x56DE;&#x7ED9; ProducerPool. &#x800C;Producer&#x4F1A;&#x4ECE; ProducerPool&#x4E2D;&#x83B7;&#x53D6;&#x53EF;&#x7528;&#x7684;&#x751F;&#x4EA7;&#x8005;&#x5B9E;&#x4F8B;&#x670D;&#x52A1;&#x4E8E;&#x751F;&#x4EA7;&#x8BF7;&#x6C42;.
+TopicMetadata&#x662F;&#x4E00;&#x4E2A; Topic&#x7684;&#x5143;&#x6570;&#x636E;.&#x4E00;&#x4E2A;topic&#x6709;&#x591A;&#x4E2A; Partitions,&#x6240;&#x4EE5;&#x4E00;&#x4E2A;TopicMetadata&#x5BF9;&#x5E94;&#x591A;&#x4E2A; PartitionMetadata.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">TopicMetadata</span> </span>{
+  <span class="hljs-keyword">val</span> <span class="hljs-type">NoLeaderNodeId</span> = <span class="hljs-number">-1</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">readFrom</span></span>(buffer: <span class="hljs-type">ByteBuffer</span>, brokers: <span class="hljs-type">Map</span>[<span class="hljs-type">Int</span>, <span class="hljs-type">BrokerEndPoint</span>]): <span class="hljs-type">TopicMetadata</span> = {
+    <span class="hljs-keyword">val</span> errorCode = readShortInRange(buffer, <span class="hljs-string">&quot;error code&quot;</span>, (<span class="hljs-number">-1</span>, <span class="hljs-type">Short</span>.<span class="hljs-type">MaxValue</span>))
+    <span class="hljs-keyword">val</span> topic = readShortString(buffer)
+    <span class="hljs-keyword">val</span> numPartitions = readIntInRange(buffer, <span class="hljs-string">&quot;number of partitions&quot;</span>, (<span class="hljs-number">0</span>, <span class="hljs-type">Int</span>.<span class="hljs-type">MaxValue</span>))
+    <span class="hljs-keyword">val</span> partitionsMetadata: <span class="hljs-type">Array</span>[<span class="hljs-type">PartitionMetadata</span>] = <span class="hljs-keyword">new</span> <span class="hljs-type">Array</span>[<span class="hljs-type">PartitionMetadata</span>](numPartitions)
+    <span class="hljs-keyword">for</span>(i &lt;- <span class="hljs-number">0</span> until numPartitions) {
+      <span class="hljs-keyword">val</span> partitionMetadata = <span class="hljs-type">PartitionMetadata</span>.readFrom(buffer, brokers)
+      partitionsMetadata(i) = partitionMetadata
+    }
+    <span class="hljs-keyword">new</span> <span class="hljs-type">TopicMetadata</span>(topic, partitionsMetadata, errorCode)
+  }
+}
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TopicMetadata</span>(<span class="hljs-params">topic: <span class="hljs-type">String</span>, partitionsMetadata: <span class="hljs-type">Seq</span>[<span class="hljs-type">PartitionMetadata</span>], errorCode: <span class="hljs-type">Short</span> = <span class="hljs-type">Errors</span>.<span class="hljs-type">NONE</span>.code</span>)</span>
+<span class="hljs-type">PartitionMetadata</span>&#x5C31;&#x7B49;&#x4E8E;<span class="hljs-type">PartitionAndLeader</span>&#x7684;&#x5143;&#x6570;&#x636E;,&#x5305;&#x542B;isr,replicas&#x7B49;(&#x7C7B;&#x4F3C;&#x4E8E;java&#x7248;&#x672C;&#x7684;<span class="hljs-type">PartitionInfo</span>).
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">PartitionMetadata</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">readFrom</span></span>(buffer: <span class="hljs-type">ByteBuffer</span>, brokers: <span class="hljs-type">Map</span>[<span class="hljs-type">Int</span>, <span class="hljs-type">BrokerEndPoint</span>]): <span class="hljs-type">PartitionMetadata</span> = {
+    <span class="hljs-keyword">val</span> errorCode = readShortInRange(buffer, <span class="hljs-string">&quot;error code&quot;</span>, (<span class="hljs-number">-1</span>, <span class="hljs-type">Short</span>.<span class="hljs-type">MaxValue</span>))
+    <span class="hljs-keyword">val</span> partitionId = readIntInRange(buffer, <span class="hljs-string">&quot;partition id&quot;</span>, (<span class="hljs-number">0</span>, <span class="hljs-type">Int</span>.<span class="hljs-type">MaxValue</span>)) <span class="hljs-comment">/* partition id */</span>
+    <span class="hljs-keyword">val</span> leaderId = buffer.getInt
+    <span class="hljs-keyword">val</span> leader = brokers.get(leaderId)   <span class="hljs-comment">// brokers&#x662F;&#x96C6;&#x7FA4;&#x6240;&#x6709;&#x8282;&#x70B9;,&#x6BCF;&#x4E2A;Partition&#x90FD;&#x6709;&#x4E00;&#x4E2A;leaderId,</span>
+
+    <span class="hljs-comment">/* list of all replicas */</span>
+    <span class="hljs-keyword">val</span> numReplicas = readIntInRange(buffer, <span class="hljs-string">&quot;number of all replicas&quot;</span>, (<span class="hljs-number">0</span>, <span class="hljs-type">Int</span>.<span class="hljs-type">MaxValue</span>))
+    <span class="hljs-keyword">val</span> replicaIds = (<span class="hljs-number">0</span> until numReplicas).map(_ =&gt; buffer.getInt)
+    <span class="hljs-keyword">val</span> replicas = replicaIds.map(brokers)
+
+    <span class="hljs-comment">/* list of in-sync replicas */</span>
+    <span class="hljs-keyword">val</span> numIsr = readIntInRange(buffer, <span class="hljs-string">&quot;number of in-sync replicas&quot;</span>, (<span class="hljs-number">0</span>, <span class="hljs-type">Int</span>.<span class="hljs-type">MaxValue</span>))
+    <span class="hljs-keyword">val</span> isrIds = (<span class="hljs-number">0</span> until numIsr).map(_ =&gt; buffer.getInt)
+    <span class="hljs-keyword">val</span> isr = isrIds.map(brokers)
+
+    <span class="hljs-keyword">new</span> <span class="hljs-type">PartitionMetadata</span>(partitionId, leader, replicas, isr, errorCode)
+  }
+}
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PartitionMetadata</span>(<span class="hljs-params">partitionId: <span class="hljs-type">Int</span>, leader: <span class="hljs-type">Option</span>[<span class="hljs-type">BrokerEndPoint</span>],
+                             replicas: <span class="hljs-type">Seq</span>[<span class="hljs-type">BrokerEndPoint</span>], isr: <span class="hljs-type">Seq</span>[<span class="hljs-type">BrokerEndPoint</span>] = <span class="hljs-type">Seq</span>.empty, errorCode: <span class="hljs-type">Short</span> = <span class="hljs-type">Errors</span>.<span class="hljs-type">NONE</span>.code</span>)</span>
+</code></pre>
+<h2 id="partition">Partition</h2>
+<ol>
+<li>&#x4E3A;&#x6D88;&#x606F;&#x9009;&#x62E9;Partition</li>
+</ol>
+<p>&#x4E0A;&#x4E00;&#x6B65;&#x83B7;&#x53D6;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x6240;&#x5C5E;&#x7684;topic&#x5BF9;&#x5E94;&#x7684; PartitionAndLeader&#x5217;&#x8868;. PartitionAndLeader&#x662F;&#x8FD9;&#x4E2A; topic&#x7684;&#x6240;&#x6709; Partition.
+&#x4F46;&#x8FD9;&#x4E9B;Partition&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x90FD;&#x6709; Leader,&#x6240;&#x4EE5;PartitionAndLeader&#x7684; leaderBrokerIdOpt&#x662F;&#x53EF;&#x9009;&#x7684;.&#x5373;&#x8FD8;&#x4E0D;&#x786E;&#x5B9A;&#x6709;&#x6CA1;&#x6709;Leader.
+&#x4E3A;&#x6D88;&#x606F;&#x9009;&#x62E9;Partition&#x4E00;&#x5B9A;&#x662F;&#x8981;&#x9009;&#x62E9;&#x6709; Leader&#x7684; Partition.&#x5982;&#x679C;&#x6D88;&#x606F;&#x6CA1;&#x6709;key&#x5219;&#x4F7F;&#x7528;&#x7F13;&#x5B58;,&#x76F8;&#x540C;topic&#x7684;&#x6D88;&#x606F;&#x90FD;&#x5206;&#x914D;&#x540C;&#x4E00;&#x4E2A; partitionId.</p>
+<p><img src="20160122150207223" alt=""></p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getPartitionListForTopic</span></span>(m: <span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]): <span class="hljs-type">Seq</span>[<span class="hljs-type">PartitionAndLeader</span>] = {
+    <span class="hljs-keyword">val</span> topicPartitionsList = brokerPartitionInfo.getBrokerPartitionInfo(m.topic, correlationId.getAndIncrement)
+    topicPartitionsList
+  }
+
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getPartition</span></span>(topic: <span class="hljs-type">String</span>, key: <span class="hljs-type">Any</span>, topicPartitionList: <span class="hljs-type">Seq</span>[<span class="hljs-type">PartitionAndLeader</span>]): <span class="hljs-type">Int</span> = {
+    <span class="hljs-keyword">val</span> numPartitions = topicPartitionList.size
+    <span class="hljs-comment">// &#x5982;&#x679C;&#x6D88;&#x606F;&#x4E2D;&#x6CA1;&#x6709;key, &#x5219;&#x4ECE;sendPartitionPerTopicCache&#x4E2D;&#x4E3A;&#x8FD9;&#x4E2A;topic&#x7684;&#x6D88;&#x606F;&#x6307;&#x5B9A;partitionId.  </span>
+    <span class="hljs-keyword">val</span> partition = <span class="hljs-keyword">if</span>(key == <span class="hljs-literal">null</span>) {
+        <span class="hljs-keyword">val</span> id = sendPartitionPerTopicCache.get(topic)
+        id <span class="hljs-keyword">match</span> {
+          <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(partitionId) =&gt; partitionId            
+          <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt;
+            <span class="hljs-keyword">val</span> availablePartitions = topicPartitionList.filter(_.leaderBrokerIdOpt.isDefined)  <span class="hljs-comment">// &#x5B58;&#x5728;Leader&#x7684;partitions, &#x7C7B;&#x4F3C;&#x4E8E;Cluster&#x4E2D;&#x7684;availablePartitionsByTopic</span>
+            <span class="hljs-keyword">val</span> index = <span class="hljs-type">Utils</span>.abs(<span class="hljs-type">Random</span>.nextInt) % availablePartitions.size    <span class="hljs-comment">// &#x968F;&#x673A;&#x9009;&#x62E9;&#x4E00;&#x4E2A;partition</span>
+            <span class="hljs-keyword">val</span> partitionId = availablePartitions(index).partitionId            <span class="hljs-comment">// &#x5BF9;&#x5E94;&#x7684;Partition&#x7684;partitionId</span>
+            sendPartitionPerTopicCache.put(topic, partitionId)                  <span class="hljs-comment">// &#x653E;&#x5165;cache&#x4E2D;</span>
+            partitionId                                                         <span class="hljs-comment">// &#x5BF9;&#x4E8E;&#x6CA1;&#x6709;key&#x7684;&#x6D88;&#x606F;,&#x6240;&#x6709;topic&#x90FD;&#x653E;&#x5230;&#x4E86;&#x540C;&#x4E00;&#x4E2A;partition&#x91CC;??</span>
+        }
+      } <span class="hljs-keyword">else</span> partitioner.partition(key, numPartitions)  <span class="hljs-comment">// &#x4F7F;&#x7528;Partitioner&#x5BF9;key&#x6307;&#x5B9A;partitionId</span>
+      partition
+  }
+</code></pre>
+<ol>
+<li>&#x6839;&#x636E;Broker-Partition&#x91CD;&#x65B0;&#x7EC4;&#x7EC7;&#x6D88;&#x606F;&#x96C6;</li>
+</ol>
+<p>&#x7531;&#x4E8E;&#x751F;&#x4EA7;&#x8005;&#x7684;&#x6D88;&#x606F;&#x96C6;messages&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x533A;&#x5206; topic. &#x5BF9;&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x9009;&#x62E9;&#x6240;&#x5C5E;&#x7684;Partition,&#x8981;&#x91CD;&#x65B0;&#x6309;&#x7167;Broker&#x7EC4;&#x7EC7;&#x6570;&#x636E;. &#x901A;&#x8FC7;&#x5C06;&#x4E71;&#x5E8F;&#x7684;&#x6D88;&#x606F;&#x6309;&#x7167;BrokerId&#x8FDB;&#x884C;&#x5206;&#x7EC4;,&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x5C06;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;Broker&#x7684;&#x6D88;&#x606F;&#x4E00;&#x6B21;&#x6027;&#x53D1;&#x9001;&#x8FC7;&#x53BB;.Int&#x5C31;&#x662F;BrokerId/NodeId.
+&#x5BF9;&#x4E8E;&#x67D0;&#x4E2A;Broker&#x7684;&#x6D88;&#x606F;,&#x4E5F;&#x8981;&#x5206;&#x6210;&#x4E0D;&#x540C;&#x7684;TopicPartition,&#x6700;&#x7EC8;&#x6BCF;&#x4E2A;Partition&#x90FD;&#x4F1A;&#x5206;&#x5230;&#x4E00;&#x6279;&#x6D88;&#x606F;.</p>
+<pre><code class="lang-nothing">[Map[Int,                               &#x2B05;&#xFE0F; BrokerId
+     Map[TopicAndPartition,             &#x2B05;&#xFE0F; Partition
+         Seq[KeyedMessage[K,Message]]]  &#x2B05;&#xFE0F; &#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;Partition&#x7684;&#x6D88;&#x606F;&#x96C6;
+</code></pre>
+<p>&#x6D88;&#x606F;&#x6700;&#x7EC8;&#x4F1A;&#x8FFD;&#x52A0;&#x5230;Partition&#x7684;&#x6D88;&#x606F;&#x96C6;&#x91CC;. &#x6709;&#x591A;&#x5C42;Map,&#x6839;&#x636E;key&#x83B7;&#x53D6;&#x96C6;&#x5408;,&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;,&#x5219;&#x65B0;&#x5EFA;&#x5E76;&#x653E;&#x5165;Map;&#x5982;&#x679C;&#x5B58;&#x5728;&#x5219;&#x76F4;&#x63A5;&#x4F7F;&#x7528;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">partitionAndCollate</span></span>(messages: <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]): <span class="hljs-type">Option</span>[<span class="hljs-type">Map</span>[<span class="hljs-type">Int</span>, collection.mutable.<span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]]]] = {
+      <span class="hljs-keyword">val</span> ret = <span class="hljs-keyword">new</span> <span class="hljs-type">HashMap</span>[<span class="hljs-type">Int</span>, collection.mutable.<span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]]]
+      <span class="hljs-keyword">for</span> (message &lt;- messages) {
+        <span class="hljs-comment">//&#x4E00;&#x4E2A;topic&#x6709;&#x591A;&#x4E2A;partition</span>
+        <span class="hljs-keyword">val</span> topicPartitionsList = getPartitionListForTopic(message)
+        <span class="hljs-comment">//&#x4E00;&#x6761;&#x6D88;&#x606F;&#x53EA;&#x4F1A;&#x5199;&#x5230;&#x4E00;&#x4E2A;partition, &#x6839;&#x636E;Partitioner&#x4F1A;&#x5206;&#x5230;&#x4E00;&#x4E2A;partition&#x7F16;&#x53F7;</span>
+        <span class="hljs-keyword">val</span> partitionIndex = getPartition(message.topic, message.partitionKey, topicPartitionsList)
+        <span class="hljs-comment">//&#x4E00;&#x4E2A;partition&#x56E0;&#x4E3A;&#x6709;&#x526F;&#x672C;,&#x6240;&#x4EE5;&#x6709;&#x591A;&#x4E2A;broker,&#x4F46;&#x662F;&#x5199;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x5199;&#x5230;Leader</span>
+        <span class="hljs-keyword">val</span> brokerPartition = topicPartitionsList(partitionIndex)
+        <span class="hljs-comment">// postpone the failure until the send operation, so that requests for other brokers are handled correctly</span>
+        <span class="hljs-keyword">val</span> leaderBrokerId = brokerPartition.leaderBrokerIdOpt.getOrElse(<span class="hljs-number">-1</span>)
+
+        <span class="hljs-comment">// &#x6BCF;&#x4E2A;Broker&#x7684;data. ret&#x91CC;&#x6709;&#x5D4C;&#x5957;&#x7684;Map[Int, Map[Partition,Seq]].     </span>
+        <span class="hljs-keyword">var</span> dataPerBroker: <span class="hljs-type">HashMap</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]] = <span class="hljs-literal">null</span>
+        ret.get(leaderBrokerId) <span class="hljs-keyword">match</span> {
+          <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(element) =&gt;     <span class="hljs-comment">// Broker&#x5B58;&#x5728;&#x91CC;&#x5C42;&#x7684;Map,&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;Map</span>
+            dataPerBroker = element.asInstanceOf[<span class="hljs-type">HashMap</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]]]
+          <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt;              <span class="hljs-comment">// Broker&#x4E0D;&#x5B58;&#x5728;&#x91CC;&#x5C42;Map, &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Map, &#x5E76;&#x653E;&#x5165;ret&#x91CC;</span>
+            dataPerBroker = <span class="hljs-keyword">new</span> <span class="hljs-type">HashMap</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]]
+            ret.put(leaderBrokerId, dataPerBroker)
+        }
+        <span class="hljs-comment">// &#x6784;&#x9020;Topic&#x548C;Partition&#x5BF9;&#x8C61;    </span>
+        <span class="hljs-keyword">val</span> topicAndPartition = <span class="hljs-type">TopicAndPartition</span>(message.topic, brokerPartition.partitionId)
+        <span class="hljs-comment">// Broker&#x5BF9;&#x5E94;&#x7684;&#x6D88;&#x606F;&#x96C6;&#x5408;, &#x5373;&#x4F7F;&#x662F;&#x76F8;&#x540C;&#x7684;Broker, Topic-Partition&#x7EC4;&#x5408;&#x4E5F;&#x4E0D;&#x4E00;&#x5B9A;&#x4E00;&#x6837; </span>
+        <span class="hljs-keyword">var</span> dataPerTopicPartition: <span class="hljs-type">ArrayBuffer</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]] = <span class="hljs-literal">null</span>
+        dataPerBroker.get(topicAndPartition) <span class="hljs-keyword">match</span> {
+          <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(element) =&gt;     <span class="hljs-comment">// Partition&#x5BF9;&#x5E94;&#x7684;&#x6D88;&#x606F;&#x96C6;&#x53C8;&#x662F;&#x4E00;&#x4E2A;Seq,&#x5982;&#x679C;&#x5B58;&#x5728;,&#x76F4;&#x63A5;&#x4F7F;&#x7528;</span>
+            dataPerTopicPartition = element.asInstanceOf[<span class="hljs-type">ArrayBuffer</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]]
+          <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt;              <span class="hljs-comment">// Partition&#x5BF9;&#x5E94;&#x7684;&#x6D88;&#x606F;&#x96C6;&#x8FD8;&#x4E0D;&#x5B58;&#x5728;,&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5217;&#x8868;, &#x5E76;&#x653E;&#x5165;&#x8FD9;&#x4E2A;Broker Map&#x91CC;</span>
+            dataPerTopicPartition = <span class="hljs-keyword">new</span> <span class="hljs-type">ArrayBuffer</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]
+            dataPerBroker.put(topicAndPartition, dataPerTopicPartition)
+        }
+        <span class="hljs-comment">// &#x5230;&#x8FD9;&#x91CC;,&#x624D;&#x662F;&#x771F;&#x6B63;&#x5C06;&#x6D88;&#x606F;&#x6DFB;&#x52A0;&#x5230;&#x96C6;&#x5408;&#x4E2D;</span>
+        dataPerTopicPartition.append(message)
+      }
+      <span class="hljs-type">Some</span>(ret)
+  }
+</code></pre>
+<ol>
+<li>&#x6D88;&#x606F;&#x5206;&#x7EC4;</li>
+</ol>
+<p>&#x4E0A;&#x9762;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x6784;&#x5305;&#x62EC;&#x4E86;&#x6BCF;&#x4E2A;Broker&#x7684;&#x6D88;&#x606F;&#x96C6;,&#x5728;&#x5B9E;&#x9645;&#x5904;&#x7406;&#x65F6;,&#x4F1A;&#x9488;&#x5BF9;&#x6BCF;&#x4E2A;Broker&#x7684;&#x6D88;&#x606F;&#x8FDB;&#x4E00;&#x6B65;&#x5206;&#x7EC4;.
+groupMessagesToSet&#x5173;&#x4E8E;&#x6D88;&#x606F;&#x7684;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7C7B;&#x578B;&#x7531; KeyedMessage&#x8F6C;&#x4E3A;&#x4E86; ByteBufferMessageSet</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">groupMessagesToSet</span></span>(messagesPerTopicAndPartition: collection.mutable.<span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>, <span class="hljs-type">Message</span>]]]) = {
+      <span class="hljs-keyword">val</span> messagesPerTopicPartition = messagesPerTopicAndPartition.map { <span class="hljs-keyword">case</span> (topicAndPartition, messages) =&gt;
+        <span class="hljs-comment">// KeyedMessage&#x5305;&#x62EC;&#x4E86;Key,Value, &#x5176;&#x4E2D;message&#x5C31;&#x662F;value&#x539F;&#x59CB;&#x6570;&#x636E;</span>
+        <span class="hljs-keyword">val</span> rawMessages = messages.map(_.message)
+        <span class="hljs-comment">// &#x8F93;&#x5165;&#x662F;&#x4E2A;Map(&#x7528;case&#x5143;&#x7EC4;&#x5339;&#x914D;),&#x8FD4;&#x56DE;&#x503C;&#x4E5F;&#x662F;&#x5143;&#x7EC4;,&#x4E5F;&#x4F1A;&#x8F6C;&#x6210;Map: key&#x6CA1;&#x6709;&#x53D8;&#x5316;,value&#x5C06;Seq[Message]&#x8F6C;&#x6210;&#x4E86;MessageSet</span>
+        (topicAndPartition, config.compressionCodec <span class="hljs-keyword">match</span> {
+            <span class="hljs-keyword">case</span> <span class="hljs-type">NoCompressionCodec</span> =&gt; <span class="hljs-keyword">new</span> <span class="hljs-type">ByteBufferMessageSet</span>(<span class="hljs-type">NoCompressionCodec</span>, rawMessages: _*)
+            <span class="hljs-keyword">case</span> _ =&gt; <span class="hljs-keyword">new</span> <span class="hljs-type">ByteBufferMessageSet</span>(config.compressionCodec, rawMessages: _*)
+          }
+        )
+      }
+      <span class="hljs-type">Some</span>(messagesPerTopicPartition)
+  }
+</code></pre>
+<p>&#x5728;&#x6709;&#x4E86;&#x4E0A;&#x9762;&#x8FD9;&#x4E9B;&#x57FA;&#x7840;&#x540E;,&#x6211;&#x4EEC;&#x6765;&#x770B;DefaultEventHandler&#x5982;&#x4F55;&#x5904;&#x7406;&#x4E00;&#x6279;&#x4E0D;&#x540C; topic&#x7684;&#x6D88;&#x606F;&#x96C6;.</p>
+<h2 id="defaulteventhandler">DefaultEventHandler</h2>
+<p>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x5668;&#x9996;&#x5148;&#x5E8F;&#x5217;&#x5316;,&#x7136;&#x540E;&#x901A;&#x8FC7;dispatchSerializedData&#x53D1;&#x9001;&#x6D88;&#x606F;,&#x8FD9;&#x91CC;&#x8FD8;&#x5E26;&#x4E86;&#x91CD;&#x8BD5;&#x53D1;&#x9001;&#x529F;&#x80FD;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">handle</span></span>(events: <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">V</span>]]) {
+    <span class="hljs-keyword">val</span> serializedData = serialize(events)              <span class="hljs-comment">// &#x2460; &#x5E8F;&#x5217;&#x5316;&#x4E8B;&#x4EF6;</span>
+    <span class="hljs-keyword">var</span> outstandingProduceRequests = serializedData     <span class="hljs-comment">// &#x672A;&#x5B8C;&#x6210;&#x7684;&#x8BF7;&#x6C42;</span>
+    <span class="hljs-keyword">var</span> remainingRetries = config.messageSendMaxRetries + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">while</span> (remainingRetries &gt; <span class="hljs-number">0</span> &amp;&amp; outstandingProduceRequests.size &gt; <span class="hljs-number">0</span>) {
+      outstandingProduceRequests = dispatchSerializedData(outstandingProduceRequests)  <span class="hljs-comment">// &#x2461; &#x5206;&#x53D1;&#x6570;&#x636E;</span>
+      <span class="hljs-keyword">if</span> (outstandingProduceRequests.size &gt; <span class="hljs-number">0</span>) {        <span class="hljs-comment">// &#x6709;&#x8FD4;&#x56DE;&#x503C;&#x8868;&#x793A;&#x51FA;&#x9519;&#x7684;,&#x672A;&#x5B8C;&#x6210;&#x7684;,&#x7EE7;&#x7EED;&#x91CD;&#x8BD5;</span>
+        remainingRetries -= <span class="hljs-number">1</span>                           <span class="hljs-comment">// &#x91CD;&#x8BD5;&#x6B21;&#x6570;&#x51CF;1</span>
+      }
+    }
+  }
+</code></pre>
+<p>&#x5728;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x8FC7;&#x7A0B;&#x4E2D;,&#x53EA;&#x8981;&#x6709;&#x5931;&#x8D25;&#x7684;&#x6D88;&#x606F;&#x5C31;&#x52A0;&#x5165;&#x5230;failedProduceRequests,&#x8FD9;&#x6837;&#x8FD4;&#x56DE;&#x7684;&#x96C6;&#x5408;&#x4E0D;&#x4E3A;&#x7A7A;,&#x5C31;&#x4F1A;&#x91CD;&#x8BD5;</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">dispatchSerializedData</span></span>(messages: <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>,<span class="hljs-type">Message</span>]]): <span class="hljs-type">Seq</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>, <span class="hljs-type">Message</span>]] = {
+    <span class="hljs-keyword">val</span> partitionedDataOpt = partitionAndCollate(messages)                      <span class="hljs-comment">// &#x2460; BrokerId -&gt; (TopicAndPartition -&gt; Seq[KeyedMessage])</span>
+    partitionedDataOpt <span class="hljs-keyword">match</span> {
+      <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(partitionedData) =&gt;
+        <span class="hljs-keyword">val</span> failedProduceRequests = <span class="hljs-keyword">new</span> <span class="hljs-type">ArrayBuffer</span>[<span class="hljs-type">KeyedMessage</span>[<span class="hljs-type">K</span>, <span class="hljs-type">Message</span>]]
+        <span class="hljs-keyword">for</span> ((brokerid, messagesPerBrokerMap) &lt;- partitionedData) {             <span class="hljs-comment">// &#x2461; &#x6BCF;&#x4E2A;BrokerId&#x90FD;&#x6709;Partition-&gt;Messages&#x7684;Map</span>
+          <span class="hljs-keyword">val</span> messageSetPerBrokerOpt = groupMessagesToSet(messagesPerBrokerMap) <span class="hljs-comment">// &#x2462; &#x6D88;&#x606F;&#x5206;&#x7EC4;,&#x5982;&#x679C;&#x6709;&#x538B;&#x7F29;,&#x5219;&#x5BF9;value&#x538B;&#x7F29;</span>
+          messageSetPerBrokerOpt <span class="hljs-keyword">match</span> {
+            <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(messageSetPerBroker) =&gt;
+              <span class="hljs-keyword">val</span> failedTopicPartitions = send(brokerid, messageSetPerBroker)   <span class="hljs-comment">// &#x2463; &#x53D1;&#x9001;&#x6D88;&#x606F;&#x96C6;,&#x8FD4;&#x56DE;&#x503C;&#x8868;&#x793A;&#x53D1;&#x9001;&#x5931;&#x8D25;&#x7684;Partitions</span>
+              failedTopicPartitions.foreach(topicPartition =&gt; {
+                messagesPerBrokerMap.get(topicPartition) <span class="hljs-keyword">match</span> {                <span class="hljs-comment">// &#x5728;&#x5168;&#x96C6;&#x4E2D;&#x627E;&#x51FA;&#x5C5E;&#x4E8E;&#x8FD9;&#x4E2A;Partition&#x7684;&#x6D88;&#x606F;</span>
+                  <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(data) =&gt; failedProduceRequests.appendAll(data)      <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x5230;failed&#x5217;&#x8868;&#x4E2D;,&#x5728;&#x91CD;&#x8BD5;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;failed&#x7EE7;&#x7EED;&#x53D1;&#x9001;</span>
+                  <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt;  <span class="hljs-comment">// nothing, &#x6240;&#x6709;&#x7684;&#x6D88;&#x606F;&#x90FD;&#x53D1;&#x9001;&#x6210;&#x529F;</span>
+                }
+              })
+            <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt; messagesPerBrokerMap.values.foreach(m =&gt; failedProduceRequests.appendAll(m))  <span class="hljs-comment">// failed to group messages</span>
+          }
+        }
+        failedProduceRequests
+      <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt; messages     <span class="hljs-comment">// failed to collate messages</span>
+    }
+  }
+</code></pre>
+<p>&#x53D1;&#x9001;&#x6D88;&#x606F;,&#x4ECE;&#x751F;&#x4EA7;&#x8005;&#x6C60;&#x4E2D;&#x83B7;&#x53D6;SyncProducer(&#x6BCF;&#x4E2A; Broker&#x4E00;&#x4E2A; Producer),&#x5C06;&#x6D88;&#x606F;&#x96C6;&#x5C01;&#x88C5;&#x5230;ProducerRequest,&#x8C03;&#x7528;Producer.send&#x53D1;&#x9001;&#x8BF7;&#x6C42;
+java&#x7248;&#x672C;&#x7684;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x662F;&#x521B;&#x5EFA; ProduceRequest-RequestSend-ClientRequest.&#x5E76;&#x4EA4;&#x7ED9;Sender-NetworkClient&#x5904;&#x7406;.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send</span></span>(brokerId: <span class="hljs-type">Int</span>, messagesPerTopic: collection.mutable.<span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">ByteBufferMessageSet</span>]) = {
+      <span class="hljs-keyword">val</span> currentCorrelationId = correlationId.getAndIncrement
+      <span class="hljs-keyword">val</span> producerRequest = <span class="hljs-keyword">new</span> <span class="hljs-type">ProducerRequest</span>(currentCorrelationId, config.clientId, config.requestRequiredAcks, config.requestTimeoutMs, messagesPerTopic)
+      <span class="hljs-keyword">val</span> syncProducer = producerPool.getProducer(brokerId)
+      <span class="hljs-keyword">val</span> response = syncProducer.send(producerRequest)
+  }
+</code></pre>
+<p>&#x53D1;&#x9001;&#x6D88;&#x606F;,&#x53EA;&#x9700;&#x8981;&#x6307;&#x5B9A;brokerId,&#x4EE5;&#x53CA;&#x6D88;&#x606F;&#x5185;&#x5BB9;(TopicPartition-&gt;MessageSet),&#x540C;&#x65F6;&#x6307;&#x5B9A;&#x672C;&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x9700;&#x8981;ack&#x548C;&#x8D85;&#x65F6;&#x65F6;&#x95F4;.</p>
+<pre><code class="lang-scala"><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProducerRequest</span>(<span class="hljs-params">versionId: <span class="hljs-type">Short</span> = <span class="hljs-type">ProducerRequest</span>.<span class="hljs-type">CurrentVersion</span>, correlationId: <span class="hljs-type">Int</span>, clientId: <span class="hljs-type">String</span>, 
+                           requiredAcks: <span class="hljs-type">Short</span>, ackTimeoutMs: <span class="hljs-type">Int</span>, data: collection.mutable.<span class="hljs-type">Map</span>[<span class="hljs-type">TopicAndPartition</span>, <span class="hljs-type">ByteBufferMessageSet</span>]</span>)</span>
+</code></pre>
+<h2 id="producerpool">ProducerPool</h2>
+<p>&#x6BCF;&#x4E2A;Broker&#x90FD;&#x6709;&#x4E00;&#x4E2A; SyncProducer,&#x56E0;&#x4E3A;&#x540C;&#x6B65;&#x7684;Producer&#x4E00;&#x6B21;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x53D1;&#x751F;&#x5728; Broker&#x4E0A;.
+&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x6CA1;&#x6709;&#x7ED3;&#x675F;&#x4F1A;&#x4E00;&#x76F4;&#x963B;&#x585E;&#x7684;,&#x5176;&#x4ED6;&#x8BF7;&#x6C42;&#x6CA1;&#x673A;&#x4F1A;&#x6267;&#x884C;,&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x4E00;&#x4E2A;Broker&#x6709;&#x591A;&#x4E2A; Producer&#x5B9E;&#x4F8B;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ProducerPool</span>(<span class="hljs-params">val config: <span class="hljs-type">ProducerConfig</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">Logging</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> syncProducers = <span class="hljs-keyword">new</span> <span class="hljs-type">HashMap</span>[<span class="hljs-type">Int</span>, <span class="hljs-type">SyncProducer</span>]
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> lock = <span class="hljs-keyword">new</span> <span class="hljs-type">Object</span>()
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">updateProducer</span></span>(topicMetadata: <span class="hljs-type">Seq</span>[<span class="hljs-type">TopicMetadata</span>]) {
+    <span class="hljs-keyword">val</span> newBrokers = <span class="hljs-keyword">new</span> collection.mutable.<span class="hljs-type">HashSet</span>[<span class="hljs-type">BrokerEndPoint</span>]
+    <span class="hljs-comment">// &#x9996;&#x5148;&#x6839;&#x636E;topicMetadata&#x627E;&#x51FA;&#x6240;&#x6709;&#x7684;Leader Broker.  </span>
+    topicMetadata.foreach(tmd =&gt; {
+      tmd.partitionsMetadata.foreach(pmd =&gt; {
+        <span class="hljs-keyword">if</span>(pmd.leader.isDefined) {
+          newBrokers += pmd.leader.get
+        }
+      })
+    })
+    <span class="hljs-comment">// &#x6BCF;&#x4E2A;Broker&#x90FD;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540C;&#x6B65;&#x7C7B;&#x578B;&#x7684;SyncProducer,&#x5E76;&#x653E;&#x5165;&#x7F13;&#x5B58;&#x4E2D;,&#x7B49;&#x5F85;getProducer&#x83B7;&#x53D6;</span>
+    lock synchronized {
+      newBrokers.foreach(b =&gt; {
+        <span class="hljs-keyword">if</span>(syncProducers.contains(b.id)){
+          syncProducers(b.id).close()
+          syncProducers.put(b.id, <span class="hljs-type">ProducerPool</span>.createSyncProducer(config, b))
+        } <span class="hljs-keyword">else</span>
+          syncProducers.put(b.id, <span class="hljs-type">ProducerPool</span>.createSyncProducer(config, b))
+      })
+    }
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getProducer</span></span>(brokerId: <span class="hljs-type">Int</span>) : <span class="hljs-type">SyncProducer</span> = {
+    lock.synchronized {
+      <span class="hljs-keyword">val</span> producer = syncProducers.get(brokerId)
+      producer <span class="hljs-keyword">match</span> {
+        <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(p) =&gt; p
+        <span class="hljs-keyword">case</span> <span class="hljs-type">None</span> =&gt; <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">UnavailableProducerException</span>(<span class="hljs-string">&quot;Sync producer for broker id %d does not exist&quot;</span>.format(brokerId))
+      }
+    }
+  }
+}
+</code></pre>
+<p>&#x521B;&#x5EFA;SyncProducer,&#x9700;&#x8981;&#x6307;&#x5B9A;Broker&#x7684;&#x5730;&#x5740;,&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;Producer&#x4F1A;&#x8D1F;&#x8D23;&#x548C; Broker&#x901A;&#x4FE1;,&#x6D88;&#x606F;&#x901A;&#x8FC7;Producer&#x53D1;&#x9001;&#x5230; Broker.</p>
+<pre><code class="lang-scala">    <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">ProducerPool</span> </span>{
+    <span class="hljs-comment">// Used in ProducerPool to initiate a SyncProducer connection with a broker.</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">createSyncProducer</span></span>(config: <span class="hljs-type">ProducerConfig</span>, broker: <span class="hljs-type">BrokerEndPoint</span>): <span class="hljs-type">SyncProducer</span> = {
+        <span class="hljs-keyword">val</span> props = <span class="hljs-keyword">new</span> <span class="hljs-type">Properties</span>()
+        props.put(<span class="hljs-string">&quot;host&quot;</span>, broker.host)
+        props.put(<span class="hljs-string">&quot;port&quot;</span>, broker.port.toString)
+        props.putAll(config.props.props)
+        <span class="hljs-keyword">new</span> <span class="hljs-type">SyncProducer</span>(<span class="hljs-keyword">new</span> <span class="hljs-type">SyncProducerConfig</span>(props))
+    }
+    }
+</code></pre>
+<h2 id="syncproducer">SyncProducer</h2>
+<p>&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x9700;&#x8981;ack,&#x5219;&#x9700;&#x8981;&#x8FD4;&#x56DE;ProducerResponse&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;(&#x8FD4;&#x56DE;&#x7684;&#x6D88;&#x606F;&#x5185;&#x5BB9;&#x653E;&#x5728;response&#x7684; payload&#x5B57;&#x8282;&#x7F13;&#x51B2;&#x533A;&#x4E2D;).</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> blockingChannel = <span class="hljs-keyword">new</span> <span class="hljs-type">BlockingChannel</span>(config.host, config.port, <span class="hljs-type">BlockingChannel</span>.<span class="hljs-type">UseDefaultBufferSize</span>, config.sendBufferBytes, config.requestTimeoutMs)
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send</span></span>(producerRequest: <span class="hljs-type">ProducerRequest</span>): <span class="hljs-type">ProducerResponse</span> = {
+    <span class="hljs-keyword">val</span> readResponse = <span class="hljs-keyword">if</span>(producerRequest.requiredAcks == <span class="hljs-number">0</span>) <span class="hljs-literal">false</span> <span class="hljs-keyword">else</span> <span class="hljs-literal">true</span>
+    <span class="hljs-keyword">var</span> response: <span class="hljs-type">NetworkReceive</span> = doSend(producerRequest, needAcks)
+    <span class="hljs-keyword">if</span>(readResponse) <span class="hljs-type">ProducerResponse</span>.readFrom(response.payload)
+    <span class="hljs-keyword">else</span> <span class="hljs-literal">null</span>  <span class="hljs-comment">// &#x5982;&#x679C;&#x751F;&#x4EA7;&#x8BF7;&#x6C42;&#x9700;&#x8981;&#x54CD;&#x5E94;(&#x7B49;&#x5F85;Leader&#x54CD;&#x5E94;, &#x6216;&#x8005;&#x9664;&#x4E86;Leader,ISR&#x4E5F;&#x8981;&#x54CD;&#x5E94;),&#x4ECE;response&#x54CD;&#x5E94;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#x8BBE;&#x7F6E;&#x5230;ProducerResponse&#x5BF9;&#x8C61;&#x4E2D;.&#x5426;&#x5219;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;</span>
+  }
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">doSend</span></span>(request: <span class="hljs-type">RequestOrResponse</span>, readResponse: <span class="hljs-type">Boolean</span> = <span class="hljs-literal">true</span>): <span class="hljs-type">NetworkReceive</span> = {
+      verifyRequest(request)
+      getOrMakeConnection()                                 <span class="hljs-comment">// &#x521B;&#x5EFA;&#x8FDE;&#x63A5;,&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6709;&#x8FDE;&#x63A5;,&#x5219;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5DF2;&#x6709;&#x7684;&#x8FDE;&#x63A5;&#x901A;&#x9053;&#x53D1;&#x9001;&#x6570;&#x636E;</span>
+      <span class="hljs-keyword">var</span> response: <span class="hljs-type">NetworkReceive</span> = <span class="hljs-literal">null</span>                   <span class="hljs-comment">// &#x51C6;&#x5907;&#x4E00;&#x4E2A;NetworkReceive,&#x5982;&#x679C;&#x6709;&#x54CD;&#x5E94;,&#x4F1A;&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x54CD;&#x5E94;&#x5230;&#x8FD9;&#x91CC;</span>
+      blockingChannel.send(request)                         <span class="hljs-comment">// &#x5411;&#x963B;&#x585E;&#x7C7B;&#x578B;&#x7684;&#x8FDE;&#x63A5;&#x901A;&#x9053;&#x53D1;&#x9001;&#x8BF7;&#x6C42;</span>
+      <span class="hljs-keyword">if</span>(readResponse) response = blockingChannel.receive() <span class="hljs-comment">// &#x4ECE;&#x963B;&#x585E;&#x7C7B;&#x578B;&#x7684;&#x8FDE;&#x63A5;&#x901A;&#x9053;&#x8BFB;&#x53D6;&#x54CD;&#x5E94;    </span>
+      response 
+  }
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;send&#x65B9;&#x6CD5;,&#x4E0D;&#x8FC7;&#x53D1;&#x9001;&#x7684;&#x662F;TopicMetadata&#x8BF7;&#x6C42;,&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x4E00;&#x5B9A;&#x662F;&#x6709;&#x54CD;&#x5E94;&#x7684;.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send</span></span>(request: <span class="hljs-type">TopicMetadataRequest</span>): <span class="hljs-type">TopicMetadataResponse</span> = {
+    <span class="hljs-keyword">val</span> response = doSend(request)
+    <span class="hljs-type">TopicMetadataResponse</span>.readFrom(response.payload)
+  }
+</code></pre>
+<p>ProducerResponse&#x548C; TopicMetadataResponse&#x7684; readFrom&#x53C2;&#x6570;&#x90FD;&#x662F; ByteBuffer,&#x7C7B;&#x4F3C;&#x4E8E;&#x53CD;&#x5E8F;&#x5217;&#x5316;.
+&#x53D1;&#x751F;&#x5728;BlockingChannel&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;,&#x524D;&#x63D0;&#x662F;&#x5148;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;,&#x6240;&#x4EE5;&#x5728;doSend&#x4E4B;&#x524D;&#x4F1A; getOrMakeConnection.
+&#x6CE8;&#x610F;: &#x7531;&#x4E8E;&#x4E00;&#x4E2A;Broker&#x53EA;&#x6709;&#x4E00;&#x4E2A; SyncProducer,&#x4E00;&#x4E2A;Producer&#x4E5F;&#x5C31;&#x53EA;&#x6709;&#x4E00;&#x4E2A; BlockingChannel.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getOrMakeConnection</span></span>() {
+    <span class="hljs-keyword">if</span>(!blockingChannel.isConnected) connect()
+  }
+
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">connect</span></span>(): <span class="hljs-type">BlockingChannel</span> = {
+    <span class="hljs-keyword">if</span> (!blockingChannel.isConnected &amp;&amp; !shutdown) {
+      blockingChannel.connect()
+    }
+    blockingChannel
+  }
+</code></pre>
+<h2 id="blockingchannel">BlockingChannel</h2>
+<p>&#x5B9E;&#x9645;&#x7684;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x662F;&#x4EA4;&#x7ED9;BlockingChannel,&#x5B83;&#x5B9E;&#x73B0;&#x4E86;I/O&#x4E2D;&#x7684;&#x8FDE;&#x63A5; connect,&#x53D1;&#x9001;&#x8BF7;&#x6C42;send,&#x63A5;&#x6536;&#x54CD;&#x5E94;receive
+&#x4ECE;&#x5B83;&#x7684;&#x540D;&#x5B57;&#x770B;&#x51FA;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x963B;&#x585E;&#x7C7B;&#x578B;&#x7684;Channel,&#x6240;&#x4EE5;&#x5E76;&#x6CA1;&#x6709;&#x7528;&#x5230;NIO&#x7684;&#x591A;&#x8DEF;&#x9009;&#x62E9;&#x7279;&#x6027;,&#x96BE;&#x602A;&#x8FD9;&#x662F;Old&#x7684;&#x8BBE;&#x8BA1;.</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BlockingChannel</span>(<span class="hljs-params"> val host: <span class="hljs-type">String</span>,  val port: <span class="hljs-type">Int</span>,  val readBufferSize: <span class="hljs-type">Int</span>,  val writeBufferSize: <span class="hljs-type">Int</span>,  val readTimeoutMs: <span class="hljs-type">Int</span> </span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">Logging</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> connected = <span class="hljs-literal">false</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> channel: <span class="hljs-type">SocketChannel</span> = <span class="hljs-literal">null</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> readChannel: <span class="hljs-type">ReadableByteChannel</span> = <span class="hljs-literal">null</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> writeChannel: <span class="hljs-type">GatheringByteChannel</span> = <span class="hljs-literal">null</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> lock = <span class="hljs-keyword">new</span> <span class="hljs-type">Object</span>()
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> connectTimeoutMs = readTimeoutMs
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> connectionId: <span class="hljs-type">String</span> = <span class="hljs-string">&quot;&quot;</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">connect</span></span>() = lock synchronized  {
+    <span class="hljs-keyword">if</span>(!connected) {
+        channel = <span class="hljs-type">SocketChannel</span>.open()
+        <span class="hljs-keyword">if</span>(readBufferSize &gt; <span class="hljs-number">0</span>) channel.socket.setReceiveBufferSize(readBufferSize)
+        <span class="hljs-keyword">if</span>(writeBufferSize &gt; <span class="hljs-number">0</span>) channel.socket.setSendBufferSize(writeBufferSize)
+        channel.configureBlocking(<span class="hljs-literal">true</span>)
+        channel.socket.connect(<span class="hljs-keyword">new</span> <span class="hljs-type">InetSocketAddress</span>(host, port), connectTimeoutMs)
+
+        writeChannel = channel
+        readChannel = <span class="hljs-type">Channels</span>.newChannel(channel.socket().getInputStream)
+        connected = <span class="hljs-literal">true</span>
+        connectionId = localHost + <span class="hljs-string">&quot;:&quot;</span> + localPort + <span class="hljs-string">&quot;-&quot;</span> + remoteHost + <span class="hljs-string">&quot;:&quot;</span> + remotePort
+    }
+  }
+}
+</code></pre>
+<p>KafkaProducer&#x6784;&#x9020;&#x7684;&#x8BF7;&#x6C42;&#x662F;&#x4ECE; ProduceRequest&#x5230; RequestSend&#x6700;&#x540E;&#x5F62;&#x6210; ClientRequest&#x4E2D;.&#x8FD9;&#x91CC;&#x628A;ProduceRequest
+(&#x662F;&#x4E00;&#x79CD;RequestOrResponse)&#x5C01;&#x88C5;&#x5230;RequestOrResponseSend,&#x4ED6;&#x4EEC;&#x90FD;&#x662F;ByteBufferSend&#x7684;&#x5B50;&#x7C7B;.</p>
+<p><img src="20160122145250082" alt=""></p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send</span></span>(request: <span class="hljs-type">RequestOrResponse</span>): <span class="hljs-type">Long</span> = {
+    <span class="hljs-keyword">val</span> send = <span class="hljs-keyword">new</span> <span class="hljs-type">RequestOrResponseSend</span>(connectionId, request)
+    send.writeCompletely(writeChannel)
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">receive</span></span>(): <span class="hljs-type">NetworkReceive</span> = {
+    <span class="hljs-keyword">val</span> response = readCompletely(readChannel)
+    response.payload().rewind()     <span class="hljs-comment">//&#x8BFB;&#x53D6;&#x5230;&#x54CD;&#x5E94;&#x7684;ByteBuffer,&#x56DE;&#x5230;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x6700;&#x5F00;&#x59CB;,&#x4FBF;&#x4E8E;&#x8BFB;&#x53D6;</span>
+    response                        <span class="hljs-comment">//&#x8FD4;&#x56DE;&#x54CD;&#x5E94;, &#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x9700;&#x8981;ack,&#x5219;&#x76F4;&#x63A5;&#x4F7F;&#x7528;response.payload&#x5373;&#x53EF;</span>
+  }
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">readCompletely</span></span>(channel: <span class="hljs-type">ReadableByteChannel</span>): <span class="hljs-type">NetworkReceive</span> = {
+    <span class="hljs-keyword">val</span> response = <span class="hljs-keyword">new</span> <span class="hljs-type">NetworkReceive</span>
+    <span class="hljs-keyword">while</span> (!response.complete())
+      response.readFromReadableChannel(channel)
+    response
+  }
+</code></pre>
+<p>SyncProducer&#x662F;&#x963B;&#x585E;&#x7C7B;&#x578B;&#x7684;,&#x6240;&#x4EE5;&#x5E76;&#x6CA1;&#x6709;&#x50CF;java&#x7248;&#x672C;&#x7684; NetworkClient&#x4F7F;&#x7528; Selector&#x975E;&#x963B;&#x585E;&#x5F02;&#x6B65;&#x6A21;&#x5F0F;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Producer/" class="navigation navigation-prev " aria-label="Previous page: Producer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Consumer/" class="navigation navigation-next " aria-label="Next page: Consumer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Producer-Scala","level":"1.2.2","depth":2,"next":{"title":"Consumer","level":"1.2.3","depth":2,"path":"Kafka/Consumer/README.md","ref":"./Kafka/Consumer/README.md","articles":[]},"previous":{"title":"Producer","level":"1.2.1","depth":2,"path":"Kafka/Producer/README.md","ref":"./Kafka/Producer/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Kafka/Producer-scala/README.md","mtime":"2017-05-02T08:45:21.613Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

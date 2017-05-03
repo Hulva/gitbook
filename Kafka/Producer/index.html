@@ -1,0 +1,1825 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Producer · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Producer-scala/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Producer-scala/">
+            
+                <a href="../Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Consumer/">
+            
+                <a href="../Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Stream/">
+            
+                <a href="../Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Connector/">
+            
+                <a href="../Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../kafka-HA.html">
+            
+                <a href="../kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../kafka-controller.html">
+            
+                <a href="../kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../Source-code-analysis/">
+            
+                <a href="../Source-code-analysis/">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../Source-code-analysis/kafka-schedule.html">
+            
+                <a href="../Source-code-analysis/kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../Source-code-analysis/kafka-zkUtils.html">
+            
+                <a href="../Source-code-analysis/kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../Source-code-analysis/kafka-metric-reporter.html">
+            
+                <a href="../Source-code-analysis/kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../Source-code-analysis/kafka-log-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../Source-code-analysis/kafka-metadata-cache.html">
+            
+                <a href="../Source-code-analysis/kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../Source-code-analysis/kafka-socketserver.html">
+            
+                <a href="../Source-code-analysis/kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../Source-code-analysis/kafka-logappend.html">
+            
+                <a href="../Source-code-analysis/kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../Source-code-analysis/kafka-isr.html">
+            
+                <a href="../Source-code-analysis/kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="../Source-code-analysis/kafka-replica-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="../Source-code-analysis/kafka-controller.html">
+            
+                <a href="../Source-code-analysis/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="../Source-code-analysis/kafka-admin-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="../Source-code-analysis/kafka-group-coordinator.html">
+            
+                <a href="../Source-code-analysis/kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="../Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                <a href="../Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="../Source-code-analysis/kafka-authorizer.html">
+            
+                <a href="../Source-code-analysis/kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="../Source-code-analysis/kafka-apis.html">
+            
+                <a href="../Source-code-analysis/kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="../Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                <a href="../Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="../Source-code-analysis/kafka-health-checker.html">
+            
+                <a href="../Source-code-analysis/kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="../Source-code-analysis/kafka-checkpoint.html">
+            
+                <a href="../Source-code-analysis/kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Hadoop/">
+            
+                <a href="../../Hadoop/">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Hadoop/HBase/">
+            
+                <a href="../../Hadoop/HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../Hadoop/HBase/getting-start.html">
+            
+                <a href="../../Hadoop/HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../Hadoop/HBase/hbase-shell.html">
+            
+                <a href="../../Hadoop/HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Hadoop/Hive/">
+            
+                <a href="../../Hadoop/Hive/">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../Hadoop/Hive/tutorial.html">
+            
+                <a href="../../Hadoop/Hive/tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../Hadoop/Hive/shell-command.html">
+            
+                <a href="../../Hadoop/Hive/shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../Hadoop/Hive/HiveQL.html">
+            
+                <a href="../../Hadoop/Hive/HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Hadoop/Sqoop/">
+            
+                <a href="../../Hadoop/Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../Hadoop/Sqoop/tutorial.html">
+            
+                <a href="../../Hadoop/Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Producer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="producer">Producer</h1>
+<p>&#x751F;&#x4EA7;&#x8005;&#x7EBF;&#x7A0B;:&#x5F02;&#x6B65;&#x53D1;&#x9001;&#x6D88;&#x606F;,&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;Callback;&#x540C;&#x6B65;&#x53D1;&#x9001;&#x6D88;&#x606F;,&#x5219;&#x8C03;&#x7528;Future.get()&#x4F1A;Block&#x4F4F;&#x76F4;&#x5230;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;.</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Producer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> KafkaProducer&lt;Integer, String&gt; producer;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> String topic;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Boolean isAsync;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Producer</span><span class="hljs-params">(String topic, Boolean isAsync)</span> </span>{
+        Properties props = <span class="hljs-keyword">new</span> Properties();
+        props.put(<span class="hljs-string">&quot;bootstrap.servers&quot;</span>, <span class="hljs-string">&quot;localhost:9092&quot;</span>);
+        props.put(<span class="hljs-string">&quot;client.id&quot;</span>, <span class="hljs-string">&quot;DemoProducer&quot;</span>);
+        props.put(<span class="hljs-string">&quot;key.serializer&quot;</span>, <span class="hljs-string">&quot;org.apache.kafka.common.serialization.IntegerSerializer&quot;</span>);
+        props.put(<span class="hljs-string">&quot;value.serializer&quot;</span>, <span class="hljs-string">&quot;org.apache.kafka.common.serialization.StringSerializer&quot;</span>);
+        producer = <span class="hljs-keyword">new</span> KafkaProducer&lt;Integer, String&gt;(props);
+        <span class="hljs-keyword">this</span>.topic = topic;
+        <span class="hljs-keyword">this</span>.isAsync = isAsync;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">int</span> messageNo = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+            String messageStr = <span class="hljs-string">&quot;Message_&quot;</span> + messageNo;
+            <span class="hljs-keyword">if</span> (isAsync) {  <span class="hljs-comment">// Send asynchronously</span>
+                producer.send(<span class="hljs-keyword">new</span> ProducerRecord&lt;Integer, String&gt;(topic, messageNo, messageStr), 
+                    <span class="hljs-keyword">new</span> Callback() {
+                        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCompletion</span><span class="hljs-params">(RecordMetadata metadata, Exception e)</span> </span>{
+                            System.out.println(<span class="hljs-string">&quot;The offset of the record we just sent is: &quot;</span> + metadata.offset());
+                        }
+                    }
+                );
+            } <span class="hljs-keyword">else</span> {        <span class="hljs-comment">// Send synchronously</span>
+                producer.send(<span class="hljs-keyword">new</span> ProducerRecord&lt;Integer, String&gt;(topic, messageNo, messageStr)).get();
+            }
+            ++messageNo;
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>KafkaProducer&#x9700;&#x8981;&#x6307;&#x5B9A;&#x6D88;&#x606F; Key,Value&#x7684;&#x7C7B;&#x578B;. ProducerRecord&#x8FD8;&#x9700;&#x8981;&#x6307;&#x5B9A; topic.</li>
+<li>&#x6839;&#x636E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x521B;&#x5EFA;KafkaProducer, &#x6307;&#x5B9A;&#x4E86;Broker&#x5730;&#x5740;, Key,Value&#x7684;&#x5E8F;&#x5217;&#x5316;&#x65B9;&#x5F0F;, &#x6D88;&#x606F;&#x5FC5;&#x987B;&#x8981;&#x6307;&#x5B9A;topic</li>
+<li>&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;RecordMetadata&#x8BB0;&#x5F55;&#x5143;&#x6570;&#x636E;&#x5305;&#x62EC;&#x4E86;&#x6D88;&#x606F;&#x7684; offset(&#x5728;&#x54EA;&#x4E2A;partition&#x7684;&#x54EA;&#x91CC; offset)</li>
+</ul>
+<p><img src="produce.png" alt=""></p>
+<h3 id="blocking-vs-non-blocking">blocking vs non-blocking</h3>
+<p>KafkaProducer.send&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A; Future,&#x90A3;&#x4E48;&#x5B83;&#x5982;&#x4F55;&#x540C;&#x65F6;&#x5B9E;&#x73B0;blocking&#x65B9;&#x5F0F;&#x548C; non-blocking&#x65B9;&#x5F0F;.</p>
+<ul>
+<li>blocking: &#x5728;&#x8C03;&#x7528;send&#x8FD4;&#x56DE; Future&#x65F6;, &#x7ACB;&#x5373;&#x8C03;&#x7528;get, &#x56E0;&#x4E3A;Future.get&#x5728;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x65F6;&#x4F1A;&#x4E00;&#x76F4;&#x963B;&#x585E;</li>
+<li>non-block: &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;callback,&#x8C03;&#x7528;send&#x540E;,&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x800C;&#x4E0D;&#x7528;&#x7B49;&#x5F85;.&#x5F53;&#x6709;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x65F6;,callback&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x901A;&#x77E5;&#x6267;&#x884C;</li>
+</ul>
+<p><img src="block_non-block.png" alt=""></p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> Future&lt;RecordMetadata&gt; <span class="hljs-title">send</span><span class="hljs-params">(ProducerRecord&lt;K, V&gt; record, Callback callback)</span> </span>{
+        <span class="hljs-comment">// first make sure the metadata for the topic is available</span>
+        <span class="hljs-keyword">long</span> waitedOnMetadataMs = waitOnMetadata(record.topic(), <span class="hljs-keyword">this</span>.maxBlockTimeMs);
+        <span class="hljs-keyword">long</span> remainingWaitMs = Math.max(<span class="hljs-number">0</span>, <span class="hljs-keyword">this</span>.maxBlockTimeMs - waitedOnMetadataMs);
+
+        <span class="hljs-comment">// &#x5E8F;&#x5217;&#x5316;key&#x548C; value</span>
+        <span class="hljs-keyword">byte</span>[] serializedKey= keySerializer.serialize(record.topic(), record.key());
+        <span class="hljs-keyword">byte</span>[] serializedValue = valueSerializer.serialize(record.topic(), record.value());
+
+        <span class="hljs-comment">// &#x9009;&#x62E9;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x7684;Partition</span>
+        <span class="hljs-keyword">int</span> partition = partition(record, serializedKey, serializedValue, metadata.fetch());
+        TopicPartition tp = <span class="hljs-keyword">new</span> TopicPartition(record.topic(), partition);
+        RecordAccumulator.RecordAppendResult result = accumulator.append(tp, serializedKey, serializedValue, callback, remainingWaitMs);
+
+        <span class="hljs-comment">// &#x5728;&#x6BCF;&#x6B21;&#x8FFD;&#x52A0;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x5230;&#x6536;&#x96C6;&#x5668;&#x4E4B;&#x540E;,&#x90FD;&#x8981;&#x5224;&#x65AD;&#x662F;&#x5426;&#x6EE1;&#x4E86;.&#x5982;&#x679C;&#x6EE1;&#x4E86;,&#x5C31;&#x6267;&#x884C;&#x4E00;&#x6B21;Sender&#x64CD;&#x4F5C;,&#x901A;&#x77E5;Sender&#x5C06;&#x8FD9;&#x6279;&#x6570;&#x636E;&#x53D1;&#x9001;&#x5230; Kafka</span>
+        <span class="hljs-keyword">if</span> (result.batchIsFull || result.newBatchCreated) <span class="hljs-keyword">this</span>.sender.wakeup();
+        <span class="hljs-keyword">return</span> result.future;
+    }
+</code></pre>
+<p><img src="flow.png" alt=""></p>
+<p>&#x5728;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x524D;,&#x6D88;&#x606F;&#x6240;&#x5C5E;&#x7684;topic&#x5FC5;&#x987B;&#x5DF2;&#x7ECF;&#x5EFA;&#x597D;,&#x5E76;&#x4E14;&#x4E5F;&#x6307;&#x5B9A;&#x8FD9;&#x4E2A;topic&#x7684; partition&#x6570;&#x91CF;(&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x5219;&#x9ED8;&#x8BA4;&#x662F;server.properties&#x7684; num.partitions).</p>
+<pre><code class="lang-bash">bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 3 --partitions 10 --topic <span class="hljs-built_in">test</span>
+</code></pre>
+<h3 id="partition">partition</h3>
+<p>&#x4E00;&#x4E2A;Partition&#x7684;&#x4E3B;&#x8981;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#x662F; topic&#x540D;&#x79F0;,partition&#x7F16;&#x53F7;,&#x6240;&#x5728;&#x7684;Leader,&#x6240;&#x6709;&#x7684;&#x526F;&#x672C;,isr&#x5217;&#x8868;.&#x8868;&#x793A;&#x8FD9;&#x4E2A;Partition&#x7684;&#x5206;&#x5E03;&#x60C5;&#x51B5;.
+public class PartitionInfo {
+    private final String topic;
+    private final int partition;
+    private final Node leader;
+    private final Node[] replicas;
+    private final Node[] inSyncReplicas;
+}
+&#x4E0B;&#x56FE;&#x662F;kafka-manager&#x4E2D;&#x67D0;&#x4E2A; topic &#x7684;PartitionInfo&#x4FE1;&#x606F;(&#x526F;&#x672C;&#x6570;=4,Broker&#x6570;&#x91CF;&#x521A;&#x597D;&#x4E5F;&#x662F;4,&#x5BFC;&#x81F4;&#x6BCF;&#x4E2A;Partition &#x90FD;&#x5206;&#x5E03;&#x5728;&#x6240;&#x6709;Broker&#x4E0A;).</p>
+<p><img src="partition-info.png" alt=""></p>
+<p>&#x5728;Cluster&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;, &#x4F1A;&#x6839;&#x636E;&#x6240;&#x6709;&#x8282;&#x70B9;&#x548C;&#x6240;&#x6709;partitions&#x6784;&#x5EFA;&#x96C6;&#x7FA4;&#x72B6;&#x6001;&#x4FE1;&#x606F;.availablePartitions &#x53EA;&#x4FDD;&#x5B58;&#x6709;Leader&#x7684; Partition.</p>
+<blockquote>
+<p>&#x6B63;&#x5E38;&#x6765;&#x8BF4;&#x6BCF;&#x4E2A;Partition&#x90FD;&#x662F;&#x6709; Leader Partition&#x7684;. &#x5982;&#x679C;Partition&#x6CA1;&#x6709; Leader&#x7684;&#x8BDD;,&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;Partition&#x5C31;&#x662F;&#x6709;&#x95EE;&#x9898;&#x7684;.</p>
+</blockquote>
+<pre><code class="lang-java">    List&lt;PartitionInfo&gt; availablePartitions = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+    <span class="hljs-keyword">for</span> (PartitionInfo part : partitionList) {
+        <span class="hljs-keyword">if</span> (part.leader() != <span class="hljs-keyword">null</span>)
+            availablePartitions.add(part);
+    }
+    <span class="hljs-keyword">this</span>.availablePartitionsByTopic.put(topic, Collections.unmodifiableList(availablePartitions));
+</code></pre>
+<p>&#x8981;&#x9009;&#x62E9;&#x6D88;&#x606F;&#x6240;&#x5C5E;&#x7684;partition,&#x9996;&#x5148;&#x9700;&#x8981;&#x77E5;&#x9053; topic&#x4E00;&#x5171;&#x6709;&#x591A;&#x5C11;&#x4E2A; partition(numPartitions),
+&#x6240;&#x4EE5;metadata.fetch&#x83B7;&#x5F97;&#x7684; Cluster &#x4FE1;&#x606F;&#x4E2D;&#x6709;topic-&gt;partitions&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;(partitionsByTopic).
+&#x6D88;&#x606F;&#x6709;key&#x7684;&#x8BDD;,&#x5BF9;key&#x8FDB;&#x884C; hash,&#x7136;&#x540E;&#x548C;partitions&#x6570;&#x91CF;&#x53D6;&#x6A21;,&#x7C7B;&#x4F3C;&#x4E8E;round-robin&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x786E;&#x5B9A; key&#x6240;&#x5728;&#x7684; partition&#x8FBE;&#x5230;&#x8D1F;&#x8F7D;&#x5747;&#x8861;.
+&#x5982;&#x679C;&#x6D88;&#x606F;&#x6CA1;&#x6709;key, &#x4F1A;&#x6839;&#x636E;&#x9012;&#x589E;&#x7684;counter&#x7684;&#x503C;&#x786E;&#x5B9A; partition, count&#x4E0D;&#x65AD;&#x9012;&#x589E;,&#x786E;&#x4FDD;&#x6D88;&#x606F;&#x4E0D;&#x4F1A;&#x90FD;&#x53D1;&#x5230;&#x540C;&#x4E00;&#x4E2A;partition&#x91CC;.</p>
+<blockquote>
+<p>&#x95EE;&#x9898;: &#x5199;&#x5165;&#x6D88;&#x606F;&#x65F6;&#x662F;&#x5199;&#x5230;Leader Partition&#x7684;&#x8BDD;,&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4F55;&#x4F53;&#x73B0;Leader?
+&#x7B54;&#x6848;: &#x5B9E;&#x9645;&#x4E0A;&#x4E3A;&#x6D88;&#x606F;&#x9009;&#x62E9;Partition,&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x8D1F;&#x8F7D;&#x5747;&#x8861;, &#x8DDF;Leader&#x6CA1;&#x6709;&#x591A;&#x5927;&#x5173;&#x7CFB;.
+&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;PartitionInfo&#x4E00;&#x5B9A;&#x80FD;&#x786E;&#x5B9A;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684; Leader(&#x4E00;&#x4E2A;Partition &#x53EA;&#x6709;&#x4E00;&#x4E2A;Leader)
+&#x5982;&#x679C;&#x4E00;&#x4E2A;topic&#x53EA;&#x6709;&#x4E00;&#x4E2A; Partition&#x7684;&#x8BDD;,&#x5728;&#x96C6;&#x7FA4;&#x73AF;&#x5883;&#x4E0B;&#x5C31;&#x4E0D;&#x80FD;&#x6C34;&#x5E73;&#x6269;&#x5C55;:&#x8FD9;&#x4E2A;topic&#x7684;&#x6D88;&#x606F;&#x53EA;&#x80FD;&#x5199;&#x5230;&#x4E00;&#x4E2A;&#x8282;&#x70B9;.
+&#x800C;&#x4E3A;&#x4E00;&#x4E2A;topic&#x8BBE;&#x7F6E;&#x591A;&#x4E2A; Partition,&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5F80;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x591A;&#x4E2A;Partition&#x5199;&#x6570;&#x636E;.
+&#x6CE8;&#x610F;: &#x591A;&#x4E2A;Partition&#x90FD;&#x662F;&#x540C;&#x4E00;&#x4E2A; topic&#x7684;,&#x6BCF;&#x4E2A;Partition&#x7684;&#x903B;&#x8F91;&#x610F;&#x4E49;&#x90FD;&#x662F;&#x76F8;&#x540C;&#x7684;,&#x53EA;&#x662F;&#x7269;&#x7406;&#x4F4D;&#x7F6E;&#x4E0D;&#x540C;&#x800C;&#x5DF2;.</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">partition</span><span class="hljs-params">(String topic, Object key, <span class="hljs-keyword">byte</span>[] keyBytes, Object value, <span class="hljs-keyword">byte</span>[] valueBytes, Cluster cluster)</span> </span>{
+        <span class="hljs-comment">// &#x8FD9;&#x4E2A;topic&#x6240;&#x6709;&#x7684; partitions. &#x7528;&#x6765;&#x8D1F;&#x8F7D;&#x5747;&#x8861;, &#x5373;Leader Partition&#x4E0D;&#x8981;&#x90FD;&#x5206;&#x5E03;&#x5728;&#x540C;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;</span>
+        List&lt;PartitionInfo&gt; partitions = cluster.partitionsForTopic(topic);
+        <span class="hljs-keyword">int</span> numPartitions = partitions.size();
+        <span class="hljs-keyword">if</span> (keyBytes == <span class="hljs-keyword">null</span>) {
+            <span class="hljs-keyword">int</span> nextValue = counter.getAndIncrement();
+            <span class="hljs-comment">// &#x8FD9;&#x4E2A;topic&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684; partitions: availablePartitionsByTopic</span>
+            List&lt;PartitionInfo&gt; availablePartitions = cluster.availablePartitionsForTopic(topic);
+            <span class="hljs-keyword">if</span> (availablePartitions.size() &gt; <span class="hljs-number">0</span>) {
+                <span class="hljs-keyword">int</span> part = DefaultPartitioner.toPositive(nextValue) % availablePartitions.size();
+                <span class="hljs-keyword">return</span> availablePartitions.get(part).partition();
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-comment">// no partitions are available, give a non-available partition</span>
+                <span class="hljs-keyword">return</span> DefaultPartitioner.toPositive(nextValue) % numPartitions;
+            }
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">// hash the keyBytes to choose a partition</span>
+            <span class="hljs-keyword">return</span> DefaultPartitioner.toPositive(Utils.murmur2(keyBytes)) % numPartitions;
+        }
+    }
+</code></pre>
+<p>&#x4E0B;&#x56FE;&#x662F;partition&#x7684;&#x5206;&#x5E03;&#x7B97;&#x6CD5;.topic1&#x6709;4&#x4E2A;partition. &#x5219;&#x603B;&#x5171;&#x6709;4&#x4E2A;&#x5BF9;&#x5E94;&#x7684;PartitionInfo&#x5BF9;&#x8C61;.
+&#x6BCF;&#x4E2A;PartitionInfo(&#x6BD4;&#x5982;topic1-part1)&#x90FD;&#x6709;&#x552F;&#x4E00;&#x7684;Partition&#x7F16;&#x53F7;(1),replicas(1,2,3).</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;:replicas&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A; PartitionInfo&#x5BF9;&#x8C61;,&#x5B83;&#x4EEC;&#x4EC5;&#x4EC5;&#x662F;&#x67D0;&#x4E2A;Partition&#x7F16;&#x53F7;&#x5BF9;&#x5E94;&#x7684; PartitionInfo&#x7684; replicas&#x4FE1;&#x606F;.
+&#x5373;partitionsForTopic&#x548C; availablePartitionsForTopic&#x91CC;&#x9762;&#x5176;&#x5B9E;&#x662F;&#x6CA1;&#x6709; follower replics&#x7684;.
+&#x56E0;&#x4E3A;&#x5982;&#x679C;Replicas&#x90FD;&#x7B97;&#x4F5C; PartitionInfo&#x7684;&#x8BDD;, &#x5219;Partition&#x7F16;&#x53F7;&#x5C31;&#x4E0D;&#x597D;&#x8868;&#x793A;&#x4E86;(4&#x4E2A;Partition,&#x6BCF;&#x4E2A;Partition&#x7531;3&#x4E2A;&#x526F;&#x672C;).</p>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x5728;&#x9009;&#x62E9;Partition&#x7684;&#x65F6;&#x5019;,&#x6839;&#x672C;&#x5C31;&#x5148;&#x4E0D;&#x8981;&#x8003;&#x8651;replicas&#x7684;&#x5B58;&#x5728;. &#x5C31;&#x53EA;&#x6709;Partition&#x7F16;&#x53F7;.
+&#x6BCF;&#x4E2A;Partition&#x662F;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x8282;&#x70B9;&#x4E0A;&#x7684;(&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;Partition&#x5C31;&#x8BA4;&#x4E3A;&#x662F; Leader Partition).
+&#x7136;&#x540E;&#x5728;&#x5199;&#x6D88;&#x606F;&#x7684;&#x65F6;&#x5019;&#x91C7;&#x7528;round-robin&#x65B9;&#x5F0F;&#x5C06;&#x6D88;&#x606F;&#x5E73;&#x5747;&#x8D1F;&#x8F7D;&#x5230;&#x6BCF;&#x4E00;&#x4E2A; Partition&#x4E0A;.
+&#x5047;&#x8BBE;&#x7B2C;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x5199;&#x5230;&#x4E86;topic1-part1,&#x5219;&#x4E0B;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x5C31;&#x5199;&#x5230;topic1-part2,&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;.</p>
+</blockquote>
+<p><img src="partition-sync.png" alt=""></p>
+<h3 id="recordaccumulator">RecordAccumulator</h3>
+<p>&#x7531;&#x4E8E;&#x751F;&#x4EA7;&#x8005;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x662F;&#x5F02;&#x6B65;&#x5730;,&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5C06;&#x591A;&#x6761;&#x6D88;&#x606F;&#x7F13;&#x5B58;&#x8D77;&#x6765;,&#x7B49;&#x5230;&#x4E00;&#x5B9A;&#x65F6;&#x673A;&#x6279;&#x91CF;&#x5730;&#x5199;&#x5165;&#x5230;Kafka&#x96C6;&#x7FA4;&#x4E2D;,RecordAccumulator&#x5C31;&#x626E;&#x6F14;&#x4E86;&#x7F13;&#x51B2;&#x8005;&#x7684;&#x89D2;&#x8272;.
+&#x751F;&#x4EA7;&#x8005;&#x6BCF;&#x751F;&#x4EA7;&#x4E00;&#x6761;&#x6D88;&#x606F;,&#x5C31;&#x5411;accumulator&#x4E2D;&#x8FFD;&#x52A0;&#x4E00;&#x6761;&#x6D88;&#x606F;,&#x5E76;&#x4E14;&#x8981;&#x8FD4;&#x56DE;&#x672C;&#x6B21;&#x8FFD;&#x52A0;&#x662F;&#x5426;&#x5BFC;&#x81F4;batch&#x6EE1;&#x4E86;,&#x5982;&#x679C;batch&#x6EE1;&#x4E86;,&#x5219;&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x8FD9;&#x4E00;&#x6279;&#x6570;&#x636E;.
+&#x6700;&#x5F00;&#x59CB;&#x4EE5;&#x4E3A; Deque<recordbatch> &#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x961F;&#x5217;,&#x5B9E;&#x9645;&#x4E0A;&#x4E00;&#x6279;&#x6D88;&#x606F;&#x4F1A;&#x9996;&#x5148;&#x653E;&#x5728;RecordBatch&#x4E2D;,&#x7136;&#x540E;Batch&#x53C8;&#x653E;&#x5728;&#x53CC;&#x7AEF;&#x961F;&#x5217;&#x4E2D;.</recordbatch></p>
+<p><img src="recorder-accumulator.png" alt=""></p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> RecordAppendResult <span class="hljs-title">append</span><span class="hljs-params">(TopicPartition tp, <span class="hljs-keyword">byte</span>[] key, <span class="hljs-keyword">byte</span>[] value, Callback callback, <span class="hljs-keyword">long</span> maxTimeToBlock)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+        Deque&lt;RecordBatch&gt; dq = dequeFor(tp);
+        <span class="hljs-keyword">synchronized</span> (dq) {
+            RecordBatch last = dq.peekLast();
+            <span class="hljs-keyword">if</span> (last != <span class="hljs-keyword">null</span>) {
+                FutureRecordMetadata future = last.tryAppend(key, value, callback, time.milliseconds());
+                <span class="hljs-comment">// &#x6709;&#x65E7;&#x7684;batch, &#x5E76;&#x4E14;&#x80FD;&#x5F80;&#x8FD9;&#x4E2A;batch&#x7EE7;&#x7EED;&#x8FFD;&#x52A0;&#x6D88;&#x606F;</span>
+                <span class="hljs-keyword">if</span> (future != <span class="hljs-keyword">null</span>) <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> RecordAppendResult(future, dq.size() &gt; <span class="hljs-number">1</span> || last.records.isFull(), <span class="hljs-keyword">false</span>);
+            }
+        }
+        <span class="hljs-comment">// &#x961F;&#x5217;&#x4E3A;&#x7A7A;(&#x6CA1;&#x6709;&#x4E00;&#x4E2A;RecordBatch,last=null), &#x6216;&#x8005;&#x65B0;&#x7684;RecordBatch&#x4E3A;&#x7A7A;(&#x65E7;&#x7684;Batch&#x6CA1;&#x6709;&#x7A7A;&#x95F4;&#x4E86;,future=null), &#x5219;&#x65B0;&#x5206;&#x914D;&#x4E00;&#x4E2A;Batch</span>
+        <span class="hljs-keyword">int</span> size = Math.max(<span class="hljs-keyword">this</span>.batchSize, Records.LOG_OVERHEAD + Record.recordSize(key, value));
+        ByteBuffer buffer = free.allocate(size, maxTimeToBlock);
+        <span class="hljs-keyword">synchronized</span> (dq) {
+            <span class="hljs-comment">// &#x5185;&#x5B58;&#x7684;ByteBuffer, &#x8FFD;&#x52A0;&#x65B0;&#x6D88;&#x606F;&#x65F6;,&#x4F1A;&#x6700;&#x7EC8;&#x5199;&#x5230;&#x8FD9;&#x4E2A;ByteBuffer&#x4E2D;</span>
+            MemoryRecords records = MemoryRecords.emptyRecords(buffer, compression, <span class="hljs-keyword">this</span>.batchSize);
+            RecordBatch batch = <span class="hljs-keyword">new</span> RecordBatch(tp, records, time.milliseconds());
+            FutureRecordMetadata future = Utils.notNull(batch.tryAppend(key, value, callback, time.milliseconds()));
+            dq.addLast(batch);
+            incomplete.add(batch);
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> RecordAppendResult(future, dq.size() &gt; <span class="hljs-number">1</span> || batch.records.isFull(), <span class="hljs-keyword">true</span>);
+        }
+    }
+</code></pre>
+<p>batches&#x662F;&#x4E00;&#x4E2A;&#x5E76;&#x53D1;&#x5B89;&#x5168;&#x7684;,&#x4F46;&#x662F;&#x6BCF;&#x4E2A;TopicPartition&#x91CC;&#x7684; ArrayDeque&#x5E76;&#x4E0D;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;,&#x6240;&#x4EE5;&#x5728;&#x4FEE;&#x6539;Deque&#x65F6;&#x90FD;&#x9700;&#x8981;&#x540C;&#x6B65;&#x5757;&#x64CD;&#x4F5C;.
+&#x961F;&#x5217;&#x4E2D;&#x53EA;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;batch(dq.size),&#x6216;&#x8005;&#x8FFD;&#x52A0;&#x4E86;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x540E;,&#x5F53;&#x524D;Batch&#x4E2D;&#x7684;&#x8BB0;&#x5F55;&#x6EE1;&#x4E86;(batch.records),&#x5C31;&#x53EF;&#x4EE5;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x4E86;.</p>
+<p><img src="batch-flow.png" alt=""></p>
+<p>RecordBatch&#x7684;tryAppend&#x5224;&#x65AD;MemoryRecords&#x662F;&#x5426;&#x80FD;&#x5BB9;&#x7EB3;&#x4E0B;&#x65B0;&#x7684;&#x6D88;&#x606F;,&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x5C31;&#x8FFD;&#x52A0;,&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7A7A;&#x95F4;&#x8FD4;&#x56DE;null,&#x8BA9;&#x8C03;&#x7528;&#x8005;&#x81EA;&#x5DF1;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;Batch.
+&#x6240;&#x4EE5;&#x4E00;&#x4E2A;RecordBatch&#x53EA;&#x5BF9;&#x5E94;&#x4E86;&#x4E00;&#x4E2A;MemoryRecords. &#x800C;&#x4E00;&#x4E2A;MemoryRecords&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x81F3;&#x591A;maxRecordSize&#x5927;&#x5C0F;&#x7684;&#x6D88;&#x606F;.</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;: &#x5BA2;&#x6237;&#x7AEF;&#x4F20;&#x9012;&#x7684;Callback&#x662F;&#x5728;&#x8FD9;&#x91CC;&#x548C;&#x6D88;&#x606F;&#x4E00;&#x8D77;&#x88AB;&#x52A0;&#x5165;&#x7684;. &#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x751F;&#x4EA7;&#x8005;&#x662F;&#x6279;&#x91CF;&#x5730;&#x5199;&#x6570;&#x636E;,&#x6240;&#x4EE5;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x662F;&#x5728;&#x4E00;&#x6279;&#x6570;&#x636E;&#x5B8C;&#x6210;&#x540E;&#x624D;&#x88AB;&#x8C03;&#x7528;</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> FutureRecordMetadata <span class="hljs-title">tryAppend</span><span class="hljs-params">(<span class="hljs-keyword">byte</span>[] key, <span class="hljs-keyword">byte</span>[] value, Callback callback, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-keyword">boolean</span> roomEnough = <span class="hljs-keyword">this</span>.records.hasRoomFor(key, value)
+        <span class="hljs-keyword">if</span>(!roomEnough) <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">this</span>.records.append(<span class="hljs-number">0L</span>, key, value);
+        <span class="hljs-keyword">this</span>.maxRecordSize = Math.max(<span class="hljs-keyword">this</span>.maxRecordSize, Record.recordSize(key, value));
+        FutureRecordMetadata future = <span class="hljs-keyword">new</span> FutureRecordMetadata(<span class="hljs-keyword">this</span>.produceFuture, <span class="hljs-keyword">this</span>.recordCount);
+        <span class="hljs-keyword">if</span> (callback != <span class="hljs-keyword">null</span>) thunks.add(<span class="hljs-keyword">new</span> Thunk(callback, future));
+        <span class="hljs-keyword">this</span>.recordCount++;
+        <span class="hljs-keyword">return</span> future;
+    }
+</code></pre>
+<blockquote>
+<p>&#x601D;&#x8003;:&#x4E3A;&#x4EC0;&#x4E48;&#x8FFD;&#x52A0;&#x6570;&#x636E;&#x7684;offset&#x56FA;&#x5B9A;&#x662F;0? &#x5B9E;&#x9645;&#x4E0A;&#x7531;&#x4E8E;&#x6D88;&#x606F;&#x4E4B;&#x95F4;&#x90FD;&#x662F;&#x72EC;&#x7ACB;&#x7684;,&#x4E00;&#x6761;&#x6D88;&#x606F;&#x81EA;&#x5DF1;&#x662F;&#x65E0;&#x6CD5;&#x786E;&#x5B9A;&#x81EA;&#x5DF1;&#x7684;offset&#x7684;. &#x90A3;&#x4E48;offset&#x662F;&#x600E;&#x4E48;&#x7BA1;&#x7406;&#x7684;?</p>
+</blockquote>
+<p>&#x5728;Sender&#x7EBF;&#x7A0B;&#x5F00;&#x59CB;&#x8FD0;&#x884C;&#x4E4B;&#x524D;,&#x9996;&#x5148;&#x8981;&#x627E;&#x5230;&#x6BCF;&#x4E2A;PartitionInfo&#x7684;Leader&#x8282;&#x70B9;,&#x7531;RecordAccumulator&#x7EDF;&#x4E00;&#x6536;&#x96C6;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x7684;&#x8282;&#x70B9;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> ReadyCheckResult <span class="hljs-title">ready</span><span class="hljs-params">(Cluster cluster, <span class="hljs-keyword">long</span> nowMs)</span> </span>{
+        Set&lt;Node&gt; readyNodes = <span class="hljs-keyword">new</span> HashSet&lt;Node&gt;();
+        <span class="hljs-comment">// batches: &#x6BCF;&#x4E2A;TopicPartition&#x90FD;&#x5BF9;&#x5E94;&#x4E86;&#x4E00;&#x4E2A;&#x53CC;&#x7AEF;&#x961F;&#x5217;</span>
+        <span class="hljs-keyword">for</span> (Map.Entry&lt;TopicPartition, Deque&lt;RecordBatch&gt;&gt; entry : <span class="hljs-keyword">this</span>.batches.entrySet()) {
+            TopicPartition part = entry.getKey();
+            Deque&lt;RecordBatch&gt; deque = entry.getValue();
+            <span class="hljs-comment">// &#x627E;&#x51FA;&#x8FD9;&#x4E2A;TopicPartition&#x7684; Leader&#x8282;&#x70B9;, &#x5728;&#x6B63;&#x5F0F;&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x65F6;, &#x4F1A;&#x5148;&#x5EFA;&#x7ACB;&#x5230;&#x8FD9;&#x4E9B;&#x8282;&#x70B9;&#x7684;&#x8FDE;&#x63A5;</span>
+            Node leader = cluster.leaderFor(part);
+            <span class="hljs-keyword">if</span> (leader == <span class="hljs-keyword">null</span>) {
+                unknownLeadersExist = <span class="hljs-keyword">true</span>;
+            } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!readyNodes.contains(leader)) {
+                <span class="hljs-keyword">synchronized</span> (deque) {
+                    RecordBatch batch = deque.peekFirst();
+                    <span class="hljs-keyword">if</span> (batch != <span class="hljs-keyword">null</span>) {
+                        <span class="hljs-keyword">boolean</span> sendable = full || expired || exhausted || closed || flushInProgress();
+                        <span class="hljs-keyword">if</span> (sendable &amp;&amp; !backingOff) {
+                            <span class="hljs-comment">// &#x52A0;&#x5165;&#x5230;&#x7B49;&#x5F85;&#x8FDE;&#x63A5;&#x7684;&#x8282;&#x70B9;&#x4E2D;.</span>
+                            readyNodes.add(leader);
+                        } <span class="hljs-keyword">else</span> {
+                            nextReadyCheckDelayMs = Math.min(timeLeftMs, nextReadyCheckDelayMs);
+                        }
+                    }
+                }
+            }
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ReadyCheckResult(readyNodes, nextReadyCheckDelayMs, unknownLeadersExist);
+    }
+</code></pre>
+<p>&#x6570;&#x636E;&#x6709;&#x751F;&#x4EA7;&#x5C31;&#x4F1A;&#x6709;&#x88AB;&#x6D88;&#x8D39;&#x7684;&#x5730;&#x65B9;,&#x5BF9;&#x5E94;Deque&#x961F;&#x5217;&#x7684;&#x8BDD;,&#x5C06;RecordBatch&#x52A0;&#x5165;,&#x5C31;&#x6709;&#x5BF9;&#x5E94;&#x7684;pollFirst&#x83B7;&#x53D6;&#x5E76;&#x5220;&#x9664;&#x7B2C;&#x4E00;&#x4E2A; batch.
+&#x7531;&#x4E8E;&#x5728;&#x751F;&#x4EA7;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;,&#x6BCF;&#x4E2A;TopicPartition&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x961F;&#x5217;,&#x5E76;&#x4E14;&#x90FD;&#x7EDF;&#x4E00;&#x88AB;&#x6536;&#x96C6;&#x5230;&#x4E86;RecordAccumulator&#x7684; batches&#x4E2D;.
+&#x5728;&#x6D88;&#x8D39;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;,&#x6700;&#x597D;&#x5BF9;batches&#x4E2D;&#x7684;&#x6BCF;&#x4E2A; TopicPartition&#x91CD;&#x65B0;&#x6574;&#x7406;&#x6210;&#x4EE5; Node&#x8282;&#x70B9;&#x4E3A;&#x7EA7;&#x522B;,&#x5BF9;&#x540E;&#x9762;&#x7684;&#x53D1;&#x9001;&#x6D41;&#x7A0B;&#x662F;&#x6709;&#x5F88;&#x5927;&#x5E2E;&#x52A9;&#x7684;.</p>
+<p><img src="send-flow.png" alt=""></p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> Map&lt;Integer, List&lt;RecordBatch&gt;&gt; drain(Cluster cluster, Set&lt;Node&gt; nodes, <span class="hljs-keyword">int</span> maxSize, <span class="hljs-keyword">long</span> now) {
+        Map&lt;Integer, List&lt;RecordBatch&gt;&gt; batches = <span class="hljs-keyword">new</span> HashMap&lt;Integer, List&lt;RecordBatch&gt;&gt;();
+        <span class="hljs-keyword">for</span> (Node node : nodes) {
+            <span class="hljs-keyword">int</span> size = <span class="hljs-number">0</span>;
+            List&lt;PartitionInfo&gt; parts = cluster.partitionsForNode(node.id());  <span class="hljs-comment">// &#x8282;&#x70B9;&#x4E0A;&#x6240;&#x6709;&#x7684;Partition</span>
+            List&lt;RecordBatch&gt; ready = <span class="hljs-keyword">new</span> ArrayList&lt;RecordBatch&gt;(); <span class="hljs-comment">// &#x7528;&#x6765;&#x4FDD;&#x5B58;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;Batch</span>
+            <span class="hljs-keyword">int</span> start = drainIndex = drainIndex % parts.size();     <span class="hljs-comment">// &#x4E3A;&#x4E86;&#x4E0D;&#x88AB;&#x997F;&#x6B7B;,start&#x5E76;&#x4E0D;&#x662F;&#x4ECE;0&#x5F00;&#x59CB;. &#x521D;&#x59CB;&#x65F6;,start=drainIndex</span>
+            do {
+                PartitionInfo part = parts.get(drainIndex);
+                Deque&lt;RecordBatch&gt; deque = dequeFor(<span class="hljs-keyword">new</span> TopicPartition(part.topic(), part.partition()));
+                <span class="hljs-keyword">if</span> (deque != <span class="hljs-keyword">null</span>) {                                <span class="hljs-comment">// &#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;Partition&#x90FD;&#x6709;&#x961F;&#x5217;&#x7684;</span>
+                    <span class="hljs-keyword">synchronized</span> (deque) {                          <span class="hljs-comment">// &#x961F;&#x5217;&#x4E0D;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;,&#x9700;&#x8981;&#x540C;&#x6B65;&#x5757;</span>
+                        RecordBatch first = deque.peekFirst();      <span class="hljs-comment">// Batch&#x52A0;&#x5165;&#x5230;&#x961F;&#x5217;&#x7684;&#x65F6;&#x5019;&#x662F;&#x52A0;&#x5230;&#x5C3E;&#x90E8;, &#x62C9;&#x53D6;Batch&#x65F6;&#x5219;&#x4ECE;&#x5934;&#x90E8;, &#x6240;&#x4EE5;&#x53EB;&#x505A;&#x53CC;&#x7AEF;&#x961F;&#x5217;&#x561B;</span>
+                        <span class="hljs-keyword">if</span> (first != <span class="hljs-keyword">null</span>) {
+                            RecordBatch batch = deque.pollFirst();  <span class="hljs-comment">// &#x4E0A;&#x9762;&#x5E76;&#x6CA1;&#x6709;&#x628A;Batch&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;, &#x5982;&#x679C;&#x8FD9;&#x4E2A;Batch&#x771F;&#x7684;&#x53EF;&#x4EE5;&#x88AB;&#x6D88;&#x8D39;,&#x624D;&#x771F;&#x6B63;&#x5220;&#x9664;(&#x5728;first&#x540E;&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x5224;&#x65AD;,&#x8FD9;&#x91CC;&#x7701;&#x7565;&#x4E86;)</span>
+                            batch.records.close();                  <span class="hljs-comment">// &#x91CA;&#x653E;&#x5185;&#x5B58;</span>
+                            ready.add(batch);                       <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x5230;&#x5F85;&#x53D1;&#x9001;&#x5217;&#x8868;&#x4E2D;</span>
+                        }
+                    }
+                }
+                <span class="hljs-keyword">this</span>.drainIndex = (<span class="hljs-keyword">this</span>.drainIndex + <span class="hljs-number">1</span>) % parts.size();
+            } <span class="hljs-keyword">while</span> (start != drainIndex);                          <span class="hljs-comment">// &#x76F4;&#x5230;&#x904D;&#x5386;&#x5B8C;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x6240;&#x6709;&#x7684;Partition,&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x4E0D;&#x4F1A;&#x6709;&#x5176;&#x4ED6;&#x7684;Partition&#x4E86;,&#x53EF;&#x4EE5;&#x653E;&#x5FC3;&#x5730;&#x9000;&#x51FA;&#x5FAA;&#x73AF;</span>
+
+            batches.put(node.id(), ready);                          <span class="hljs-comment">// Batch&#x662F;&#x4EE5; Node&#x4E3A;&#x7EA7;&#x522B;&#x7684;.&#x8868;&#x793A;&#x8FD9;&#x4E2A; Node&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E00;&#x6279;&#x7684; RecordBatch. &#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;RecordBatch&#x7684; Partition&#x90FD;&#x662F;&#x65E0;&#x5E8F;&#x7684;.</span>
+        }
+        <span class="hljs-keyword">return</span> batches;
+    }
+</code></pre>
+<h3 id="sender">Sender</h3>
+<p>RecordAccumulator.RecordAppendResult&#x7684; batch&#x6EE1;&#x4E86;,&#x5524;&#x9192;Sender&#x7EBF;&#x7A0B;.Sender&#x7EBF;&#x7A0B;&#x7684;&#x542F;&#x52A8;&#x5728;&#x521B;&#x5EFA; KafkaProducer&#x65F6;.
+Sender&#x518D;&#x5524;&#x9192; NetworkClient(&#x4E0D;&#x662F;&#x7EBF;&#x7A0B;,&#x76F8;&#x5F53;&#x4E8E;&#x901A;&#x77E5;&#x5BA2;&#x6237;&#x7AEF;&#x5F00;&#x59CB;&#x670D;&#x52A1;&#x4E86;),client&#x4E5F;&#x5524;&#x9192; Selector,&#x6700;&#x7EC8;&#x5524;&#x9192;NIO&#x7684; Selector.</p>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x6709;wakeup&#x52A8;&#x4F5C;:&#x56E0;&#x4E3A;&#x53EF;&#x80FD;&#x6709;&#x7EBF;&#x7A0B;&#x5728;select&#x7B49;&#x5F85;&#x4E8B;&#x4EF6;&#x88AB;&#x963B;&#x585E;&#x4E86;(&#x6CA1;&#x6709;&#x4E8B;&#x4EF6;),&#x901A;&#x8FC7;wakeup&#x5524;&#x9192;&#x90A3;&#x4E2A;&#x7EBF;&#x7A0B;&#x5F00;&#x59CB;&#x5DE5;&#x4F5C;(&#x6709;&#x4E8B;&#x4EF6;&#x8FDB;&#x6765;&#x4E86;)</p>
+</blockquote>
+<p>Sender&#x4E0D;&#x4EC5;&#x627F;&#x8F7D;&#x4E86; RecordAccumulator&#x8BB0;&#x5F55;&#x7684;&#x6536;&#x96C6;&#x5668;,&#x4E5F;&#x8981;&#x901A;&#x77E5;&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;:&#x628A;Accumulator&#x6536;&#x96C6;&#x7684;&#x6279;&#x8BB0;&#x5F55;&#x901A;&#x8FC7;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x51FA;&#x53BB;.
+Sender&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;,&#x662F;&#x5728;&#x540E;&#x53F0;&#x4E0D;&#x65AD;&#x8FD0;&#x884C;&#x7684;,&#x5982;&#x679C;&#x7EBF;&#x7A0B;&#x88AB;&#x505C;&#x6B62;,&#x53EF;&#x80FD;RecordAccumulator&#x4E2D;&#x8FD8;&#x6709;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x51FA;&#x53BB;,&#x6240;&#x4EE5;&#x8981;&#x4F18;&#x96C5;&#x5730;&#x505C;&#x6B62;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">while</span> (running) {
+            run(time.milliseconds());
+        }
+        <span class="hljs-keyword">while</span> (!forceClose &amp;&amp; (<span class="hljs-keyword">this</span>.accumulator.hasUnsent() || <span class="hljs-keyword">this</span>.client.inFlightRequestCount() &gt; <span class="hljs-number">0</span>)) {
+            run(time.milliseconds());
+        }
+        <span class="hljs-keyword">this</span>.client.close();
+    }
+</code></pre>
+<p>&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;&#x5DE5;&#x4F5C;&#x7EDF;&#x4E00;&#x7531;Sender&#x6765;&#x63A7;&#x5236;.&#x4E4B;&#x524D;&#x7684;wakeup&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x901A;&#x77E5;,&#x5B9E;&#x9645;&#x7684;&#x5DE5;&#x4F5C;&#x8FD8;&#x662F;&#x7531;&#x7EBF;&#x7A0B;&#x7684;run&#x65B9;&#x6CD5;&#x6765;&#x63A7;&#x5236;&#x7684;.
+&#x540C;&#x6837;&#x8C03;&#x7528;client.send&#x4E5F;&#x53EA;&#x662F;&#x628A;&#x8BF7;&#x6C42;&#x5148;&#x653E;&#x5230;&#x961F;&#x5217;&#x4E2D;, client.poll&#x624D;&#x662F;&#x4F1A;&#x5C06;&#x8BFB;&#x5199;&#x771F;&#x6B63;&#x53D1;&#x9001;&#x5230; socket&#x94FE;&#x8DEF;&#x4E0A;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">(<span class="hljs-keyword">long</span> now)</span> </span>{
+        Cluster cluster = metadata.fetch();
+        <span class="hljs-comment">// &#x2460; get the list of partitions with data ready to send</span>
+        RecordAccumulator.ReadyCheckResult result = <span class="hljs-keyword">this</span>.accumulator.ready(cluster, now);
+        <span class="hljs-comment">// &#x2461; remove any nodes we aren&apos;t ready to send to  &#x5EFA;&#x7ACB;&#x5230;Leader&#x7684; Socket&#x8FDE;&#x63A5;</span>
+        Iterator&lt;Node&gt; iter = result.readyNodes.iterator();
+        <span class="hljs-keyword">long</span> notReadyTimeout = Long.MAX_VALUE;
+        <span class="hljs-keyword">while</span> (iter.hasNext()) {
+            Node node = iter.next();
+            <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.client.ready(node, now)) {
+                iter.remove();
+                notReadyTimeout = Math.min(notReadyTimeout, <span class="hljs-keyword">this</span>.client.connectionDelay(node, now));
+            }
+        }
+
+        <span class="hljs-comment">// &#x2462; create produce requests &#x4E4B;&#x524D;&#x52A0;&#x5165;&#x5230;&#x4E86;accumulator&#x6536;&#x96C6;&#x5668;&#x4E2D;, &#x73B0;&#x5728;&#x4ECE;&#x6536;&#x96C6;&#x5668;&#x83B7;&#x53D6;&#x51FA;&#x6700;&#x5F00;&#x59CB;&#x653E;&#x5165;&#x7684;&#x6D88;&#x606F;</span>
+        Map&lt;Integer, List&lt;RecordBatch&gt;&gt; batches = <span class="hljs-keyword">this</span>.accumulator.drain(cluster, result.readyNodes, <span class="hljs-keyword">this</span>.maxRequestSize, now);
+        <span class="hljs-comment">// &#x2463; Transfer the record batches into a list of produce requests on a per-node basis &#x4EE5;&#x8282;&#x70B9;&#x4E3A;&#x7EA7;&#x522B;&#x7684;&#x751F;&#x4EA7;&#x8BF7;&#x6C42;&#x5217;&#x8868;. &#x5373;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x53EA;&#x6709;&#x4E00;&#x4E2A;ClientRequest</span>
+        List&lt;ClientRequest&gt; requests = createProduceRequests(batches, now);
+
+        <span class="hljs-keyword">long</span> pollTimeout = Math.min(result.nextReadyCheckDelayMs, notReadyTimeout);
+        <span class="hljs-comment">// &#x2464; Queue up the given request for sending. Requests can only be sent out to ready nodes. &#x4ECE;&#x6CE8;&#x91CA;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5165;&#x961F;&#x5217;&#x7684;&#x64CD;&#x4F5C;</span>
+        <span class="hljs-keyword">for</span> (ClientRequest request : requests) client.send(request, now);
+        <span class="hljs-comment">// &#x2465; Do actual reads and writes to sockets. &#x8FD9;&#x91CC;&#x624D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;</span>
+        <span class="hljs-keyword">this</span>.client.poll(pollTimeout, now);
+    }
+</code></pre>
+<p>accumulator&#x5728;&#x4E4B;&#x524D;&#x4E00;&#x76F4; append&#x6570;&#x636E;,&#x5230;&#x771F;&#x6B63;&#x8981;&#x53D1;&#x9001;&#x4E00;&#x6279;&#x6570;&#x636E;&#x65F6;,&#x5148;&#x2460;&#x51C6;&#x5907;(ready)&#x9700;&#x8981;&#x53D1;&#x9001;&#x7684;partitions&#x5230;&#x54EA;&#x4E9B; Nodes&#x4E0A;,&#x2461;&#x5E76;&#x5EFA;&#x7ACB;&#x5230;&#x8282;&#x70B9;&#x7684;&#x8FDE;&#x63A5;
+&#x7136;&#x540E;&#x2462;&#x6784;&#x9020;&#x6BCF;&#x4E2A;Node&#x9700;&#x8981;&#x7684; RecordBatch&#x5217;&#x8868;(&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x540C;&#x65F6;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x591A;&#x6279;&#x6570;&#x636E;),&#x2463;&#x5E76;&#x8F6C;&#x6362;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;ClientRequest.</p>
+<p><img src="sender.png" alt=""></p>
+<p>&#x7531;&#x4E8E;batches&#x5DF2;&#x7ECF;&#x662F;&#x6309;&#x7167;&#x8282;&#x70B9;&#x5212;&#x5206;&#x597D;&#x7684;&#x4E86;,&#x6240;&#x4EE5;&#x521B;&#x5EFA;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x4E5F;&#x662F;&#x6309;&#x7167;&#x8282;&#x70B9;&#x5212;&#x5206;&#x597D;&#x4E86;.&#x4E0D;&#x8FC7;&#x867D;&#x7136;produceRequest&#x65B9;&#x6CD5;&#x4E2D;&#x7684; batches
+&#x662F;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x6240;&#x6709;&#x7684;batches,&#x4F46;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x9762;&#x5411;&#x7684;&#x8FD8;&#x662F;Partition&#x7EA7;&#x522B;! &#x6240;&#x4EE5;&#x8981;&#x5BF9;batches&#x91CD;&#x65B0;&#x6309;&#x7167; Partition&#x7684;&#x7C92;&#x5EA6;&#x6574;&#x7406;.
+&#x4E0D;&#x8FC7;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x53EA;&#x6709;&#x4E00;&#x4E2A;ClientRequest,&#x5B83;&#x672C;&#x8EAB;&#x5E76;&#x4E0D;&#x5173;&#x5FC3;&#x5305;&#x542B;&#x4E86;&#x591A;&#x5C11;&#x4E2A;Partition,&#x4F60;&#x53EA;&#x8981;&#x9700;&#x8981;&#x53D1;&#x9001;&#x7684;&#x5BF9;&#x8C61;&#x5305;&#x88C5;&#x6210;RequestSend&#x5373;&#x53EF;.</p>
+<p><img src="recordBatch.png" alt=""></p>
+<blockquote>
+<p>&#x95EE;&#x9898;: batches&#x4E2D;&#x4F1A;&#x4E0D;&#x4F1A;&#x6709;&#x76F8;&#x540C;&#x7684;Partition? &#x4E0D;&#x4F1A;&#x7684;! &#x5982;&#x679C;&#x90A3;&#x6837;&#x7684;&#x8BDD;,&#x4E24;&#x4E2A;Map&#x7684;key&#x56E0;&#x4E3A;&#x90FD;&#x662F;Partition,&#x4F1A;&#x5BFC;&#x81F4;value&#x88AB;&#x8986;&#x76D6;.&#x4F46;&#x662F;&#x600E;&#x4E48;&#x4FDD;&#x8BC1;?</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">private</span> ClientRequest <span class="hljs-title">produceRequest</span><span class="hljs-params">(<span class="hljs-keyword">long</span> now, <span class="hljs-keyword">int</span> destination, <span class="hljs-keyword">short</span> acks, <span class="hljs-keyword">int</span> timeout, List&lt;RecordBatch&gt; batches)</span> </span>{
+        Map&lt;TopicPartition, ByteBuffer&gt; produceRecordsByPartition = <span class="hljs-keyword">new</span> HashMap&lt;TopicPartition, ByteBuffer&gt;(batches.size());
+        <span class="hljs-keyword">final</span> Map&lt;TopicPartition, RecordBatch&gt; recordsByPartition = <span class="hljs-keyword">new</span> HashMap&lt;TopicPartition, RecordBatch&gt;(batches.size());
+        <span class="hljs-keyword">for</span> (RecordBatch batch : batches) {
+            TopicPartition tp = batch.topicPartition;                   <span class="hljs-comment">// &#x6BCF;&#x4E2A;RecordBatch&#x90FD;&#x6709;&#x552F;&#x4E00;&#x7684;TopicPartition</span>
+            produceRecordsByPartition.put(tp, batch.records.buffer());  <span class="hljs-comment">// RecordBatch&#x7684;records&#x662F;MemoryRecords,&#x5E95;&#x5C42;&#x662F;ByteBuffer</span>
+            recordsByPartition.put(tp, batch);
+        }
+        <span class="hljs-comment">// &#x6784;&#x9020;&#x751F;&#x4EA7;&#x8005;&#x7684;&#x8BF7;&#x6C42;(&#x6BCF;&#x4E2A;Partition&#x90FD;&#x6709;&#x751F;&#x4EA7;&#x8BB0;&#x5F55;), &#x5E76;&#x6307;&#x5B9A;&#x76EE;&#x6807;&#x8282;&#x70B9;,&#x8BF7;&#x6C42;&#x5934;&#x548C;&#x8BF7;&#x6C42;&#x5185;&#x5BB9;, &#x8F6C;&#x6362;&#x4E3A;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;</span>
+        ProduceRequest request = <span class="hljs-keyword">new</span> ProduceRequest(acks, timeout, produceRecordsByPartition);
+        RequestSend send = <span class="hljs-keyword">new</span> RequestSend(Integer.toString(destination), <span class="hljs-keyword">this</span>.client.nextRequestHeader(ApiKeys.PRODUCE), request.toStruct());
+
+        <span class="hljs-comment">// &#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x4F5C;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x7684;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x53D8;&#x91CF;, &#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x5B8C;&#x6210;&#x540E;, &#x4F1A;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;!</span>
+        RequestCompletionHandler callback = <span class="hljs-keyword">new</span> RequestCompletionHandler() {
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onComplete</span><span class="hljs-params">(ClientResponse response)</span> </span>{
+                handleProduceResponse(response, recordsByPartition, time.milliseconds());
+            }
+        };
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ClientRequest(now, acks != <span class="hljs-number">0</span>, send, callback);
+    }
+</code></pre>
+<blockquote>
+<p>ProduceRequest&#x662F; Producer&#x7684;&#x751F;&#x4EA7;&#x8BF7;&#x6C42;,&#x9700;&#x8981; acks&#x548C; timeout&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;,&#x5728;&#x540E;&#x9762;&#x7684;DelayedOperation&#x4E2D;&#x4F1A;&#x7528;&#x5230;.</p>
+</blockquote>
+<h3 id="clientrequest--clientresponse--callback">ClientRequest &amp; ClientResponse &amp; Callback</h3>
+<p>ClientRequest&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;,&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x4F1A;&#x88AB;&#x53D1;&#x9001;(Send)&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;,&#x6240;&#x4EE5;&#x5B83;&#x5305;&#x88C5;&#x7684;&#x662F;RequestSend.</p>
+<p>ClientResponse&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x54CD;&#x5E94;,&#x4E5F;&#x9700;&#x8981;ClientRequest&#x662F;&#x56E0;&#x4E3A;&#x8BF7;&#x6C42;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x65F6;&#x54CD;&#x5E94;&#x8981;&#x548C;&#x8BF7;&#x6C42;&#x5BF9;&#x7684;&#x4E0A;.</p>
+<p>&#x7531;&#x4E8E;Callback&#x662F;&#x9644;&#x52A0;&#x5728; Request&#x91CC;&#x7684;,&#x4E3A;&#x4E86;&#x8BA9;Response&#x80FD;&#x591F;&#x89E6;&#x53D1; Callback&#x56DE;&#x8C03;,&#x5C06;Request&#x8BBE;&#x7F6E;&#x5230; Response.</p>
+<pre><code class="lang-java"><span class="hljs-comment">// A request being sent to the server. This holds both the network send as well as the client-level metadata.</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClientRequest</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> createdTimeMs;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> expectResponse;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> RequestSend request;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> RequestCompletionHandler callback;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> isInitiatedByNetworkClient;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> sendTimeMs;
+}
+<span class="hljs-comment">// A response from the server. Contains both the body of the response as well as the correlated request that was originally sent.</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClientResponse</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> receivedTimeMs;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">boolean</span> disconnected;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> ClientRequest request;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Struct responseBody;
+}
+</code></pre>
+<p>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F20;&#x7ED9;&#x4E86;ClientRequest&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;,&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x771F;&#x6B63;&#x53D1;&#x751F;&#x8BFB;&#x5199;&#x540E;(poll),&#x4F1A;&#x4EA7;&#x751F;ClientResponse&#x5BF9;&#x8C61;,&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;.
+&#x56E0;&#x4E3A;&#x56DE;&#x8C03;&#x5BF9;&#x8C61;RequestCompletionHandler&#x7684;&#x56DE;&#x8C03;&#x65B9;&#x6CD5; onComplete&#x7684;&#x53C2;&#x6570;&#x662F; ClientResponse.
+NetworkClient.poll&#x662F;&#x771F;&#x6B63;&#x53D1;&#x751F;&#x8BFB;&#x5199;&#x7684;&#x5730;&#x65B9;,&#x6240;&#x4EE5;&#x5B83;&#x4E5F;&#x4F1A;&#x8D1F;&#x8D23;&#x751F;&#x6210;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x54CD;&#x5E94;&#x4FE1;&#x606F;.</p>
+<p><img src="request-response.png" alt=""></p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;ClientResponse&gt; <span class="hljs-title">poll</span><span class="hljs-params">(<span class="hljs-keyword">long</span> timeout, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-comment">// .....&#x771F;&#x6B63;&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;, &#x4F1A;&#x751F;&#x6210;responses</span>
+
+        <span class="hljs-comment">// invoke callbacks</span>
+        <span class="hljs-keyword">for</span> (ClientResponse response : responses) {
+            <span class="hljs-keyword">if</span> (response.request().hasCallback()) {
+                response.request().callback().onComplete(response);
+            }
+        }
+        <span class="hljs-keyword">return</span> responses;
+    }
+</code></pre>
+<p>&#x5230;poll&#x51FA;&#x6765;&#x7684; responses&#x662F;&#x4E00;&#x4E2A;&#x5217;&#x8868;(&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5217;&#x8868;).&#x6BCF;&#x4E2A;ClientRequest&#x548C; ClientResponse&#x90FD;&#x662F;&#x9488;&#x5BF9;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;.
+&#x518D;&#x6B21;&#x5F3A;&#x8C03;&#x4E0B;,&#x53D1;&#x751F;&#x5728;Client&#x7EA7;&#x522B;&#x7684;&#x52A8;&#x4F5C;&#x90FD;&#x662F;&#x9488;&#x5BF9;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x800C;&#x8A00;,&#x81F3;&#x4E8E;&#x5E95;&#x5C42;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5206;&#x6210;&#x591A;&#x4E2A;Partition&#x5219;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x628A;&#x5185;&#x5BB9;&#x5C01;&#x88C5;&#x8FDB;&#x53BB;.</p>
+<pre><code class="lang-java">        <span class="hljs-keyword">for</span> (ClientRequest request : requests) 
+            client.send(request, now);
+</code></pre>
+<h3 id="handleproduceresponse">handleProduceResponse</h3>
+<p>&#x6BCF;&#x4E2A;ClientResponse&#x4EE3;&#x8868;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x54CD;&#x5E94;,&#x8981;&#x4ECE;&#x4E2D;&#x89E3;&#x6790;&#x51FA;ProduceResponse&#x4E2D;&#x6240;&#x6709; Partition&#x7684; PartitionResponse.</p>
+<p><img src="handleProduceResponse.png" alt=""></p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleProduceResponse</span><span class="hljs-params">(ClientResponse response, Map&lt;TopicPartition, RecordBatch&gt; batches, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-keyword">if</span> (response.hasResponse()) {                       <span class="hljs-comment">// if we have a response, parse it</span>
+            ProduceResponse produceResponse = <span class="hljs-keyword">new</span> ProduceResponse(response.responseBody());
+            <span class="hljs-keyword">for</span> (Map.Entry&lt;TopicPartition, ProduceResponse.PartitionResponse&gt; entry : produceResponse.responses().entrySet()) {
+                TopicPartition tp = entry.getKey();         <span class="hljs-comment">// &#x6BCF;&#x4E00;&#x4E2A;TopicPartition&#x90FD;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;PartitionResponse</span>
+                ProduceResponse.PartitionResponse partResp = entry.getValue();
+                Errors error = Errors.forCode(partResp.errorCode);
+                RecordBatch batch = batches.get(tp);        <span class="hljs-comment">// &#x56E0;&#x4E3A;batches&#x4E2D;&#x5BF9;&#x4E00;&#x4E2A;Partition&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;RecordBatch</span>
+                completeBatch(batch, error, partResp.baseOffset, correlationId, now);   <span class="hljs-comment">// &#x5B8C;&#x6210;&#x8FD9;&#x4E2A;RecordBatch, &#x8C03;&#x7528;RecordBatch.done    </span>
+            }
+        } <span class="hljs-keyword">else</span> {  <span class="hljs-comment">// this is the acks = 0 case, just complete all requests</span>
+            <span class="hljs-keyword">for</span> (RecordBatch batch : batches.values()) completeBatch(batch, Errors.NONE, -<span class="hljs-number">1L</span>, correlationId, now);
+        }
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">completeBatch</span><span class="hljs-params">(RecordBatch batch, Errors error, <span class="hljs-keyword">long</span> baseOffset, <span class="hljs-keyword">long</span> correlationId, <span class="hljs-keyword">long</span> now)</span> </span>{
+        batch.done(baseOffset, error.exception());  <span class="hljs-comment">// tell the user the result of their request</span>
+        <span class="hljs-keyword">this</span>.accumulator.deallocate(batch);         <span class="hljs-comment">// release resource include remove from incomplete and deallocate batch&apos;s records memory</span>
+    }
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684;ClientRequest&#x548C; ClientResponse&#x5206;&#x522B;&#x7531; ProduceRequest&#x548C; ProduceResponse&#x7EC4;&#x6210;,&#x4E24;&#x8005;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x5171;&#x540C;&#x70B9;.</p>
+<p><img src="20160121082905460" alt=""></p>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x7EC4;&#x7EC7;&#x751F;&#x6210;&#x7684;&#x6BCF;&#x4E00;&#x6279;Batch&#x8BB0;&#x5F55;&#x90FD;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A; Partition,&#x6240;&#x4EE5;&#x6BCF;&#x4E2A;Batch&#x90FD;&#x8981; complete(&#x8C03;&#x7528;RecordBatch.done).
+&#x6BCF;&#x6B21;Batch&#x4E2D;,&#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x9700;&#x8981;&#x54CD;&#x5E94;,&#x5219;baseOffset=-1,&#x5426;&#x5219;&#x4ECE;response&#x4E2D;&#x89E3;&#x6790;&#x51FA; baseOffset&#x7528;&#x6765;&#x8868;&#x793A;&#x6D88;&#x606F;&#x7684; offset.
+&#x7531;&#x4E8E;RecordBatch&#x8BB0;&#x5F55;&#x7684;&#x662F;&#x6BCF;&#x4E00;&#x6761;&#x6D88;&#x606F;,&#x6BCF;&#x6761;&#x6D88;&#x606F;&#x90FD;&#x6709;Callback&#x7684;&#x8BDD;,&#x4E00;&#x4E2A;Batch&#x91CC;&#x5C31;&#x6709;&#x548C;&#x6D88;&#x606F;&#x6570;&#x91CF;&#x76F8;&#x7B49;&#x7684; thunks(callback).</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">done</span><span class="hljs-params">(<span class="hljs-keyword">long</span> baseOffset, RuntimeException exception)</span> </span>{
+        <span class="hljs-comment">// execute callbacks</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-keyword">this</span>.thunks.size(); i++) {
+            Thunk thunk = <span class="hljs-keyword">this</span>.thunks.get(i);
+            <span class="hljs-keyword">if</span> (exception == <span class="hljs-keyword">null</span>) {
+                RecordMetadata metadata = <span class="hljs-keyword">new</span> RecordMetadata(<span class="hljs-keyword">this</span>.topicPartition,  baseOffset, thunk.future.relativeOffset());
+                thunk.callback.onCompletion(metadata, <span class="hljs-keyword">null</span>);
+            } <span class="hljs-keyword">else</span> {
+                thunk.callback.onCompletion(<span class="hljs-keyword">null</span>, exception);
+            }
+        }
+        <span class="hljs-keyword">this</span>.produceFuture.done(topicPartition, baseOffset, exception);
+    }
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x8FFD;&#x52A0;&#x6D88;&#x606F;&#x65F6;&#x9644;&#x5C5E;&#x7684;Callback&#x7EC8;&#x4E8E;&#x5728;&#x8FD9;&#x91CC;&#x51FA;&#x73B0;&#x4E86;.&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E86;&#x5F88;&#x719F;&#x6089;&#x7684;RecordMetadata&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;onCompletion&#x7684;&#x56DE;&#x8C03;&#x53C2;&#x6570;</p>
+<pre><code class="lang-java">    <span class="hljs-keyword">new</span> Callback() {
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onCompletion</span><span class="hljs-params">(RecordMetadata metadata, Exception e)</span> </span>{
+            System.out.println(<span class="hljs-string">&quot;The offset of the record we just sent is: &quot;</span> + metadata.offset());
+        }
+    }
+</code></pre>
+<h3 id="selector">Selector</h3>
+<p>NetworkClient&#x7684;&#x8BF7;&#x6C42;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x4EA4;&#x7ED9; Selector&#x53BB;&#x5B8C;&#x6210;&#x7684;. Selector&#x4F7F;&#x7528; NIO&#x5F02;&#x6B65;&#x975E;&#x963B;&#x585E;&#x6A21;&#x5F0F;&#x7BA1;&#x7406;&#x8FDE;&#x63A5;,&#x8BFB;&#x5199;&#x8BF7;&#x6C42;.
+Selector&#x7528;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x7EBF;&#x7A0B;&#x5C31;&#x53EF;&#x4EE5;&#x7BA1;&#x7406;&#x591A;&#x4E2A;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x7684; channel,&#x5E76;&#x80FD;&#x591F;&#x77E5;&#x6653;&#x901A;&#x9053;&#x662F;&#x5426;&#x4E3A;&#x8BFB;&#x5199;&#x4E8B;&#x4EF6;&#x505A;&#x597D;&#x51C6;&#x5907;.</p>
+<h3 id="connect&#x8FDE;&#x63A5;">connect&#x8FDE;&#x63A5;</h3>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x548C;&#x8282;&#x70B9;&#x8FDE;&#x63A5;&#x7684;&#x65F6;&#x5019;,&#x4F1A;&#x521B;&#x5EFA;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x7684;SocketChannel&#x8FDE;&#x63A5;&#x901A;&#x9053;.Selector&#x7EF4;&#x62A4;&#x4E86;&#x6BCF;&#x4E2A;&#x76EE;&#x6807;&#x8282;&#x70B9;&#x5BF9;&#x5E94;&#x7684; KafkaChannel.</p>
+<p><img src="20160120162602972" alt=""></p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">connect</span><span class="hljs-params">(String id, InetSocketAddress address, <span class="hljs-keyword">int</span> sendBufferSize, <span class="hljs-keyword">int</span> receiveBufferSize)</span> </span>{
+        SocketChannel socketChannel = SocketChannel.open();
+        socketChannel.configureBlocking(<span class="hljs-keyword">false</span>);
+        Socket socket = socketChannel.socket();     <span class="hljs-comment">// &#x8FD9;&#x662F;&#x5BA2;&#x6237;&#x7AEF;,&#x6240;&#x4EE5;&#x8FD4;&#x56DE;&#x7684;&#x662F;Socket</span>
+        socketChannel.connect(address);             <span class="hljs-comment">// &#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x7AEF;, &#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x5E76;&#x6CA1;&#x6709;&#x5F00;&#x59CB;&#x771F;&#x6B63;&#x8FDE;&#x63A5;, &#x6216;&#x8005;&#x8BF4;&#x56E0;&#x4E3A;&#x662F;&#x975E;&#x963B;&#x585E;&#x65B9;&#x5F0F;, &#x662F;&#x53D1;&#x8D77;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;</span>
+        SelectionKey key = socketChannel.register(nioSelector, SelectionKey.OP_CONNECT);    <span class="hljs-comment">// &#x8FDE;&#x63A5;&#x4E8B;&#x4EF6;</span>
+        KafkaChannel channel = channelBuilder.buildChannel(id, key, maxReceiveSize);        <span class="hljs-comment">// &#x4F1A;&#x521B;&#x5EFA;&#x5305;&#x62EC;&#x5E95;&#x5C42;&#x7684;transportLayer&#x7B49;.</span>
+        key.attach(channel);                        <span class="hljs-comment">// &#x5C06;KafkaChannel&#x6CE8;&#x518C;&#x5230;SelectionKey</span>
+        <span class="hljs-keyword">this</span>.channels.put(id, channel);             <span class="hljs-comment">// Selector&#x7EF4;&#x62A4;&#x4E86;&#x6BCF;&#x4E2A;nodeConnectionId&#x4EE5;&#x53CA;KafkaChannel</span>
+    }
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x662F;&#x975E;&#x963B;&#x585E;&#x6A21;&#x5F0F;,&#x6B64;&#x65F6;&#x8C03;&#x7528;connect()&#x53EF;&#x80FD;&#x5728;&#x8FDE;&#x63A5;&#x5EFA;&#x7ACB;&#x4E4B;&#x524D;&#x5C31;&#x8FD4;&#x56DE;&#x4E86;.&#x4E3A;&#x4E86;&#x786E;&#x5B9A;&#x8FDE;&#x63A5;&#x662F;&#x5426;&#x5EFA;&#x7ACB;,&#x9700;&#x8981;&#x518D;&#x8C03;&#x7528;finishConnect()&#x786E;&#x8BA4;&#x5B8C;&#x5168;&#x8FDE;&#x63A5;&#x4E0A;&#x4E86;.</p>
+<h3 id="kafkachannel-finishconnect">KafkaChannel finishConnect</h3>
+<p>finishConnect&#x4F1A;&#x4F5C;&#x4E3A;key.isConnectable&#x7684;&#x5904;&#x7406;&#x65B9;&#x6CD5;.&#x5728;&#x786E;&#x8BA4;&#x8FDE;&#x63A5;&#x540E;&#x53EF;&#x4EE5;&#x53D6;&#x6D88;Connect&#x4E8B;&#x4EF6;,&#x5E76;&#x6DFB;&#x52A0;READ&#x4E8B;&#x4EF6;.</p>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x5728;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x4E4B;&#x540E;&#x5C31;&#x6CE8;&#x518C;&#x4E86;READ,&#x9996;&#x5148;&#x53EA;&#x6709;&#x6210;&#x529F;&#x8FDE;&#x63A5;,&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;.&#x5BF9;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BFB;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x8BFB;&#x53D6;&#x54CD;&#x5E94;&#x7ED3;&#x679C;.
+&#x800C;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x4E0D;&#x786E;&#x5B9A;&#x7684;,&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x5728;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x5019;&#x6CE8;&#x518C;&#x8BFB;,&#x56E0;&#x4E3A;&#x6709;&#x4E9B;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x7ED3;&#x679C;&#x7684;.</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">finishConnect</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        socketChannel.finishConnect();
+        key.interestOps(key.interestOps() &amp; ~SelectionKey.OP_CONNECT | SelectionKey.OP_READ);
+    }
+</code></pre>
+<h3 id="send&#x53D1;&#x9001;">send&#x53D1;&#x9001;</h3>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x6BCF;&#x4E2A;Send&#x8BF7;&#x6C42;&#x4F1A;&#x88AB;&#x7528;&#x5230;&#x4E00;&#x4E2A; KafkaChannel&#x4E2D;.&#x5982;&#x679C;&#x4E00;&#x4E2A;KafkaChannel&#x4E0A;&#x8FD8;&#x6709;&#x672A;&#x53D1;&#x9001;&#x6210;&#x529F;&#x7684; Send&#x8BF7;&#x6C42;.
+&#x5219;&#x540E;&#x9762;&#x7684;&#x8BF7;&#x6C42;&#x4E0D;&#x5141;&#x8BB8;&#x53D1;&#x9001;.&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;,&#x5728;&#x4E00;&#x4E2A;KafkaChannel&#x4E2D;,&#x4E00;&#x6B21;&#x53EA;&#x80FD;&#x53D1;&#x9001;&#x4E00;&#x4E2A;Send&#x8BF7;&#x6C42;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">send</span><span class="hljs-params">(Send send)</span> </span>{                   <span class="hljs-comment">// NetworkClient&#x7684;send&#x65B9;&#x6CD5;&#x53D1;&#x9001;&#x7684;&#x662F;ClientRequest&#x7684;RequestSend</span>
+        KafkaChannel channel = channelOrFail(send.destination());
+        channel.setSend(send);                      <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x5F53;&#x524D;&#x53D1;&#x9001;&#x7684;Send&#x8BF7;&#x6C42;&#x662F;KafkaChannel&#x8981;&#x5904;&#x7406;&#x7684;&#x8BF7;&#x6C42;</span>
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> KafkaChannel <span class="hljs-title">channelOrFail</span><span class="hljs-params">(String id)</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.channels.get(id);
+    }
+</code></pre>
+<h3 id="kafkachannelsetsend">KafkaChannel.setSend</h3>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;Send&#x8BBE;&#x7F6E;&#x5230; KafkaChannel&#x4E2D;,KafkaChannel&#x7684; TransportLayer&#x4F1A;&#x4E3A; SelectionKey&#x6CE8;&#x518C; WRITE&#x4E8B;&#x4EF6;.
+Channel&#x7684; SelectionKey&#x6709;&#x4E86; Connect&#x548C; Write&#x4E8B;&#x4EF6;,&#x5728;Selector&#x7684;&#x8F6E;&#x8BE2;&#x8FC7;&#x7A0B;&#x4E2D;&#x5F53;&#x53D1;&#x73B0;&#x8FD9;&#x4E9B;&#x4E8B;&#x4EF6;&#x5230;&#x6765;,&#x5C31;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x771F;&#x6B63;&#x7684;&#x64CD;&#x4F5C;.</p>
+<blockquote>
+<p>&#x867D;&#x7136;&#x4E00;&#x4E2A;KafkaChannel&#x4E00;&#x6B21;&#x53EA;&#x80FD;&#x5904;&#x7406;&#x4E00;&#x4E2A; Send&#x8BF7;&#x6C42;,&#x6BCF;&#x6B21;Send&#x65F6;&#x90FD;&#x8981;&#x6DFB;&#x52A0; WRITE&#x4E8B;&#x4EF6;,&#x5F53;Send&#x53D1;&#x9001;&#x6210;&#x529F;&#x540E;,
+&#x5C31;&#x8981;&#x53D6;&#x6D88;&#x6389;WRITE. &#x4E0B;&#x4E00;&#x4E2A;Send&#x8BF7;&#x6C42;&#x4E8B;&#x4EF6;&#x8FDB;&#x6765;&#x65F6;,&#x7EE7;&#x7EED;&#x6DFB;&#x52A0;WRITE,&#x7136;&#x540E;&#x5728;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x6210;&#x529F;&#x540E;,&#x53C8;&#x53D6;&#x6D88;WRITE.
+&#x56E0;&#x4E3A;KafkaChannel&#x662F;&#x7531;&#x8BF7;&#x6C42;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;.&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BF7;&#x6C42;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x76D1;&#x542C;WRITE,KafkaChannel&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x5199;&#x64CD;&#x4F5C;.
+&#x57FA;&#x672C;&#x6D41;&#x7A0B;&#x5C31;&#x662F;: &#x5F00;&#x59CB;&#x53D1;&#x9001;&#x4E00;&#x4E2A;Send&#x8BF7;&#x6C42;-&gt;&#x6CE8;&#x518C;OP_WRITE-&gt; &#x53D1;&#x9001;&#x8BF7;&#x6C42;... -&gt;Send&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5B8C;&#x6210;-&gt;&#x53D6;&#x6D88;OP_WRITE</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setSend</span><span class="hljs-params">(Send send)</span> </span>{
+        <span class="hljs-comment">// &#x5982;&#x679C;&#x5B58;&#x5728;send&#x8BF7;&#x6C42;,&#x8BF4;&#x660E;&#x4E4B;&#x524D;&#x7684;Send&#x8BF7;&#x6C42;&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;,&#x65B0;&#x7684;&#x8BF7;&#x6C42;&#x4E0D;&#x80FD;&#x8FDB;&#x6765;! &#x4EC0;&#x4E48;&#x65F6;&#x5019;send=null: &#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;&#x65F6;</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.send != <span class="hljs-keyword">null</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalStateException(<span class="hljs-string">&quot;Attempt to begin a send operation with prior send operation still in progress.&quot;</span>);
+        <span class="hljs-keyword">this</span>.send = send;
+        <span class="hljs-keyword">this</span>.transportLayer.addInterestOps(SelectionKey.OP_WRITE);
+    }
+    <span class="hljs-comment">// &#x8FD9;&#x662F;KafkaChannel&#x7684; transportLayer&#x7684;&#x65B9;&#x6CD5;, transportLayer&#x7684; key&#x6765;&#x81EA;&#x4E8E; buildChannel&#x7684; SelectionKey</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addInterestOps</span><span class="hljs-params">(<span class="hljs-keyword">int</span> ops)</span> </span>{
+        key.interestOps(key.interestOps() | ops);
+    }
+</code></pre>
+<p>&#x73B0;&#x5728;&#x5BF9;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x800C;&#x8A00;,&#x8FDE;&#x63A5;,&#x8BFB;,&#x5199;&#x4E8B;&#x4EF6;&#x90FD;&#x6709;&#x4E86;(CONNECT,READ,WRITE).&#x5728;selector&#x7684;&#x8F6E;&#x8BE2;&#x4E2D;&#x53EF;&#x4EE5;&#x64CD;&#x4F5C;&#x8BFB;&#x5199;&#x4E8B;&#x4EF6;.</p>
+<p><img src="20160120174334217" alt=""></p>
+<h3 id="poll&#x8F6E;&#x8BE2;">poll&#x8F6E;&#x8BE2;</h3>
+<p>&#x8F6E;&#x8BE2;&#x7684;&#x7B56;&#x7565;&#x662F;&#x5982;&#x679C;&#x6709;&#x6570;&#x636E;(timeout=0)&#x76F4;&#x63A5;&#x8C03;&#x7528;nioSelector.selectNow,&#x5426;&#x5219;&#x6BCF;&#x9694;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;&#x89E6;&#x53D1;&#x4E00;&#x6B21;select&#x8C03;&#x7528;.
+&#x7ED1;&#x5B9A;&#x5230;SelectionKey&#x4E0A;&#x7684;&#x662F; KafkaChannel,&#x57FA;&#x4E8E;Kafka&#x7684;&#x4F20;&#x8F93;&#x5C42; TransportLayer&#x5305;&#x542B;&#x4E86; IO&#x5C42;&#x7684; SocketChannel.</p>
+<p><img src="20160122090034616" alt=""></p>
+<blockquote>
+<p>poll&#x8F6E;&#x8BE2;.&#x4E00;&#x6B21;&#x8F6E;&#x8BE2;&#x8C03;&#x7528;&#x662F;&#x4E0D;&#x65AD;&#x5730;while&#x5FAA;&#x73AF;. &#x5F53;&#x7136;&#x5B83;&#x7684;&#x6761;&#x4EF6;&#x662F;&#x80FD;&#x591F;&#x9009;&#x62E9;&#x5230;&#x611F;&#x5174;&#x8DA3;&#x7684;SelectionKey&#x96C6;&#x5408;.
+&#x5728;&#x5F97;&#x5230;SelectionKey&#x540E;,&#x83B7;&#x53D6;&#x5176;&#x4E2D;&#x7684;KafkaChannel,&#x56E0;&#x4E3A;Channel&#x4E0A;&#x6709;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;,&#x7136;&#x540E;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x64CD;&#x4F5C;.</p>
+<p>&#x5728;&#x4E00;&#x5F00;&#x59CB;&#x65F6;,&#x6211;&#x4EEC;&#x4E3A;SocketChannel&#x6CE8;&#x518C;&#x4E86;&#x67D0;&#x7C7B;SelectionKey,&#x5E76;&#x7ED1;&#x5B9A;KafkaChannel&#x5230;key&#x4E0A;.
+&#x5F53;SocketChannel&#x4E0A;&#x6709;&#x8BFB;&#x5199;&#x4E8B;&#x4EF6;&#x65F6;,SelectionKey&#x4F1A;&#x88AB;&#x89E6;&#x53D1;,&#x5C31;&#x80FD;&#x53D6;&#x5230;&#x7ED1;&#x5B9A;&#x65F6;&#x7684;KafkaChannel.</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">poll</span><span class="hljs-params">(<span class="hljs-keyword">long</span> timeout)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        clear();
+        <span class="hljs-keyword">if</span> (hasStagedReceives()) timeout = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">int</span> readyKeys = select(timeout);                <span class="hljs-comment">//&#x9009;&#x62E9;&#x5668;,&#x89E6;&#x53D1;&#x7ACB;&#x5373;&#x8C03;&#x7528;,&#x6216;&#x8005;&#x5B9A;&#x65F6;&#x8C03;&#x7528;</span>
+        <span class="hljs-keyword">if</span> (readyKeys &gt; <span class="hljs-number">0</span>) {
+            Set&lt;SelectionKey&gt; keys = <span class="hljs-keyword">this</span>.nioSelector.selectedKeys();
+            Iterator&lt;SelectionKey&gt; iter = keys.iterator();
+            <span class="hljs-keyword">while</span> (iter.hasNext()) {
+                SelectionKey key = iter.next();
+                iter.remove();
+                KafkaChannel channel = channel(key);    <span class="hljs-comment">//&#x83B7;&#x5F97;&#x7ED1;&#x5B9A;&#x5230;SelectionKey&#x7684;&#x901A;&#x9053;</span>
+                <span class="hljs-comment">/* complete any connections that have finished their handshake */</span>
+                <span class="hljs-keyword">if</span> (key.isConnectable()) channel.finishConnect();
+                <span class="hljs-comment">/* if channel is not ready finish prepare */</span>
+                <span class="hljs-keyword">if</span> (channel.isConnected() &amp;&amp; !channel.ready()) channel.prepare();
+
+                <span class="hljs-comment">/* if channel is ready read from any connections that have readable data */</span>
+                <span class="hljs-keyword">if</span> (channel.ready() &amp;&amp; key.isReadable() &amp;&amp; !hasStagedReceive(channel)) {
+                    NetworkReceive networkReceive;
+                    <span class="hljs-keyword">while</span> ((networkReceive = channel.read()) != <span class="hljs-keyword">null</span>)
+                        addToStagedReceives(channel, networkReceive);
+                }
+                <span class="hljs-comment">/* if channel is ready write to any sockets that have space in their buffer and for which we have data */</span>
+                <span class="hljs-keyword">if</span> (channel.ready() &amp;&amp; key.isWritable()) {
+                    Send send = channel.write();
+                    <span class="hljs-keyword">if</span> (send != <span class="hljs-keyword">null</span>) <span class="hljs-keyword">this</span>.completedSends.add(send);
+                }
+                <span class="hljs-comment">/* cancel any defunct sockets */</span>
+                <span class="hljs-keyword">if</span> (!key.isValid()) close(channel);
+            }
+        }
+        addToCompletedReceives();  <span class="hljs-comment">// &#x6CA1;&#x6709;&#x65B0;&#x7684;SelectionKey&#x4E86;! &#x8BF4;&#x660E;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x5DF2;&#x7ECF;&#x90FD;&#x8BFB;&#x53D6;&#x5B8C;&#x4E86;.  </span>
+        <span class="hljs-comment">//&#x4E0D;&#x8FC7;Selector.poll&lt;-NetworkClient.poll&lt;-Sender.run&#x662F;&#x5728;&#x8FD9;&#x91CC;&#x5FAA;&#x73AF;&#x7684;,&#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5C31;&#x4F1A;poll&#x4E00;&#x6B21;!</span>
+    }
+</code></pre>
+<h3 id="kafkachannel-write">KafkaChannel write</h3>
+<p>&#x5199;&#x64CD;&#x4F5C;&#x7684;&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;&#x4F7F;&#x7528;while&#x5FAA;&#x73AF;&#x6765;&#x63A7;&#x5236;,&#x800C;&#x662F;&#x5728;&#x5B8C;&#x6210;&#x53D1;&#x9001;&#x65F6;&#x53D6;&#x6D88;&#x6389;Write&#x4E8B;&#x4EF6;.&#x5982;&#x679C;Send&#x5728;&#x4E00;&#x6B21; write&#x8C03;&#x7528;&#x65F6;&#x6CA1;&#x6709;&#x5199;&#x5B8C;,
+SelectionKey&#x7684; OP_WRITE&#x4E8B;&#x4EF6;&#x6CA1;&#x6709;&#x53D6;&#x6D88;,&#x4E0B;&#x6B21;isWritable&#x4E8B;&#x4EF6;&#x4F1A;&#x7EE7;&#x7EED;&#x89E6;&#x53D1;,&#x76F4;&#x5230;&#x6574;&#x4E2A;Send&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;&#x624D;&#x53D6;&#x6D88;.
+&#x6240;&#x4EE5;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684; Send&#x8BF7;&#x6C42;&#x662F;&#x901A;&#x8FC7;&#x6700;&#x5916;&#x5C42;&#x7684; while(iter.hasNext),&#x5373;SelectionKey&#x63A7;&#x5236;&#x7684;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> Send <span class="hljs-title">write</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        Send result = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (send != <span class="hljs-keyword">null</span> &amp;&amp; send(send)) {   <span class="hljs-comment">//&#x5982;&#x679C;send&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;false,&#x8868;&#x793A;send.completed=false,&#x5373;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x6210;&#x529F;</span>
+            result = send;
+            send = <span class="hljs-keyword">null</span>;                    <span class="hljs-comment">//&#x53D1;&#x9001;&#x5B8C;&#x6BD5;&#x540E;,&#x8BBE;&#x7F6E;send=null,&#x8FD9;&#x6837;&#x4E0B;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5224;&#x65AD;&#x5230;send=null,&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x65B0;&#x7684;Send&#x8BBE;&#x7F6E;&#x4E3A;KafkaChannel&#x7684;&#x5F53;&#x524D;send</span>
+        }
+        <span class="hljs-keyword">return</span> result;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">send</span><span class="hljs-params">(Send send)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        send.writeTo(transportLayer);       <span class="hljs-comment">//transportLayer&#x6709;SocketChannel,&#x6240;&#x4EE5;&#x662F;&#x771F;&#x6B63;&#x53D1;&#x751F;&#x5199;&#x7684;&#x5730;&#x65B9;</span>
+        <span class="hljs-keyword">if</span> (send.completed())               <span class="hljs-comment">//&#x53EA;&#x6709;Send&#x8BF7;&#x6C42;&#x5168;&#x90E8;&#x5199;&#x51FA;&#x53BB;&#x4E86;,&#x624D;&#x5BF9;transportLayer&#x53D6;&#x6D88;WRITE&#x4E8B;&#x4EF6;</span>
+            transportLayer.removeInterestOps(SelectionKey.OP_WRITE);
+        <span class="hljs-keyword">return</span> send.completed();            <span class="hljs-comment">//&#x5982;&#x679C;Send&#x53EA;&#x53D1;&#x9001;&#x4E86;&#x4E00;&#x70B9;&#x70B9;,&#x5219;SelectionKey&#x8FD8;&#x4F1A;&#x76D1;&#x542C;&#x5230;Writable&#x4E8B;&#x4EF6;&#x7684;</span>
+    }
+</code></pre>
+<h3 id="kafkachannel-read">KafkaChannel read</h3>
+<p>&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;NetworkReceive. &#x521D;&#x59CB;&#x65F6;receive=null,&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;NetworkReceive.
+receive(receive)&#x65B9;&#x6CD5;&#x4ECE;transportLayer&#x4E2D;&#x8BFB;&#x53D6;&#x5230; NetworkReceive&#x5BF9;&#x8C61;&#x4E2D;. &#x5047;&#x8BBE;&#x8BFB;&#x4E86;&#x4E00;&#x6B21;&#x6CA1;&#x6709;&#x8BFB;&#x5B8C;,
+&#x5373;receive.complete=false,read()&#x8FD4;&#x56DE;&#x7684;result=null,&#x5BFC;&#x81F4;poll&#x4E2D;&#x7684; while&#x5FAA;&#x73AF;&#x7EE7;&#x7EED;&#x8C03;&#x7528; read().</p>
+<p><img src="20160121082923585" alt=""></p>
+<p>&#x7B2C;&#x4E8C;&#x6B21;&#x8BFB;&#x53D6;&#x65F6;,receive!=null,&#x7EE7;&#x7EED;&#x4ECE;transportLayer&#x8BFB;&#x53D6;&#x5230; receive&#x5BF9;&#x8C61;&#x4E2D;,&#x8FD9;&#x6B21;&#x6210;&#x529F;&#x5730;&#x8BFB;&#x5B8C;&#x4E86;,&#x8BBE;&#x7F6E;result
+&#x4E3A;&#x8BFB;&#x53D6;&#x6210;&#x529F;&#x7684;receive NetworkReceive,&#x8FD9;&#x4E2A;result&#x4E0D;&#x4E3A;&#x7A7A;,while&#x5FAA;&#x73AF;&#x7ED3;&#x675F;,&#x8C03;&#x7528;addToStagedReceives.</p>
+<p><img src="20160121082943445" alt=""></p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> NetworkReceive <span class="hljs-title">read</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        NetworkReceive result = <span class="hljs-keyword">null</span>;
+        <span class="hljs-keyword">if</span> (receive == <span class="hljs-keyword">null</span>) receive = <span class="hljs-keyword">new</span> NetworkReceive(maxReceiveSize, id);
+        receive(receive);
+        <span class="hljs-keyword">if</span> (receive.complete()) {
+            receive.payload().rewind();
+            result = receive;
+            receive = <span class="hljs-keyword">null</span>;
+        }
+        <span class="hljs-keyword">return</span> result;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> <span class="hljs-title">receive</span><span class="hljs-params">(NetworkReceive receive)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+        <span class="hljs-keyword">return</span> receive.readFrom(transportLayer);
+    }
+</code></pre>
+<blockquote>
+<p>&#x6BD4;&#x8F83;&#x8BFB;&#x548C;&#x5199;&#x5728;poll&#x4E2D;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;.&#x4E00;&#x65E6;&#x6709;&#x8BFB;&#x64CD;&#x4F5C;,&#x5C31;&#x8981;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;NetworkReceive,&#x5982;&#x679C;&#x662F;&#x5199;,&#x53EF;&#x4EE5;&#x5206;&#x591A;&#x6B21;&#x5199;.
+&#x5373;&#x8BFB;&#x64CD;&#x4F5C;&#x4F1A;&#x5728;&#x4E00;&#x6B21;SelectionKey&#x5FAA;&#x73AF;&#x8BFB;&#x53D6;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x63A5;&#x6536;&#x52A8;&#x4F5C;,&#x800C;&#x5199;&#x64CD;&#x4F5C;&#x4F1A;&#x5728;&#x591A;&#x6B21;SelectionKey&#x4E2D;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x53D1;&#x9001;&#x52A8;&#x4F5C;.
+&#x5199;&#x5B8C;&#x540E;(&#x6210;&#x529F;&#x5730;&#x53D1;&#x9001;&#x4E86;Send&#x8BF7;&#x6C42;),&#x4F1A;&#x53D6;&#x6D88;&#x6389;WRITE&#x4E8B;&#x4EF6;(&#x672C;&#x6B21;&#x5199;&#x5DF2;&#x5B8C;&#x6210;). &#x800C;&#x8BFB;&#x5B8C;&#x5E76;&#x6CA1;&#x6709;&#x53D6;&#x6D88;&#x6389;READ&#x4E8B;&#x4EF6;(&#x53EF;&#x80FD;&#x8FD8;&#x8981;&#x8BFB;&#x65B0;&#x7684;&#x6570;&#x636E;).</p>
+</blockquote>
+<h3 id="complte-sends-and-receives">complte sends and receives</h3>
+<p>&#x5199;&#x64CD;&#x4F5C;&#x4F1A;&#x5C06;&#x5F53;&#x524D;&#x53D1;&#x9001;&#x6210;&#x529F;&#x7684;Send&#x52A0;&#x5165;&#x5230;completedSends. &#x56E0;&#x4E3A;&#x6BCF;&#x6B21;&#x5199;&#x8BF7;&#x6C42;&#x5728;&#x6BCF;&#x4E2A;&#x901A;&#x9053;&#x4E2D;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;.
+&#x8BFB;&#x64CD;&#x4F5C;&#x5148;&#x52A0;&#x5230;stagedReceives,&#x6700;&#x540E;&#x5168;&#x90E8;&#x8BFB;&#x53D6;&#x5B8C;&#x4E4B;&#x540E;&#x624D;&#x4ECE;stagedReceives&#x590D;&#x5236;&#x5230;completedReceives.
+completedSends&#x548C;completedReceives&#x5206;&#x522B;&#x8868;&#x793A;&#x5728;Selector&#x7AEF;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;&#x7684;&#x548C;&#x63A5;&#x6536;&#x5230;&#x7684;&#x8BF7;&#x6C42;.
+&#x5B83;&#x4EEC;&#x4F1A;&#x5728;NetworkClient&#x7684;poll&#x8C03;&#x7528;&#x4E4B;&#x540E;&#x88AB;&#x4E0D;&#x540C;&#x7684;handleCompleteXXX&#x4F7F;&#x7528;.</p>
+<pre><code class="lang-java">    <span class="hljs-comment">// &#x4E00;&#x6B21;&#x8BFB;&#x64CD;&#x4F5C;&#x5C31;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;NetworkReceive&#x751F;&#x6210;,&#x5E76;&#x52A0;&#x5165;&#x5230;channel&#x5BF9;&#x5E94;&#x7684;&#x961F;&#x5217;&#x4E2D;</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addToStagedReceives</span><span class="hljs-params">(KafkaChannel channel, NetworkReceive receive)</span> </span>{
+        <span class="hljs-keyword">if</span> (!stagedReceives.containsKey(channel))
+            stagedReceives.put(channel, <span class="hljs-keyword">new</span> ArrayDeque&lt;NetworkReceive&gt;());
+        Deque&lt;NetworkReceive&gt; deque = stagedReceives.get(channel);
+        deque.add(receive);
+    }
+    <span class="hljs-comment">// &#x53EA;&#x6709;&#x5728;&#x672C;&#x6B21;&#x8F6E;&#x8BE2;&#x4E2D;&#x6CA1;&#x6709;&#x8BFB;&#x64CD;&#x4F5C;&#x4E86;(&#x4E5F;&#x6CA1;&#x6709;&#x5199;&#x4E86;), &#x5728;&#x9000;&#x51FA;&#x8F6E;&#x8BE2;&#x65F6;, &#x5C06;&#x4E0A;&#x4E00;&#x6B65;&#x7684;&#x6240;&#x6709;NetworkReceive&#x52A0;&#x5230;completedReceives</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addToCompletedReceives</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.stagedReceives.size() &gt; <span class="hljs-number">0</span>) {
+            Iterator&lt;Map.Entry&lt;KafkaChannel, Deque&lt;NetworkReceive&gt;&gt;&gt; iter = <span class="hljs-keyword">this</span>.stagedReceives.entrySet().iterator();
+            <span class="hljs-keyword">while</span> (iter.hasNext()) {
+                Map.Entry&lt;KafkaChannel, Deque&lt;NetworkReceive&gt;&gt; entry = iter.next();
+                KafkaChannel channel = entry.getKey();
+                <span class="hljs-keyword">if</span> (!channel.isMute()) {   <span class="hljs-comment">// &#x5F53;&#x524D;&#x901A;&#x9053;&#x4E0A;&#x6CA1;&#x6709;OP_READ&#x4E8B;&#x4EF6;&#x65F6;</span>
+                    Deque&lt;NetworkReceive&gt; deque = entry.getValue();
+                    NetworkReceive networkReceive = deque.poll();
+                    <span class="hljs-keyword">this</span>.completedReceives.add(networkReceive);
+                    <span class="hljs-keyword">if</span> (deque.size() == <span class="hljs-number">0</span>) iter.remove();
+                }
+            }
+        }
+    }
+</code></pre>
+<blockquote>
+<p>&#x95EE;&#x9898;1:&#x6700;&#x540E;&#x52A0;&#x5165;&#x5230;completedReceives&#x7684;&#x6761;&#x4EF6;&#x662F; channel.isMute()=false,&#x5373;&#x901A;&#x9053;&#x4E0A;&#x6CA1;&#x6709;OP_READ&#x4E8B;&#x4EF6;&#x65F6;.&#x4F46;&#x662F;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x4F1A;&#x53D6;&#x6D88;READ&#x5462;?</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isMute</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> key.isValid() &amp;&amp; (key.interestOps() &amp; SelectionKey.OP_READ) == <span class="hljs-number">0</span>;
+    }
+</code></pre>
+<blockquote>
+<p>&#x95EE;&#x9898;2:deque.poll()&#x662F;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;&#x5143;&#x7D20;,&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;channel&#x6709;&#x591A;&#x4E2A;&#x5143;&#x7D20;,&#x5728;while&#x5FAA;&#x73AF;&#x7684;&#x662F; channel&#x7EA7;&#x522B;,&#x5982;&#x4F55;&#x5F39;&#x51FA;&#x67D0;&#x4E2A;channel&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;?</p>
+</blockquote>
+<h3 id="networkclient">NetworkClient</h3>
+<p>send&#x52A8;&#x4F5C;&#x5C06; ClientRequest&#x6DFB;&#x52A0;&#x5230;&#x961F;&#x5217; inFlightRequests&#x7528;&#x6765;&#x7F13;&#x51B2;&#x8BF7;&#x6C42;,
+&#x7136;&#x540E;&#x89E6;&#x53D1;Selector-&gt;KafkaChannel-&gt;transportLayer&#x6DFB;&#x52A0; OP_WRITE&#x5199;&#x4E8B;&#x4EF6;&#x901A;&#x77E5;
+poll&#x52A8;&#x4F5C;&#x4E5F;&#x5C06;&#x5B9E;&#x9645;&#x5904;&#x7406;&#x4EA4;&#x7ED9; Selector,&#x5BA2;&#x6237;&#x7AEF;&#x670D;&#x52A1;&#x4E8E;&#x8BFB;&#x548C;&#x5199;,&#x5373;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;.
+Selector&#x5728;&#x6BCF;&#x6B21;&#x8F6E;&#x8BE2;&#x8C03;&#x7528;&#x4E4B;&#x540E;,&#x90FD;&#x4F1A;&#x89E6;&#x53D1;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;&#x7684;&#x5B8C;&#x6210;handler,&#x5E76;&#x6DFB;&#x52A0;&#x5230;responses,&#x7528;&#x4E8E;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;.
+&#x4E0D;&#x7BA1;&#x662F;Send&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x8FD8;&#x662F; NetworkReceive&#x63A5;&#x6536;&#x8BF7;&#x6C42;,&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;ClientRequest&#x8868;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">send</span><span class="hljs-params">(ClientRequest request, <span class="hljs-keyword">long</span> now)</span> </span>{
+        String nodeId = request.request().destination();
+        <span class="hljs-keyword">if</span> (!canSendRequest(nodeId)) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalStateException(<span class="hljs-string">&quot;Attempt to send a request to node &quot;</span> + nodeId + <span class="hljs-string">&quot; which is not ready.&quot;</span>);
+        doSend(request, now);
+    }
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">doSend</span><span class="hljs-params">(ClientRequest request, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-keyword">this</span>.inFlightRequests.add(request);             <span class="hljs-comment">//&#x8FD8;&#x6CA1;&#x5F00;&#x59CB;&#x771F;&#x6B63;&#x53D1;&#x9001;,&#x5148;&#x52A0;&#x5165;&#x5230;&#x961F;&#x5217;&#x4E2D;</span>
+        selector.send(request.request());               <span class="hljs-comment">//&#x6807;&#x8BB0;&#x4E0B;&#x6536;&#x5230;&#x7684;&#x662F;Send&#x8BF7;&#x6C42;.</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;ClientResponse&gt; <span class="hljs-title">poll</span><span class="hljs-params">(<span class="hljs-keyword">long</span> timeout, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-comment">// &#x2460; Selector&#x8F6E;&#x8BE2;, &#x771F;&#x6B63;&#x8BFB;&#x5199;&#x53D1;&#x751F;&#x7684;&#x5730;&#x65B9;. &#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x88AB;&#x5B8C;&#x6574;&#x5730;&#x5904;&#x7406;&#x8FC7;&#x4E86;, &#x4F1A;&#x52A0;&#x5165;&#x5230;completeSends&#x6216;complteReceives&#x4E2D;</span>
+        <span class="hljs-keyword">this</span>.selector.poll(Utils.min(timeout, metadataTimeout, requestTimeoutMs));
+        <span class="hljs-comment">// &#x2461; process completed actions &#x5904;&#x7406;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x7684;&#x52A8;&#x4F5C;,&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x5B8C;&#x6574;&#x7684;&#x8BF7;&#x6C42;,&#x5219;&#x4E0D;&#x4F1A;&#x88AB;&#x52A0;&#x5165;&#x5230;completeXXX&#x4E2D;</span>
+        List&lt;ClientResponse&gt; responses = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+        handleCompletedSends(responses, updatedNow);    <span class="hljs-comment">//&#x5B8C;&#x6210;&#x53D1;&#x9001;&#x7684;handler</span>
+        handleCompletedReceives(responses, updatedNow); <span class="hljs-comment">//&#x5B8C;&#x6210;&#x63A5;&#x6536;&#x7684;handler</span>
+        handleDisconnections(responses, updatedNow);    <span class="hljs-comment">//&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x7684;handler</span>
+        handleConnections();                            <span class="hljs-comment">//&#x5904;&#x7406;&#x8FDE;&#x63A5;&#x7684;handler</span>
+        handleTimedOutRequests(responses, updatedNow);  <span class="hljs-comment">//&#x8D85;&#x65F6;&#x8BF7;&#x6C42;&#x7684;handler</span>
+        <span class="hljs-comment">// &#x2462; invoke callbacks &#x5C06;responses&#x7528;&#x4E8E;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;</span>
+        <span class="hljs-keyword">return</span> responses;
+    }
+</code></pre>
+<h3 id="ready">ready</h3>
+<p>Sender&#x7684; run&#x4E2D;,&#x5728;drain produce requests&#x524D;&#x4F1A;&#x5148;&#x5224;&#x65AD; readyNodes&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x51C6;&#x5907;&#x597D;&#x4E86;,&#x56E0;&#x4E3A;&#x4E0D;&#x4F1A;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7ED9;&#x6CA1;&#x6709;&#x51C6;&#x5907;&#x597D;&#x7684;&#x8282;&#x70B9;.</p>
+<pre><code class="lang-java">    Iterator&lt;Node&gt; iter = result.readyNodes.iterator();
+    <span class="hljs-keyword">long</span> notReadyTimeout = Long.MAX_VALUE;
+    <span class="hljs-keyword">while</span> (iter.hasNext()) {
+        Node node = iter.next();
+        <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.client.ready(node, now)) {
+            iter.remove();
+            notReadyTimeout = Math.min(notReadyTimeout, <span class="hljs-keyword">this</span>.client.connectionDelay(node, now));
+        }
+    }
+</code></pre>
+<p>&#x5982;&#x679C;isReady&#x8FD4;&#x56DE; false,&#x4F1A;&#x5148;&#x521D;&#x59CB;&#x5316;&#x8FDE;&#x63A5;initiateConnect,&#x8FD9;&#x91CC;&#x901A;&#x8FC7;Selector&#x5411;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x53D1;&#x8D77;&#x8FDE;&#x63A5;.
+ready&#x6307;&#x7684;&#x662F;&#x5DF2;&#x7ECF;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;,&#x5E76;&#x4E14;&#x901A;&#x9053;&#x4E5F;&#x51C6;&#x5907;&#x597D;,&#x4E5F;&#x5141;&#x8BB8;&#x5F80;inFlightRequests&#x53D1;&#x9001;&#x66F4;&#x591A;&#x7684;&#x8BF7;&#x6C42;.
+&#x5982;&#x679C;&#x662F;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x8FDE;&#x63A5;,&#x73B0;&#x5728;&#x521A;&#x521A;&#x53D1;&#x8D77;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;,&#x5219;&#x4E0D;&#x7B97;&#x51C6;&#x5907;&#x597D;,&#x56E0;&#x4E3A;&#x8FDE;&#x63A5;&#x52A8;&#x4F5C;&#x80AF;&#x5B9A;&#x9700;&#x8981;&#x4E00;&#x5B9A;&#x65F6;&#x95F4;.</p>
+<pre><code class="lang-java">    <span class="hljs-comment">// Begin connecting to the given node, return true if we are already connected and ready to send to that node.</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">ready</span><span class="hljs-params">(Node node, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-keyword">if</span> (isReady(node, now)) <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+        <span class="hljs-keyword">if</span> (connectionStates.canConnect(node.idString(), now))
+            initiateConnect(node, now);  <span class="hljs-comment">// if we are interested in sending to a node and we don&apos;t have a connection to it, initiate one</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+    }
+    <span class="hljs-comment">// Initiate a connection to the given node</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">initiateConnect</span><span class="hljs-params">(Node node, <span class="hljs-keyword">long</span> now)</span> </span>{
+        String nodeConnectionId = node.idString();
+        <span class="hljs-keyword">this</span>.connectionStates.connecting(nodeConnectionId, now);
+        selector.connect(nodeConnectionId, <span class="hljs-keyword">new</span> InetSocketAddress(node.host(), node.port()), <span class="hljs-keyword">this</span>.socketSendBuffer, <span class="hljs-keyword">this</span>.socketReceiveBuffer);
+    }
+
+    <span class="hljs-comment">// Check if the node with the given id is ready to send more requests.</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isReady</span><span class="hljs-params">(Node node, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-keyword">return</span> !metadataUpdater.isUpdateDue(now) &amp;&amp; canSendRequest(node.idString());
+    }
+    <span class="hljs-comment">// Are we connected and ready and able to send more requests to the given connection?</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">canSendRequest</span><span class="hljs-params">(String node)</span> </span>{
+        <span class="hljs-keyword">return</span> connectionStates.isConnected(node) &amp;&amp; selector.isChannelReady(node) &amp;&amp; inFlightRequests.canSendMore(node);
+    }
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x53EF;&#x4EE5;&#x5F80;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;: &#x961F;&#x5217;&#x4E3A;&#x7A7A;,&#x6216;&#x8005;&#x961F;&#x5217;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5FC5;&#x987B;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;.
+&#x5982;&#x679C;&#x6709;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4E0A;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x6CA1;&#x6709;&#x5B8C;&#x6210;,&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x6709;&#x6B63;&#x5728;&#x5904;&#x7406;&#x7684;&#x8BF7;&#x6C42;,&#x6BD4;&#x8F83;&#x5FD9;,&#x5219;&#x4E0D;&#x5141;&#x8BB8;&#x53D1;&#x9001;&#x7ED9;&#x5B83;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">canSendMore</span><span class="hljs-params">(String node)</span> </span>{
+        Deque&lt;ClientRequest&gt; queue = requests.get(node);
+        <span class="hljs-keyword">return</span> queue == <span class="hljs-keyword">null</span> || queue.isEmpty() ||
+               (queue.peekFirst().request().completed() &amp;&amp; queue.size() &lt; <span class="hljs-keyword">this</span>.maxInFlightRequestsPerConnection);
+    }
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x8981;&#x7EE7;&#x7EED;&#x770B;&#x4E0B;&#x4EC0;&#x4E48;&#x6761;&#x4EF6;&#x624D;&#x7B97;&#x662F;completed,&#x5BF9;&#x4E8E;ByteBufferSend&#x662F;&#x6CA1;&#x6709;&#x8981;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x4E86;,&#x4E5F;&#x6CA1;&#x6709;&#x6B63;&#x5728;&#x5199;&#x7684;&#x6570;&#x636E;.
+&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x7684;&#x8BF7;&#x6C42;&#x5B8C;&#x6210;&#x6307;&#x7684;&#x662F;&#x4E0A;&#x4E00;&#x4E2A;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x4E86;,&#x4F46;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x90A3;&#x4E2A;&#x8BF7;&#x6C42;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x7ED3;&#x679C;.</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">completed</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> remaining &lt;= <span class="hljs-number">0</span> &amp;&amp; !pending;
+    }
+</code></pre>
+<h3 id="inflightrequestsadd">inFlightRequests.add</h3>
+<p>&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;,&#x6216;&#x6B63;&#x5728;&#x53D1;&#x9001;.&#x5E76;&#x4E14;&#x8FD8;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x7684;(&#x5BA2;&#x6237;&#x7AEF;)&#x8BF7;&#x6C42;.&#x8BF7;&#x6C42;&#x9996;&#x5148;&#x52A0;&#x5165;&#x5230;(&#x76EE;&#x6807;&#x8282;&#x70B9;&#x5BF9;&#x5E94;&#x7684;)&#x961F;&#x5217;&#x4E2D;.</p>
+<p><img src="20160121093500704" alt=""></p>
+<blockquote>
+<p>&#x6CE8;&#x610F;:&#x4E0A;&#x9762;ready&#x7684;&#x9650;&#x5236;&#x6761;&#x4EF6;,&#x5219;&#x6700;&#x5F00;&#x59CB;&#x7684;&#x4E24;&#x4E2A;&#x8BF7;&#x6C42;&#x4E00;&#x5B9A;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;&#x6210;&#x529F;,&#x5426;&#x5219;&#x8BF7;&#x6C42;3&#x4E0D;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x5230;Deque&#x4E2D;.
+&#x6240;&#x4EE5;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5230;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x8FDF;&#x8FDF;&#x4E0D;&#x80FD;&#x5B8C;&#x6210;,&#x6709;&#x53EF;&#x80FD;&#x90A3;&#x4E2A;&#x8282;&#x70B9;&#x7F51;&#x7EDC;&#x6709;&#x95EE;&#x9898;,&#x5219;&#x540E;&#x9762;&#x7684;&#x8BF7;&#x6C42;&#x4E0D;&#x4F1A;&#x53D1;&#x9001;&#x8FC7;&#x6765;.
+&#x8FD9;&#x5C31;&#x907F;&#x514D;&#x4E86;&#x56E0;&#x4E3A;&#x7F51;&#x7EDC;&#x963B;&#x585E;,&#x8BF7;&#x6C42;&#x4E00;&#x76F4;&#x5806;&#x79EF;&#x5728;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x4E0A;.</p>
+</blockquote>
+<p>&#x4F7F;&#x7528;&#x961F;&#x5217;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;,&#x4F46;&#x662F;&#x65B0;&#x7684;&#x8BF7;&#x6C42;&#x80FD;&#x52A0;&#x8FDB;&#x6765;&#x7684;&#x6761;&#x4EF6;&#x662F;&#x4E0A;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5FC5;&#x987B;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;&#x6210;&#x529F;!</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(ClientRequest request)</span> </span>{
+        Deque&lt;ClientRequest&gt; reqs = <span class="hljs-keyword">this</span>.requests.get(request.request().destination());
+        <span class="hljs-keyword">if</span> (reqs == <span class="hljs-keyword">null</span>) {
+            reqs = <span class="hljs-keyword">new</span> ArrayDeque&lt;&gt;();
+            <span class="hljs-keyword">this</span>.requests.put(request.request().destination(), reqs);
+        }
+        reqs.addFirst(request);     <span class="hljs-comment">// &#x65B0;&#x7684;&#x8BF7;&#x6C42;&#x603B;&#x662F;&#x52A0;&#x5230;&#x961F;&#x5217;&#x7684;&#x5934;&#x90E8;.</span>
+    }
+</code></pre>
+<p>requests Map&#x7684; key&#x662F; request.request().destination(),&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x8981;&#x53D1;&#x9001;&#x5230;&#x54EA;&#x4E2A;Broker&#x8282;&#x70B9;&#x4E0A;.
+&#x6240;&#x4EE5;&#x4ECE;&#x8FD9;&#x91CC;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;,&#x73B0;&#x5728;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x90FD;&#x53EA;&#x662F;&#x5728;&#x5BA2;&#x6237;&#x7AEF;,&#x56E0;&#x4E3A;&#x53EA;&#x6709;&#x5BA2;&#x6237;&#x7AEF;&#x624D;&#x6709;&#x76EE;&#x6807;&#x8282;&#x70B9;destination.
+&#x5982;&#x679C;&#x662F;Kafka&#x4F5C;&#x4E3A;&#x670D;&#x52A1;&#x7AEF;(&#x76EE;&#x6807;&#x8282;&#x70B9;),&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x7AEF;,&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;SocketChannel&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x901A;&#x4FE1;.</p>
+<h3 id="client-server-mode">client-server mode</h3>
+<blockquote>
+<p>&#x6CE8;&#x610F;doSend&#x4E0D;&#x53EA;&#x662F;&#x7528;&#x4E8E; Producer&#x53D1;&#x9001;,&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;Consumer&#x6D88;&#x8D39;.&#x53C2;&#x6570;ClientRequest&#x8868;&#x793A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;.
+&#x5BF9;&#x4E8E;Kafka&#x800C;&#x8A00;,P&#x548C;C&#x90FD;&#x662F;&#x5BA2;&#x6237;&#x7AEF;.&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x7ED9;Kafka,&#x4ECE;Kafka&#x8FD9;&#x65B9;&#x6765;&#x8BF4;,&#x90FD;&#x8981;Receive&#x8BFB;&#x53D6;&#x8BF7;&#x6C42;.
+&#x5B9E;&#x9645;&#x4E0A;KafkaProducer&#x548C; KafkaConsumer&#x90FD;&#x6709; NetworkClient,&#x8BF4;&#x660E;&#x5BA2;&#x6237;&#x7AEF;&#x662F;&#x5D4C;&#x5165;&#x5728;P&#x548C;C&#x91CC;&#x9762;&#x7684;.
+Send&#x8BF7;&#x6C42;&#x7684; destination, NetworkReceive&#x7684; source&#x90FD;&#x8868;&#x793A;&#x8FDC;&#x7A0B;&#x7684; Kafka&#x8282;&#x70B9;.
+&#x56E0;&#x4E3A;&#x5728;P&#x548C;C&#x7684;&#x4E00;&#x4EA9;&#x4E09;&#x5206;&#x5730;&#x91CC;, NetworkClient&#x662F;&#x5B83;&#x4EEC;&#x548C;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x4EA4;&#x4E92;&#x7684;&#x4E2D;&#x95F4;&#x4ECB;&#x8D28;.
+&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x53EA;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x901A;&#x9053;&#x8FDB;&#x884C;&#x901A;&#x4FE1;,&#x6240;&#x4EE5;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x4EA4;&#x4E92;&#x53EA;&#x6709;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;:&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x548C;&#x8BFB;&#x53D6;&#x54CD;&#x5E94;.
+Selector&#x4EE5;&#x53CA;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;&#x90FD;&#x53EA;&#x662F; NetworkClient&#x548C; SocketServer&#x4E4B;&#x95F4;&#x4E92;&#x76F8;&#x901A;&#x4FE1;&#x4E0A;&#x7684;&#x4E00;&#x4E9B;&#x4ECB;&#x8D28;.
+&#x53EA;&#x4E0D;&#x8FC7;Selector&#x63D0;&#x4F9B;&#x4E86; NIO&#x975E;&#x963B;&#x585E; IO, &#x800C;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;(Send,NetworkReceive)&#x662F;&#x901A;&#x4FE1;&#x7684;&#x6570;&#x636E;.
+&#x4E0D;&#x8981;&#x8BA4;&#x4E3A;NetworkClient&#x548C; Selector&#x4E4B;&#x95F4;&#x4E5F;&#x6709;&#x4E00;&#x5C42;&#x901A;&#x9053;.&#x901A;&#x9053;&#x53EA;&#x6709;&#x8DE8;&#x673A;&#x5668;(&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;)&#x624D;&#x4F1A;&#x5EFA;&#x7ACB;&#x7684;&#x8FDE;&#x63A5;.</p>
+</blockquote>
+<p><img src="20160121082955867" alt=""></p>
+<p>&#x8FD8;&#x662F;&#x4EE5;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x4E3A;&#x4F8B;,&#x5F53;NetworkClient&#x628A;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;,&#x9759;&#x9759;&#x5730;&#x7B49;&#x5F85;&#x670D;&#x52A1;&#x7AEF;&#x5904;&#x7406;.
+&#x7136;&#x540E;&#x67D0;&#x4E2A;&#x65F6;&#x523B;&#x670D;&#x52A1;&#x7AEF;&#x5BF9;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x8981;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;, NetworkClient&#x770B;&#x5230;&#x6709;&#x54CD;&#x5E94;&#x6D88;&#x606F;&#x8FC7;&#x6765;&#x4E86;,&#x4E0D;&#x7B49;&#x9759;&#x9759;&#x4E86;,
+&#x4E00;&#x70B9;&#x4E00;&#x70B9;&#x5730;&#x63A5;&#x6536;&#x54CD;&#x5E94;,&#x76F4;&#x5230;&#x628A;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x5B8C;&#x6574;&#x5730;&#x63A5;&#x6536;&#x4E0B;&#x6765;, &#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x662F;Send,&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x5C31;&#x662F;NetworkReceive.</p>
+<p><img src="20160121083009101" alt=""></p>
+<p>&#x4E0D;&#x8FC7;&#x6709;&#x53EF;&#x80FD;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x5B8C;&#x8BF7;&#x6C42;&#x4E4B;&#x540E;&#x5E76;&#x4E0D;&#x60F3;&#x77E5;&#x9053;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x7ED3;&#x679C;,&#x90A3;&#x4E48;&#x5B83;&#x53D1;&#x9001;&#x5B8C;&#x5C31;&#x4E0D;&#x7BA1;&#x4E86;. &#x548C;&#x6709;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x7684;&#x4E0D;&#x540C;&#x70B9;&#x662F;
+ClientResponse&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x54CD;&#x5E94;&#x5185;&#x5BB9; body,&#x5728;&#x4E0D;&#x671F;&#x671B;&#x5F97;&#x5230;&#x54CD;&#x5E94;&#x65F6;&#x4E3A;null,&#x6709;&#x54CD;&#x5E94;&#x65F6;&#x4E3A;receive.payload.</p>
+<blockquote>
+<p>&#x6BD4;&#x5982;CS&#x6A21;&#x5F0F;&#x4E2D;&#x7684; set&#x548C; get&#x8BF7;&#x6C42;. set&#x66F4;&#x6539;&#x540E;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x54CD;&#x5E94;,&#x800C;get&#x8BF7;&#x6C42;&#x9700;&#x8981;&#x670D;&#x52A1;&#x7AEF;&#x8FD4;&#x56DE;&#x4E00;&#x6279;&#x6570;&#x636E;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;.</p>
+<p>&#x6CE8;&#x610F;:NetworkClient&#x5728;&#x53D1;&#x9001;&#x5B8C; set/get&#x8BF7;&#x6C42;&#x540E;,&#x5C31;&#x4F1A;&#x8C03;&#x7528;handleCompletedSends,&#x8868;&#x793A;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x4E86;.
+&#x81F3;&#x4E8E;&#x8BF7;&#x6C42;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x88AB;&#x5904;&#x7406;,&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x5B8C;&#x6210;&#x5B8C;&#x5168;&#x53D6;&#x51B3;&#x4E8E;&#x670D;&#x52A1;&#x7AEF;,&#x5F53;get&#x8BF7;&#x6C42;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x65F6;,&#x624D;&#x8C03;&#x7528;handleCompletedReceives.</p>
+</blockquote>
+<h3 id="complete-handler">complete handler</h3>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x540E;,handleCompletedSends&#x4E2D;&#x5BF9;&#x4E8E;&#x6709;&#x54CD;&#x5E94;&#x7684;&#x8BF7;&#x6C42;,&#x5E76;&#x4E0D;&#x4F1A;&#x5C06;ClientRequest&#x4ECE; inFlightRequests&#x4E2D;&#x79FB;&#x9664;.
+&#x56E0;&#x4E3A;inFlightRequests&#x8868;&#x793A;&#x7684;&#x662F;&#x8FD8;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;.&#x800C;&#x73B0;&#x5728;&#x624D;&#x53D1;&#x5B8C;&#x8BF7;&#x6C42;,&#x80AF;&#x5B9A;&#x8FD8;&#x6CA1;&#x6536;&#x5230;&#x54CD;&#x5E94;,&#x6240;&#x4EE5;&#x4E0D;&#x4F1A;&#x79FB;&#x9664;.
+&#x800C;&#x5982;&#x679C;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x4E0D;&#x9700;&#x8981;&#x54CD;&#x5E94;,&#x5219;&#x8FD9;&#x65F6;&#x5019;&#x662F;&#x53EF;&#x4EE5;&#x5C06;ClientRequest&#x4ECE;&#x4E2D;&#x5220;&#x9664;,&#x6DFB;&#x52A0;&#x65F6;&#x653E;&#x5230;&#x5934;&#x90E8;,&#x5220;&#x9664;&#x65F6;&#x4E5F;&#x662F;&#x4ECE;&#x5934;&#x90E8;&#x5220;&#x9664;.</p>
+<blockquote>
+<p>&#x95EE;:&#x5220;&#x9664;&#x65F6;&#x4E5F;&#x662F;&#x4ECE;&#x5934;&#x90E8;&#x5220;&#x9664;,&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;,&#x521A;&#x597D;&#x6765;&#x4E86;&#x7B2C;&#x4E8C;&#x4E2A;&#x8BF7;&#x6C42;,&#x8FD9;&#x65F6;&#x5019;&#x5220;&#x9664;&#x5934;&#x90E8;&#x662F;&#x5220;&#x9664;&#x54EA;&#x4E2A;&#x8BF7;&#x6C42;?
+&#x7B54;1(&#xD7;):&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x5B8C;,&#x5982;&#x679C;&#x5B83;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x6210;,&#x5219;&#x7B2C;&#x4E8C;&#x4E2A;&#x8BF7;&#x6C42;&#x662F;&#x4E0D;&#x4F1A;&#x8FDB;&#x5165;&#x5230;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x961F;&#x5217;&#x4E2D;&#x7684;.
+&#x53EA;&#x6709;&#x524D;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;,&#x4E0B;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x624D;&#x53EF;&#x4EE5;&#x8FDB;&#x5165;&#x5230;&#x961F;&#x5217;.&#x786E;&#x4FDD;&#x4E0B;&#x9762;&#x7684;&#x5220;&#x9664;&#x662F;&#x5220;&#x9664;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x7684;,&#x800C;&#x4E0D;&#x662F;&#x65B0;&#x8FDB;&#x6765;&#x521A;&#x5F00;&#x59CB;&#x7684;&#x8BF7;&#x6C42;.</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-comment">// Handle any completed request send. In particular if no response is expected, consider the request complete.</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleCompletedSends</span><span class="hljs-params">(List&lt;ClientResponse&gt; responses, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-comment">// if no response is expected then when the send is completed, return it</span>
+        <span class="hljs-keyword">for</span> (Send send : <span class="hljs-keyword">this</span>.selector.completedSends()) {
+            <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x83B7;&#x53D6;&#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x961F;&#x5217;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;, &#x4F46;&#x5E76;&#x6CA1;&#x6709;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;, &#x53D6;&#x51FA;&#x4E4B;&#x540E;&#x5224;&#x65AD;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x662F;&#x5426;&#x671F;&#x671B;&#x5F97;&#x5230;&#x54CD;&#x5E94;</span>
+            ClientRequest request = <span class="hljs-keyword">this</span>.inFlightRequests.lastSent(send.destination());
+            <span class="hljs-comment">// &#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;&#x54CD;&#x5E94;,&#x5F53;Send&#x8BF7;&#x6C42;&#x5B8C;&#x6210;&#x65F6;,&#x5C31;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;. &#x4E0D;&#x8FC7;&#x8FD8;&#x662F;&#x6709;ClientResponse&#x5BF9;&#x8C61;&#x7684;, &#x53EA;&#x4E0D;&#x8FC7;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;null,&#x8868;&#x793A;&#x6CA1;&#x6709;&#x54CD;&#x5E94;&#x5185;&#x5BB9;</span>
+            <span class="hljs-keyword">if</span> (!request.expectResponse()) {
+                <span class="hljs-keyword">this</span>.inFlightRequests.completeLastSent(send.destination());
+                responses.add(<span class="hljs-keyword">new</span> ClientResponse(request, now, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">null</span>));
+            }
+            <span class="hljs-comment">// &#x5982;&#x679C;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x9700;&#x8981;&#x6709;&#x54CD;&#x5E94;, &#x90A3;&#x4E48;&#x5B83;&#x7684;&#x54CD;&#x5E94;&#x662F;&#x5728;&#x4E0B;&#x9762;&#x7684;handleCompletedReceives&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;.  </span>
+        }
+    }
+</code></pre>
+<p>&#x6536;&#x5230;&#x54CD;&#x5E94;&#x662F;&#x5728;handleCompletedReceives,&#x8FD9;&#x65F6;&#x5019;&#x624D;&#x53EF;&#x4EE5;&#x8C03;&#x7528;completeNext&#x5220;&#x9664; source&#x5BF9;&#x5E94;&#x7684; ClientRequest,
+&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x77E5;&#x9053;inFlightRequests&#x5B58;&#x7684;&#x662F;&#x672A;&#x6536;&#x5230;&#x8BF7;&#x6C42;&#x7684; ClientRequest,&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x5DF2;&#x7ECF;&#x6709;&#x54CD;&#x5E94;&#x4E86;,&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x5176;&#x4E2D;&#x4FDD;&#x5B58;&#x4E86;.</p>
+<blockquote>
+<p>&#x95EE;:inFlightRequests&#x5728;&#x8FD9;&#x91CC;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4EC0;&#x4E48;? &#x9996;&#x5148;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x4E2D;&#x7684;&#x8BF7;&#x6C42;&#x961F;&#x5217;,&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x8BF7;&#x6C42;&#x5806;&#x79EF;(&#x6D41;&#x63A7;?).
+&#x5F53;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x6210;&#x529F;,&#x8FD8;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x54CD;&#x5E94;(&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x54CD;&#x5E94;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x800C;&#x8A00;)&#x7684;&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x91CC;,ClientRequest&#x662F;&#x5904;&#x4E8E;in-flight&#x72B6;&#x6001;&#x7684;.
+&#x540C;&#x65F6;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x961F;&#x5217;&#x6709;&#x4E2A;&#x9650;&#x5236;&#x6761;&#x4EF6;&#x662F;:&#x4E0A;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x5B8C;&#x6BD5;,&#x4E0B;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x4E0D;&#x80FD;&#x8FDB;&#x6765;.&#x6216;&#x8005;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x8BF7;&#x6C42;&#x6570;&#x5F88;&#x591A;&#x65F6;&#x90FD;&#x4F1A;&#x9650;&#x5236;.</p>
+<p>&#x4E0D;&#x9700;&#x8981;&#x54CD;&#x5E94;&#x7684;&#x6D41;&#x7A0B;:&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x8BF7;&#x6C42;-&gt;&#x6DFB;&#x52A0;&#x5230;inFlightRequests-&gt; &#x53D1;&#x9001;&#x8BF7;&#x6C42;... -&gt;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x6210;&#x529F;-&gt;&#x4ECE;inFlightRequests&#x5220;&#x9664;&#x8BF7;&#x6C42;
+&#x9700;&#x8981;&#x54CD;&#x5E94;&#x7684;&#x6D41;&#x7A0B;:&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x8BF7;&#x6C42;-&gt;&#x6DFB;&#x52A0;&#x5230;inFlightRequests-&gt;&#x53D1;&#x9001;&#x8BF7;&#x6C42;...-&gt;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x6210;&#x529F;-&gt;&#x7B49;&#x5F85;&#x63A5;&#x6536;&#x54CD;&#x5E94;-&gt;&#x63A5;&#x6536;&#x5230;&#x54CD;&#x5E94;-&gt;&#x5220;&#x9664;&#x8BF7;&#x6C42;</p>
+</blockquote>
+<pre><code class="lang-java">    <span class="hljs-comment">// Handle any completed receives and update the response list with the responses received.</span>
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleCompletedReceives</span><span class="hljs-params">(List&lt;ClientResponse&gt; responses, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-keyword">for</span> (NetworkReceive receive : <span class="hljs-keyword">this</span>.selector.completedReceives()) {
+            String source = receive.source();
+            <span class="hljs-comment">// &#x63A5;&#x6536;&#x5230;&#x5B8C;&#x6574;&#x7684;&#x54CD;&#x5E94;&#x4E86;, &#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x5220;&#x9664;inFlightRequests&#x4E2D;&#x7684; ClientRequest&#x4E86;.</span>
+            ClientRequest req = inFlightRequests.completeNext(source);
+
+            ResponseHeader header = ResponseHeader.parse(receive.payload());
+            <span class="hljs-comment">// Always expect the response version id to be the same as the request version id</span>
+            <span class="hljs-keyword">short</span> apiKey = req.request().header().apiKey();
+            <span class="hljs-keyword">short</span> apiVer = req.request().header().apiVersion();
+            Struct body = ProtoUtils.responseSchema(apiKey, apiVer).read(receive.payload());
+            correlate(req.request().header(), header);
+            <span class="hljs-keyword">if</span> (!metadataUpdater.maybeHandleCompletedReceive(req, now, body))
+                responses.add(<span class="hljs-keyword">new</span> ClientResponse(req, now, <span class="hljs-keyword">false</span>, body));
+        }
+    }
+</code></pre>
+<h3 id="inflightrequests-complete">InFlightRequests complete</h3>
+<p>Deque&#x662F;&#x4E2A;&#x53CC;&#x7AEF;&#x961F;&#x5217;,&#x53EF;&#x4EE5;&#x5F80;&#x5934;&#x548C;&#x5C3E;&#x65B9;&#x4FBF;&#x5730;&#x6DFB;&#x52A0;/&#x5220;&#x9664;/&#x83B7;&#x53D6;ClientRequest(&#x524D;&#x9762;Partition&#x7684; RecordBatch&#x4E5F;&#x7528;&#x8FC7; Deque).</p>
+<pre><code class="lang-java">    <span class="hljs-comment">//Get the oldest request (the one that that will be completed next) for the given node</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ClientRequest <span class="hljs-title">completeNext</span><span class="hljs-params">(String node)</span> </span>{
+        <span class="hljs-keyword">return</span> requestQueue(node).pollLast();
+    }
+    <span class="hljs-comment">// Get the last request we sent to the given node (but don&apos;t remove it from the queue)</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ClientRequest <span class="hljs-title">lastSent</span><span class="hljs-params">(String node)</span> </span>{
+        <span class="hljs-keyword">return</span> requestQueue(node).peekFirst();
+    }
+    <span class="hljs-comment">// Complete the last request that was sent to a particular node.</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> ClientRequest <span class="hljs-title">completeLastSent</span><span class="hljs-params">(String node)</span> </span>{
+        <span class="hljs-keyword">return</span> requestQueue(node).pollFirst();
+    }
+</code></pre>
+<h3 id="question">Question</h3>
+<p>I&apos;m reading new client design of version 0.9. and I has a question of inFlightRequests in and out.
+Here is the basic flow :</p>
+<p>When Sender send a ClientRequest to NetworkClient, it add to inFlightRequests indicator in-flight requests</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">doSend</span><span class="hljs-params">(ClientRequest request, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-keyword">this</span>.inFlightRequests.add(request);
+        selector.send(request.request());
+    }
+</code></pre>
+<p>the inFlightRequests map node to deque. the new request add as first element of deque</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(ClientRequest request)</span> </span>{
+        Deque&lt;ClientRequest&gt; reqs = <span class="hljs-keyword">this</span>.requests.get(request.request().destination());
+        <span class="hljs-keyword">if</span> (reqs == <span class="hljs-keyword">null</span>) {
+            reqs = <span class="hljs-keyword">new</span> ArrayDeque&lt;&gt;();
+            <span class="hljs-keyword">this</span>.requests.put(request.request().destination(), reqs);
+        }
+        reqs.addFirst(request);
+    }
+</code></pre>
+<p>then poll happen on client and then selector, after success send this ClientRequest, the send will add to selector&apos;s completedSends</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">handleCompletedSends</span><span class="hljs-params">(List&lt;ClientResponse&gt; responses, <span class="hljs-keyword">long</span> now)</span> </span>{
+        <span class="hljs-comment">// if no response is expected then when the send is completed, return it</span>
+        <span class="hljs-keyword">for</span> (Send send : <span class="hljs-keyword">this</span>.selector.completedSends()) {
+            ClientRequest request = <span class="hljs-keyword">this</span>.inFlightRequests.lastSent(send.destination());
+            <span class="hljs-keyword">if</span> (!request.expectResponse()) {
+                <span class="hljs-keyword">this</span>.inFlightRequests.completeLastSent(send.destination());
+                responses.add(<span class="hljs-keyword">new</span> ClientResponse(request, now, <span class="hljs-keyword">false</span>, <span class="hljs-keyword">null</span>));
+            }
+        }
+    }
+</code></pre>
+<p>if this request doesn&apos;t need response, the ClientRequest will remove from inFlightRequest</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> ClientRequest <span class="hljs-title">completeLastSent</span><span class="hljs-params">(String node)</span> </span>{
+        <span class="hljs-keyword">return</span> requestQueue(node).pollFirst();
+    }
+</code></pre>
+<p>I&apos;m curios why poll First? A scene like this: after the first ClientRequest sended out success,
+and not yet execute to handleCompletedSends, another ClientRequest coming, and the new request addFirst to deque.
+then pollFirst execute, as first element of deque now become to the new request, pollFirst will delete the new one, not old one.</p>
+<pre><code class="lang-shell">CR1-&gt;inFlightRequests  |  CR1 send success  | CR2-&gt;inFlightRequests  | completeSends  |  pollFirst
+
+first    last                                 first    last
+-------------                                 -------------
+CR1                                           CR2 CR1                      CR1           poll CR2, but CR2 is just come in!
+-------------                                 -------------
+</code></pre>
+<p>I has also check NetworkClient.send-&gt;canSendRequest -&gt; inFlightRequests.canSendMore(node) -&gt; queue.peekFirst().request().completed()
+only the first element of deque finish, then new request can send to the same node. but the condition of completed
+by ByteBufferSend is remaining &lt;= 0 &amp;&amp; !pending. which means If Send sended success to server, it&apos;s completed!
+Am I missing something(are there any other limitation)? Can some on point out. Tks.</p>
+<h2 id="kafkaserver">KafkaServer</h2>
+<p>&#x4E0A;&#x9762;&#x7684;Producer&#x548C; Consumer&#x90FD;&#x4E0D;&#x662F;&#x4F5C;&#x4E3A; Kafka&#x7684;&#x5185;&#x7F6E;&#x670D;&#x52A1;,&#x800C;&#x662F;&#x4E00;&#x79CD;&#x5BA2;&#x6237;&#x7AEF;(&#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x90FD;&#x5728;clients&#x5305;).
+&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x4E8E;Kafka,&#x548C;Kafka&#x670D;&#x52A1;&#x6240;&#x5728;&#x7684;&#x8282;&#x70B9;&#x4E92;&#x76F8;&#x9694;&#x79BB;.Producer&#x548C; Consumer&#x548C; Kafka&#x96C6;&#x7FA4;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;.
+&#x6BCF;&#x4E2A;Kafka&#x8282;&#x70B9;&#x90FD;&#x6709;&#x4E00;&#x4E9B;&#x81EA;&#x5DF1;&#x5185;&#x7F6E;&#x7684;&#x670D;&#x52A1;&#x8FDB;&#x7A0B;,&#x6BD4;&#x5982;Broker,KafkaController,GroupCoordinator,ReplicaManager</p>
+<p><img src="../kafka.PNG" alt=""></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x770B;&#x4E0B;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x662F;&#x600E;&#x4E48;&#x88AB;&#x5904;&#x7406;&#x7684;. &#x5BA2;&#x6237;&#x7AEF;&#x6709;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#x8BF7;&#x6C42;, &#x670D;&#x52A1;&#x7AEF;&#x540C;&#x6837;&#x4E5F;&#x6709;&#x63A5;&#x6536;&#x548C;&#x53D1;&#x9001;&#x7684;&#x903B;&#x8F91;.
+&#x56E0;&#x4E3A;&#x5BF9;&#x4E8E;I/O&#x6765;&#x8BF4;&#x662F;&#x53CC;&#x5411;&#x7684;:&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;,&#x5C31;&#x610F;&#x5473;&#x7740;&#x670D;&#x52A1;&#x7AEF;&#x8981;&#x63A5;&#x6536;&#x8BF7;&#x6C42;,&#x540C;&#x6837;&#x670D;&#x52A1;&#x7AEF;&#x4E5F;&#x4F1A;&#x53D1;&#x9001;&#x54CD;&#x5E94;,&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x8981;&#x63A5;&#x6536;&#x54CD;&#x5E94;.</p>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="http://blog.csdn.net/lizhitao/article/details/39499283" target="_blank">apache kafka&#x6280;&#x672F;&#x5206;&#x4EAB;&#x7CFB;&#x5217;(&#x76EE;&#x5F55;&#x7D22;&#x5F15;)</a></li>
+<li><a href="http://ifeve.com/socket-channel/" target="_blank">Java NIO&#x7CFB;&#x5217;&#x6559;&#x7A0B;&#xFF08;&#x516B;&#xFF09; SocketChannel</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Kafka">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Producer-scala/" class="navigation navigation-next " aria-label="Next page: Producer-Scala">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Producer","level":"1.2.1","depth":2,"next":{"title":"Producer-Scala","level":"1.2.2","depth":2,"path":"Kafka/Producer-scala/README.md","ref":"./Kafka/Producer-scala/README.md","articles":[]},"previous":{"title":"Kafka","level":"1.2","depth":1,"path":"Kafka/README.md","ref":"./Kafka/README.md","articles":[{"title":"Producer","level":"1.2.1","depth":2,"path":"Kafka/Producer/README.md","ref":"./Kafka/Producer/README.md","articles":[]},{"title":"Producer-Scala","level":"1.2.2","depth":2,"path":"Kafka/Producer-scala/README.md","ref":"./Kafka/Producer-scala/README.md","articles":[]},{"title":"Consumer","level":"1.2.3","depth":2,"path":"Kafka/Consumer/README.md","ref":"./Kafka/Consumer/README.md","articles":[]},{"title":"Stream","level":"1.2.4","depth":2,"path":"Kafka/Stream/README.md","ref":"./Kafka/Stream/README.md","articles":[]},{"title":"Connector","level":"1.2.5","depth":2,"path":"Kafka/Connector/README.md","ref":"./Kafka/Connector/README.md","articles":[]},{"title":"Kafka High Availability","level":"1.2.6","depth":2,"path":"Kafka/kafka-HA.md","ref":"./Kafka/kafka-HA.md","articles":[]},{"title":"Kafka Controller","level":"1.2.7","depth":2,"path":"Kafka/kafka-controller.md","ref":"./Kafka/kafka-controller.md","articles":[]},{"title":"Kafka Source Code Analysis","level":"1.2.8","depth":2,"path":"Kafka/Source-code-analysis/README.md","ref":"./Kafka/Source-code-analysis/README.md","articles":[{"title":"Kafka Schedule","level":"1.2.8.1","depth":3,"path":"Kafka/Source-code-analysis/kafka-schedule.md","ref":"./Kafka/Source-code-analysis/kafka-schedule.md","articles":[]},{"title":"Zookeeper Utils","level":"1.2.8.2","depth":3,"path":"Kafka/Source-code-analysis/kafka-zkUtils.md","ref":"./Kafka/Source-code-analysis/kafka-zkUtils.md","articles":[]},{"title":"Metric Reporter","level":"1.2.8.3","depth":3,"path":"Kafka/Source-code-analysis/kafka-metric-reporter.md","ref":"./Kafka/Source-code-analysis/kafka-metric-reporter.md","articles":[]},{"title":"Log Manager","level":"1.2.8.4","depth":3,"path":"Kafka/Source-code-analysis/kafka-log-manager.md","ref":"./Kafka/Source-code-analysis/kafka-log-manager.md","articles":[]},{"title":"Metadata Cache","level":"1.2.8.5","depth":3,"path":"Kafka/Source-code-analysis/kafka-metadata-cache.md","ref":"./Kafka/Source-code-analysis/kafka-metadata-cache.md","articles":[]},{"title":"Socketserver","level":"1.2.8.6","depth":3,"path":"Kafka/Source-code-analysis/kafka-socketserver.md","ref":"./Kafka/Source-code-analysis/kafka-socketserver.md","articles":[]},{"title":"LogAppend","level":"1.2.8.7","depth":3,"path":"Kafka/Source-code-analysis/kafka-logappend.md","ref":"./Kafka/Source-code-analysis/kafka-logappend.md","articles":[]},{"title":"ISR","level":"1.2.8.8","depth":3,"path":"Kafka/Source-code-analysis/kafka-isr.md","ref":"./Kafka/Source-code-analysis/kafka-isr.md","articles":[]},{"title":"Replica Manager","level":"1.2.8.9","depth":3,"path":"Kafka/Source-code-analysis/kafka-replica-manager.md","ref":"./Kafka/Source-code-analysis/kafka-replica-manager.md","articles":[]},{"title":"Kafka Controller","level":"1.2.8.10","depth":3,"path":"Kafka/Source-code-analysis/kafka-controller.md","ref":"./Kafka/Source-code-analysis/kafka-controller.md","articles":[]},{"title":"Admin Manager","level":"1.2.8.11","depth":3,"path":"Kafka/Source-code-analysis/kafka-admin-manager.md","ref":"./Kafka/Source-code-analysis/kafka-admin-manager.md","articles":[]},{"title":"Group Coordinator","level":"1.2.8.12","depth":3,"path":"Kafka/Source-code-analysis/kafka-group-coordinator.md","ref":"./Kafka/Source-code-analysis/kafka-group-coordinator.md","articles":[]},{"title":"Transaction Coordinator","level":"1.2.8.13","depth":3,"path":"Kafka/Source-code-analysis/kafka-transaction-coordinator.md","ref":"./Kafka/Source-code-analysis/kafka-transaction-coordinator.md","articles":[]},{"title":"Authorizer","level":"1.2.8.14","depth":3,"path":"Kafka/Source-code-analysis/kafka-authorizer.md","ref":"./Kafka/Source-code-analysis/kafka-authorizer.md","articles":[]},{"title":"Kafka APIs","level":"1.2.8.15","depth":3,"path":"Kafka/Source-code-analysis/kafka-apis.md","ref":"./Kafka/Source-code-analysis/kafka-apis.md","articles":[]},{"title":"Dynamic Config Manager","level":"1.2.8.16","depth":3,"path":"Kafka/Source-code-analysis/kafka-dynamic-config-manager.md","ref":"./Kafka/Source-code-analysis/kafka-dynamic-config-manager.md","articles":[]},{"title":"Health Checker","level":"1.2.8.17","depth":3,"path":"Kafka/Source-code-analysis/kafka-health-checker.md","ref":"./Kafka/Source-code-analysis/kafka-health-checker.md","articles":[]},{"title":"Checkpoint","level":"1.2.8.18","depth":3,"path":"Kafka/Source-code-analysis/kafka-checkpoint.md","ref":"./Kafka/Source-code-analysis/kafka-checkpoint.md","articles":[]}]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Kafka/Producer/README.md","mtime":"2017-05-02T08:12:06.865Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1295 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Socketserver · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kafka-logappend.html" />
+    
+    
+    <link rel="prev" href="kafka-metadata-cache.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Producer/">
+            
+                <a href="../Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Producer-scala/">
+            
+                <a href="../Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Consumer/">
+            
+                <a href="../Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Stream/">
+            
+                <a href="../Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Connector/">
+            
+                <a href="../Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../kafka-HA.html">
+            
+                <a href="../kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../kafka-controller.html">
+            
+                <a href="../kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="kafka-schedule.html">
+            
+                <a href="kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="kafka-zkUtils.html">
+            
+                <a href="kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="kafka-metric-reporter.html">
+            
+                <a href="kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="kafka-log-manager.html">
+            
+                <a href="kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="kafka-metadata-cache.html">
+            
+                <a href="kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8.6" data-path="kafka-socketserver.html">
+            
+                <a href="kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="kafka-logappend.html">
+            
+                <a href="kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="kafka-isr.html">
+            
+                <a href="kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="kafka-replica-manager.html">
+            
+                <a href="kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="kafka-controller.html">
+            
+                <a href="kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="kafka-admin-manager.html">
+            
+                <a href="kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="kafka-group-coordinator.html">
+            
+                <a href="kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="kafka-transaction-coordinator.html">
+            
+                <a href="kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="kafka-authorizer.html">
+            
+                <a href="kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="kafka-apis.html">
+            
+                <a href="kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="kafka-dynamic-config-manager.html">
+            
+                <a href="kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="kafka-health-checker.html">
+            
+                <a href="kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="kafka-checkpoint.html">
+            
+                <a href="kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../Hadoop/">
+            
+                <a href="../../Hadoop/">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../Hadoop/HBase/">
+            
+                <a href="../../Hadoop/HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../Hadoop/HBase/getting-start.html">
+            
+                <a href="../../Hadoop/HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../Hadoop/HBase/hbase-shell.html">
+            
+                <a href="../../Hadoop/HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../Hadoop/Hive/">
+            
+                <a href="../../Hadoop/Hive/">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../Hadoop/Hive/tutorial.html">
+            
+                <a href="../../Hadoop/Hive/tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../Hadoop/Hive/shell-command.html">
+            
+                <a href="../../Hadoop/Hive/shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../Hadoop/Hive/HiveQL.html">
+            
+                <a href="../../Hadoop/Hive/HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../Hadoop/Sqoop/">
+            
+                <a href="../../Hadoop/Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../Hadoop/Sqoop/tutorial.html">
+            
+                <a href="../../Hadoop/Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Socketserver</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="socketserver">Socketserver</h1>
+<blockquote>
+<p>Kafka&#x7684; Broker&#x5185;&#x90E8;&#x5206;&#x6210;:&#x7F51;&#x7EDC;&#x5C42;,API&#x5C42;,&#x65E5;&#x5FD7;&#x5B58;&#x50A8;&#x5C42;,&#x526F;&#x672C;&#x590D;&#x5236;. &#x8FD9;&#x91CC;&#x5148;&#x4ECB;&#x7ECD;&#x7F51;&#x7EDC;&#x5C42;&#x7684;SocketServer</p>
+</blockquote>
+<p><img src="kafka-broker-internals.png" alt=""></p>
+<p>SocketServer&#x662F;&#x4E00;&#x4E2A; NIO&#x7684;&#x670D;&#x52A1;&#x5668;,&#x5B83;&#x7684;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;:</p>
+<ul>
+<li>&#x4E00;&#x4E2A;Acceptor&#x7EBF;&#x7A0B;&#x63A5;&#x53D7;/&#x5904;&#x7406;&#x6240;&#x6709;&#x7684;&#x65B0;&#x8FDE;&#x63A5;</li>
+<li>N&#x4E2A; Processor&#x7EBF;&#x7A0B;,&#x6BCF;&#x4E2A;Processor&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684; selector,&#x4ECE;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x4E2D;&#x8BFB;&#x53D6;&#x8BF7;&#x6C42;</li>
+<li>M&#x4E2A; Handler&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x8BF7;&#x6C42;,&#x5E76;&#x5C06;&#x4EA7;&#x751F;&#x7684;&#x8BF7;&#x6C42;&#x8FD4;&#x56DE;&#x7ED9;Processor&#x7EBF;&#x7A0B;&#x7528;&#x4E8E;&#x5199;&#x56DE;&#x5BA2;&#x6237;&#x7AEF;</li>
+</ul>
+<p><img src="20160115112951692" alt=""></p>
+<p>SocketServer&#x5728;&#x542F;&#x52A8;&#x65F6;(Kafka-&gt;KafkaServer),&#x4F1A;&#x542F;&#x52A8;&#x4E00;&#x4E2A; Acceptor &#x548C;N&#x4E2A; Processor.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">startup</span></span>() {
+      <span class="hljs-keyword">val</span> brokerId = config.brokerId
+      <span class="hljs-keyword">var</span> processorBeginIndex = <span class="hljs-number">0</span>
+      endpoints.values.foreach { endpoint =&gt;
+        <span class="hljs-keyword">val</span> protocol = endpoint.protocolType
+        <span class="hljs-keyword">val</span> processorEndIndex = processorBeginIndex + numProcessorThreads
+        <span class="hljs-keyword">for</span> (i &lt;- processorBeginIndex until processorEndIndex) {
+          processors(i) = <span class="hljs-keyword">new</span> <span class="hljs-type">Processor</span>(i,time,maxRequestSize,requestChannel,connectionQuotas,connectionsMaxIdleMs,protocol,config.values,metrics)
+        }
+        <span class="hljs-comment">//Processor&#x7EBF;&#x7A0B;&#x662F;&#x9644;&#x5C5E;&#x5728; Acceptor&#x7EBF;&#x7A0B;&#x4E2D;,&#x968F;&#x7740;Acceptor&#x7684;&#x521B;&#x5EFA;&#x800C;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;</span>
+        <span class="hljs-keyword">val</span> acceptor = <span class="hljs-keyword">new</span> <span class="hljs-type">Acceptor</span>(endpoint, sendBufferSize, recvBufferSize, brokerId, processors.slice(processorBeginIndex, processorEndIndex), connectionQuotas)
+        acceptors.put(endpoint, acceptor)
+        <span class="hljs-comment">//&#x542F;&#x52A8;Acceptor&#x7EBF;&#x7A0B;</span>
+        <span class="hljs-type">Utils</span>.newThread(<span class="hljs-string">&quot;kafka-socket-acceptor-%s-%d&quot;</span>.format(protocol.toString, endpoint.port), acceptor, <span class="hljs-literal">false</span>).start()
+        acceptor.awaitStartup()     <span class="hljs-comment">//&#x7B49;&#x5F85;&#x542F;&#x52A8;&#x5B8C;&#x6210;,&#x901A;&#x8FC7;CountDownLatch&#x63A7;&#x5236;,&#x5728;&#x6CE8;&#x518C;OP_ACCEPT&#x540E;&#x5373;&#x53EF;&#x7EE7;&#x7EED;</span>
+        processorBeginIndex = processorEndIndex
+      }
+    }
+</code></pre>
+<p><img src="20160110142243150" alt=""></p>
+<h2 id="acceptor">Acceptor</h2>
+<p>SelectionKey&#x662F;&#x8868;&#x793A;&#x4E00;&#x4E2A; Channel&#x548C; Selector&#x7684;&#x6CE8;&#x518C;&#x5173;&#x7CFB;&#x3002;&#x5728;Acceptor&#x4E2D;&#x7684; selector&#xFF0C;
+&#x53EA;&#x6709;&#x76D1;&#x542C;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x7684;ServerSocketChannel&#x7684; OP_ACCEPT&#x4E8B;&#x4EF6;&#x6CE8;&#x518C;&#x5728;&#x4E0A;&#x9762;&#x3002;
+&#x5F53;selector&#x7684; select&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x65F6;&#xFF0C;&#x5219;&#x8868;&#x793A;&#x6CE8;&#x518C;&#x5728;&#x5B83;&#x4E0A;&#x9762;&#x7684;Channel&#x53D1;&#x751F;&#x4E86;&#x5BF9;&#x5E94;&#x7684;&#x4E8B;&#x4EF6;&#x3002;
+&#x5728;Acceptor&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x5C31;&#x662F;OP_ACCEPT&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x4E2A;ServerSocketChannel&#x7684; OP_ACCEPT&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x4E86;&#x3002;
+&#x56E0;&#x6B64;&#xFF0C;Acceptor&#x7684; accept&#x65B9;&#x6CD5;&#x7684;&#x5904;&#x7406;&#x903B;&#x8F91;&#x4E3A;&#xFF1A;&#x9996;&#x5148;&#x901A;&#x8FC7;SelectionKey&#x6765;&#x62FF;&#x5230;&#x5BF9;&#x5E94;&#x7684; ServerSocketChannel&#xFF0C;
+&#x5E76;&#x8C03;&#x7528;&#x5176;accept&#x65B9;&#x6CD5;&#x6765;&#x5EFA;&#x7ACB;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x7136;&#x540E;&#x62FF;&#x5230;&#x5BF9;&#x5E94;&#x7684;SocketChannel&#x5E76;&#x4EA4;&#x7ED9;&#x4E86; processor&#x3002;
+&#x7136;&#x540E;Acceptor&#x7684;&#x4EFB;&#x52A1;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x5F00;&#x59CB;&#x53BB;&#x5904;&#x7406;&#x4E0B;&#x4E00;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x3002;
+Acceptor&#x53EA;&#x8D1F;&#x8D23;&#x63A5;&#x53D7;&#x65B0;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8FDE;&#x63A5;,&#x5E76;&#x5C06;&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x7ED9;Processor&#x5904;&#x7406;,&#x91C7;&#x7528;Round-robin&#x7684;&#x65B9;&#x5F0F;&#x5206;&#x7ED9;&#x4E0D;&#x540C;&#x7684; Processor</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span></span>() {
+      serverChannel.register(nioSelector, <span class="hljs-type">SelectionKey</span>.<span class="hljs-type">OP_ACCEPT</span>)
+      startupComplete()
+      <span class="hljs-keyword">var</span> currentProcessor = <span class="hljs-number">0</span>
+      <span class="hljs-keyword">while</span> (isRunning) {
+          <span class="hljs-keyword">val</span> ready = nioSelector.select(<span class="hljs-number">500</span>)
+          <span class="hljs-keyword">if</span> (ready &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">val</span> keys = nioSelector.selectedKeys()
+            <span class="hljs-keyword">val</span> iter = keys.iterator()
+            <span class="hljs-keyword">while</span> (iter.hasNext &amp;&amp; isRunning) {
+                <span class="hljs-keyword">val</span> key = iter.next
+                iter.remove()
+                <span class="hljs-keyword">if</span> (key.isAcceptable) accept(key, processors(currentProcessor))
+                <span class="hljs-comment">// round robin to the next processor thread</span>
+                currentProcessor = (currentProcessor + <span class="hljs-number">1</span>) % processors.length
+            }
+          }
+      }
+  }
+</code></pre>
+<p>&#x6CE8;&#x518C;OP_ACCEPT&#x65F6;,&#x6CE8;&#x518C;&#x5230;Selector&#x4E0A;&#x7684; serverChannel&#x662F;&#x4E00;&#x4E2A; ServerSocketChannel.
+&#x6240;&#x4EE5;&#x6BCF;&#x4E2A;Processor&#x90FD;&#x80FD;&#x83B7;&#x5F97; Acceptor&#x6210;&#x529F;&#x7684;&#x8FDE;&#x63A5;&#x4E0A;&#x7684; SocketChannel.</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">accept</span></span>(key: <span class="hljs-type">SelectionKey</span>, processor: <span class="hljs-type">Processor</span>) {
+      <span class="hljs-keyword">val</span> serverSocketChannel = key.channel().asInstanceOf[<span class="hljs-type">ServerSocketChannel</span>]
+      <span class="hljs-keyword">val</span> socketChannel = serverSocketChannel.accept()
+      processor.accept(socketChannel)
+  }
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;&#x8FDE;&#x63A5;SocketChannel.connect,&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x53D7;&#x8FD9;&#x4E2A;&#x8FDE;&#x63A5;ServerSocketChannel.accept,&#x4E8E;&#x662F;&#x53CC;&#x65B9;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x901A;&#x4FE1;&#x4E86;.</p>
+<p><img src="20160110144830297" alt=""></p>
+<h2 id="processor">Processor</h2>
+<blockquote>
+<p>Processor&#x7684;&#x4E3B;&#x8981;&#x804C;&#x8D23;&#x662F;&#x8D1F;&#x8D23;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x548C;&#x5C06;&#x54CD;&#x5E94;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;
+&#x5B83;&#x672C;&#x8EAB;&#x4E0D;&#x5904;&#x7406;&#x5177;&#x4F53;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5B83;&#x5E76;&#x4E0D;&#x8BA4;&#x8BC6;&#x5B83;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x8BFB;&#x53D6;&#x56DE;&#x6765;&#x7684;&#x6570;&#x636E;&#x3002;
+&#x6BCF;&#x4E2A;Processor&#x90FD;&#x6709;&#x4E00;&#x4E2A; Selector&#xFF0C;&#x7528;&#x6765;&#x76D1;&#x542C;&#x591A;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x975E;&#x963B;&#x585E;&#x5730;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;&#x3002;</p>
+</blockquote>
+<p>&#x7531;&#x4E8E;&#x91C7;&#x7528;Round-Robin&#x7684;&#x65B9;&#x5F0F;&#x5206;&#x914D;&#x8FDE;&#x63A5;&#x7ED9; Processor,&#x6240;&#x4EE5;&#x4E00;&#x4E2A;Processor&#x4F1A;&#x6709;&#x591A;&#x4E2A; SocketChannel,&#x5BF9;&#x5E94;&#x591A;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;.
+&#x6BCF;&#x4E2A;SocketChannel&#x90FD;&#x4EE3;&#x8868;&#x670D;&#x52A1;&#x7AEF;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x5EFA;&#x7ACB;&#x7684;&#x8FDE;&#x63A5;,Processor&#x901A;&#x8FC7;&#x4E00;&#x4E2A; Selector&#x4E0D;&#x65AD;&#x8F6E;&#x8BE2;(&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x6BCF;&#x4E2A;&#x8FDE;&#x63A5;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;Selector).</p>
+<p><img src="20160122085949818" alt=""></p>
+<p>Processor&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x65B0;&#x7684; SocketChannel&#x901A;&#x9053;&#x8FDE;&#x63A5;&#x65F6;,&#x5148;&#x653E;&#x5165;LinkedQueue&#x961F;&#x5217;&#x4E2D;,&#x7136;&#x540E;&#x5524;&#x9192;Selector&#x7EBF;&#x7A0B;&#x5F00;&#x59CB;&#x5DE5;&#x4F5C;
+Processor&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x9996;&#x5148;&#x4ECE;&#x901A;&#x9053;&#x961F;&#x5217;&#x4E2D;&#x53BB;&#x53D6; SocketChannel,&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;ID&#x6CE8;&#x518C;&#x5230; Selector&#x4E2D;,
+&#x4FBF;&#x4E8E;&#x540E;&#x9762;Selector&#x80FD;&#x591F;&#x6839;&#x636E; ConnectionID&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x7684;&#x4E0D;&#x540C;&#x7684; SocketChannel(&#x6BD4;&#x5982;selector.completedReceives).</p>
+<pre><code class="lang-scala">  <span class="hljs-comment">//Acceptor&#x4F1A;&#x628A;&#x591A;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x8FDE;&#x63A5; SocketChannel&#x5206;&#x914D;&#x4E00;&#x4E2A; Processor&#xFF0C;&#x56E0;&#x6B64;&#x6BCF;&#x4E2A;Processor&#x5185;&#x90E8;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#x6765;&#x4FDD;&#x5B58;&#x8FD9;&#x4E9B;&#x65B0;&#x6765;&#x7684;&#x6570;&#x636E;&#x8FDE;&#x63A5;</span>
+  <span class="hljs-comment">//&#x628A;&#x4E00;&#x4E2A;SocketChannel&#x653E;&#x5230;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5524;&#x9192;Processor&#x7684; selector</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">accept</span></span>(socketChannel: <span class="hljs-type">SocketChannel</span>) {
+    newConnections.add(socketChannel)
+    wakeup()
+  }
+
+  <span class="hljs-comment">//&#x5982;&#x679C;&#x6709;&#x961F;&#x5217;&#x4E2D;&#x6709;&#x65B0;&#x7684;SocketChannel&#xFF0C;&#x5219;&#x5B83;&#x9996;&#x5148;&#x5C06;&#x5176;OP_READ&#x4E8B;&#x4EF6;&#x6CE8;&#x518C;&#x5230;&#x8BE5; Processor&#x7684; selector&#x4E0A;&#x9762;</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">configureNewConnections</span></span>() {
+    <span class="hljs-keyword">while</span>(!newConnections.isEmpty) {
+        <span class="hljs-keyword">val</span> channel = newConnections.poll()
+        <span class="hljs-keyword">val</span> localHost = channel.socket().getLocalAddress.getHostAddress
+        <span class="hljs-keyword">val</span> localPort = channel.socket().getLocalPort
+        <span class="hljs-keyword">val</span> remoteHost = channel.socket().getInetAddress.getHostAddress
+        <span class="hljs-keyword">val</span> remotePort = channel.socket().getPort
+        <span class="hljs-keyword">val</span> connectionId = <span class="hljs-type">ConnectionId</span>(localHost, localPort, remoteHost, remotePort).toString
+        selector.register(connectionId, channel)
+    }
+  }
+</code></pre>
+<p>&#x56DE;&#x987E;&#x4E0B;&#x5BA2;&#x6237;&#x7AEF;NetworkClient&#x4E5F;&#x662F;&#x5728; finishConnect&#x7684;&#x65F6;&#x5019;&#x6CE8;&#x518C;&#x4E86; OP_READ&#x4E8B;&#x4EF6;,&#x7528;&#x4E8E;&#x8BFB;&#x53D6;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x54CD;&#x5E94;.
+&#x800C;&#x5BF9;&#x4E8E;&#x670D;&#x52A1;&#x7AEF;&#x800C;&#x8A00;,&#x5728;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x7684;&#x65F6;&#x5019;,&#x6CE8;&#x518C;OP_READ&#x4E8B;&#x4EF6;, &#x662F;&#x4E3A;&#x4E86;&#x8BFB;&#x53D6;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;.</p>
+<p><img src="20160110152629900" alt=""></p>
+<p>&#x4E0B;&#x9762;&#x7684;Selector&#x4E5F;&#x662F;&#x524D;&#x9762;&#x5206;&#x6790; KafkaProducer&#x7684; Selector.&#x6BCF;&#x6B21;&#x8F6E;&#x8BE2;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x9700;&#x8981;&#x5904;&#x7406;&#x8FD4;&#x56DE;&#x7684;completedReceives,completedSends&#x7B49;
+&#x6240;&#x4EE5;KafkaProducer/KafkaConsumer&#x548C; SocketServer&#x90FD;&#x91C7;&#x7528; NIO Selector&#x65B9;&#x5F0F;.&#x5F53;&#x7136;&#x5BA2;&#x6237;&#x7AEF;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x963B;&#x585E;&#x6A21;&#x5F0F;(&#x6BD4;&#x5982;OldProducer)
+Selector&#x6A21;&#x578B;&#x662F;&#x4E00;&#x79CD;&#x591A;&#x8DEF;&#x590D;&#x7528;&#x7684;&#x901A;&#x4FE1;&#x6A21;&#x5F0F;,&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x53EA;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x624D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;.&#x6240;&#x4EE5;&#x770B;&#x5230;SocketServer&#x4F7F;&#x7528;&#x4E86;&#x516C;&#x7528;&#x7684; Selector.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span></span>() {
+    startupComplete()
+    <span class="hljs-keyword">while</span>(isRunning) {
+        configureNewConnections()   <span class="hljs-comment">// setup any new connections that have been queued up</span>
+        processNewResponses()       <span class="hljs-comment">// register any new responses for writing</span>
+        selector.poll(<span class="hljs-number">300</span>)          <span class="hljs-comment">// poll&#x8F6E;&#x8BE2;&#x903B;&#x8F91;&#x5DF2;&#x7ECF;&#x5728; KafkaProducer&#x4E2D;&#x5206;&#x6790;&#x8FC7;&#x4E86;</span>
+
+        <span class="hljs-comment">// NetworkClient.poll&#x4E4B;&#x540E;&#x5BF9;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x53D1;&#x9001;&#x548C;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x63A5;&#x6536;&#x7684;&#x90FD;&#x8FDB;&#x884C;&#x4E86; handler&#x5904;&#x7406;. &#x8FD9;&#x91CC;&#x4E5F;&#x4E00;&#x6837;</span>
+        selector.completedReceives.asScala.foreach { receive =&gt;
+            <span class="hljs-comment">//receive&#x662F; NetworkReceive, &#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x6E90;&#x8282;&#x70B9;&#x5730;&#x5740;, &#x5BF9;&#x5E94;configureNewConnections&#x6CE8;&#x518C;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; connectionId</span>
+            <span class="hljs-keyword">val</span> channel = selector.channel(receive.source)
+            <span class="hljs-keyword">val</span> session = <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Session</span>(<span class="hljs-keyword">new</span> <span class="hljs-type">KafkaPrincipal</span>(<span class="hljs-type">KafkaPrincipal</span>.<span class="hljs-type">USER_TYPE</span>, channel.principal.getName), channel.socketAddress)
+            <span class="hljs-keyword">val</span> req = <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Request</span>(processor = id, connectionId = receive.source, session = session, buffer = receive.payload, startTimeMs = time.milliseconds, securityProtocol = protocol)
+            requestChannel.sendRequest(req)     <span class="hljs-comment">//Request&#x8BF7;&#x6C42;,&#x53D1;&#x9001;&#x7ED9;RequestChannel&#x5904;&#x7406;</span>
+            selector.mute(receive.source)       <span class="hljs-comment">//&#x79FB;&#x9664;OP_READ&#x4E8B;&#x4EF6;. &#x63A5;&#x6536;&#x672C;&#x8EAB;&#x5C31;&#x662F;Read,&#x63A5;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x540E;,&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x8BFB;&#x4E86;</span>
+        }
+        <span class="hljs-comment">// &#x4E0A;&#x9762;&#x7684;completedReceives&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x6536;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;,&#x4E0B;&#x9762;&#x7684;completedSends&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x8981;&#x5C06;&#x54CD;&#x5E94;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;</span>
+        selector.completedSends.asScala.foreach { send =&gt;
+            <span class="hljs-keyword">val</span> resp = inflightResponses.remove(send.destination).getOrElse <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">IllegalStateException</span>()  <span class="hljs-comment">//[B]</span>
+            selector.unmute(send.destination)   <span class="hljs-comment">//&#x6DFB;&#x52A0;OP_READ&#x4E8B;&#x4EF6;. &#x8FD9;&#x6837;&#x624D;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x8BFB;&#x53D6;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;</span>
+        }
+    }
+    shutdownComplete()
+  }
+</code></pre>
+<p>&#x518D;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;, &#x5176;&#x5B9E;&#x4E24;&#x8005;&#x662F;&#x6709;&#x5F88;&#x591A;&#x5171;&#x540C;&#x70B9;&#x7684;.</p>
+<ul>
+<li>&#x56E0;&#x4E3A;&#x5BF9;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x800C;&#x8A00;,&#x90FD;&#x6709;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;,&#x6240;&#x4EE5;&#x4E5F;&#x5C31;&#x90FD;&#x6709;Selector&#x8F6E;&#x8BE2;&#x4EA7;&#x751F;&#x7684; completedSends,completedSends.</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x53D1;&#x9001;&#x8BF7;&#x6C42;(Send)&#x5BF9;&#x4E8E;&#x670D;&#x52A1;&#x7AEF;&#x800C;&#x8A00;&#x662F;&#x8BFB;&#x53D6;&#x8BF7;&#x6C42;(NetworkReceive),&#x53CD;&#x8FC7;&#x6765;&#x670D;&#x52A1;&#x7AEF;&#x7684;Send&#x5BF9;&#x5E94;&#x5BA2;&#x6237;&#x7AEF;&#x7684; NetworkReceive.</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;Send&#x7684; destination&#x5BF9;&#x5E94;&#x670D;&#x52A1;&#x7AEF; NetworkReceive&#x7684; source. &#x53CD;&#x8FC7;&#x6765;&#x670D;&#x52A1;&#x7AEF;Send&#x7684; dest&#x5BF9;&#x5E94;&#x5BA2;&#x6237;&#x7AEF; NetworkReceice&#x7684; source.</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;ClientRequest&#x5728;&#x8FD8;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x54CD;&#x5E94;&#x65F6;&#x4F1A;&#x5C06;&#x8BF7;&#x6C42;&#x653E;&#x5230; inFlightRequests&#x4E2D;,&#x5BF9;&#x5E94;&#x670D;&#x52A1;&#x7AEF;&#x7684;requestChannel.</li>
+<li>inFlightRequests&#x8868;&#x793A;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x4E2D;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;,&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x65F6;&#x5C31;&#x52A0;&#x5165;&#x5230;&#x7F13;&#x51B2;&#x961F;&#x5217;&#x4E2D;,&#x53EA;&#x6709;&#x6536;&#x5230;&#x8BF7;&#x6C42;&#x5BF9;&#x5E94;&#x7684;&#x54CD;&#x5E94;&#x7ED3;&#x679C;,&#x624D;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;.</li>
+<li>inflightResponses&#x8868;&#x793A;&#x6B63;&#x5728;&#x8FDB;&#x884C;&#x4E2D;&#x7684;&#x670D;&#x52A1;&#x7AEF;&#x54CD;&#x5E94;,&#x4E5F;&#x662F;&#x5728;&#x670D;&#x52A1;&#x7AEF;&#x5F00;&#x59CB;&#x53D1;&#x9001;&#x54CD;&#x5E94;&#x8BF7;&#x6C42;&#x65F6;&#x52A0;&#x5165;&#x5230;&#x961F;&#x5217;&#x4E2D;,&#x53EA;&#x6709;&#x54CD;&#x5E94;&#x53D1;&#x9001;&#x6210;&#x529F;,&#x624D;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x5220;&#x9664;.</li>
+<li>&#x5B8C;&#x6574;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x6D41;&#x7A0B;:&#x52A0;&#x5230;inFlightRequests,&#x670D;&#x52A1;&#x7AEF;&#x5904;&#x7406;&#x8BF7;&#x6C42;,&#x52A0;&#x5230;inflightResponses,&#x5220;&#x9664;inflightResponses,&#x5220;&#x9664;inFlightRequests</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x7684;send&#x8868;&#x793A;&#x8981;&#x53D1;&#x9001;&#x4E00;&#x4E2A; Send&#x8BF7;&#x6C42;,&#x4F46;&#x8FD8;&#x6CA1;&#x5F00;&#x59CB;,&#x670D;&#x52A1;&#x7AEF;&#x7684;processNewResponses&#x4E5F;&#x8868;&#x793A;&#x8981;&#x53D1;&#x9001;&#x4E00;&#x4E2A; Response,&#x4F46;&#x4E5F;&#x6CA1;&#x5F00;&#x59CB;,&#x6240;&#x4EE5;&#x90FD;&#x9700;&#x8981;&#x7F13;&#x51B2;&#x961F;&#x5217;.</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x4ECE;Sender-NetworkClient-Selector. &#x670D;&#x52A1;&#x7AEF;&#x4ECE;Acceptor-Processor-Selector. Selector&#x662F;&#x771F;&#x6B63;&#x5E72;&#x6D3B;&#x7684;(&#x5728;&#x5E95;&#x5C42;&#x7684;&#x901A;&#x9053;&#x4E0A;&#x8BFB;&#x5199;&#x6570;&#x636E;).</li>
+<li>&#x800C;NetworkClient&#x548C; Processor&#x4F1A;&#x5BF9;&#x8BFB;&#x5199;&#x8BF7;&#x6C42;&#x7684;&#x7ED3;&#x679C; completeXXX&#x505A;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;(&#x53EF;&#x4EE5;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;handleCompletedXXX&#x505A;&#x6BD4;&#x8F83;).</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x65F6;&#x6CE8;&#x518C;READ:&#x5B83;&#x4E0D;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x670D;&#x52A1;&#x7AEF;&#x4F1A;&#x8FD4;&#x56DE;&#x6D88;&#x606F;,&#x670D;&#x52A1;&#x7AEF;&#x914D;&#x7F6E;&#x65B0;&#x8FDE;&#x63A5;&#x65F6;&#x4E5F;&#x6CE8;&#x518C;READ:&#x5B83;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#x5BA2;&#x6237;&#x7AEF;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x8FC7;&#x6765;</li>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x5728;&#x521A;&#x5F00;&#x59CB;&#x8981;&#x53D1;&#x9001;Send&#x8BF7;&#x6C42;&#x65F6;,&#x4F1A;&#x6CE8;&#x518C;OP_WRITE,&#x5F53;&#x53D1;&#x9001;&#x5B8C;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;Send&#x8BF7;&#x6C42;&#x540E;,&#x4F1A;&#x53D6;&#x6D88;OP_WRITE</li>
+<li>&#x800C;&#x670D;&#x52A1;&#x7AEF;&#x5728;&#x8FDE;&#x63A5;&#x65F6;&#x6CE8;&#x518C;&#x4E86;READ,&#x63A5;&#x6536;&#x5230;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;NetworkReceive&#x8BF7;&#x6C42;&#x540E;,&#x624D;&#x4F1A;&#x53D6;&#x6D88;OP_READ.&#x670D;&#x52A1;&#x7AEF;&#x5728;&#x53D1;&#x9001;&#x54CD;&#x5E94;&#x4E4B;&#x540E;,&#x8FD8;&#x8981;&#x91CD;&#x65B0;&#x6CE8;&#x518C;READ.</li>
+</ul>
+<p><img src="20160110155608130" alt=""></p>
+<h3 id="request-completedreceives">Request-&gt;completedReceives</h3>
+<p>&#x5C06;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x8BF7;&#x6C42;&#x4E32;&#x8054;&#x8D77;&#x6765;:&#x5BA2;&#x6237;&#x7AEF;(P&#x6216;C)&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x4F1A;&#x7ECF;&#x8FC7;NetworkClient&#x53D1;&#x9001; Send&#x8BF7;&#x6C42;(ClientRequest),
+&#x670D;&#x52A1;&#x7AEF;&#x5BF9;&#x6BCF;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x4F7F;&#x7528;Processor&#x5904;&#x7406;(Processor&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x5EFA;&#x7ACB; SocketChannel&#x8FDB;&#x884C;&#x901A;&#x4FE1;).
+&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x53D1;&#x9001;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x90FD;&#x91C7;&#x7528;&#x4E86;NIO&#x7684; Selector&#x8F6E;&#x8BE2;.&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x540E;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x9700;&#x8981;&#x54CD;&#x5E94;(handleCompletedSends).
+&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BF7;&#x6C42;&#x5904;&#x7406;&#x662F;&#x5728;selector.completedReceives&#x4E2D;, &#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x4F1A;&#x5C06;&#x6536;&#x5230;&#x7684;&#x8BF7;&#x6C42;&#x53D1;&#x7ED9;RequestChannel&#x5904;&#x7406;.</p>
+<p>&#x670D;&#x52A1;&#x7AEF;&#x6CE8;&#x518C;OP_READ&#x6709;&#x4E24;&#x4E2A;&#x5730;&#x65B9;,&#x4E00;&#x4E2A;&#x662F;&#x5728;configureNewConnections,&#x4E00;&#x4E2A;&#x662F;completedSends&#x5B8C;&#x6210;&#x54CD;&#x5E94;&#x53D1;&#x9001;&#x4E4B;&#x540E;.
+&#x6CE8;&#x518C;OP_READ&#x76EE;&#x7684;&#x662F;&#x8BA9;&#x670D;&#x52A1;&#x7AEF;&#x80FD;&#x591F;&#x8BFB;&#x53D6;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;,&#x5982;&#x679C;&#x6CA1;&#x6709;&#x6CE8;&#x518C;,&#x5373;&#x4F7F;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;,&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;Selector&#x8F6E;&#x8BE2;&#x51FA;&#x6765;.</p>
+<blockquote>
+<p>&#x5728;&#x5B8C;&#x6210;&#x53D1;&#x9001;&#x54CD;&#x5E94;&#x4E4B;&#x540E;,&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7EE7;&#x7EED;&#x6CE8;&#x518C;READ?&#x7C7B;&#x4F3C;&#x4E8E;&#x914D;&#x7F6E;&#x65B0;&#x7684;&#x8FDE;&#x63A5;&#x65F6;,&#x5C31;&#x6CE8;&#x518C;&#x4E86;READ.&#x786E;&#x4FDD;&#x8FDE;&#x63A5;&#x4E00;&#x65E6;&#x5EFA;&#x7ACB;&#x5982;&#x679C;&#x6709;&#x6570;&#x636E;&#x8FDB;&#x6765;,&#x5C31;&#x80FD;&#x7ACB;&#x5373;&#x8BFB;&#x53D6;&#x5230;&#x6570;&#x636E;.
+&#x90A3;&#x4E48;&#x65E2;&#x7136;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x8FD9;&#x4E48;&#x9891;&#x7E41;,&#x6216;&#x8005;&#x8BF4;&#x4E0D;&#x56FA;&#x5B9A;, &#x4F55;&#x4E0D;&#x5982;&#x4E00;&#x76F4;&#x6CE8;&#x518C;READ&#x7B97;&#x4E86;,&#x4E0D;&#x8981;&#x5728;&#x8BFB;&#x53D6;&#x5B8C;&#x6BD5;&#x540E;&#x53C8;&#x53D6;&#x6D88;&#x4E86;READ. &#x663E;&#x7136;&#x4E0D;&#x884C;,&#x4E8B;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x6BD4;&#x4E00;&#x76F4;&#x8F6E;&#x8BE2;&#x8981;&#x597D;.</p>
+</blockquote>
+<pre><code class="lang-scala">    <span class="hljs-comment">// Use this on server-side, when a connection is accepted by a different thread but processed by the Selector</span>
+    public void register(<span class="hljs-type">String</span> id, <span class="hljs-type">SocketChannel</span> socketChannel) <span class="hljs-keyword">throws</span> <span class="hljs-type">ClosedChannelException</span> {
+        <span class="hljs-type">SelectionKey</span> key = socketChannel.register(nioSelector, <span class="hljs-type">SelectionKey</span>.<span class="hljs-type">OP_READ</span>);
+        <span class="hljs-type">KafkaChannel</span> channel = channelBuilder.buildChannel(id, key, maxReceiveSize);
+        key.attach(channel);
+        <span class="hljs-keyword">this</span>.channels.put(id, channel);
+    }
+</code></pre>
+<blockquote>
+<p>&#x5BA2;&#x6237;&#x7684;&#x4E5F;&#x6709;&#x4E0A;&#x9762;&#x7C7B;&#x4F3C;&#x7684;&#x4EE3;&#x7801;,&#x4E0D;&#x8FC7;&#x5B83;&#x662F;&#x5728;Selector&#x7684; connect&#x65B9;&#x6CD5;&#x91CC;,&#x867D;&#x7136;&#x4E0A;&#x9762;&#x7684;register&#x4E5F;&#x662F;&#x5728; Selector&#x4E2D;,&#x4F46;&#x662F;&#x53EA;&#x6709;&#x670D;&#x52A1;&#x7AEF;&#x8C03;&#x7528;.
+&#x5B9E;&#x9645;&#x4E0A;&#x53EA;&#x4F1A;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8D77;connect&#x8BF7;&#x6C42;(SocketChannel.connect),&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;&#x5BA2;&#x6237;&#x7AEF;&#x800C;&#x8A00;&#x5728;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x65F6;&#x5C31;&#x521B;&#x5EFA;KafkaChannel&#x5C31;&#x5F88;&#x5408;&#x9002;&#x4E86;.</p>
+</blockquote>
+<p>&#x65E7;&#x7248;&#x672C;&#x7684;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4E86;BoundedByteBufferReceive,&#x800C;&#x4E0D;&#x662F;NetworkReceive:</p>
+<blockquote>
+<p>a. &#x9996;&#x5148;&#x4ECE;SelectionKey&#x4E2D;&#x62FF;&#x5230;&#x5BF9;&#x5E94;&#x7684; SocketChannel&#xFF0C;&#x5E76;&#x4E14;&#x53D6;&#x51FA;attach&#x5728; SelectionKey&#x4E0A;&#x7684; Receive&#x5BF9;&#x8C61;&#xFF0C;
+&#x5982;&#x679C;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x8BFB;&#x53D6;&#xFF0C;Receive&#x5BF9;&#x8C61;&#x4E3A; null&#xFF0C;&#x5219;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;BoundedByteBufferReceive&#xFF0C;&#x7531;&#x5B83;&#x6765;&#x5904;&#x7406;&#x5177;&#x4F53;&#x7684;&#x8BFB;&#x6570;&#x636E;&#x7684;&#x903B;&#x8F91;&#x3002;
+&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6BCF;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x90FD;&#x6709;&#x4E00;&#x4E2A;Receive&#x5BF9;&#x8C61;&#x6765;&#x8BFB;&#x53D6;&#x6570;&#x636E;(&#x540C;&#x65F6;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;Send&#x5BF9;&#x8C61;&#x7528;&#x6765;&#x53D1;&#x9001;&#x6570;&#x636E;)&#x3002;
+b. &#x5982;&#x679C;&#x6570;&#x636E;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x8BFB;&#x53D6;&#x5B8C;&#x6BD5;(receive.complete)&#xFF0C;&#x5219;&#x5C06;&#x8BFB;&#x53D6;&#x7684;&#x6570;&#x636E;&#x5C01;&#x88C5;&#x6210;Request&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x5230;requestChannel&#x4E2D;&#x53BB;&#x3002;
+&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BFB;&#x53D6;&#x5B8C;&#x6BD5;&#xFF08;&#x53EF;&#x80FD;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x8FD8;&#x6CA1;&#x6709;&#x53D1;&#x9001;&#x5B8C;&#x6216;&#x8005;&#x7F51;&#x7EDC;&#x5EF6;&#x8FDF;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x8BA9;selector&#x7EE7;&#x7EED;&#x76D1;&#x542C;&#x8FD9;&#x4E2A;&#x901A;&#x9053;&#x7684; OP_READ&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>Processor&#x901A;&#x8FC7; selector&#x6765;&#x76D1;&#x542C;&#x5B83;&#x8D1F;&#x8D23;&#x7684;&#x90A3;&#x4E9B;&#x6570;&#x636E;&#x901A;&#x9053;&#xFF0C;&#x5F53;&#x901A;&#x9053;&#x4E0A;&#x6709;&#x6570;&#x636E;&#x53EF;&#x8BFB;&#x65F6;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x628A;&#x8FD9;&#x4E2A;&#x4E8B;&#x60C5;&#x4EA4;&#x7ED9;BoundedByteBufferReceive&#x3002;
+BoundedByteBufferReceive&#x5148;&#x8BFB;&#x4E00;&#x4E2A; int&#x6765;&#x786E;&#x5B9A;&#x6570;&#x636E;&#x91CF;&#x6709;&#x591A;&#x5C11;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x8BFB;&#x53D6;&#x771F;&#x6B63;&#x7684;&#x6570;&#x636E;&#x3002;&#x90A3;&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x8FDB;&#x6765;&#x540E;&#x53C8;&#x662F;&#x5982;&#x4F55;&#x88AB;&#x5904;&#x7406;&#x7684;&#x5462;&#xFF1F;</p>
+</blockquote>
+<h3 id="response-completedsends">Response-&gt;completedSends</h3>
+<blockquote>
+<p>Processor&#x4E0D;&#x4EC5;&#x8D1F;&#x8D23;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x8FD8;&#x8981;&#x5C06;Handler&#x7684;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;.&#x7C7B;&#x4F3C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;NetworkClient&#x4E5F;&#x8D1F;&#x8D23;&#x53D1;&#x9001;&#x548C;&#x8BFB;&#x53D6;.</p>
+</blockquote>
+<p>&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x54CD;&#x5E94;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;:&#x5728;processNewResponses[A]&#x4E2D;,&#x5224;&#x65AD;&#x5230;&#x662F;SendAction(&#x80AF;&#x5B9A;&#x6709;&#x4EBA;&#x544A;&#x8BC9;Processor&#x8BF4;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x53D1;&#x9001;&#x547D;&#x4EE4;),
+&#x4E8E;&#x662F;&#x6CE8;&#x518C;&#x4E86;OP_WRITE&#x4E8B;&#x4EF6;,&#x540C;&#x65F6;&#x52A0;&#x5165;&#x5230;inflightResponses&#x4E2D;. &#x5F53;&#x8F6E;&#x8BE2;&#x53D1;&#x751F;&#x65F6;,SelectionKey&#x4F1A;&#x76D1;&#x542C;&#x5230;&#x5199;&#x4E8B;&#x4EF6;,&#x5C06;&#x5199;&#x8BF7;&#x6C42;&#x53D1;&#x9001;&#x51FA;&#x53BB;.
+&#x5728;poll&#x8F6E;&#x8BE2;&#x7ED3;&#x675F;&#x540E;,selector.completedSends&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;.&#x9700;&#x8981;&#x505A;&#x4E9B;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;:&#x4ECE;inflightResponses&#x5220;&#x9664;&#x76F8;&#x5173;&#x4FE1;&#x606F;[B].
+Processor&#x5904;&#x7406;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x8BFB;&#x8BF7;&#x6C42;,&#x5219;&#x8981;&#x8FD4;&#x56DE;response&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;,&#x5728;poll&#x4E4B;&#x524D;&#x5C31;&#x8981;&#x6CE8;&#x518C;&#x4EFB;&#x4F55;&#x65B0;&#x7684; response.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">processNewResponses</span></span>() {
+    <span class="hljs-keyword">var</span> curr = requestChannel.receiveResponse(id)       <span class="hljs-comment">// id&#x662F; Processor&#x7684;&#x7F16;&#x53F7;,&#x56E0;&#x4E3A;RequestChannel&#x5BF9; response&#x961F;&#x5217;&#x662F;&#x5206; Processor&#x7684;</span>
+    <span class="hljs-keyword">while</span>(curr != <span class="hljs-literal">null</span>) {
+      <span class="hljs-keyword">try</span> {
+        curr.responseAction <span class="hljs-keyword">match</span> {
+          <span class="hljs-keyword">case</span> <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">NoOpAction</span> =&gt;             <span class="hljs-comment">// &#x6CA1;&#x6709;&#x54CD;&#x5E94;&#x9700;&#x8981;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;,&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x66F4;&#x591A;&#x7684;&#x8BF7;&#x6C42;(&#x6DFB;&#x52A0;OP_READ)</span>
+            selector.unmute(curr.request.connectionId)
+          <span class="hljs-keyword">case</span> <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">SendAction</span> =&gt;             <span class="hljs-comment">// &#x6709;&#x54CD;&#x5E94;&#x9700;&#x8981;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;,&#x6CE8;&#x518C;&#x5199;&#x4E8B;&#x4EF6;,&#x56E0;&#x4E3A;&#x8981;&#x628A;&#x54CD;&#x5E94;&#x8FD4;&#x56DE;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;</span>
+            selector.send(curr.responseSend)            <span class="hljs-comment">// &#x5C06;&#x54CD;&#x5E94;&#x901A;&#x8FC7;Selector&#x5148;&#x6807;&#x8BB0;&#x4E3A; Send,&#x5B9E;&#x9645;&#x7684;&#x53D1;&#x9001;&#x8FD8;&#x662F;&#x901A;&#x8FC7;poll&#x8F6E;&#x8BE2;&#x5B8C;&#x6210;--&gt;selector.completedSends</span>
+            inflightResponses += (curr.request.connectionId -&gt; curr)  <span class="hljs-comment">//[A]</span>
+          <span class="hljs-keyword">case</span> <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">CloseConnectionAction</span> =&gt;  <span class="hljs-comment">// &#x6839;&#x636E;&#x8FD4;&#x56DE;&#x7801;&#x5173;&#x95ED;Socket&#x901A;&#x4FE1;</span>
+            close(selector, curr.request.connectionId)
+        }
+      } <span class="hljs-keyword">finally</span> {
+        curr = requestChannel.receiveResponse(id)       <span class="hljs-comment">// while&#x5FAA;&#x73AF;,&#x786E;&#x4FDD;&#x6BCF;&#x6B21;&#x9009;&#x62E9;&#x65B0;&#x7684;Response,&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;Processor&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x961F;&#x5217;,&#x6240;&#x4EE5;&#x961F;&#x5217;&#x4E2D;&#x7684;resp&#x90FD;&#x8981;&#x53D1;&#x9001;&#x51FA;&#x53BB;</span>
+      }
+    }
+  }
+</code></pre>
+<blockquote>
+<p>NetworkClient&#x53D1;&#x9001; Send&#x8BF7;&#x6C42;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;&#x52A0;&#x5165;&#x5230; inFlightRequests,&#x8FD9;&#x91CC;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001; Send&#x8BF7;&#x6C42;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x52A0;&#x5165;&#x5230; inflightResponses.</p>
+<p>&#x95EE;&#x9898;: &#x5728;selector.poll&#x4E4B;&#x540E;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709; completedReceives&#x548C; completedSends&#x7684;&#x5904;&#x7406;&#x903B;&#x8F91;?
+&#x89E3;&#x91CA;1: poll&#x64CD;&#x4F5C;&#x53EA;&#x662F;&#x8F6E;&#x8BE2;,&#x628A;&#x6CE8;&#x518C;&#x5728;SocketChannel&#x4E0A;&#x7684;&#x8BFB;&#x5199;&#x4E8B;&#x4EF6;&#x83B7;&#x53D6;&#x51FA;&#x6765;, &#x90A3;&#x4E48;&#x5F97;&#x5230;&#x4E8B;&#x4EF6;&#x540E;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5B9E;&#x9645;&#x7684;&#x5904;&#x7406;&#x624D;&#x6709;&#x7528;.
+&#x6BD4;&#x5982;&#x670D;&#x52A1;&#x7AEF;&#x6CE8;&#x518C;&#x4E86;OP_READ,&#x8F6E;&#x8BE2;&#x65F6;&#x8BFB;&#x53D6;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;,&#x90A3;&#x4E48;&#x600E;&#x4E48;&#x670D;&#x52A1;&#x7AEF;&#x600E;&#x4E48;&#x5904;&#x7406;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x5462;?&#x5C31;&#x4EA4;&#x7ED9;&#x4E86;completedReceives
+&#x53EF;&#x4EE5;&#x628A;poll&#x64CD;&#x4F5C;&#x770B;&#x505A;&#x662F;&#x670D;&#x52A1;&#x7AEF;&#x5141;&#x8BB8;&#x63A5;&#x6536;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;,&#x7136;&#x540E;&#x8FD8;&#x8981;&#x628A;&#x8FD9;&#x4E2A;&#x5141;&#x8BB8;&#x7684;&#x4E8B;&#x4EF6;&#x62FF;&#x51FA;&#x6765;&#x8FDB;&#x884C;&#x771F;&#x6B63;&#x7684;&#x903B;&#x8F91;&#x5904;&#x7406;.
+&#x89E3;&#x91CA;2: poll&#x64CD;&#x4F5C;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x4E00;&#x6B21;&#x6027;&#x5B8C;&#x6574;&#x5730;&#x8BFB;&#x53D6;&#x5B8C;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;,&#x53EA;&#x6709;&#x7B49;&#x5230;&#x5B8C;&#x6574;&#x5730;&#x8BFB;&#x53D6;&#x5B8C;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;,&#x624D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;completeReceives&#x4E2D;!</p>
+</blockquote>
+<h2 id="requestchannel">RequestChannel</h2>
+<blockquote>
+<p>RequestChannel&#x662F; Processor&#x548C; Handler&#x4EA4;&#x6362;&#x6570;&#x636E;&#x7684;&#x5730;&#x65B9;(Processor&#x83B7;&#x53D6;&#x6570;&#x636E;&#x540E;&#x901A;&#x8FC7; RC&#x4EA4;&#x7ED9; Handler&#x5904;&#x7406;)&#x3002;
+&#x5B83;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x961F;&#x5217;requestQueue&#x7528;&#x6765;&#x5B58;&#x653E; Processor&#x52A0;&#x5165;&#x7684; Request&#xFF0C;Handler&#x4F1A;&#x4ECE;&#x91CC;&#x9762;&#x53D6;&#x51FA; Request&#x6765;&#x5904;&#x7406;&#xFF1B;
+&#x5B83;&#x8FD8;&#x4E3A;&#x6BCF;&#x4E2A;Processor&#x5F00;&#x8F9F;&#x4E86;&#x4E00;&#x4E2A; respondQueue&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x653E;Handler&#x5904;&#x7406;&#x4E86; Request&#x540E;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x7684; Response</p>
+</blockquote>
+<p>RequestChannel&#x662F; SocketServer&#x5168;&#x5C40;&#x7684;,&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x7AEF;&#x53EA;&#x6709;&#x4E00;&#x4E2A;RequestChannel.
+&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;Processor&#x6570;&#x91CF;&#x7528;&#x4E8E; response,&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x961F;&#x5217;&#x5927;&#x5C0F;&#x7528;&#x4E8E;request&#x963B;&#x585E;&#x961F;&#x5217;.</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">val</span> requestChannel = <span class="hljs-keyword">new</span> <span class="hljs-type">RequestChannel</span>(totalProcessorThreads, maxQueuedRequests)
+
+  <span class="hljs-comment">// register the processor threads for notification of responses</span>
+  requestChannel.addResponseListener(id =&gt; processors(id).wakeup())
+</code></pre>
+<p>&#x6BCF;&#x4E2A;Processor&#x90FD;&#x6709;&#x4E00;&#x4E2A; response&#x961F;&#x5217;,&#x800C;Request&#x8BF7;&#x6C42;&#x5219;&#x662F;&#x5168;&#x5C40;&#x7684;.
+&#x4E3A;&#x4EC0;&#x4E48;request&#x4E0D;&#x9700;&#x8981;&#x7ED9;&#x6BCF;&#x4E2A; Processor&#x90FD;&#x914D;&#x5907;&#x4E00;&#x4E2A;&#x961F;&#x5217;, &#x800C;response&#x5219;&#x9700;&#x8981;&#x5462;?</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RequestChannel</span>(<span class="hljs-params">val numProcessors: <span class="hljs-type">Int</span>, val queueSize: <span class="hljs-type">Int</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">KafkaMetricsGroup</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> responseListeners: <span class="hljs-type">List</span>[(<span class="hljs-type">Int</span>) =&gt; <span class="hljs-type">Unit</span>] = <span class="hljs-type">Nil</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> requestQueue = <span class="hljs-keyword">new</span> <span class="hljs-type">ArrayBlockingQueue</span>[<span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Request</span>](queueSize)
+
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> responseQueues = <span class="hljs-keyword">new</span> <span class="hljs-type">Array</span>[<span class="hljs-type">BlockingQueue</span>[<span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Response</span>]](numProcessors)
+  <span class="hljs-keyword">for</span>(i &lt;- <span class="hljs-number">0</span> until numProcessors)
+    responseQueues(i) = <span class="hljs-keyword">new</span> <span class="hljs-type">LinkedBlockingQueue</span>[<span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Response</span>]()
+
+  <span class="hljs-comment">// Send a request to be handled, potentially blocking until there is room in the queue for the request</span>
+  <span class="hljs-comment">// &#x5982;&#x679C;requestQueue&#x6EE1;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x963B;&#x585E;&#x5728;&#x8FD9;&#x91CC;&#x76F4;&#x5230;&#x6709;Handler&#x53D6;&#x8D70;&#x4E00;&#x4E2A; Request</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sendRequest</span></span>(request: <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Request</span>) {
+    requestQueue.put(request)
+  }
+
+  <span class="hljs-comment">// Send a response back to the socket server to be sent over the network</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sendResponse</span></span>(response: <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Response</span>) {
+    responseQueues(response.processor).put(response)
+    <span class="hljs-keyword">for</span>(onResponse &lt;- responseListeners) onResponse(response.processor)
+  }
+
+  <span class="hljs-comment">// Get the next request or block until specified time has elapsed</span>
+  <span class="hljs-comment">// Handler&#x4ECE; requestQueue&#x4E2D;&#x53D6;&#x51FA; Request&#xFF0C;&#x5982;&#x679C;&#x961F;&#x5217;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4F1A;&#x963B;&#x585E;&#x5728;&#x8FD9;&#x91CC;&#x76F4;&#x5230;&#x6709;Processor&#x52A0;&#x5165;&#x65B0;&#x7684; Request</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">receiveRequest</span></span>(timeout: <span class="hljs-type">Long</span>): <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Request</span> = requestQueue.poll(timeout, <span class="hljs-type">TimeUnit</span>.<span class="hljs-type">MILLISECONDS</span>)  
+
+  <span class="hljs-comment">// Get a response for the given processor if there is one</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">receiveResponse</span></span>(processor: <span class="hljs-type">Int</span>): <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Response</span> = responseQueues(processor).poll()
+}
+
+<span class="hljs-comment">//object RequestChannel&#x7684;case class&#x6709;: Session,Request,Response, ResponseAction.</span>
+</code></pre>
+<p>sendRequest &#x51FA;&#x73B0;&#x5728; Processor &#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42; completedReceives&#x540E;,&#x52A0;&#x5165;&#x5230;RequestChannel&#x7684;&#x8BF7;&#x6C42;&#x961F;&#x5217;
+receiveResponse &#x51FA;&#x73B0;&#x5728;Processor &#x4E2D; processNewResponses,&#x5B83;&#x4F1A;&#x8BFB;&#x53D6;RequestChannel&#x4E2D;&#x6307;&#x5B9A; Processor&#x7684;&#x54CD;&#x5E94;&#x961F;&#x5217;</p>
+<ul>
+<li>receiveRequest&#x7528;&#x4E8E; KafkaRequestHandler&#x4ECE; RequestChannel&#x7684;&#x8BF7;&#x6C42;&#x961F;&#x5217;&#x83B7;&#x53D6;&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;</li>
+<li>sendResponse&#x4F1A;&#x7531; Kafka&#x5C06;&#x54CD;&#x5E94;&#x7ED3;&#x679C;&#x53D1;&#x9001;&#x7ED9; RequestChannel&#x7684;&#x6307;&#x5B9A; Processor&#x7684;&#x54CD;&#x5E94;&#x961F;&#x5217;</li>
+</ul>
+<p>Handler&#x7684;&#x804C;&#x8D23;&#x662F;&#x4ECE; requestChannel&#x4E2D;&#x7684; requestQueue&#x53D6;&#x51FA; Request&#xFF0C;
+&#x5904;&#x7406;&#x4EE5;&#x540E;&#x518D;&#x5C06;Response&#x6DFB;&#x52A0;&#x5230; requestChannel&#x4E2D;&#x7684; responseQueue&#x4E2D;&#x3002;
+Processor&#x548C; Handler&#x4E92;&#x76F8;&#x901A;&#x4FE1;&#x90FD;&#x901A;&#x8FC7; RequestChannel&#x7684;&#x8BF7;&#x6C42;&#x6216;&#x54CD;&#x5E94;&#x961F;&#x5217;</p>
+<p><img src="20160110120027673" alt=""></p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x7EC8;&#x4E8E;&#x53EF;&#x4EE5;&#x7406;&#x6E05;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x7684;&#x8DEF;&#x5F84;&#x4E86;:</p>
+<pre><code class="lang-route">NetworkClient --- ClientRequest(Send) --- KafkaChannel ===&gt; SocketServer --- Processor -- RequestChannel -- KafkaRequestHandler
+            selector                                                                selector
+</code></pre>
+<h3 id="request">Request</h3>
+<p>&#x8BF7;&#x6C42;&#x8F6C;&#x53D1;&#x7ED9;KafkaApis&#x5904;&#x7406;, &#x8BF7;&#x6C42;&#x5185;&#x5BB9;&#x90FD;&#x5728;ByteBuffer buffer&#x4E2D;. requestId&#x8868;&#x793A;&#x8BF7;&#x6C42;&#x7C7B;&#x578B;,&#x6709;PRODUCE,FETCH&#x7B49;.
+&#x63D0;&#x524D;&#x5B9A;&#x4E49; keyToNameAndDeserializerMap,&#x6839;&#x636E; requestId,&#x518D;&#x4F20;&#x5165;buffer,&#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x8BF7;&#x6C42;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x7684;Request</p>
+<pre><code class="lang-scala">  <span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Request</span>(<span class="hljs-params">processor: <span class="hljs-type">Int</span>, connectionId: <span class="hljs-type">String</span>, session: <span class="hljs-type">Session</span>, private var buffer: <span class="hljs-type">ByteBuffer</span>, startTimeMs: <span class="hljs-type">Long</span>, securityProtocol: <span class="hljs-type">SecurityProtocol</span></span>) </span>{
+    <span class="hljs-comment">//&#x9996;&#x5148;&#x83B7;&#x53D6;&#x8BF7;&#x6C42;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x7684;ID</span>
+    <span class="hljs-keyword">val</span> requestId = buffer.getShort()
+
+    <span class="hljs-comment">// <span class="hljs-doctag">NOTE:</span> this map only includes the server-side request/response handlers. Newer request types should only use the client-side versions which are parsed with o.a.k.common.requests.AbstractRequest.getRequest()</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">val</span> keyToNameAndDeserializerMap: <span class="hljs-type">Map</span>[<span class="hljs-type">Short</span>, (<span class="hljs-type">ByteBuffer</span>) =&gt; <span class="hljs-type">RequestOrResponse</span>]=
+      <span class="hljs-type">Map</span>(<span class="hljs-type">ApiKeys</span>.<span class="hljs-type">PRODUCE</span>.id -&gt; <span class="hljs-type">ProducerRequest</span>.readFrom, <span class="hljs-type">ApiKeys</span>.<span class="hljs-type">FETCH</span>.id -&gt; <span class="hljs-type">FetchRequest</span>.readFrom)
+
+    <span class="hljs-comment">//&#x901A;&#x8FC7;ByteBuffer&#x6784;&#x9020;&#x8BF7;&#x6C42;&#x5BF9;&#x8C61;,&#x6BD4;&#x5982;ProducerRequest</span>
+    <span class="hljs-keyword">val</span> requestObj = keyToNameAndDeserializerMap.get(requestId).map(readFrom =&gt; readFrom(buffer)).orNull
+
+    <span class="hljs-comment">//&#x8BF7;&#x6C42;&#x5934;&#x548C;&#x8BF7;&#x6C42;&#x5185;&#x5BB9;</span>
+    <span class="hljs-keyword">val</span> header: <span class="hljs-type">RequestHeader</span> = <span class="hljs-keyword">if</span> (requestObj == <span class="hljs-literal">null</span>) {buffer.rewind; <span class="hljs-type">RequestHeader</span>.parse(buffer)} <span class="hljs-keyword">else</span> <span class="hljs-literal">null</span>
+    <span class="hljs-keyword">val</span> body: <span class="hljs-type">AbstractRequest</span> = <span class="hljs-keyword">if</span> (requestObj == <span class="hljs-literal">null</span>) <span class="hljs-type">AbstractRequest</span>.getRequest(header.apiKey, header.apiVersion, buffer) <span class="hljs-keyword">else</span> <span class="hljs-literal">null</span>
+
+    <span class="hljs-comment">//&#x91CD;&#x7F6E;ByteBuffer&#x4E3A;&#x7A7A;</span>
+    buffer = <span class="hljs-literal">null</span>
+  }
+</code></pre>
+<h2 id="kafkarequesthandler">KafkaRequestHandler</h2>
+<p>KafkaServer&#x4F1A;&#x521B;&#x5EFA; KafkaRequestHandlerPool, &#x5728;HandlerPool&#x4E2D;&#x4F1A;&#x542F;&#x52A8; numThreads&#x4E2A; KafkaRequestHandler&#x7EBF;&#x7A0B;
+KafkaRequestHandler&#x7EBF;&#x7A0B;&#x4ECE; requestChannel&#x7684; requestQueue&#x4E2D;&#x83B7;&#x53D6; Request&#x8BF7;&#x6C42;,&#x4EA4;&#x7ED9;KafkaApis&#x7684; handle&#x5904;&#x7406;</p>
+<pre><code class="lang-scala">  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span></span>() {
+    <span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>) {
+        <span class="hljs-keyword">var</span> req : <span class="hljs-type">RequestChannel</span>.<span class="hljs-type">Request</span> = <span class="hljs-literal">null</span>
+        <span class="hljs-keyword">while</span> (req == <span class="hljs-literal">null</span>) {
+          req = requestChannel.receiveRequest(<span class="hljs-number">300</span>)
+        }
+        apis.handle(req)
+    }
+  }
+</code></pre>
+<p>&#x6CE8;&#x610F;RequestChannel&#x662F;&#x600E;&#x6837;&#x4ECE; KafkaServer&#x4E00;&#x76F4;&#x4F20;&#x9012;&#x7ED9; KafkaRequestHandler&#x7684;</p>
+<pre><code class="lang-scala"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">KafkaServer</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">startup</span></span>() {
+    socketServer = <span class="hljs-keyword">new</span> <span class="hljs-type">SocketServer</span>(config, metrics, kafkaMetricsTime)
+    socketServer.startup()
+
+    apis = <span class="hljs-keyword">new</span> <span class="hljs-type">KafkaApis</span>(socketServer.requestChannel, replicaManager, consumerCoordinator, ...)
+    requestHandlerPool = <span class="hljs-keyword">new</span> <span class="hljs-type">KafkaRequestHandlerPool</span>(config.brokerId, socketServer.requestChannel, apis, config.numIoThreads)
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">KafkaRequestHandlerPool</span>(<span class="hljs-params">val brokerId: <span class="hljs-type">Int</span>, val requestChannel: <span class="hljs-type">RequestChannel</span>, val apis: <span class="hljs-type">KafkaApis</span>, numThreads: <span class="hljs-type">Int</span></span>) </span>{
+  <span class="hljs-keyword">for</span>(i &lt;- <span class="hljs-number">0</span> until numThreads) {
+    runnables(i) = <span class="hljs-keyword">new</span> <span class="hljs-type">KafkaRequestHandler</span>(i, brokerId, aggregateIdleMeter, numThreads, requestChannel, apis)
+    threads(i) = <span class="hljs-type">Utils</span>.daemonThread(<span class="hljs-string">&quot;kafka-request-handler-&quot;</span> + i, runnables(i))
+    threads(i).start()
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">KafkaRequestHandler</span>(<span class="hljs-params">id: <span class="hljs-type">Int</span>, brokerId: <span class="hljs-type">Int</span>, val requestChannel: <span class="hljs-type">RequestChannel</span>, apis: <span class="hljs-type">KafkaApis</span></span>) </span>{}
+</code></pre>
+<p><img src="20160110120044584" alt=""></p>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Internals" target="_blank">Kafka Internals</a></li>
+<li><a href="http://colobu.com/2015/03/23/kafka-internals/" target="_blank">Kafka &#x5185;&#x5E55;&#xFF1A;&#x6E90;&#x4EE3;&#x7801;High level&#x5206;&#x6790;</a></li>
+<li><a href="https://www.zybuluo.com/jewes/note/59978" target="_blank">Kafka SocketServer&#x6E90;&#x4EE3;&#x7801;&#x5206;&#x6790;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kafka-metadata-cache.html" class="navigation navigation-prev " aria-label="Previous page: Metadata Cache">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kafka-logappend.html" class="navigation navigation-next " aria-label="Next page: LogAppend">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Socketserver","level":"1.2.8.6","depth":3,"next":{"title":"LogAppend","level":"1.2.8.7","depth":3,"path":"Kafka/Source-code-analysis/kafka-logappend.md","ref":"./Kafka/Source-code-analysis/kafka-logappend.md","articles":[]},"previous":{"title":"Metadata Cache","level":"1.2.8.5","depth":3,"path":"Kafka/Source-code-analysis/kafka-metadata-cache.md","ref":"./Kafka/Source-code-analysis/kafka-metadata-cache.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Kafka/Source-code-analysis/kafka-socketserver.md","mtime":"2017-05-02T09:18:18.095Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

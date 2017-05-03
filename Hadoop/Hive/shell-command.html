@@ -1,0 +1,1492 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hive Shell Command · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HiveQL.html" />
+    
+    
+    <link rel="prev" href="tutorial.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../Kafka/">
+            
+                <a href="../../Kafka/">
+            
+                    
+                    Kafka
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../Kafka/Producer/">
+            
+                <a href="../../Kafka/Producer/">
+            
+                    
+                    Producer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../Kafka/Producer-scala/">
+            
+                <a href="../../Kafka/Producer-scala/">
+            
+                    
+                    Producer-Scala
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../Kafka/Consumer/">
+            
+                <a href="../../Kafka/Consumer/">
+            
+                    
+                    Consumer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../Kafka/Stream/">
+            
+                <a href="../../Kafka/Stream/">
+            
+                    
+                    Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../Kafka/Connector/">
+            
+                <a href="../../Kafka/Connector/">
+            
+                    
+                    Connector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../Kafka/kafka-HA.html">
+            
+                <a href="../../Kafka/kafka-HA.html">
+            
+                    
+                    Kafka High Availability
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../Kafka/kafka-controller.html">
+            
+                <a href="../../Kafka/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../Kafka/Source-code-analysis/">
+            
+                <a href="../../Kafka/Source-code-analysis/">
+            
+                    
+                    Kafka Source Code Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-schedule.html">
+            
+                    
+                    Kafka Schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="../../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-zkUtils.html">
+            
+                    
+                    Zookeeper Utils
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="../../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-metric-reporter.html">
+            
+                    
+                    Metric Reporter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="../../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-log-manager.html">
+            
+                    
+                    Log Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="../../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-metadata-cache.html">
+            
+                    
+                    Metadata Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="../../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-socketserver.html">
+            
+                    
+                    Socketserver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="../../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-logappend.html">
+            
+                    
+                    LogAppend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="../../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-isr.html">
+            
+                    
+                    ISR
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="../../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-replica-manager.html">
+            
+                    
+                    Replica Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="../../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-controller.html">
+            
+                    
+                    Kafka Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="../../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-admin-manager.html">
+            
+                    
+                    Admin Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="../../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-group-coordinator.html">
+            
+                    
+                    Group Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="../../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-transaction-coordinator.html">
+            
+                    
+                    Transaction Coordinator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.14" data-path="../../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-authorizer.html">
+            
+                    
+                    Authorizer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.15" data-path="../../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-apis.html">
+            
+                    
+                    Kafka APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.16" data-path="../../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-dynamic-config-manager.html">
+            
+                    
+                    Dynamic Config Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.17" data-path="../../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-health-checker.html">
+            
+                    
+                    Health Checker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.18" data-path="../../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                <a href="../../Kafka/Source-code-analysis/kafka-checkpoint.html">
+            
+                    
+                    Checkpoint
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../Zookeeper/">
+            
+                <a href="../../Zookeeper/">
+            
+                    
+                    Zookeeper
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../Zookeeper/getting-start.html">
+            
+                <a href="../../Zookeeper/getting-start.html">
+            
+                    
+                    Zookeeper getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../Zookeeper/managing-configuration.html">
+            
+                <a href="../../Zookeeper/managing-configuration.html">
+            
+                    
+                    Managing Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Hadoop Ecosystem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../HBase/">
+            
+                <a href="../HBase/">
+            
+                    
+                    HBase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../HBase/getting-start.html">
+            
+                <a href="../HBase/getting-start.html">
+            
+                    
+                    HBase getting start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../HBase/hbase-shell.html">
+            
+                <a href="../HBase/hbase-shell.html">
+            
+                    
+                    HBase Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Hive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="tutorial.html">
+            
+                <a href="tutorial.html">
+            
+                    
+                    Hive Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2.2" data-path="shell-command.html">
+            
+                <a href="shell-command.html">
+            
+                    
+                    Hive Shell Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="HiveQL.html">
+            
+                <a href="HiveQL.html">
+            
+                    
+                    HiveQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Sqoop/">
+            
+                <a href="../Sqoop/">
+            
+                    
+                    Sqoop
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../Sqoop/tutorial.html">
+            
+                <a href="../Sqoop/tutorial.html">
+            
+                    
+                    Sqoop Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../2017/">
+            
+                <a href="../../2017/">
+            
+                    
+                    2017
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2017/load-unload-jar.html">
+            
+                <a href="../../2017/load-unload-jar.html">
+            
+                    
+                    (un)load Jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2017/somthing-with-git.html">
+            
+                <a href="../../2017/somthing-with-git.html">
+            
+                    
+                    Somthing with Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../Angular2/">
+            
+                <a href="../../Angular2/">
+            
+                    
+                    Angular2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../Docker/">
+            
+                <a href="../../Docker/">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../Confluent/">
+            
+                <a href="../../Confluent/">
+            
+                    
+                    Confluent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../Gobblin/">
+            
+                <a href="../../Gobblin/">
+            
+                    
+                    Gobblin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../Gradle/">
+            
+                <a href="../../Gradle/">
+            
+                    
+                    Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../Log4j/">
+            
+                <a href="../../Log4j/">
+            
+                    
+                    Log4j
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../Java/NIO-IO.html">
+            
+                <a href="../../Java/NIO-IO.html">
+            
+                    
+                    Java NIO vs IO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../Cassandra/">
+            
+                <a href="../../Cassandra/">
+            
+                    
+                    Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../Logrotate/">
+            
+                <a href="../../Logrotate/">
+            
+                    
+                    Logrotate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Hive Shell Command</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="common">Common</h2>
+<pre><code>SHOW DATABASES;
+SHOW TABLES;
+</code></pre><h2 id="create-database">Create Database</h2>
+<p><code>CREATE DATABASE|SCHEMA [IF NOT EXISTS] &lt;database name&gt;</code></p>
+<h2 id="drop-database">Drop Database</h2>
+<p><code>DROP DATABASE StatementDROP (DATABASE|SCHEMA) [IF EXISTS] database_name 
+[RESTRICT|CASCADE];</code></p>
+<h2 id="create-table">Create Table</h2>
+<pre><code>CREATE [TEMPORARY] [EXTERNAL] TABLE [IF NOT EXISTS] [db_name.] table_name
+[(col_name data_type [COMMENT col_comment], ...)]
+[COMMENT table_comment]
+[ROW FORMAT row_format]
+[STORED AS file_format]
+</code></pre><h3 id="example">Example</h3>
+<pre><code>hive&gt; CREATE TABLE IF NOT EXISTS employee ( eid int, name String,
+salary String, destination String)
+COMMENT &#x2018;Employee details&#x2019;
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY &#x2018;\t&#x2019;
+LINES TERMINATED BY &#x2018;\n&#x2019;
+STORED AS TEXTFILE;
+</code></pre><h2 id="load-data">Load Data</h2>
+<pre><code>LOAD DATA [LOCAL] INPATH &apos;filepath&apos; [OVERWRITE] INTO TABLE tablename 
+[PARTITION (partcol1=val1, partcol2=val2 ...)]
+</code></pre><h3 id="example">Example</h3>
+<p>sample.txt</p>
+<pre><code>1201  Gopal       45000    Technical manager
+1202  Manisha     45000    Proof reader
+1203  Masthanvali 40000    Technical writer
+1204  Kiran       40000    Hr Admin
+1205  Kranthi     30000    Op Admin
+</code></pre><pre><code>hive&gt; LOAD DATA LOCAL INPATH &apos;/home/user/sample.txt&apos;
+OVERWRITE INTO TABLE employee;
+</code></pre><h2 id="alter-table">Alter Table</h2>
+<pre><code>ALTER TABLE name RENAME TO new_name
+ALTER TABLE name ADD COLUMNS (col_spec[, col_spec ...])
+ALTER TABLE name DROP [COLUMN] column_name
+ALTER TABLE name CHANGE column_name new_name new_type
+ALTER TABLE name REPLACE COLUMNS (col_spec[, col_spec ...])
+</code></pre><p>Example</p>
+<pre><code>hive&gt; ALTER TABLE employee RENAME TO emp;
+hive&gt; ALTER TABLE employee CHANGE name ename String;
+hive&gt; ALTER TABLE employee CHANGE salary salary Double;
+hive&gt; ALTER TABLE employee ADD COLUMNS ( 
+dept STRING COMMENT &apos;Department name&apos;);
+hive&gt; ALTER TABLE employee REPLACE COLUMNS ( 
+eid INT empid Int, 
+ename STRING name String);
+</code></pre><h2 id="drop-table">Drop Table</h2>
+<p><code>DROP TABLE [IF EXISTS] table_name;</code> <br>
+Example <br>
+<code>hive&gt; DROP TABLE IF EXISTS employee;</code> <br></p>
+<h2 id="adding-a-partition">Adding a Partition</h2>
+<pre><code>ALTER TABLE table_name ADD [IF NOT EXISTS] PARTITION partition_spec
+[LOCATION &apos;location1&apos;] partition_spec [LOCATION &apos;location2&apos;] ...;
+partition_spec:
+: (p_column = p_col_value, p_column = p_col_value, ...)
+</code></pre><p>Example</p>
+<pre><code>hive&gt; ALTER TABLE employee
+&gt; ADD PARTITION (year=&#x2019;2013&#x2019;)
+&gt; location &apos;/2012/part2012&apos;;
+</code></pre><h2 id="renaming-a-partition">Renaming a Partition</h2>
+<pre><code>ALTER TABLE table_name PARTITION partition_spec RENAME TO PARTITION partition_spec;
+</code></pre><p>Example</p>
+<pre><code>hive&gt; ALTER TABLE employee PARTITION (year=&#x2019;1203&#x2019;)
+   &gt; RENAME TO PARTITION (Yoj=&#x2019;1203&#x2019;);
+</code></pre><h2 id="dropping-a-partition">Dropping a Partition</h2>
+<pre><code>ALTER TABLE table_name DROP [IF EXISTS] PARTITION partition_spec, PARTITION partition_spec,...;
+</code></pre><p>Example</p>
+<pre><code>hive&gt; ALTER TABLE employee DROP [IF EXISTS]
+   &gt; PARTITION (year=&#x2019;1203&#x2019;);
+</code></pre><h2 id="built-in-operators">Built-in Operators</h2>
+<ul>
+<li>Relational Operators</li>
+<li>Arrihmetic Operators</li>
+<li>Logical Operators</li>
+<li>Complex Operators</li>
+</ul>
+<h3 id="relational-operators">Relational Operators</h3>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Operand</th>
+<th>Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A = B</td>
+<td>all primitive types</td>
+<td>TRUE if expression A is equivalent to expression B otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A != B</td>
+<td>all primitive types</td>
+<td>TRUE if expression A is not equivalent to expression B otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A &lt; B</td>
+<td>all primitive types</td>
+<td>TRUE if expression A is less than expression B otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A &lt;= B</td>
+<td>all primitive types</td>
+<td>TRUE if expression A is less than or equal to expression B otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A &gt; B</td>
+<td>all primitive types</td>
+<td>TRUE if expression A is greater than expression B otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A &gt;= B</td>
+<td>all primitive types</td>
+<td>TRUE if expression A is greater than or equal to expression B otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A IS NULL</td>
+<td>all types</td>
+<td>TRUE if expression A evaluates to NULL otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A IS NOT NULL</td>
+<td>all types</td>
+<td>FALSE if expression A evaluates to NULL otherwise TRUE.</td>
+</tr>
+<tr>
+<td>A LIKE B</td>
+<td>Strings</td>
+<td>TRUE if string pattern A matches to B otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A RLIKE B</td>
+<td>Strings</td>
+<td>NULL if A or B is NULL, TRUE if any substring of A matches the Java regular expression B , otherwise FALSE.</td>
+</tr>
+<tr>
+<td>A REGEXP B</td>
+<td>Strings</td>
+<td>Same as RLIKE.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example">Example</h4>
+<pre><code>+-----+--------------+--------+---------------------------+------+
+| Id  | Name         | Salary | Designation               | Dept |
++-----+--------------+------------------------------------+------+
+|1201 | Gopal        | 45000  | Technical manager         | TP   |
+|1202 | Manisha      | 45000  | Proofreader               | PR   |
+|1203 | Masthanvali  | 40000  | Technical writer          | TP   |
+|1204 | Krian        | 40000  | Hr Admin                  | HR   |
+|1205 | Kranthi      | 30000  | Op Admin                  | Admin|
++-----+--------------+--------+---------------------------+------+
+</code></pre><pre><code>hive&gt; SELECT * FROM employee WHERE Id=1205;
+</code></pre><p>It&apos;ll get:</p>
+<pre><code>+-----+-----------+-----------+----------------------------------+
+| ID  | Name      | Salary    | Designation              | Dept  |
++-----+---------------+-------+----------------------------------+
+|1205 | Kranthi   | 30000     | Op Admin                 | Admin |
++-----+-----------+-----------+----------------------------------+
+</code></pre><pre><code>hive&gt; SELECT * FROM employee WHERE Salary&gt;=40000;
+</code></pre><p>It&apos;ll get:</p>
+<pre><code>+-----+------------+--------+----------------------------+------+
+| ID  | Name       | Salary | Designation                | Dept |
++-----+------------+--------+----------------------------+------+
+|1201 | Gopal      | 45000  | Technical manager          | TP   |
+|1202 | Manisha    | 45000  | Proofreader                | PR   |
+|1203 | Masthanvali| 40000  | Technical writer           | TP   |
+|1204 | Krian      | 40000  | Hr Admin                   | HR   |
++-----+------------+--------+----------------------------+------+
+</code></pre><h3 id="arrihmetic-operators">Arrihmetic Operators</h3>
+<table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>Operand</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A + B</td>
+<td>all number types</td>
+<td>Gives the result of adding A and B.</td>
+</tr>
+<tr>
+<td>A - B</td>
+<td>all number types</td>
+<td>Gives the result of subtracting B from A.</td>
+</tr>
+<tr>
+<td>A * B</td>
+<td>all number types</td>
+<td>Gives the result of multiplying A and B.</td>
+</tr>
+<tr>
+<td>A / B</td>
+<td>all number types</td>
+<td>Gives the result of dividing B from A.</td>
+</tr>
+<tr>
+<td>A % B</td>
+<td>all number types</td>
+<td>Gives the reminder resulting from dividing A by B.</td>
+</tr>
+<tr>
+<td>A &amp; B</td>
+<td>all number types</td>
+<td>Gives the result of bitwise AND of A and B.</td>
+</tr>
+<tr>
+<td>A | B</td>
+<td>all number types</td>
+<td>Gives the result of bitwise OR of A and B.</td>
+</tr>
+<tr>
+<td>A ^ B</td>
+<td>all number types</td>
+<td>Gives the result of bitwise XOR of A and B.</td>
+</tr>
+<tr>
+<td>~A</td>
+<td>all number types</td>
+<td>Gives the result of bitwise NOT of A.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example">Example</h4>
+<p><code>hive&gt; SELECT 20+30 ADD FROM temp;</code> <br>
+It&apos;ll get:</p>
+<pre><code>+--------+
+|   ADD  |
++--------+
+|   50   |
++--------+
+</code></pre><h3 id="logical-operators">Logical Operators</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Operators</th>
+<th>Operands</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A AND B</td>
+<td>boolean</td>
+<td>TRUE if both A and B are TRUE, otherwise FALSE.</td>
+</tr>
+<tr>
+<td style="text-align:center">A &amp;&amp; B</td>
+<td>boolean</td>
+<td>Same as A AND B.</td>
+</tr>
+<tr>
+<td style="text-align:center">A OR B</td>
+<td>boolean</td>
+<td>TRUE if either A or B or both are TRUE, otherwise FALSE.</td>
+</tr>
+<tr>
+<td style="text-align:center">A || B</td>
+<td>boolean</td>
+<td>Same as A OR B.</td>
+</tr>
+<tr>
+<td style="text-align:center">NOT A</td>
+<td>boolean</td>
+<td>TRUE if A is FALSE, otherwise FALSE.</td>
+</tr>
+<tr>
+<td style="text-align:center">!A</td>
+<td>boolean</td>
+<td>Same as NOT A.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example">Example</h4>
+<p><code>hive&gt; SELECT * FROM employee WHERE Salary&gt;40000 &amp;&amp; Dept=TP;</code> <br>
+Got that:</p>
+<pre><code>+------+--------------+-------------+-------------------+--------+
+| ID   | Name         | Salary      | Designation       | Dept   |
++------+--------------+-------------+-------------------+--------+
+|1201  | Gopal        | 45000       | Technical manager | TP     |
++------+--------------+-------------+-------------------+--------+
+</code></pre><h3 id="complex-operators">Complex Operators</h3>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Operand</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A[n]</td>
+<td>A is an Array and n is an int</td>
+<td>It returns the nth element in the array A. The first element has index 0.</td>
+</tr>
+<tr>
+<td>M[key]</td>
+<td>M is a Map<k, v=""> and key has type K</k,></td>
+<td>It returns the value corresponding to the key in the map.</td>
+</tr>
+<tr>
+<td>S.x</td>
+<td>S is a struct</td>
+<td>It returns the x field of S.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="built-in-functions">Built-In Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Return</th>
+<th>Type</th>
+<th>Signature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BIGINT</td>
+<td>round(double a)</td>
+<td>It returns the rounded BIGINT value of the double.</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>floor(double a)</td>
+<td>It returns the maximum BIGINT value that is equal or less than the double.</td>
+</tr>
+<tr>
+<td>BIGINT</td>
+<td>ceil(double a)</td>
+<td>It returns the minimum BIGINT value that is equal or greater than the double.</td>
+</tr>
+<tr>
+<td>double</td>
+<td>rand(), rand(int seed)</td>
+<td>It returns a random number that changes from row to row.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>concat(string A, string B,...)</td>
+<td>It returns the string resulting from concatenating B after A.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>substr(string A, int start)</td>
+<td>It returns the substring of A starting from start position till the end of string A.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>substr(string A, int start, int length)</td>
+<td>It returns the substring of A starting from start position with the given length.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>upper(string A)</td>
+<td>It returns the string resulting from converting all characters of A to upper case.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>ucase(string A)</td>
+<td>Same as above.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>lower(string A)</td>
+<td>It returns the string resulting from converting all characters of B to lower case.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>lcase(string A)</td>
+<td>Same as above.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>trim(string A)</td>
+<td>It returns the string resulting from trimming spaces from both ends of A.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>ltrim(string A)</td>
+<td>It returns the string resulting from trimming spaces from the beginning (left hand side) of A.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>rtrim(string A)    rtrim(string A)</td>
+<td>It returns the string resulting from trimming spaces from the end (right hand side) of A.</td>
+</tr>
+<tr>
+<td>string</td>
+<td>regexp_replace(string A, string B, string C)</td>
+<td>It returns the string resulting from replacing all substrings in B that match the Java regular expression syntax with C.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>size(Map<k.v>)</k.v></td>
+<td>It returns the number of elements in the map type.</td>
+</tr>
+<tr>
+<td>int</td>
+<td>size(Array<t>)</t></td>
+<td>It returns the number of elements in the array type.</td>
+</tr>
+<tr>
+<td>value of <type></type></td>
+<td>cast(<expr> as <type>)</type></expr></td>
+<td>It converts the results of the expression expr to <type> e.g. cast(&apos;1&apos; as BIGINT) converts the string &apos;1&apos; to it integral representation. A NULL is returned if the conversion does not succeed.</type></td>
+</tr>
+<tr>
+<td>string</td>
+<td>from_unixtime(int unixtime)</td>
+<td>convert the number of seconds from Unix epoch (1970-01-01 00:00:00 UTC) to a string representing the timestamp of that moment in the current system time zone in the format of &quot;1970-01-01 00:00:00&quot;</td>
+</tr>
+<tr>
+<td>string</td>
+<td>to_date(string timestamp)</td>
+<td>It returns the date part of a timestamp string: to_date(&quot;1970-01-01 00:00:00&quot;) = &quot;1970-01-01&quot;</td>
+</tr>
+<tr>
+<td>int</td>
+<td>year(string date)</td>
+<td>It returns the year part of a date or a timestamp string: year(&quot;1970-01-01 00:00:00&quot;) = 1970, year(&quot;1970-01-01&quot;) = 1970</td>
+</tr>
+<tr>
+<td>int</td>
+<td>month(string date)</td>
+<td>It returns the month part of a date or a timestamp string: month(&quot;1970-11-01 00:00:00&quot;) = 11, month(&quot;1970-11-01&quot;) = 11</td>
+</tr>
+<tr>
+<td>int</td>
+<td>day(string date)</td>
+<td>It returns the day part of a date or a timestamp string: day(&quot;1970-11-01 00:00:00&quot;) = 1, day(&quot;1970-11-01&quot;) = 1</td>
+</tr>
+<tr>
+<td>string</td>
+<td>get_json_object(string json_string, string path)</td>
+<td>It extracts json object from a json string based on json path specified, and returns json string of the extracted json object. It returns NULL if the input json string is invalid.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<p><strong>round()</strong> function <br>
+<code>hive&gt; SELECT round(2.6) from temp;</code> <br>
+That gets: <br>
+<code>3.0</code> <br>
+<strong>floor()</strong> function <br>
+<code>hive&gt; SELECT floor(2.6) from temp;</code> <br>
+That gets: <br>
+<code>2.0</code> <br>
+<strong>ceil()</strong> function <br>
+<code>&gt;hive SELECT ceil(2.6) from temp;</code> <br>
+That gets: <br>
+<code>3.0</code> <br></p>
+<h2 id="aggregate-functions">Aggregate Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Return Type</th>
+<th>Signature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BIGINT</td>
+<td>count(*), count(expr),</td>
+<td>count(*) - Returns the total number of retrieved rows.</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>sum(col), sum(DISTINCT col)</td>
+<td>It returns the sum of the elements in the group or the sum of the distinct values of the column in the group.</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>avg(col), avg(DISTINCT col)</td>
+<td>It returns the average of the elements in the group or the average of the distinct values of the column in the group.</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>min(col)</td>
+<td>It returns the minimum value of the column in the group.</td>
+</tr>
+<tr>
+<td>DOUBLE</td>
+<td>max(col)</td>
+<td>It returns the maximum value of the column in the group.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="views-and-indexes">Views and Indexes</h2>
+<ul>
+<li>Create View <pre><code>CREATE VIEW [IF NOT EXISTS] view_name [(column_name [COMMENT column_comment], ...) ]
+[COMMENT table_comment]
+AS SELECT ...
+</code></pre>Example<pre><code>+------+--------------+-------------+-------------------+--------+
+| ID   | Name         | Salary      | Designation       | Dept   |
++------+--------------+-------------+-------------------+--------+
+|1201  | Gopal        | 45000       | Technical manager | TP     |
+|1202  | Manisha      | 45000       | Proofreader       | PR     |
+|1203  | Masthanvali  | 40000       | Technical writer  | TP     |
+|1204  | Krian        | 40000       | Hr Admin          | HR     |
+|1205  | Kranthi      | 30000       | Op Admin          | Admin  |
++------+--------------+-------------+-------------------+--------+
+</code></pre><pre><code>hive&gt; CREATE VIEW emp_30000 AS
+SELECT * FROM employee
+WHERE salary&gt;30000;
+</code></pre></li>
+<li>Drop View
+<code>DROP VIEW view_name;</code> <br>
+<code>hive&gt; DROP VIEW emp_30000;</code></li>
+<li>Create Index <pre><code>CREATE INDEX index_name
+ON TABLE base_table_name (col_name, ...)
+AS &apos;index.handler.class.name&apos;
+[WITH DEFERRED REBUILD]
+[IDXPROPERTIES (property_name=property_value, ...)]
+[IN TABLE index_table_name]
+[PARTITIONED BY (col_name, ...)]
+[
+ [ ROW FORMAT ...] STORED AS ...
+ | STORED BY ...
+]
+[LOCATION hdfs_path]
+[TBLPROPERTIES (...)]
+</code></pre>Example<pre><code>hive&gt; CREATE INDEX inedx_salary ON TABLE employee(salary)
+AS &apos;org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler&apos;;
+</code></pre></li>
+<li>Drop Index<pre><code>DROP INDEX &lt;index_name&gt; ON &lt;table_name&gt;;
+</code></pre><pre><code>hive&gt; DROP INDEX index_salary ON employee;
+</code></pre></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tutorial.html" class="navigation navigation-prev " aria-label="Previous page: Hive Tutorial">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HiveQL.html" class="navigation navigation-next " aria-label="Next page: HiveQL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hive Shell Command","level":"1.4.2.2","depth":3,"next":{"title":"HiveQL","level":"1.4.2.3","depth":3,"path":"Hadoop/Hive/HiveQL.md","ref":"./Hadoop/Hive/HiveQL.md","articles":[]},"previous":{"title":"Hive Tutorial","level":"1.4.2.1","depth":3,"path":"Hadoop/Hive/tutorial.md","ref":"./Hadoop/Hive/tutorial.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Hadoop/Hive/shell-command.md","mtime":"2017-01-14T02:51:04.490Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T06:07:17.133Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
