@@ -44,7 +44,7 @@
 * [2017](./2017/README.md)
     * [(un)load Jar](./2017/load-unload-jar.md)
     * [Somthing with Git](./2017/somthing-with-git.md)
-* [Angular2](./Angular2/README.md)
+* [Angular](./Angular/README.md)
 * [Docker](./Docker/README.md)
 * [Confluent](./Confluent/README.md)
 * [Gobblin](./Gobblin/README.md)
@@ -53,4 +53,6 @@
 * [Java NIO vs IO](./Java/NIO-IO.md)
 * [Cassandra](./Cassandra/README.md)
 * [Logrotate](./Logrotate/README.md)
+* [Netty](./Netty/README.md)
+* [React-Native](./React-Native/README.md)
 
